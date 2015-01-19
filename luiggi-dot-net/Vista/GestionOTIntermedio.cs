@@ -231,21 +231,21 @@ namespace Vista
         {
             if (_estado == estados.nuevo && validarDatos() == termino.aprobado)
             {
-                OrdenDeTrabajo orden = new OrdenDeTrabajo()
-                {
-                    fechaPlan = infoPlan.fechaProduccion,
-                    estado = new Estado() { idEstado = 19 },
-                    idPlan = infoPlan.idPlan,
-                    producto=new Producto(){idProducto=infoPlan.producto.idProducto},
-                    horaInicio = Convert.ToDateTime(txt_inicio.Text),
-                    horaFin = Convert.ToDateTime(txt_fin.Text),
-                    productoIntermedio = new Producto() { idProducto = prodInt.idProducto },
-                    maquinaria = new Maquinaria() { idMaquinaria = (int)cmb_maquinaria.SelectedValue, Nombre = ((Maquinaria)cmb_maquinaria.SelectedItem).Nombre},
-                    empleado = new Empleado() { idEmpleado = (int)cmb_empleado.SelectedValue, Nombre = ((Empleado)cmb_empleado.SelectedItem).Nombre },
-                    fechaCreacion=dtp_creacion_OT.Value.Date,
-                    cantidad = (float)Convert.ToDouble(lbl_cant.Text)
+                OrdenDeTrabajo orden = new OrdenDeTrabajo();
+                
+                    orden.fechaPlan = infoPlan.fechaProduccion;
+                    orden.estado = new Estado() { idEstado = 19 };
+                    orden.idPlan = infoPlan.idPlan;
+                    orden.producto=new Producto(){idProducto=infoPlan.producto.idProducto};
+                    orden.horaInicio = Convert.ToDateTime(txt_inicio.Text);
+                    orden.horaFin = Convert.ToDateTime(txt_fin.Text);
+                    orden.productoIntermedio = new Producto() { idProducto = prodInt.idProducto };
+                    orden.maquinaria = new Maquinaria() { idMaquinaria = (int)cmb_maquinaria.SelectedValue, Nombre = ((Maquinaria)cmb_maquinaria.SelectedItem).Nombre};
+                    orden.empleado = new Empleado() { idEmpleado = (int)cmb_empleado.SelectedValue, Nombre = ((Empleado)cmb_empleado.SelectedItem).Nombre };
+                    orden.fechaCreacion=dtp_creacion_OT.Value.Date;
+                    orden.cantidad = (float)Convert.ToDouble(lbl_cant.Text);
 
-                };
+                
                 
                 iniciador.otHija = orden;
                        

@@ -169,7 +169,7 @@
             this.dgv_pedidos.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.dgv_pedidos.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
                         | System.Windows.Forms.AnchorStyles.Right)));
-            this.dgv_pedidos.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgv_pedidos.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
             this.dgv_pedidos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgv_pedidos.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.idPedido,
@@ -207,42 +207,49 @@
             this.nroPedido.HeaderText = "Numero de Pedido";
             this.nroPedido.Name = "nroPedido";
             this.nroPedido.ReadOnly = true;
+            this.nroPedido.Width = 80;
             // 
             // fecPedido
             // 
             this.fecPedido.HeaderText = "Fecha Pedido";
             this.fecPedido.Name = "fecPedido";
             this.fecPedido.ReadOnly = true;
+            this.fecPedido.Width = 90;
             // 
             // Estado
             // 
             this.Estado.HeaderText = "Estado";
             this.Estado.Name = "Estado";
             this.Estado.ReadOnly = true;
+            this.Estado.Width = 65;
             // 
             // razSoc
             // 
             this.razSoc.HeaderText = "Razon Social";
             this.razSoc.Name = "razSoc";
             this.razSoc.ReadOnly = true;
+            this.razSoc.Width = 87;
             // 
             // Nombre
             // 
             this.Nombre.HeaderText = "Nombre";
             this.Nombre.Name = "Nombre";
             this.Nombre.ReadOnly = true;
+            this.Nombre.Width = 69;
             // 
             // ape
             // 
             this.ape.HeaderText = "Apellido";
             this.ape.Name = "ape";
             this.ape.ReadOnly = true;
+            this.ape.Width = 69;
             // 
             // fecNec
             // 
             this.fecNec.HeaderText = "Fecha Necesidad";
             this.fecNec.Name = "fecNec";
             this.fecNec.ReadOnly = true;
+            this.fecNec.Width = 106;
             // 
             // total
             // 
@@ -252,18 +259,21 @@
             this.total.HeaderText = "Monto Total";
             this.total.Name = "total";
             this.total.ReadOnly = true;
+            this.total.Width = 82;
             // 
             // dirEntrega
             // 
             this.dirEntrega.HeaderText = "Dir. Entrega";
             this.dirEntrega.Name = "dirEntrega";
             this.dirEntrega.ReadOnly = true;
+            this.dirEntrega.Width = 81;
             // 
             // opciones
             // 
             this.opciones.HeaderText = "Opciones";
             this.opciones.Name = "opciones";
             this.opciones.ReadOnly = true;
+            this.opciones.Width = 58;
             // 
             // idestado
             // 

@@ -952,7 +952,7 @@ namespace DAO
                    
                     p.idProducto = Convert.ToInt32(dr["idProducto"]);
                     p.Unidad = new UnidadMedida() { Nombre = dr["nombre"].ToString() };
-                    p.cantidadAProd = Convert.ToInt32(dr["cantidad"]);
+                    p.cantidadAProd = Convert.ToDouble(dr["cantidad"]);
                     p.tiempoProduccion = Convert.ToDouble(dr["tiempoProduccion"]);
                     p.cantidadProductos = Convert.ToDouble(dr["cantidadProductos"]);
                    

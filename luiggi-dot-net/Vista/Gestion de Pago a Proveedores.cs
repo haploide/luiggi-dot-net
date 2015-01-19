@@ -136,8 +136,14 @@ namespace Vista
                 dgv_detalle_orden_compra.Rows.Clear();
                 foreach (DetalleOrdenCompra detOrd in detOrden)
                 {
+                    string unidadReal = "";
+                    if (detOrd.producto.Unidad.Nombre == "g")
+                    {
+                        unidadReal = "Kg";
+                        
+                    }
 
-                    dgv_detalle_orden_compra.Rows.Add(detOrd.producto.idProducto, detOrd.producto.Nombre, detOrd.cantidad, detOrd.producto.Unidad.Nombre, detOrd.precio, detOrd.subTotal);
+                    dgv_detalle_orden_compra.Rows.Add(detOrd.producto.idProducto, detOrd.producto.Nombre, detOrd.cantidad, unidadReal, detOrd.precio, detOrd.subTotal);
 
                 }
 

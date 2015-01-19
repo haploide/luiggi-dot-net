@@ -328,6 +328,8 @@ namespace Vista
                 
                 bloquear = false;
                 btn_guardar.Enabled = false;
+                btn_cargar_combos.Enabled = false;
+                txt_inicio.Enabled = false;
                 limpiar();
                 _estado = estados.guardado;
             }
@@ -370,13 +372,21 @@ namespace Vista
         }
         private void btn_cargar_combos_Click(object sender, EventArgs e)
         {
-            DateTime desde = new DateTime();
-            DateTime hasta = new DateTime();
-            desde = Convert.ToDateTime(txt_inicio.Text);
-            hasta =desde.AddMinutes(Convert.ToDouble(lbl_tiempo.Text));
-            txt_fin.Text = hasta.TimeOfDay.ToString();
-            
-            cargaCombos();
+            try
+            {
+                DateTime desde = new DateTime();
+                DateTime hasta = new DateTime();
+                desde = Convert.ToDateTime(txt_inicio.Text);
+                hasta = desde.AddMinutes(Convert.ToDouble(lbl_tiempo.Text));
+                txt_fin.Text = hasta.TimeOfDay.ToString();
+
+                cargaCombos();
+            }
+            catch (Exception ex)
+            {
+                
+                
+            }
         }
         private void limpiar()
         {
@@ -393,6 +403,7 @@ namespace Vista
             lbl_cant.Text = "0";
             lbl_unidad.Text = "";
 
+            cargaCombo();
             dgv_estructuraOT.Rows.Clear();
         }
         private void btn_nuevo_Click(object sender, EventArgs e)

@@ -24,10 +24,10 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Consultar_Orden_de_Compra));
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Consultar_Orden_de_Compra));
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.dgv_pedidos = new System.Windows.Forms.DataGridView();
             this.idOrden = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -44,6 +44,12 @@
             this.cerrar = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.dgv_detalle_pedido = new System.Windows.Forms.DataGridView();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.btn_imprimir = new System.Windows.Forms.Button();
+            this.btn_nuevo = new System.Windows.Forms.Button();
+            this.btn_eliminar = new System.Windows.Forms.Button();
+            this.btn_salir_consulta = new System.Windows.Forms.Button();
+            this.btn_limpiar_filtros = new System.Windows.Forms.Button();
             this.codProd = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.nomProd = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.cant = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -54,12 +60,6 @@
             this.idOrd = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.carrar = new System.Windows.Forms.DataGridViewButtonColumn();
             this.unidadReal = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.btn_imprimir = new System.Windows.Forms.Button();
-            this.btn_nuevo = new System.Windows.Forms.Button();
-            this.btn_eliminar = new System.Windows.Forms.Button();
-            this.btn_salir_consulta = new System.Windows.Forms.Button();
-            this.btn_limpiar_filtros = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_pedidos)).BeginInit();
             this.groupBox3.SuspendLayout();
@@ -238,6 +238,76 @@
             this.dgv_detalle_pedido.TabIndex = 50;
             this.dgv_detalle_pedido.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_detalle_pedido_CellContentClick);
             // 
+            // groupBox2
+            // 
+            this.groupBox2.Controls.Add(this.btn_imprimir);
+            this.groupBox2.Controls.Add(this.btn_nuevo);
+            this.groupBox2.Controls.Add(this.btn_eliminar);
+            this.groupBox2.Controls.Add(this.btn_salir_consulta);
+            this.groupBox2.Controls.Add(this.btn_limpiar_filtros);
+            this.groupBox2.Location = new System.Drawing.Point(12, 548);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(1038, 59);
+            this.groupBox2.TabIndex = 55;
+            this.groupBox2.TabStop = false;
+            // 
+            // btn_imprimir
+            // 
+            this.btn_imprimir.Image = ((System.Drawing.Image)(resources.GetObject("btn_imprimir.Image")));
+            this.btn_imprimir.Location = new System.Drawing.Point(838, 15);
+            this.btn_imprimir.Name = "btn_imprimir";
+            this.btn_imprimir.Size = new System.Drawing.Size(38, 38);
+            this.btn_imprimir.TabIndex = 50;
+            this.btn_imprimir.UseVisualStyleBackColor = true;
+            this.btn_imprimir.Click += new System.EventHandler(this.btn_imprimir_Click);
+            // 
+            // btn_nuevo
+            // 
+            this.btn_nuevo.AutoSize = true;
+            this.btn_nuevo.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.btn_nuevo.Image = global::Vista.Properties.Resources.mop2;
+            this.btn_nuevo.Location = new System.Drawing.Point(653, 15);
+            this.btn_nuevo.Name = "btn_nuevo";
+            this.btn_nuevo.Size = new System.Drawing.Size(38, 38);
+            this.btn_nuevo.TabIndex = 48;
+            this.btn_nuevo.UseVisualStyleBackColor = true;
+            // 
+            // btn_eliminar
+            // 
+            this.btn_eliminar.AutoSize = true;
+            this.btn_eliminar.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.btn_eliminar.Image = global::Vista.Properties.Resources.bin2;
+            this.btn_eliminar.Location = new System.Drawing.Point(926, 15);
+            this.btn_eliminar.Name = "btn_eliminar";
+            this.btn_eliminar.Size = new System.Drawing.Size(38, 38);
+            this.btn_eliminar.TabIndex = 47;
+            this.btn_eliminar.UseVisualStyleBackColor = true;
+            this.btn_eliminar.Visible = false;
+            // 
+            // btn_salir_consulta
+            // 
+            this.btn_salir_consulta.AutoSize = true;
+            this.btn_salir_consulta.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.btn_salir_consulta.Image = global::Vista.Properties.Resources.exit6;
+            this.btn_salir_consulta.Location = new System.Drawing.Point(994, 15);
+            this.btn_salir_consulta.Name = "btn_salir_consulta";
+            this.btn_salir_consulta.Size = new System.Drawing.Size(38, 38);
+            this.btn_salir_consulta.TabIndex = 46;
+            this.btn_salir_consulta.UseVisualStyleBackColor = true;
+            this.btn_salir_consulta.Click += new System.EventHandler(this.btn_salir_consulta_Click);
+            // 
+            // btn_limpiar_filtros
+            // 
+            this.btn_limpiar_filtros.AutoSize = true;
+            this.btn_limpiar_filtros.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.btn_limpiar_filtros.Image = global::Vista.Properties.Resources.new10;
+            this.btn_limpiar_filtros.Location = new System.Drawing.Point(882, 17);
+            this.btn_limpiar_filtros.Name = "btn_limpiar_filtros";
+            this.btn_limpiar_filtros.Size = new System.Drawing.Size(38, 36);
+            this.btn_limpiar_filtros.TabIndex = 45;
+            this.btn_limpiar_filtros.UseVisualStyleBackColor = true;
+            this.btn_limpiar_filtros.Click += new System.EventHandler(this.btn_limpiar_filtros_Click);
+            // 
             // codProd
             // 
             this.codProd.HeaderText = "Codigo Producto";
@@ -308,76 +378,7 @@
             this.unidadReal.HeaderText = "Unidad";
             this.unidadReal.Name = "unidadReal";
             this.unidadReal.ReadOnly = true;
-            // 
-            // groupBox2
-            // 
-            this.groupBox2.Controls.Add(this.btn_imprimir);
-            this.groupBox2.Controls.Add(this.btn_nuevo);
-            this.groupBox2.Controls.Add(this.btn_eliminar);
-            this.groupBox2.Controls.Add(this.btn_salir_consulta);
-            this.groupBox2.Controls.Add(this.btn_limpiar_filtros);
-            this.groupBox2.Location = new System.Drawing.Point(12, 548);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(1038, 59);
-            this.groupBox2.TabIndex = 55;
-            this.groupBox2.TabStop = false;
-            // 
-            // btn_imprimir
-            // 
-            this.btn_imprimir.Image = ((System.Drawing.Image)(resources.GetObject("btn_imprimir.Image")));
-            this.btn_imprimir.Location = new System.Drawing.Point(838, 15);
-            this.btn_imprimir.Name = "btn_imprimir";
-            this.btn_imprimir.Size = new System.Drawing.Size(38, 38);
-            this.btn_imprimir.TabIndex = 50;
-            this.btn_imprimir.UseVisualStyleBackColor = true;
-            this.btn_imprimir.Click += new System.EventHandler(this.btn_imprimir_Click);
-            // 
-            // btn_nuevo
-            // 
-            this.btn_nuevo.AutoSize = true;
-            this.btn_nuevo.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.btn_nuevo.Image = global::Vista.Properties.Resources.mop2;
-            this.btn_nuevo.Location = new System.Drawing.Point(653, 15);
-            this.btn_nuevo.Name = "btn_nuevo";
-            this.btn_nuevo.Size = new System.Drawing.Size(38, 38);
-            this.btn_nuevo.TabIndex = 48;
-            this.btn_nuevo.UseVisualStyleBackColor = true;
-            // 
-            // btn_eliminar
-            // 
-            this.btn_eliminar.AutoSize = true;
-            this.btn_eliminar.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.btn_eliminar.Image = global::Vista.Properties.Resources.bin2;
-            this.btn_eliminar.Location = new System.Drawing.Point(926, 15);
-            this.btn_eliminar.Name = "btn_eliminar";
-            this.btn_eliminar.Size = new System.Drawing.Size(38, 38);
-            this.btn_eliminar.TabIndex = 47;
-            this.btn_eliminar.UseVisualStyleBackColor = true;
-            this.btn_eliminar.Visible = false;
-            // 
-            // btn_salir_consulta
-            // 
-            this.btn_salir_consulta.AutoSize = true;
-            this.btn_salir_consulta.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.btn_salir_consulta.Image = global::Vista.Properties.Resources.exit6;
-            this.btn_salir_consulta.Location = new System.Drawing.Point(994, 15);
-            this.btn_salir_consulta.Name = "btn_salir_consulta";
-            this.btn_salir_consulta.Size = new System.Drawing.Size(38, 38);
-            this.btn_salir_consulta.TabIndex = 46;
-            this.btn_salir_consulta.UseVisualStyleBackColor = true;
-            this.btn_salir_consulta.Click += new System.EventHandler(this.btn_salir_consulta_Click);
-            // 
-            // btn_limpiar_filtros
-            // 
-            this.btn_limpiar_filtros.AutoSize = true;
-            this.btn_limpiar_filtros.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.btn_limpiar_filtros.Image = global::Vista.Properties.Resources.new10;
-            this.btn_limpiar_filtros.Location = new System.Drawing.Point(882, 17);
-            this.btn_limpiar_filtros.Name = "btn_limpiar_filtros";
-            this.btn_limpiar_filtros.Size = new System.Drawing.Size(38, 36);
-            this.btn_limpiar_filtros.TabIndex = 45;
-            this.btn_limpiar_filtros.UseVisualStyleBackColor = true;
-            this.btn_limpiar_filtros.Click += new System.EventHandler(this.btn_limpiar_filtros_Click);
+            this.unidadReal.Visible = false;
             // 
             // Consultar_Orden_de_Compra
             // 
