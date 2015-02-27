@@ -21,26 +21,26 @@ namespace Vista
         private void Emitir_Informe_de_Venta_por_Producto_Load(object sender, EventArgs e)
         {
 
-            try
-            {
-                DataTable tabla = InformesDAO.GetInformeVentasProducto(dtp_fecha_desde.Value.Date, dtp_fecha_hasta.Value.Date);
+            //try
+            //{
+            //    DataTable tabla = InformesDAO.GetInformeVentasProducto(dtp_fecha_desde.Value.Date, dtp_fecha_hasta.Value.Date);
 
-                if (tabla.Rows.Count > 0)
-                {
-                    ProductosBindingSource.DataSource = tabla;
+            //    if (tabla.Rows.Count > 0)
+            //    {
+            //        ProductosBindingSource.DataSource = tabla;
 
-                    this.reportViewer1.RefreshReport();
-                }
-                else
-                {
-                    //MessageBox.Show("No hay datos disponibles", "Atención", MessageBoxButtons.OK, MessageBoxIcon.Information, MessageBoxDefaultButton.Button1);
-                }
-            }
-            catch (ApplicationException ex)
-            {
+            //        this.reportViewer1.RefreshReport();
+            //    }
+            //    else
+            //    {
+            //        //MessageBox.Show("No hay datos disponibles", "Atención", MessageBoxButtons.OK, MessageBoxIcon.Information, MessageBoxDefaultButton.Button1);
+            //    }
+            //}
+            //catch (ApplicationException ex)
+            //{
 
-                MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error, MessageBoxDefaultButton.Button1);
-            }
+            //    MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error, MessageBoxDefaultButton.Button1);
+            //}
         }
 
         private void btn_aplicar_filtro_Click(object sender, EventArgs e)

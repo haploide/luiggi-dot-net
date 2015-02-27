@@ -337,7 +337,8 @@ namespace Vista
             {
 
             }
-            
+
+            btn_salir_consulta_Click(sender, e);
             
         }
         private void Gestion_de_orden_de_Trabajo_FormClosing(object sender, FormClosingEventArgs e)
