@@ -7,20 +7,21 @@ using System.Data;
 using System.Data.SqlClient;
 using System.Configuration;
 
+
 namespace DAO
 {
-    public  class UsuarioDAO
+    public class AutorizacionDAO
     {
-        public static Usuario  GetUsuario(string  login , string  pass)
+        public static bool   GetAutorizacionPorUsuario(int idUsuario , string permiso)
         {
             Acceso ac = new Acceso();
 
-            Usuario p = new Usuario();
+            bool  a = false ;
 
-            string sql = "SELECT * from usuarios where login = @login and password  =  @pass ";
+            string sql = "select * from Autorizaciones a join Permisos p on a.idpermiso = p.idpermiso where a.idusuario = @idUsuario and p.permiso = @permiso ";
             SqlCommand cmd = new SqlCommand();
-            cmd.Parameters.AddWithValue("@login", login);
-            cmd.Parameters.AddWithValue("@pass", pass);
+            cmd.Parameters.AddWithValue("@idUsuario", idUsuario);
+            cmd.Parameters.AddWithValue("@permiso", permiso);
             SqlConnection conexion = new SqlConnection(ac.getCadenaConexion());
 
             try
@@ -32,12 +33,11 @@ namespace DAO
                 cmd.CommandType = CommandType.Text;
 
                 SqlDataReader dr = cmd.ExecuteReader();
+                a = dr.HasRows;
 
-                dr.Read();
-
-                p.Login  = dr["login"].ToString();
-                p.Nombre = dr["nombre"].ToString();
-                p.idUsuario  = Convert.ToInt32(dr["idUsuario"]);
+                //a.idUsuario = Convert.ToInt32(dr["idUsuario"]);
+                //a.idPermiso= Convert.ToInt32(dr["idpermiso"]);
+              
 
 
             }
@@ -55,7 +55,7 @@ namespace DAO
             }
 
 
-            return p;
+            return a;
 
         }
     }

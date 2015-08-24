@@ -43,6 +43,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Acceso.cs" />
+    <Compile Include="AutorizacionDAO.cs" />
     <Compile Include="CategoriaDAO.cs" />
     <Compile Include="CondicionIVADAO.cs" />
     <Compile Include="DetalleFacturaDAO.cs" />

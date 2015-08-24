@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using Entidades;
+using DAO;
 namespace Vista
 {
    public static  class Seguridad
@@ -11,8 +12,12 @@ namespace Vista
 
         public static bool GetAutorizacion(string permiso)
         {
-            // buscar si el usuario esta autorizado
-
+         
+            if (AutorizacionDAO.GetAutorizacionPorUsuario(usuario.idUsuario, permiso))
+            {
+                return true;
+ 
+            }
             return false;
         }
     }

@@ -27,8 +27,13 @@ namespace Vista
             }
             catch (Exception)
             {
-               lbl_error.Text= "Error de inicio de sesion "  ;
+               lbl_error.Text= "Error de inicio de sesión "  ;
             }            
+        }
+
+        private void Inicio_Sesion_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -151,6 +151,7 @@
             this.listadosEInformesToolStripMenuItem1.Name = "listadosEInformesToolStripMenuItem1";
             this.listadosEInformesToolStripMenuItem1.Size = new System.Drawing.Size(176, 22);
             this.listadosEInformesToolStripMenuItem1.Text = "Listados e Informes";
+            this.listadosEInformesToolStripMenuItem1.Click += new System.EventHandler(this.listadosEInformesToolStripMenuItem1_Click);
             // 
             // informeDeVentasPorProductoToolStripMenuItem
             // 
@@ -284,6 +285,7 @@
             this.listadosEInformesToolStripMenuItem.Name = "listadosEInformesToolStripMenuItem";
             this.listadosEInformesToolStripMenuItem.Size = new System.Drawing.Size(325, 22);
             this.listadosEInformesToolStripMenuItem.Text = "Listados e Informes";
+            this.listadosEInformesToolStripMenuItem.Click += new System.EventHandler(this.listadosEInformesToolStripMenuItem_Click);
             // 
             // informeDeStockToolStripMenuItem
             // 
@@ -505,7 +507,7 @@
             this.MainMenuStrip = this.menuStrip;
             this.Name = "Menu_Principal";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Menú Principal";
+            this.Text = "Menú Principal ";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.Menu_Principal_Load);
             this.menuStrip.ResumeLayout(false);

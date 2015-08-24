@@ -90,6 +90,11 @@ namespace Vista
 
         private void gestionProductoToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            if (!Seguridad.GetAutorizacion("gestion producto"))
+            {
+                MessageBox.Show("No está autorizado a visualizar este formulario", "Acceso restringido", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
+                return;
+            }
             if (consProd == null)
             {
                 btn_ventas.Visible = false;
@@ -109,6 +114,11 @@ namespace Vista
 
         private void gestiToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            if (!Seguridad.GetAutorizacion("Gestion Cliente"))
+            {
+                MessageBox.Show("No está autorizado a visualizar este formulario", "Acceso restringido", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
+                return;
+            }
             if (consCli == null)
             {
                 btn_ventas.Visible = false;
@@ -128,9 +138,10 @@ namespace Vista
 
         private void gestionDePedidosToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            if (!Seguridad.GetAutorizacion("Consulta Pedido"))
+            
+            if (!Seguridad.GetAutorizacion("Gestion pedido"))
             {
-                MessageBox.Show("no tenes permiso forro.");
+                MessageBox.Show("No está autorizado a visualizar este formulario", "Acceso restringido", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
                 return;
             }
 
@@ -152,6 +163,11 @@ namespace Vista
 
         private void gestionDeEstructuraDeProductoToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            if (!Seguridad.GetAutorizacion("gestion estructura"))
+            {
+                MessageBox.Show("No está autorizado a visualizar este formulario", "Acceso restringido", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
+                return;
+            }
             if (Estr == null)
             {
                 btn_ventas.Visible = false;
@@ -170,7 +186,12 @@ namespace Vista
 
         private void gestionDePlanesDeProducciónToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            if (planes ==null)
+            if (!Seguridad.GetAutorizacion("gestion plan produccion"))
+            {
+                MessageBox.Show("No está autorizado a visualizar este formulario", "Acceso restringido", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
+                return;
+            } 
+            if (planes == null)
             {
                 btn_ventas.Visible = false;
                 btn_impresiones.Visible = false;
@@ -188,6 +209,11 @@ namespace Vista
 
         private void gestionDeOrdenDeTrabajoToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            if (!Seguridad.GetAutorizacion("gestion orden trabajo"))
+            {
+                MessageBox.Show("No está autorizado a visualizar este formulario", "Acceso restringido", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
+                return;
+            }
             if (Ordenes == null)
             {
                 btn_ventas.Visible = false;
@@ -206,6 +232,11 @@ namespace Vista
 
         private void gestionDeProveedorToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            if (!Seguridad.GetAutorizacion("gestion proveedor"))
+            {
+                MessageBox.Show("No está autorizado a visualizar este formulario", "Acceso restringido", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
+                return;
+            }
             //if (consProv == null)
             //{
                 btn_ventas.Visible = false;
@@ -224,6 +255,11 @@ namespace Vista
 
         private void gestionProductoPorProveedorToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            if (!Seguridad.GetAutorizacion("Gestion Producctos por Proveedor"))
+            {
+                MessageBox.Show("No está autorizado a visualizar este formulario", "Acceso restringido", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
+                return;
+            }
             if (consProdProv == null)
             {
                 btn_ventas.Visible = false;
@@ -242,6 +278,11 @@ namespace Vista
 
         private void gestionarComprasDeMateriaPrimaEInsumosToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            if (!Seguridad.GetAutorizacion("gestion compra"))
+            {
+                MessageBox.Show("No está autorizado a visualizar este formulario", "Acceso restringido", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
+                return;
+            }
             if (consOrCom == null)
             {
                 btn_ventas.Visible = false;
@@ -260,6 +301,11 @@ namespace Vista
 
         private void registrarCobroToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            if (!Seguridad.GetAutorizacion("gestion cobro"))
+            {
+                MessageBox.Show("No está autorizado a visualizar este formulario", "Acceso restringido", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
+                return;
+            }
             if (facturas == null)
             {
                 btn_ventas.Visible = false;
@@ -280,6 +326,11 @@ namespace Vista
 
         private void gestionDePagoAProveedoresToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            if (!Seguridad.GetAutorizacion("gestion pago"))
+            {
+                MessageBox.Show("No está autorizado a visualizar este formulario", "Acceso restringido", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
+                return;
+            }
             if (ordenesCompra == null)
             {
                 btn_ventas.Visible = false;
@@ -298,6 +349,11 @@ namespace Vista
 
         private void informeDeStockToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            if (!Seguridad.GetAutorizacion("informe compra"))
+            {
+                MessageBox.Show("No está autorizado a visualizar este formulario", "Acceso restringido", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
+                return;
+            }
             Emitir_Informe_de_Stock stock = new Emitir_Informe_de_Stock();
             stock.ShowDialog();
 
@@ -305,6 +361,12 @@ namespace Vista
 
         private void ventaDirectaToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            if (!Seguridad.GetAutorizacion("Venta Directa"))
+            {
+                MessageBox.Show("No está autorizado a visualizar este formulario", "Acceso restringido", MessageBoxButtons.OK, MessageBoxIcon.Asterisk );
+                return;
+            }
+
             Gestion_Venta_Directa ventaDirecta = new Gestion_Venta_Directa();
             ventaDirecta.ShowDialog();
         }
@@ -352,6 +414,11 @@ namespace Vista
 
         private void gestiónDeMaquinariaToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            if (!Seguridad.GetAutorizacion("gestion maquinaria"))
+            {
+                MessageBox.Show("No está autorizado a visualizar este formulario", "Acceso restringido", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
+                return;
+            }
             if (gestMaquina == null)
             {
                 btn_ventas.Visible = false;
@@ -375,12 +442,22 @@ namespace Vista
 
         private void informeDeVentasPorProductoToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            if (!Seguridad.GetAutorizacion("informe venta"))
+            {
+                MessageBox.Show("No está autorizado a visualizar este formulario", "Acceso restringido", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
+                return;
+            }
             Emitir_Informe_de_Venta_por_Producto ventas = new Emitir_Informe_de_Venta_por_Producto();
             ventas.ShowDialog();
         }
 
         private void gestiónDeEmpleadosToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            if (!Seguridad.GetAutorizacion("gestion empleado"))
+            {
+                MessageBox.Show("No está autorizado a visualizar este formulario", "Acceso restringido", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
+                return;
+            }
             if (gestEmpleado == null)
             {
                 btn_ventas.Visible = false;
@@ -399,6 +476,11 @@ namespace Vista
 
         private void informeDeVentasToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            if (!Seguridad.GetAutorizacion("informe venta"))
+            {
+                MessageBox.Show("No está autorizado a visualizar este formulario", "Acceso restringido", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
+                return;
+            }
             Emitir_Informe_de_Ventas infVentas = new Emitir_Informe_de_Ventas();
             infVentas.ShowDialog();
         }
@@ -410,6 +492,11 @@ namespace Vista
 
         private void informeOrdenesDeTrabajoToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            if (!Seguridad.GetAutorizacion("informe produccion"))
+            {
+                MessageBox.Show("No está autorizado a visualizar este formulario", "Acceso restringido", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
+                return;
+            }
             EmitirInformeOrdenTrabajo infOrdenTrabajo = new EmitirInformeOrdenTrabajo();
             infOrdenTrabajo.ShowDialog();
         }
@@ -433,6 +520,11 @@ namespace Vista
 
         private void informeDeOrdenesDeCompraToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            if (!Seguridad.GetAutorizacion("informe compra"))
+            {
+                MessageBox.Show("No está autorizado a visualizar este formulario", "Acceso restringido", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
+                return;
+            }
             EmitirInformeOrdenCompra infCompras = new EmitirInformeOrdenCompra();
             infCompras.ShowDialog();
 
@@ -446,6 +538,11 @@ namespace Vista
 
         private void presupuestoToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            if (!Seguridad.GetAutorizacion("Presupuesto"))
+            {
+                MessageBox.Show("No está autorizado a visualizar este formulario", "Acceso restringido", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
+                return;
+            }
             Gestion_presupuesto presup = new Gestion_presupuesto();
             presup.ShowDialog();
         }
@@ -453,6 +550,11 @@ namespace Vista
 
         private void informeDesviacionToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            if (!Seguridad.GetAutorizacion("informe produccion"))
+            {
+                MessageBox.Show("No está autorizado a visualizar este formulario", "Acceso restringido", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
+                return;
+            }
             EmitirInformeDesviacionesOrdenTrabajo infDesv = new EmitirInformeDesviacionesOrdenTrabajo();
             infDesv.ShowDialog();
         }
@@ -465,6 +567,20 @@ namespace Vista
         private void presupuestoToolStripMenuItem1_Click(object sender, EventArgs e)
         {
             presupuestoToolStripMenuItem_Click(sender, e);
+        }
+
+        private void listadosEInformesToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            if (!Seguridad.GetAutorizacion("informe Venta"))
+            {
+                MessageBox.Show("No está autorizado a visualizar este formulario", "Acceso restringido", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
+                return;
+            }
+        }
+
+        private void listadosEInformesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
         }
 
 
