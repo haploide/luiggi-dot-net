@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DataSetInformeDesviacionesOrdenesDeTrabajo" targetNamespace="http://tempuri.org/DataSetInformeDesviacionesOrdenesDeTrabajo.xsd" xmlns:mstns="http://tempuri.org/DataSetInformeDesviacionesOrdenesDeTrabajo.xsd" xmlns="http://tempuri.org/DataSetInformeDesviacionesOrdenesDeTrabajo.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DataSetInformeDesviacionesOrdenesDeTrabajo" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="DataSetInformeDesviacionesOrdenesDeTrabajo" msprop:Generator_UserDSName="DataSetInformeDesviacionesOrdenesDeTrabajo">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="OrdenDeTrabajo" msprop:Generator_TableClassName="OrdenDeTrabajoDataTable" msprop:Generator_TableVarName="tableOrdenDeTrabajo" msprop:Generator_TablePropName="OrdenDeTrabajo" msprop:Generator_RowDeletingName="OrdenDeTrabajoRowDeleting" msprop:Generator_UserTableName="OrdenDeTrabajo" msprop:Generator_RowChangingName="OrdenDeTrabajoRowChanging" msprop:Generator_RowEvHandlerName="OrdenDeTrabajoRowChangeEventHandler" msprop:Generator_RowDeletedName="OrdenDeTrabajoRowDeleted" msprop:Generator_RowEvArgName="OrdenDeTrabajoRowChangeEvent" msprop:Generator_RowChangedName="OrdenDeTrabajoRowChanged" msprop:Generator_RowClassName="OrdenDeTrabajoRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="idProducto" msprop:Generator_ColumnVarNameInTable="columnidProducto" msprop:Generator_ColumnPropNameInRow="idProducto" msprop:Generator_ColumnPropNameInTable="idProductoColumn" msprop:Generator_UserColumnName="idProducto" type="xs:int" minOccurs="0" />
+              <xs:element name="nombre" msprop:Generator_ColumnVarNameInTable="columnnombre" msprop:Generator_ColumnPropNameInRow="nombre" msprop:Generator_ColumnPropNameInTable="nombreColumn" msprop:Generator_UserColumnName="nombre" type="xs:string" minOccurs="0" />
+              <xs:element name="mes" msprop:Generator_ColumnVarNameInTable="columnmes" msprop:Generator_ColumnPropNameInRow="mes" msprop:Generator_ColumnPropNameInTable="mesColumn" msprop:Generator_UserColumnName="mes" type="xs:int" minOccurs="0" />
+              <xs:element name="CantidadPlanificada" msprop:Generator_ColumnVarNameInTable="columnCantidadPlanificada" msprop:Generator_ColumnPropNameInRow="CantidadPlanificada" msprop:Generator_ColumnPropNameInTable="CantidadPlanificadaColumn" msprop:Generator_UserColumnName="CantidadPlanificada" type="xs:double" minOccurs="0" />
+              <xs:element name="CantidadProducida" msprop:Generator_ColumnVarNameInTable="columnCantidadProducida" msprop:Generator_ColumnPropNameInRow="CantidadProducida" msprop:Generator_ColumnPropNameInTable="CantidadProducidaColumn" msprop:Generator_UserColumnName="CantidadProducida" type="xs:double" minOccurs="0" />
+              <xs:element name="año" msprop:Generator_ColumnVarNameInTable="columnaño" msprop:Generator_ColumnPropNameInRow="año" msprop:Generator_ColumnPropNameInTable="añoColumn" msprop:Generator_UserColumnName="año" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

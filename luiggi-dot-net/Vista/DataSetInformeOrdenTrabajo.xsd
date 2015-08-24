@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DataSetInformeOrdenTrabajo" targetNamespace="http://tempuri.org/DataSetInformeOrdenTrabajo.xsd" xmlns:mstns="http://tempuri.org/DataSetInformeOrdenTrabajo.xsd" xmlns="http://tempuri.org/DataSetInformeOrdenTrabajo.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DataSetInformeOrdenTrabajo" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="DataSetInformeOrdenTrabajo" msprop:Generator_UserDSName="DataSetInformeOrdenTrabajo">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="OrdenTrabajo" msprop:Generator_TableClassName="OrdenTrabajoDataTable" msprop:Generator_TableVarName="tableOrdenTrabajo" msprop:Generator_TablePropName="OrdenTrabajo" msprop:Generator_RowDeletingName="OrdenTrabajoRowDeleting" msprop:Generator_UserTableName="OrdenTrabajo" msprop:Generator_RowChangingName="OrdenTrabajoRowChanging" msprop:Generator_RowEvHandlerName="OrdenTrabajoRowChangeEventHandler" msprop:Generator_RowDeletedName="OrdenTrabajoRowDeleted" msprop:Generator_RowEvArgName="OrdenTrabajoRowChangeEvent" msprop:Generator_RowChangedName="OrdenTrabajoRowChanged" msprop:Generator_RowClassName="OrdenTrabajoRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="idOrdenTrabajo" msprop:Generator_ColumnVarNameInTable="columnidOrdenTrabajo" msprop:Generator_ColumnPropNameInRow="idOrdenTrabajo" msprop:Generator_ColumnPropNameInTable="idOrdenTrabajoColumn" msprop:Generator_UserColumnName="idOrdenTrabajo" type="xs:int" minOccurs="0" />
+              <xs:element name="fechaCreacion" msprop:Generator_ColumnVarNameInTable="columnfechaCreacion" msprop:Generator_ColumnPropNameInRow="fechaCreacion" msprop:Generator_ColumnPropNameInTable="fechaCreacionColumn" msprop:Generator_UserColumnName="fechaCreacion" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="horaInicio" msprop:Generator_ColumnVarNameInTable="columnhoraInicio" msprop:Generator_ColumnPropNameInRow="horaInicio" msprop:Generator_ColumnPropNameInTable="horaInicioColumn" msprop:Generator_UserColumnName="horaInicio" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="horaFin" msprop:Generator_ColumnVarNameInTable="columnhoraFin" msprop:Generator_ColumnPropNameInRow="horaFin" msprop:Generator_ColumnPropNameInTable="horaFinColumn" msprop:Generator_UserColumnName="horaFin" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="horaInicioReal" msprop:Generator_ColumnVarNameInTable="columnhoraInicioReal" msprop:Generator_ColumnPropNameInRow="horaInicioReal" msprop:Generator_ColumnPropNameInTable="horaInicioRealColumn" msprop:Generator_UserColumnName="horaInicioReal" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="horaFinReal" msprop:Generator_ColumnVarNameInTable="columnhoraFinReal" msprop:Generator_ColumnPropNameInRow="horaFinReal" msprop:Generator_ColumnPropNameInTable="horaFinRealColumn" msprop:Generator_UserColumnName="horaFinReal" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="nombreIntermedio" msprop:Generator_ColumnVarNameInTable="columnnombreIntermedio" msprop:Generator_ColumnPropNameInRow="nombreIntermedio" msprop:Generator_ColumnPropNameInTable="nombreIntermedioColumn" msprop:Generator_UserColumnName="nombreIntermedio" type="xs:string" minOccurs="0" />
+              <xs:element name="unidadIntermedio" msprop:Generator_ColumnVarNameInTable="columnunidadIntermedio" msprop:Generator_ColumnPropNameInRow="unidadIntermedio" msprop:Generator_ColumnPropNameInTable="unidadIntermedioColumn" msprop:Generator_UserColumnName="unidadIntermedio" type="xs:string" minOccurs="0" />
+              <xs:element name="cantidad" msprop:Generator_ColumnVarNameInTable="columncantidad" msprop:Generator_ColumnPropNameInRow="cantidad" msprop:Generator_ColumnPropNameInTable="cantidadColumn" msprop:Generator_UserColumnName="cantidad" type="xs:double" minOccurs="0" />
+              <xs:element name="cantidadProducidaReal" msprop:Generator_ColumnVarNameInTable="columncantidadProducidaReal" msprop:Generator_ColumnPropNameInRow="cantidadProducidaReal" msprop:Generator_ColumnPropNameInTable="cantidadProducidaRealColumn" msprop:Generator_UserColumnName="cantidadProducidaReal" type="xs:double" minOccurs="0" />
+              <xs:element name="nombreFinal" msprop:Generator_ColumnVarNameInTable="columnnombreFinal" msprop:Generator_ColumnPropNameInRow="nombreFinal" msprop:Generator_ColumnPropNameInTable="nombreFinalColumn" msprop:Generator_UserColumnName="nombreFinal" type="xs:string" minOccurs="0" />
+              <xs:element name="unidadFinal" msprop:Generator_ColumnVarNameInTable="columnunidadFinal" msprop:Generator_ColumnPropNameInRow="unidadFinal" msprop:Generator_ColumnPropNameInTable="unidadFinalColumn" msprop:Generator_UserColumnName="unidadFinal" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
