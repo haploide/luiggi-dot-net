@@ -124,7 +124,7 @@
             this.Name = "Inicio_Sesion";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Inicio Sesion";
-            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Inicio_Sesion_FormClosing);
+            
             this.Load += new System.EventHandler(this.Inicio_Sesion_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
