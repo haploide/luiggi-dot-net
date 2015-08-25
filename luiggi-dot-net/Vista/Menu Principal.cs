@@ -71,9 +71,11 @@ namespace Vista
         private void Menu_Principal_Load(object sender, EventArgs e)
         {
             statusStrip.Items["ts_fecha"].Text = DateTime.Now.ToShortDateString();
+            
 
             Inicio_Sesion login = new Inicio_Sesion();
             login.ShowDialog(this);
+            statusStrip.Items["usuario"].Text = Seguridad.usuario.Nombre;
         }
 
         private void gestionProductoToolStripMenuItem_Click(object sender, EventArgs e)
@@ -88,7 +90,7 @@ namespace Vista
                 btn_impresiones.Visible = false;
                 iniciador.cantVentanasAbiertas++;
 
-                Consultas_Producto consProd = new Consultas_Producto();
+                Consultas_Producto consProd = Consultas_Producto.Instance();
                 consProd.MdiParent = this;
                 consProd.Show();
             
@@ -107,7 +109,7 @@ namespace Vista
                 btn_impresiones.Visible = false;
                 iniciador.cantVentanasAbiertas++;
 
-                Consultas_Cliente consCli = new Consultas_Cliente();
+                Consultas_Cliente consCli = Consultas_Cliente.Instance();
                 consCli.MdiParent = this;
                 consCli.Show();
             
@@ -128,7 +130,7 @@ namespace Vista
                 btn_impresiones.Visible = false;
                 iniciador.cantVentanasAbiertas++;
 
-                Consulta_de_Pedidos consPed = new Consulta_de_Pedidos();
+                Consulta_de_Pedidos consPed =Consulta_de_Pedidos.Instance();
                 consPed.MdiParent = this;
                 consPed.Show();
             

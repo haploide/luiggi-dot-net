@@ -15,11 +15,31 @@ namespace Vista
     public partial class Consulta_de_Pedidos : Form
     {
         public GestorConsultaPedido gestor ;
+        private static Consulta_de_Pedidos InstanciaFormulario = null;
 
 
         public Consulta_de_Pedidos()
         {
             InitializeComponent();
+        }
+        public static Consulta_de_Pedidos Instance()
+        {
+            if (InstanciaFormulario == null)
+            {
+                InstanciaFormulario = new Consulta_de_Pedidos();
+            }
+            return InstanciaFormulario;
+        }
+
+        protected override void Dispose(bool disposing)
+        {
+            if (disposing && (components != null))
+            {
+                components.Dispose();
+            }
+            base.Dispose(disposing);
+
+            InstanciaFormulario = null;
         }
 
         private void Consulta_de_Pedidos_Load(object sender, EventArgs e)

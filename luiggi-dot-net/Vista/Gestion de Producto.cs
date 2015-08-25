@@ -95,6 +95,7 @@ namespace Vista
         {
             txt_nombre_producto.Enabled = true;
         }
+        
         public void cargarCombos()
         {
             List<Categoria> cat = gestor.buscarCategorias();

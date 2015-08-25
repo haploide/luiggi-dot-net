@@ -14,9 +14,33 @@ namespace Vista
     public partial class Consultas_Cliente : Form
     {
         private GestorConsultarCliente  gestor;
+        private static Consultas_Cliente InstanciaFormulario = null;
+
+
+
         public Consultas_Cliente()
         {
             InitializeComponent();
+        }
+
+        public static Consultas_Cliente Instance()
+        {
+            if (InstanciaFormulario == null)
+            {
+                InstanciaFormulario = new Consultas_Cliente();
+            }
+            return InstanciaFormulario;
+        }
+
+        protected override void Dispose(bool disposing)
+        {
+            if (disposing && (components != null))
+            {
+                components.Dispose();
+            }
+            base.Dispose(disposing);
+
+            InstanciaFormulario = null;
         }
 
         private void Consultas_Cliente_Load(object sender, EventArgs e)

@@ -16,9 +16,30 @@ namespace Vista
     public partial class Consultas_Producto : Form
     {
         public GestorConsultaProducto gestor;
+        private static Consultas_Producto InstanciaFormulario = null;
         public Consultas_Producto()
         {
             InitializeComponent();
+        }
+
+        public static Consultas_Producto Instance()
+        {
+            if (InstanciaFormulario == null)
+            {
+                InstanciaFormulario = new Consultas_Producto();
+            }
+            return InstanciaFormulario;
+        }
+
+        protected override void Dispose(bool disposing)
+        {
+            if (disposing && (components != null))
+            {
+                components.Dispose();
+            }
+            base.Dispose(disposing);
+
+            InstanciaFormulario = null;
         }
 
         private void btn_limpiar_filtros_Click(object sender, EventArgs e)
