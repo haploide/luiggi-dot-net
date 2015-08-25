@@ -57,6 +57,7 @@
             // 
             // btn_inicio
             // 
+            this.btn_inicio.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_inicio.Location = new System.Drawing.Point(320, 111);
             this.btn_inicio.Name = "btn_inicio";
             this.btn_inicio.Size = new System.Drawing.Size(100, 23);
