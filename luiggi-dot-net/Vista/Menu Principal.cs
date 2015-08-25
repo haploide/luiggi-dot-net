@@ -536,6 +536,11 @@ namespace Vista
 
         private void btn_pedido_Click(object sender, EventArgs e)
         {
+            if (!Seguridad.GetAutorizacion("Gestion pedido"))
+            {
+                MessageBox.Show("No está autorizado a visualizar este formulario", "Acceso restringido", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
+                return;
+            }
             Gestion_de_Pedidos gestPedido = new Gestion_de_Pedidos();
             gestPedido._estado = estados.nuevo;
             gestPedido.ShowDialog();
