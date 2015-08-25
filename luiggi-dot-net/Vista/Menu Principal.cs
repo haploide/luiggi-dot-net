@@ -75,11 +75,15 @@ namespace Vista
 
             Inicio_Sesion login = new Inicio_Sesion();
             login.ShowDialog(this);
+<<<<<<< HEAD
             if (Seguridad.usuario != null)
             {
                 statusStrip.Items["usuario"].Text = Seguridad.usuario.Nombre;
             }
             
+=======
+            //statusStrip.Items["usuario"].Text = Seguridad.usuario.Nombre;
+>>>>>>> origin/master
         }
 
         private void gestionProductoToolStripMenuItem_Click(object sender, EventArgs e)

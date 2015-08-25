@@ -36,6 +36,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.btn_salir_consulta = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -56,22 +57,22 @@
             // 
             // btn_inicio
             // 
-            this.btn_inicio.Location = new System.Drawing.Point(345, 111);
+            this.btn_inicio.Location = new System.Drawing.Point(320, 111);
             this.btn_inicio.Name = "btn_inicio";
-            this.btn_inicio.Size = new System.Drawing.Size(75, 23);
+            this.btn_inicio.Size = new System.Drawing.Size(100, 23);
             this.btn_inicio.TabIndex = 2;
-            this.btn_inicio.Text = "Entrar";
+            this.btn_inicio.Text = "Iniciar Sesión ";
             this.btn_inicio.UseVisualStyleBackColor = true;
             this.btn_inicio.Click += new System.EventHandler(this.btn_inicio_Click);
             // 
             // lbl_error
             // 
             this.lbl_error.AutoSize = true;
-            this.lbl_error.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_error.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_error.ForeColor = System.Drawing.Color.Red;
-            this.lbl_error.Location = new System.Drawing.Point(179, 165);
+            this.lbl_error.Location = new System.Drawing.Point(150, 161);
             this.lbl_error.Name = "lbl_error";
-            this.lbl_error.Size = new System.Drawing.Size(0, 24);
+            this.lbl_error.Size = new System.Drawing.Size(0, 20);
             this.lbl_error.TabIndex = 3;
             // 
             // label1
@@ -97,11 +98,23 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = global::Vista.Properties.Resources.llave;
-            this.pictureBox1.Location = new System.Drawing.Point(12, 85);
+            this.pictureBox1.Location = new System.Drawing.Point(12, 75);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(132, 153);
             this.pictureBox1.TabIndex = 6;
             this.pictureBox1.TabStop = false;
+            // 
+            // btn_salir_consulta
+            // 
+            this.btn_salir_consulta.AutoSize = true;
+            this.btn_salir_consulta.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.btn_salir_consulta.Image = global::Vista.Properties.Resources.exit6;
+            this.btn_salir_consulta.Location = new System.Drawing.Point(421, 200);
+            this.btn_salir_consulta.Name = "btn_salir_consulta";
+            this.btn_salir_consulta.Size = new System.Drawing.Size(38, 38);
+            this.btn_salir_consulta.TabIndex = 48;
+            this.btn_salir_consulta.UseVisualStyleBackColor = true;
+            this.btn_salir_consulta.Click += new System.EventHandler(this.btn_salir_consulta_Click);
             // 
             // Inicio_Sesion
             // 
@@ -109,6 +122,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(471, 250);
+            this.Controls.Add(this.btn_salir_consulta);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -124,7 +138,6 @@
             this.Name = "Inicio_Sesion";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Inicio Sesion";
-            
             this.Load += new System.EventHandler(this.Inicio_Sesion_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
@@ -141,5 +154,6 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Button btn_salir_consulta;
     }
 }
