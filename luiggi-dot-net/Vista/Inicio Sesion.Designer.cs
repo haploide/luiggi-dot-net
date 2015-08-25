@@ -67,11 +67,11 @@
             // lbl_error
             // 
             this.lbl_error.AutoSize = true;
-            this.lbl_error.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_error.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_error.ForeColor = System.Drawing.Color.Red;
-            this.lbl_error.Location = new System.Drawing.Point(179, 165);
+            this.lbl_error.Location = new System.Drawing.Point(150, 161);
             this.lbl_error.Name = "lbl_error";
-            this.lbl_error.Size = new System.Drawing.Size(0, 24);
+            this.lbl_error.Size = new System.Drawing.Size(0, 20);
             this.lbl_error.TabIndex = 3;
             // 
             // label1
@@ -97,7 +97,7 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = global::Vista.Properties.Resources.llave;
-            this.pictureBox1.Location = new System.Drawing.Point(12, 85);
+            this.pictureBox1.Location = new System.Drawing.Point(12, 75);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(132, 153);
             this.pictureBox1.TabIndex = 6;
@@ -124,7 +124,6 @@
             this.Name = "Inicio_Sesion";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Inicio Sesion";
-            
             this.Load += new System.EventHandler(this.Inicio_Sesion_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
