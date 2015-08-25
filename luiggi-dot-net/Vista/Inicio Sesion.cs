@@ -36,14 +36,14 @@ namespace Vista
 
         }
 
-        private void Inicio_Sesion_FormClosing(object sender, FormClosingEventArgs e)
-        {
-            switch (e.CloseReason)
-            {
-                case CloseReason.UserClosing:
-                    e.Cancel = true;
-                    break;
-            }
-        }
+        //private void Inicio_Sesion_FormClosing(object sender, FormClosingEventArgs e)
+        //{
+        //    switch (e.CloseReason)
+        //    {
+        //        case CloseReason.UserClosing:
+        //            e.Cancel = true;
+        //            break;
+        //    }
+        //}
     }
 }
