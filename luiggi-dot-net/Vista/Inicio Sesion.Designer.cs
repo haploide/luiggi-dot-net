@@ -36,6 +36,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.btn_salir_consulta = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -56,11 +57,11 @@
             // 
             // btn_inicio
             // 
-            this.btn_inicio.Location = new System.Drawing.Point(345, 111);
+            this.btn_inicio.Location = new System.Drawing.Point(320, 111);
             this.btn_inicio.Name = "btn_inicio";
-            this.btn_inicio.Size = new System.Drawing.Size(75, 23);
+            this.btn_inicio.Size = new System.Drawing.Size(100, 23);
             this.btn_inicio.TabIndex = 2;
-            this.btn_inicio.Text = "Entrar";
+            this.btn_inicio.Text = "Iniciar Sesión ";
             this.btn_inicio.UseVisualStyleBackColor = true;
             this.btn_inicio.Click += new System.EventHandler(this.btn_inicio_Click);
             // 
@@ -103,12 +104,25 @@
             this.pictureBox1.TabIndex = 6;
             this.pictureBox1.TabStop = false;
             // 
+            // btn_salir_consulta
+            // 
+            this.btn_salir_consulta.AutoSize = true;
+            this.btn_salir_consulta.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.btn_salir_consulta.Image = global::Vista.Properties.Resources.exit6;
+            this.btn_salir_consulta.Location = new System.Drawing.Point(421, 200);
+            this.btn_salir_consulta.Name = "btn_salir_consulta";
+            this.btn_salir_consulta.Size = new System.Drawing.Size(38, 38);
+            this.btn_salir_consulta.TabIndex = 48;
+            this.btn_salir_consulta.UseVisualStyleBackColor = true;
+            this.btn_salir_consulta.Click += new System.EventHandler(this.btn_salir_consulta_Click);
+            // 
             // Inicio_Sesion
             // 
             this.AcceptButton = this.btn_inicio;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(471, 250);
+            this.Controls.Add(this.btn_salir_consulta);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -140,5 +154,6 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Button btn_salir_consulta;
     }
 }

@@ -36,6 +36,11 @@ namespace Vista
 
         }
 
+        private void btn_salir_consulta_Click(object sender, EventArgs e)
+        {
+            Application.ExitThread();
+        }
+
         //private void Inicio_Sesion_FormClosing(object sender, FormClosingEventArgs e)
         //{
         //    switch (e.CloseReason)
