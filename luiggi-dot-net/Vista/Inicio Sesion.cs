@@ -27,13 +27,23 @@ namespace Vista
             }
             catch (Exception)
             {
-               lbl_error.Text= "Error de inicio de sesión "  ;
+               lbl_error.Text= "Usuario y/o Contraseña Incorrectos "  ;
             }            
         }
 
         private void Inicio_Sesion_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void Inicio_Sesion_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            switch (e.CloseReason)
+            {
+                case CloseReason.UserClosing:
+                    e.Cancel = true;
+                    break;
+            }
         }
     }
 }

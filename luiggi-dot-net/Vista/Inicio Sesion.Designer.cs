@@ -116,10 +116,15 @@
             this.Controls.Add(this.btn_inicio);
             this.Controls.Add(this.txt_pass);
             this.Controls.Add(this.txt_usuario);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.ImeMode = System.Windows.Forms.ImeMode.Off;
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "Inicio_Sesion";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Inicio Sesion";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Inicio_Sesion_FormClosing);
             this.Load += new System.EventHandler(this.Inicio_Sesion_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
