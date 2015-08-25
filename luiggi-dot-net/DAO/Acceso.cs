@@ -8,14 +8,15 @@ namespace DAO
     public class Acceso
            
     {
-        private String cadena_de_conexion = "Data Source=(local);Initial Catalog=Luiggi;Integrated Security=True";
+        private String cadena_de_conexion = "Data Source=HAPLOIDE;Initial Catalog=Luiggi;Integrated Security=True";
 
-        public string getCadenaConexion()
+        public string getCadenaConexion() {
+            return cadena_de_conexion;
+        }
+
+        public void setCadenaConexion(string cadena)
         {
-            var config = System.Configuration.ConfigurationManager.OpenExeConfiguration("Vista.exe");
-            string connString = config.ConnectionStrings.ConnectionStrings["luiggi_db"].ConnectionString;
-
-            return connString;
+            cadena_de_conexion = cadena;
         }
     }
 }
