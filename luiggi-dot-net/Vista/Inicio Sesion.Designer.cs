@@ -97,7 +97,7 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = global::Vista.Properties.Resources.llave;
-            this.pictureBox1.Location = new System.Drawing.Point(12, 66);
+            this.pictureBox1.Location = new System.Drawing.Point(12, 85);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(132, 153);
             this.pictureBox1.TabIndex = 6;

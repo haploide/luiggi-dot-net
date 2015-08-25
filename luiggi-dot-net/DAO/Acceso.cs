@@ -8,7 +8,7 @@ namespace DAO
     public class Acceso
            
     {
-        private String cadena_de_conexion = "Data Source=HAPLOIDE;Initial Catalog=Luiggi;Integrated Security=True";
+        private String cadena_de_conexion = "Data Source=PABLO-PC;Initial Catalog=Luiggi;Integrated Security=True";
 
         public string getCadenaConexion() {
             return cadena_de_conexion;
