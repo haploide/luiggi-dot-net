@@ -13,10 +13,33 @@ namespace Vista
 {
     public partial class Consultar_Orden_de_Compra : Form
     {
+        private static Consultar_Orden_de_Compra InstanciaFormulario = null;
+
         public Consultar_Orden_de_Compra()
         {
             InitializeComponent();
         }
+
+        public static Consultar_Orden_de_Compra Instance()
+        {
+            if (InstanciaFormulario == null)
+            {
+                InstanciaFormulario = new Consultar_Orden_de_Compra();
+            }
+            return InstanciaFormulario;
+        }
+
+        protected override void Dispose(bool disposing)
+        {
+            if (disposing && (components != null))
+            {
+                components.Dispose();
+            }
+            base.Dispose(disposing);
+
+            InstanciaFormulario = null;
+        }
+ 
 
         private void Consultar_Orden_de_Compra_Load(object sender, EventArgs e)
         {

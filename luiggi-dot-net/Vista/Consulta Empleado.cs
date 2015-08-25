@@ -13,9 +13,30 @@ namespace Vista
 {
     public partial class Consulta_Empleado : Form
     {
+        private static Consulta_Empleado InstanciaFormulario = null;
+
         public Consulta_Empleado()
         {
             InitializeComponent();
+        }
+        public static Consulta_Empleado Instance()
+        {
+            if (InstanciaFormulario == null)
+            {
+                InstanciaFormulario = new Consulta_Empleado();
+            }
+            return InstanciaFormulario;
+        }
+
+        protected override void Dispose(bool disposing)
+        {
+            if (disposing && (components != null))
+            {
+                components.Dispose();
+            }
+            base.Dispose(disposing);
+
+            InstanciaFormulario = null;
         }
 
         private void Consulta_Empleado_Load(object sender, EventArgs e)

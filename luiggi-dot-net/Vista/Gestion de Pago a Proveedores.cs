@@ -13,9 +13,31 @@ namespace Vista
 {
     public partial class Gestion_de_Pago_a_Proveedores : Form
     {
+        private static Gestion_de_Pago_a_Proveedores InstanciaFormulario = null;
+
         public Gestion_de_Pago_a_Proveedores()
         {
             InitializeComponent();
+        }
+
+        public static Gestion_de_Pago_a_Proveedores Instance()
+        {
+            if (InstanciaFormulario == null)
+            {
+                InstanciaFormulario = new Gestion_de_Pago_a_Proveedores();
+            }
+            return InstanciaFormulario;
+        }
+
+        protected override void Dispose(bool disposing)
+        {
+            if (disposing && (components != null))
+            {
+                components.Dispose();
+            }
+            base.Dispose(disposing);
+
+            InstanciaFormulario = null;
         }
 
         private void btn_salir_consulta_Click(object sender, EventArgs e)

@@ -15,9 +15,31 @@ namespace Vista
 {
     public partial class ConsultarOrdenTrabajo : Form
     {
+        private static ConsultarOrdenTrabajo InstanciaFormulario = null;
+
         public ConsultarOrdenTrabajo()
         {
             InitializeComponent();
+        }
+
+        public static ConsultarOrdenTrabajo Instance()
+        {
+            if (InstanciaFormulario == null)
+            {
+                InstanciaFormulario = new ConsultarOrdenTrabajo();
+            }
+            return InstanciaFormulario;
+        }
+
+        protected override void Dispose(bool disposing)
+        {
+            if (disposing && (components != null))
+            {
+                components.Dispose();
+            }
+            base.Dispose(disposing);
+
+            InstanciaFormulario = null;
         }
 
         private void ConsultarOrdenTrabajo_Load(object sender, EventArgs e)

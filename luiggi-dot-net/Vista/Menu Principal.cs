@@ -148,7 +148,7 @@ namespace Vista
                 btn_impresiones.Visible = false;
                 iniciador.cantVentanasAbiertas++;
 
-                Gestionar_Estructura_Productos Estr = new Gestionar_Estructura_Productos();
+                Gestionar_Estructura_Productos Estr = Gestionar_Estructura_Productos.Instance();
                 Estr.MdiParent = this;
                 Estr.Show();
             
@@ -166,7 +166,7 @@ namespace Vista
                 btn_impresiones.Visible = false;
                 iniciador.cantVentanasAbiertas++;
 
-                Consulta_Planes_Produccion planes = new Consulta_Planes_Produccion();
+                Consulta_Planes_Produccion planes = Consulta_Planes_Produccion.Instance();
                 planes.MdiParent = this;
                 planes.Show();
             
@@ -184,7 +184,7 @@ namespace Vista
                 btn_impresiones.Visible = false;
                 iniciador.cantVentanasAbiertas++;
 
-                ConsultarOrdenTrabajo Ordenes = new ConsultarOrdenTrabajo();
+                ConsultarOrdenTrabajo Ordenes = ConsultarOrdenTrabajo.Instance();
                 Ordenes.MdiParent = this;
                 Ordenes.Show();
             
@@ -202,7 +202,7 @@ namespace Vista
                 btn_impresiones.Visible = false;
                 iniciador.cantVentanasAbiertas++;
 
-                Consulta_Proveedor consProv = new Consulta_Proveedor();
+                Consulta_Proveedor consProv = Consulta_Proveedor.Instance();
                 consProv.MdiParent = this;
                 consProv.Show();
             
@@ -220,7 +220,7 @@ namespace Vista
                 btn_impresiones.Visible = false;
                 iniciador.cantVentanasAbiertas++;
 
-                Gestion_Producto_X_Proveedor consProdProv = new Gestion_Producto_X_Proveedor();
+                Gestion_Producto_X_Proveedor consProdProv = Gestion_Producto_X_Proveedor.Instance();
                 consProdProv.MdiParent = this;
                 consProdProv.Show();
             
@@ -238,7 +238,7 @@ namespace Vista
                 btn_impresiones.Visible = false;
                 iniciador.cantVentanasAbiertas++;
 
-                Consultar_Orden_de_Compra consOrCom = new Consultar_Orden_de_Compra();
+                Consultar_Orden_de_Compra consOrCom = Consultar_Orden_de_Compra.Instance();
                 consOrCom.MdiParent = this;
                 consOrCom.Show();
             
@@ -256,7 +256,7 @@ namespace Vista
                 btn_impresiones.Visible = false;
                 iniciador.cantVentanasAbiertas++;
 
-                Gestion_de_Facturas facturas = new Gestion_de_Facturas();
+                Gestion_de_Facturas facturas = Gestion_de_Facturas.Instance();
                 facturas.MdiParent = this;
                 facturas.Show();
             
@@ -276,7 +276,7 @@ namespace Vista
                 btn_impresiones.Visible = false;
                 iniciador.cantVentanasAbiertas++;
 
-                Gestion_de_Pago_a_Proveedores ordenesCompra = new Gestion_de_Pago_a_Proveedores();
+                Gestion_de_Pago_a_Proveedores ordenesCompra = Gestion_de_Pago_a_Proveedores.Instance();
                 ordenesCompra.MdiParent = this;
                 ordenesCompra.Show();
             
@@ -344,7 +344,15 @@ namespace Vista
 
         private void helpMenu_Click(object sender, EventArgs e)
         {
-            System.Diagnostics.Process.Start(helpProviderMenu.HelpNamespace);
+            try
+            {
+                System.Diagnostics.Process.Start(helpProviderMenu.HelpNamespace);
+            }
+            catch (Win32Exception ex)
+            {
+                
+                MessageBox.Show("No se encontro archivo de ayuda", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning,MessageBoxDefaultButton.Button1);
+            }
         }
 
         private void gestiónDeMaquinariaToolStripMenuItem_Click(object sender, EventArgs e)
@@ -359,7 +367,7 @@ namespace Vista
                 btn_impresiones.Visible = false;
                 iniciador.cantVentanasAbiertas++;
 
-                Consulta_Maquinaria gestMaquina = new Consulta_Maquinaria();
+                Consulta_Maquinaria gestMaquina = Consulta_Maquinaria.Instance();
                 gestMaquina.MdiParent = this;
                 gestMaquina.Show();
             
@@ -393,7 +401,7 @@ namespace Vista
                 btn_impresiones.Visible = false;
                 iniciador.cantVentanasAbiertas++;
 
-                Consulta_Empleado gestEmpleado = new Consulta_Empleado();
+                Consulta_Empleado gestEmpleado = Consulta_Empleado.Instance();
                 gestEmpleado.MdiParent = this;
                 gestEmpleado.Show();
             

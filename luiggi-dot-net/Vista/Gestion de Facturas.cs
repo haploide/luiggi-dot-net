@@ -13,9 +13,31 @@ namespace Vista
 {
     public partial class Gestion_de_Facturas : Form
     {
+        private static Gestion_de_Facturas InstanciaFormulario = null;
+
         public Gestion_de_Facturas()
         {
             InitializeComponent();
+        }
+
+        public static Gestion_de_Facturas Instance()
+        {
+            if (InstanciaFormulario == null)
+            {
+                InstanciaFormulario = new Gestion_de_Facturas();
+            }
+            return InstanciaFormulario;
+        }
+
+        protected override void Dispose(bool disposing)
+        {
+            if (disposing && (components != null))
+            {
+                components.Dispose();
+            }
+            base.Dispose(disposing);
+
+            InstanciaFormulario = null;
         }
 
         private void Gestion_de_Facturas_Load(object sender, EventArgs e)

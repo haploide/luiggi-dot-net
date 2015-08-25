@@ -13,9 +13,31 @@ namespace Vista
 {
     public partial class Consulta_Maquinaria : Form
     {
+        private static Consulta_Maquinaria InstanciaFormulario = null;
+
         public Consulta_Maquinaria()
         {
             InitializeComponent();
+        }
+
+        public static Consulta_Maquinaria Instance()
+        {
+            if (InstanciaFormulario == null)
+            {
+                InstanciaFormulario = new Consulta_Maquinaria();
+            }
+            return InstanciaFormulario;
+        }
+
+        protected override void Dispose(bool disposing)
+        {
+            if (disposing && (components != null))
+            {
+                components.Dispose();
+            }
+            base.Dispose(disposing);
+
+            InstanciaFormulario = null;
         }
 
         private void btn_aplicar_filtro_Click(object sender, EventArgs e)

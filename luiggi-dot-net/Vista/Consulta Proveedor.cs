@@ -14,10 +14,31 @@ namespace Vista
 {
     public partial class Consulta_Proveedor : Form
     {
+        private static Consulta_Proveedor InstanciaFormulario = null;
 
         public Consulta_Proveedor()
         {
             InitializeComponent();
+        }
+
+        public static Consulta_Proveedor Instance()
+        {
+            if (InstanciaFormulario == null)
+            {
+                InstanciaFormulario = new Consulta_Proveedor();
+            }
+            return InstanciaFormulario;
+        }
+
+        protected override void Dispose(bool disposing)
+        {
+            if (disposing && (components != null))
+            {
+                components.Dispose();
+            }
+            base.Dispose(disposing);
+
+            InstanciaFormulario = null;
         }
 
         private void btn_limpiar_filtros_Click(object sender, EventArgs e)

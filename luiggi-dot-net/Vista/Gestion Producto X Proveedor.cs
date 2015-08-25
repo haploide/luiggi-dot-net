@@ -22,9 +22,31 @@ namespace Vista
         ProductoXProveedor prodXProvViejo = new ProductoXProveedor();
         Producto prod = new Producto();
         Persona prov = new Persona();
+        private static Gestion_Producto_X_Proveedor InstanciaFormulario = null;
+
         public Gestion_Producto_X_Proveedor()
         {
             InitializeComponent();
+        }
+
+        public static Gestion_Producto_X_Proveedor Instance()
+        {
+            if (InstanciaFormulario == null)
+            {
+                InstanciaFormulario = new Gestion_Producto_X_Proveedor();
+            }
+            return InstanciaFormulario;
+        }
+
+        protected override void Dispose(bool disposing)
+        {
+            if (disposing && (components != null))
+            {
+                components.Dispose();
+            }
+            base.Dispose(disposing);
+
+            InstanciaFormulario = null;
         }
 
         private void Gestion_Producto_X_Proveedor_Load(object sender, EventArgs e)

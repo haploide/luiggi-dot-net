@@ -17,11 +17,32 @@ namespace Vista
         bool eliminarEstructura = false;
         bool estructuraProductoSeleccionado = false;
         GestorEstructuraProducto gestor = new GestorEstructuraProducto();
+        private static Gestionar_Estructura_Productos InstanciaFormulario = null;
         
         DetalleProducto detProd = new DetalleProducto();
         public Gestionar_Estructura_Productos()
         {
             InitializeComponent();
+        }
+
+        public static Gestionar_Estructura_Productos Instance()
+        {
+            if (InstanciaFormulario == null)
+            {
+                InstanciaFormulario = new Gestionar_Estructura_Productos();
+            }
+            return InstanciaFormulario;
+        }
+
+        protected override void Dispose(bool disposing)
+        {
+            if (disposing && (components != null))
+            {
+                components.Dispose();
+            }
+            base.Dispose(disposing);
+
+            InstanciaFormulario = null;
         }
 
         private void btnAgregar_Click(object sender, EventArgs e)
