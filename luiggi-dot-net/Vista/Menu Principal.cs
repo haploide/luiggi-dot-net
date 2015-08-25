@@ -11,19 +11,7 @@ namespace Vista
 {
     public partial class Menu_Principal : Form
     {
-        Consultas_Cliente consCli = null;
-        Consultas_Producto consProd = null;
-        Consulta_de_Pedidos consPed = null;
-        Gestionar_Estructura_Productos Estr = null;
-        Consulta_Planes_Produccion planes = null;
-        ConsultarOrdenTrabajo Ordenes = null;
-        Consulta_Proveedor consProv = null;
-        Gestion_Producto_X_Proveedor consProdProv = null;
-        Consultar_Orden_de_Compra consOrCom = null;
-        Gestion_de_Facturas facturas = null;
-        Gestion_de_Pago_a_Proveedores ordenesCompra = null;
-        Consulta_Maquinaria gestMaquina = null;
-        Consulta_Empleado gestEmpleado = null;
+     
 
         public Menu_Principal()
         {
@@ -95,20 +83,15 @@ namespace Vista
                 MessageBox.Show("No está autorizado a visualizar este formulario", "Acceso restringido", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
                 return;
             }
-            if (consProd == null)
-            {
+            
                 btn_ventas.Visible = false;
                 btn_impresiones.Visible = false;
                 iniciador.cantVentanasAbiertas++;
 
-                consProd = new Consultas_Producto();
+                Consultas_Producto consProd = new Consultas_Producto();
                 consProd.MdiParent = this;
                 consProd.Show();
-            }
-            else
-            {
-                consProd.BringToFront();
-            }
+            
             
         }
 
@@ -119,20 +102,15 @@ namespace Vista
                 MessageBox.Show("No está autorizado a visualizar este formulario", "Acceso restringido", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
                 return;
             }
-            if (consCli == null)
-            {
+            
                 btn_ventas.Visible = false;
                 btn_impresiones.Visible = false;
                 iniciador.cantVentanasAbiertas++;
 
-                consCli = new Consultas_Cliente();
+                Consultas_Cliente consCli = new Consultas_Cliente();
                 consCli.MdiParent = this;
                 consCli.Show();
-            }
-            else
-            {
-                consCli.BringToFront();
-            }
+            
                        
         }
 
@@ -145,20 +123,15 @@ namespace Vista
                 return;
             }
 
-            if (consPed == null)
-            {
+            
                 btn_ventas.Visible = false;
                 btn_impresiones.Visible = false;
                 iniciador.cantVentanasAbiertas++;
 
-                consPed = new Consulta_de_Pedidos();
+                Consulta_de_Pedidos consPed = new Consulta_de_Pedidos();
                 consPed.MdiParent = this;
                 consPed.Show();
-            }
-            else
-            {
-            consPed. BringToFront();
-            }
+            
         }
 
         private void gestionDeEstructuraDeProductoToolStripMenuItem_Click(object sender, EventArgs e)
@@ -168,20 +141,15 @@ namespace Vista
                 MessageBox.Show("No está autorizado a visualizar este formulario", "Acceso restringido", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
                 return;
             }
-            if (Estr == null)
-            {
+            
                 btn_ventas.Visible = false;
                 btn_impresiones.Visible = false;
                 iniciador.cantVentanasAbiertas++;
 
-                Estr = new Gestionar_Estructura_Productos();
+                Gestionar_Estructura_Productos Estr = new Gestionar_Estructura_Productos();
                 Estr.MdiParent = this;
                 Estr.Show();
-            }
-            else
-            {
-                Estr.BringToFront();
-            }
+            
         }
 
         private void gestionDePlanesDeProducciónToolStripMenuItem_Click(object sender, EventArgs e)
@@ -191,20 +159,15 @@ namespace Vista
                 MessageBox.Show("No está autorizado a visualizar este formulario", "Acceso restringido", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
                 return;
             } 
-            if (planes == null)
-            {
+            
                 btn_ventas.Visible = false;
                 btn_impresiones.Visible = false;
                 iniciador.cantVentanasAbiertas++;
 
-                planes = new Consulta_Planes_Produccion();
+                Consulta_Planes_Produccion planes = new Consulta_Planes_Produccion();
                 planes.MdiParent = this;
                 planes.Show();
-            }
-            else
-            {
-                planes.BringToFront();
-            }
+            
         }
 
         private void gestionDeOrdenDeTrabajoToolStripMenuItem_Click(object sender, EventArgs e)
@@ -214,20 +177,15 @@ namespace Vista
                 MessageBox.Show("No está autorizado a visualizar este formulario", "Acceso restringido", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
                 return;
             }
-            if (Ordenes == null)
-            {
+            
                 btn_ventas.Visible = false;
                 btn_impresiones.Visible = false;
                 iniciador.cantVentanasAbiertas++;
 
-                Ordenes = new ConsultarOrdenTrabajo();
+                ConsultarOrdenTrabajo Ordenes = new ConsultarOrdenTrabajo();
                 Ordenes.MdiParent = this;
                 Ordenes.Show();
-            }
-            else
-            {
-                Ordenes.BringToFront();
-            }
+            
         }
 
         private void gestionDeProveedorToolStripMenuItem_Click(object sender, EventArgs e)
@@ -237,20 +195,15 @@ namespace Vista
                 MessageBox.Show("No está autorizado a visualizar este formulario", "Acceso restringido", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
                 return;
             }
-            //if (consProv == null)
-            //{
+            
                 btn_ventas.Visible = false;
                 btn_impresiones.Visible = false;
                 iniciador.cantVentanasAbiertas++;
 
-                consProv = new Consulta_Proveedor();
+                Consulta_Proveedor consProv = new Consulta_Proveedor();
                 consProv.MdiParent = this;
                 consProv.Show();
-            //}
-            //else
-            //{
-            //    consProv.BringToFront();
-            //}
+            
         }
 
         private void gestionProductoPorProveedorToolStripMenuItem_Click(object sender, EventArgs e)
@@ -260,20 +213,15 @@ namespace Vista
                 MessageBox.Show("No está autorizado a visualizar este formulario", "Acceso restringido", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
                 return;
             }
-            if (consProdProv == null)
-            {
+            
                 btn_ventas.Visible = false;
                 btn_impresiones.Visible = false;
                 iniciador.cantVentanasAbiertas++;
 
-                consProdProv = new Gestion_Producto_X_Proveedor();
+                Gestion_Producto_X_Proveedor consProdProv = new Gestion_Producto_X_Proveedor();
                 consProdProv.MdiParent = this;
                 consProdProv.Show();
-            }
-            else
-            {
-                consProdProv.BringToFront();
-            }
+            
         }
 
         private void gestionarComprasDeMateriaPrimaEInsumosToolStripMenuItem_Click(object sender, EventArgs e)
@@ -283,20 +231,15 @@ namespace Vista
                 MessageBox.Show("No está autorizado a visualizar este formulario", "Acceso restringido", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
                 return;
             }
-            if (consOrCom == null)
-            {
+            
                 btn_ventas.Visible = false;
                 btn_impresiones.Visible = false;
                 iniciador.cantVentanasAbiertas++;
 
-                consOrCom = new Consultar_Orden_de_Compra();
+                Consultar_Orden_de_Compra consOrCom = new Consultar_Orden_de_Compra();
                 consOrCom.MdiParent = this;
                 consOrCom.Show();
-            }
-            else
-            {
-                consOrCom.BringToFront();
-            }
+            
         }
 
         private void registrarCobroToolStripMenuItem_Click(object sender, EventArgs e)
@@ -306,20 +249,15 @@ namespace Vista
                 MessageBox.Show("No está autorizado a visualizar este formulario", "Acceso restringido", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
                 return;
             }
-            if (facturas == null)
-            {
+            
                 btn_ventas.Visible = false;
                 btn_impresiones.Visible = false;
                 iniciador.cantVentanasAbiertas++;
 
-                facturas = new Gestion_de_Facturas();
+                Gestion_de_Facturas facturas = new Gestion_de_Facturas();
                 facturas.MdiParent = this;
                 facturas.Show();
-            }
-            else
-            {
-                facturas.BringToFront();
-            }
+            
 
 
         }
@@ -331,20 +269,15 @@ namespace Vista
                 MessageBox.Show("No está autorizado a visualizar este formulario", "Acceso restringido", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
                 return;
             }
-            if (ordenesCompra == null)
-            {
+            
                 btn_ventas.Visible = false;
                 btn_impresiones.Visible = false;
                 iniciador.cantVentanasAbiertas++;
 
-                ordenesCompra = new Gestion_de_Pago_a_Proveedores();
+                Gestion_de_Pago_a_Proveedores ordenesCompra = new Gestion_de_Pago_a_Proveedores();
                 ordenesCompra.MdiParent = this;
                 ordenesCompra.Show();
-            }
-            else
-            {
-                ordenesCompra.BringToFront();
-            }
+            
         }
 
         private void informeDeStockToolStripMenuItem_Click(object sender, EventArgs e)
@@ -419,20 +352,15 @@ namespace Vista
                 MessageBox.Show("No está autorizado a visualizar este formulario", "Acceso restringido", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
                 return;
             }
-            if (gestMaquina == null)
-            {
+            
                 btn_ventas.Visible = false;
                 btn_impresiones.Visible = false;
                 iniciador.cantVentanasAbiertas++;
 
-                gestMaquina = new Consulta_Maquinaria();
+                Consulta_Maquinaria gestMaquina = new Consulta_Maquinaria();
                 gestMaquina.MdiParent = this;
                 gestMaquina.Show();
-            }
-            else
-            {
-                gestMaquina.BringToFront();
-            }
+            
         }
 
         private void informeDeVentasPorProductoToolStripMenuItem1_Click(object sender, EventArgs e)
@@ -458,20 +386,15 @@ namespace Vista
                 MessageBox.Show("No está autorizado a visualizar este formulario", "Acceso restringido", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
                 return;
             }
-            if (gestEmpleado == null)
-            {
+            
                 btn_ventas.Visible = false;
                 btn_impresiones.Visible = false;
                 iniciador.cantVentanasAbiertas++;
 
-                gestEmpleado = new Consulta_Empleado();
+                Consulta_Empleado gestEmpleado = new Consulta_Empleado();
                 gestEmpleado.MdiParent = this;
                 gestEmpleado.Show();
-            }
-            else
-            {
-                gestEmpleado.BringToFront();
-            }
+            
         }
 
         private void informeDeVentasToolStripMenuItem_Click(object sender, EventArgs e)
