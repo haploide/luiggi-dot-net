@@ -344,6 +344,7 @@ namespace Vista
             if (iniciador.cantVentanasAbiertas == 0)
             {
                 ((Menu_Principal)(MdiParent)).btn_impresiones.Visible = true;
+                ((Menu_Principal)(MdiParent)).btn_pedido.Visible = true;
                 ((Menu_Principal)(MdiParent)).btn_ventas.Visible = true;
             }
         }

@@ -90,6 +90,7 @@ namespace Vista
             {
                 ((Menu_Principal)(MdiParent)).btn_impresiones.Visible = true;
                 ((Menu_Principal)(MdiParent)).btn_ventas.Visible = true;
+                ((Menu_Principal)(MdiParent)).btn_pedido.Visible = true;
             }
         }
 

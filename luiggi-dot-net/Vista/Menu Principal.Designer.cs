@@ -67,9 +67,6 @@
             this.usuario = new System.Windows.Forms.ToolStripStatusLabel();
             this.toolTip = new System.Windows.Forms.ToolTip(this.components);
             this.btn_ventas = new System.Windows.Forms.Button();
-            this.contextMenuStripVentas = new System.Windows.Forms.ContextMenuStrip(this.components);
-            this.directaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.nuevoPedidoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.btn_impresiones = new System.Windows.Forms.Button();
             this.contextMenuStripImpresiones = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.informeDeStockToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
@@ -80,11 +77,9 @@
             this.informeDeOrdenesDeCompraToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.informeDesviaciónDeOrdenesDeTrabajoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.helpProviderMenu = new System.Windows.Forms.HelpProvider();
-            this.presupuestoToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btn_pedido = new System.Windows.Forms.Button();
             this.menuStrip.SuspendLayout();
             this.statusStrip.SuspendLayout();
-            this.contextMenuStripVentas.SuspendLayout();
             this.contextMenuStripImpresiones.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -384,29 +379,6 @@
             this.btn_ventas.UseVisualStyleBackColor = true;
             this.btn_ventas.Click += new System.EventHandler(this.button1_Click);
             // 
-            // contextMenuStripVentas
-            // 
-            this.contextMenuStripVentas.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.directaToolStripMenuItem,
-            this.nuevoPedidoToolStripMenuItem,
-            this.presupuestoToolStripMenuItem1});
-            this.contextMenuStripVentas.Name = "contextMenuStrip1";
-            this.contextMenuStripVentas.Size = new System.Drawing.Size(150, 70);
-            // 
-            // directaToolStripMenuItem
-            // 
-            this.directaToolStripMenuItem.Name = "directaToolStripMenuItem";
-            this.directaToolStripMenuItem.Size = new System.Drawing.Size(149, 22);
-            this.directaToolStripMenuItem.Text = "Venta Directa";
-            this.directaToolStripMenuItem.Click += new System.EventHandler(this.directaToolStripMenuItem_Click);
-            // 
-            // nuevoPedidoToolStripMenuItem
-            // 
-            this.nuevoPedidoToolStripMenuItem.Name = "nuevoPedidoToolStripMenuItem";
-            this.nuevoPedidoToolStripMenuItem.Size = new System.Drawing.Size(149, 22);
-            this.nuevoPedidoToolStripMenuItem.Text = "Nuevo Pedido";
-            this.nuevoPedidoToolStripMenuItem.Click += new System.EventHandler(this.nuevoPedidoToolStripMenuItem_Click);
-            // 
             // btn_impresiones
             // 
             this.btn_impresiones.Image = ((System.Drawing.Image)(resources.GetObject("btn_impresiones.Image")));
@@ -483,21 +455,15 @@
             // 
             this.helpProviderMenu.HelpNamespace = ".\\Ayuda\\Luiggi.chm";
             // 
-            // presupuestoToolStripMenuItem1
+            // btn_pedido
             // 
-            this.presupuestoToolStripMenuItem1.Name = "presupuestoToolStripMenuItem1";
-            this.presupuestoToolStripMenuItem1.Size = new System.Drawing.Size(149, 22);
-            this.presupuestoToolStripMenuItem1.Text = "Presupuesto";
-            this.presupuestoToolStripMenuItem1.Click += new System.EventHandler(this.presupuestoToolStripMenuItem1_Click);
-            // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(26, 107);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 63);
-            this.button1.TabIndex = 7;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btn_pedido.Image = global::Vista.Properties.Resources.booking_list_checkpoint_order_32;
+            this.btn_pedido.Location = new System.Drawing.Point(26, 107);
+            this.btn_pedido.Name = "btn_pedido";
+            this.btn_pedido.Size = new System.Drawing.Size(75, 63);
+            this.btn_pedido.TabIndex = 7;
+            this.btn_pedido.UseVisualStyleBackColor = true;
+            this.btn_pedido.Click += new System.EventHandler(this.btn_pedido_Click);
             // 
             // Menu_Principal
             // 
@@ -507,7 +473,7 @@
             this.BackgroundImage = global::Vista.Properties.Resources.La_pasta_de_luiggi;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1102, 750);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btn_pedido);
             this.Controls.Add(this.statusStrip);
             this.Controls.Add(this.menuStrip);
             this.Controls.Add(this.btn_ventas);
@@ -525,7 +491,6 @@
             this.menuStrip.PerformLayout();
             this.statusStrip.ResumeLayout(false);
             this.statusStrip.PerformLayout();
-            this.contextMenuStripVentas.ResumeLayout(false);
             this.contextMenuStripImpresiones.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -559,9 +524,7 @@
         private System.Windows.Forms.ToolStripMenuItem informeDeStockToolStripMenuItem;
         public System.Windows.Forms.Button btn_ventas;
         public System.Windows.Forms.Button btn_impresiones;
-        private System.Windows.Forms.ContextMenuStrip contextMenuStripVentas;
-        private System.Windows.Forms.ToolStripMenuItem directaToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem nuevoPedidoToolStripMenuItem;
+        public System.Windows.Forms.Button btn_pedido;
         private System.Windows.Forms.ContextMenuStrip contextMenuStripImpresiones;
         private System.Windows.Forms.ToolStripMenuItem informeDeStockToolStripMenuItem1;
         private System.Windows.Forms.HelpProvider helpProviderMenu;
@@ -586,8 +549,7 @@
         private System.Windows.Forms.ToolStripMenuItem informeDesviaciónDeOrdenesDeTrabajoToolStripMenuItem;
         private System.Windows.Forms.ToolStripStatusLabel usuario;
         private System.Windows.Forms.ToolStripMenuItem cuentasStripMenuItem1;
-        private System.Windows.Forms.ToolStripMenuItem presupuestoToolStripMenuItem1;
-        private System.Windows.Forms.Button button1;
+        
 
     }
 }

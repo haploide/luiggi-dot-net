@@ -78,8 +78,11 @@ namespace Vista
 
             if (Seguridad.usuario != null)
             {
-                statusStrip.Items["usuario"].Text = Seguridad.usuario.Nombre;
+                statusStrip.Items["usuario"].Text = "Usuario: "+Seguridad.usuario.Nombre;
             }
+
+            toolTip.SetToolTip(btn_pedido, "Nuevo Pedido");
+            toolTip.SetToolTip(btn_ventas, "Venta Directa");
             
 
         }
@@ -94,6 +97,7 @@ namespace Vista
             
                 btn_ventas.Visible = false;
                 btn_impresiones.Visible = false;
+                btn_pedido.Visible = false;
                 iniciador.cantVentanasAbiertas++;
 
                 Consultas_Producto consProd = Consultas_Producto.Instance();
@@ -113,6 +117,7 @@ namespace Vista
             
                 btn_ventas.Visible = false;
                 btn_impresiones.Visible = false;
+                btn_pedido.Visible = false;
                 iniciador.cantVentanasAbiertas++;
 
                 Consultas_Cliente consCli = Consultas_Cliente.Instance();
@@ -134,6 +139,7 @@ namespace Vista
             
                 btn_ventas.Visible = false;
                 btn_impresiones.Visible = false;
+                btn_pedido.Visible = false;
                 iniciador.cantVentanasAbiertas++;
 
                 Consulta_de_Pedidos consPed =Consulta_de_Pedidos.Instance();
@@ -152,6 +158,7 @@ namespace Vista
             
                 btn_ventas.Visible = false;
                 btn_impresiones.Visible = false;
+                btn_pedido.Visible = false;
                 iniciador.cantVentanasAbiertas++;
 
                 Gestionar_Estructura_Productos Estr = Gestionar_Estructura_Productos.Instance();
@@ -170,6 +177,7 @@ namespace Vista
             
                 btn_ventas.Visible = false;
                 btn_impresiones.Visible = false;
+                btn_pedido.Visible = false;
                 iniciador.cantVentanasAbiertas++;
 
                 Consulta_Planes_Produccion planes = Consulta_Planes_Produccion.Instance();
@@ -188,6 +196,7 @@ namespace Vista
             
                 btn_ventas.Visible = false;
                 btn_impresiones.Visible = false;
+                btn_pedido.Visible = false;
                 iniciador.cantVentanasAbiertas++;
 
                 ConsultarOrdenTrabajo Ordenes = ConsultarOrdenTrabajo.Instance();
@@ -206,6 +215,7 @@ namespace Vista
             
                 btn_ventas.Visible = false;
                 btn_impresiones.Visible = false;
+                btn_pedido.Visible = false;
                 iniciador.cantVentanasAbiertas++;
 
                 Consulta_Proveedor consProv = Consulta_Proveedor.Instance();
@@ -224,6 +234,7 @@ namespace Vista
             
                 btn_ventas.Visible = false;
                 btn_impresiones.Visible = false;
+                btn_pedido.Visible = false;
                 iniciador.cantVentanasAbiertas++;
 
                 Gestion_Producto_X_Proveedor consProdProv = Gestion_Producto_X_Proveedor.Instance();
@@ -242,6 +253,7 @@ namespace Vista
             
                 btn_ventas.Visible = false;
                 btn_impresiones.Visible = false;
+                btn_pedido.Visible = false;
                 iniciador.cantVentanasAbiertas++;
 
                 Consultar_Orden_de_Compra consOrCom = Consultar_Orden_de_Compra.Instance();
@@ -260,6 +272,7 @@ namespace Vista
             
                 btn_ventas.Visible = false;
                 btn_impresiones.Visible = false;
+                btn_pedido.Visible = false;
                 iniciador.cantVentanasAbiertas++;
 
                 Gestion_de_Facturas facturas = Gestion_de_Facturas.Instance();
@@ -280,6 +293,7 @@ namespace Vista
             
                 btn_ventas.Visible = false;
                 btn_impresiones.Visible = false;
+                btn_pedido.Visible = false;
                 iniciador.cantVentanasAbiertas++;
 
                 Gestion_de_Pago_a_Proveedores ordenesCompra = Gestion_de_Pago_a_Proveedores.Instance();
@@ -320,21 +334,17 @@ namespace Vista
 
         private void button1_Click(object sender, EventArgs e)
         {
-            
-            contextMenuStripVentas.Show();
-            contextMenuStripVentas.SetBounds(((MouseEventArgs)e).Location.X+33, ((MouseEventArgs)e).Location.Y+70, 0, 0);
+            ventaDirectaToolStripMenuItem_Click(sender, e);
         }
 
         private void directaToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            ventaDirectaToolStripMenuItem_Click(sender, e);
+            
         }
 
         private void nuevoPedidoToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Gestion_de_Pedidos gestPedido = new Gestion_de_Pedidos();
-            gestPedido._estado = estados.nuevo;
-            gestPedido.ShowDialog();
+            
         }
 
         private void informeDeStockToolStripMenuItem1_Click(object sender, EventArgs e)
@@ -371,6 +381,7 @@ namespace Vista
             
                 btn_ventas.Visible = false;
                 btn_impresiones.Visible = false;
+                btn_pedido.Visible = false;
                 iniciador.cantVentanasAbiertas++;
 
                 Consulta_Maquinaria gestMaquina = Consulta_Maquinaria.Instance();
@@ -405,6 +416,7 @@ namespace Vista
             
                 btn_ventas.Visible = false;
                 btn_impresiones.Visible = false;
+                btn_pedido.Visible = false;
                 iniciador.cantVentanasAbiertas++;
 
                 Consulta_Empleado gestEmpleado = Consulta_Empleado.Instance();
@@ -520,6 +532,13 @@ namespace Vista
         private void listadosEInformesToolStripMenuItem_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void btn_pedido_Click(object sender, EventArgs e)
+        {
+            Gestion_de_Pedidos gestPedido = new Gestion_de_Pedidos();
+            gestPedido._estado = estados.nuevo;
+            gestPedido.ShowDialog();
         }
 
 
