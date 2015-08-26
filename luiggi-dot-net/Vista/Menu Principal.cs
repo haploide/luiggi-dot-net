@@ -546,6 +546,22 @@ namespace Vista
             gestPedido.ShowDialog();
         }
 
+        private void cerrarSesiónToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Seguridad.usuario = null;
+            Inicio_Sesion login = new Inicio_Sesion();
+            if (Seguridad.usuario == null)
+            {
+                statusStrip.Items["usuario"].Text = "Usuario: " ;
+            }
+            login.ShowDialog(this);
+            if (Seguridad.usuario != null)
+            {
+                statusStrip.Items["usuario"].Text = "Usuario: " + Seguridad.usuario.Nombre;
+            }
+           
+        }
+
 
 
         

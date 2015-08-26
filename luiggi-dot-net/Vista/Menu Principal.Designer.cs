@@ -78,6 +78,7 @@
             this.informeDesviaciónDeOrdenesDeTrabajoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.helpProviderMenu = new System.Windows.Forms.HelpProvider();
             this.btn_pedido = new System.Windows.Forms.Button();
+            this.cerrarSesiónToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip.SuspendLayout();
             this.statusStrip.SuspendLayout();
             this.contextMenuStripImpresiones.SuspendLayout();
@@ -330,10 +331,11 @@
             // 
             // cuentasStripMenuItem1
             // 
+            this.cuentasStripMenuItem1.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.cerrarSesiónToolStripMenuItem});
             this.cuentasStripMenuItem1.Name = "cuentasStripMenuItem1";
             this.cuentasStripMenuItem1.Size = new System.Drawing.Size(162, 20);
             this.cuentasStripMenuItem1.Text = "Administracion de Cuentas";
-            this.cuentasStripMenuItem1.Visible = false;
             // 
             // helpMenu
             // 
@@ -362,8 +364,8 @@
             // usuario
             // 
             this.usuario.Name = "usuario";
-            this.usuario.Size = new System.Drawing.Size(46, 17);
-            this.usuario.Text = "usuario";
+            this.usuario.Size = new System.Drawing.Size(47, 17);
+            this.usuario.Text = "Usuario";
             // 
             // toolTip
             // 
@@ -465,6 +467,13 @@
             this.btn_pedido.UseVisualStyleBackColor = true;
             this.btn_pedido.Click += new System.EventHandler(this.btn_pedido_Click);
             // 
+            // cerrarSesiónToolStripMenuItem
+            // 
+            this.cerrarSesiónToolStripMenuItem.Name = "cerrarSesiónToolStripMenuItem";
+            this.cerrarSesiónToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.cerrarSesiónToolStripMenuItem.Text = "Cerrar Sesión";
+            this.cerrarSesiónToolStripMenuItem.Click += new System.EventHandler(this.cerrarSesiónToolStripMenuItem_Click);
+            // 
             // Menu_Principal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
@@ -549,6 +558,7 @@
         private System.Windows.Forms.ToolStripMenuItem informeDesviaciónDeOrdenesDeTrabajoToolStripMenuItem;
         private System.Windows.Forms.ToolStripStatusLabel usuario;
         private System.Windows.Forms.ToolStripMenuItem cuentasStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem cerrarSesiónToolStripMenuItem;
         
 
     }
