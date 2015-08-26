@@ -548,6 +548,10 @@ namespace Vista
 
         private void cerrarSesiónToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            foreach (Form hijo in this.MdiChildren)
+            {
+                hijo.Close();
+            }
             Seguridad.usuario = null;
             Inicio_Sesion login = new Inicio_Sesion();
             if (Seguridad.usuario == null)
