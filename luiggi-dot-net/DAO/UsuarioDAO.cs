@@ -17,7 +17,7 @@ namespace DAO
 
             Usuario p = new Usuario();
 
-            string sql = "SELECT * from usuarios where login = @login and password  =  @pass ";
+            string sql = "SELECT * from usuarios where login = @login and password COLLATE Latin1_General_CS_AS  =  @pass ";
             SqlCommand cmd = new SqlCommand();
             cmd.Parameters.AddWithValue("@login", login);
             cmd.Parameters.AddWithValue("@pass", pass);
