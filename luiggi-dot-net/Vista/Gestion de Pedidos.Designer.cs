@@ -709,10 +709,12 @@
             this.helpProviderGestionPedidos.SetHelpKeyword(this, "8");
             this.helpProviderGestionPedidos.SetHelpNavigator(this, System.Windows.Forms.HelpNavigator.TopicId);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "Gestion_de_Pedidos";
             this.helpProviderGestionPedidos.SetShowHelp(this, true);
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
-            this.Text = "Gestion_de_Pedidos";
+            this.Text = "Gestion de Pedidos";
             this.Load += new System.EventHandler(this.Gestion_de_Pedidos_Load);
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();

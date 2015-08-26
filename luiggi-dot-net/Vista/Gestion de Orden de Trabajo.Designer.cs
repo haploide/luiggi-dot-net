@@ -52,7 +52,7 @@ namespace Vista
             this.cantidad = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.idUnidad = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.unidad = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.estado = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Estado = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.cmb_productos = new System.Windows.Forms.ComboBox();
             this.label3 = new System.Windows.Forms.Label();
@@ -139,7 +139,7 @@ namespace Vista
             this.cantidad,
             this.idUnidad,
             this.unidad,
-            this.estado});
+            this.Estado});
             this.dgv_estructuraOT.EditMode = System.Windows.Forms.DataGridViewEditMode.EditOnEnter;
             this.dgv_estructuraOT.Location = new System.Drawing.Point(8, 34);
             this.dgv_estructuraOT.MultiSelect = false;
@@ -250,10 +250,10 @@ namespace Vista
             // 
             // Estado
             // 
-            this.estado.HeaderText = "Estado";
-            this.estado.Name = "Estado";
-            this.estado.ReadOnly = true;
-            this.estado.Visible = false;
+            this.Estado.HeaderText = "Estado";
+            this.Estado.Name = "Estado";
+            this.Estado.ReadOnly = true;
+            this.Estado.Visible = false;
             // 
             // groupBox2
             // 
@@ -499,7 +499,7 @@ namespace Vista
             this.Controls.Add(this.label1);
             this.Name = "Gestion_de_orden_de_Trabajo";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
-            this.Text = "Gestion_de_orden_de_Trabajo";
+            this.Text = "Gestion de Ordenes de Trabajo";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Gestion_de_orden_de_Trabajo_FormClosing);
             this.Load += new System.EventHandler(this.Gestion_de_orden_de_Trabajo_Load);
             ((System.ComponentModel.ISupportInitialize)(this.errores)).EndInit();
@@ -556,6 +556,7 @@ namespace Vista
         private System.Windows.Forms.DataGridViewTextBoxColumn idUnidad;
         private System.Windows.Forms.DataGridViewTextBoxColumn unidad;
         private System.Windows.Forms.DataGridViewTextBoxColumn estado;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Estado;
 
     }
 }

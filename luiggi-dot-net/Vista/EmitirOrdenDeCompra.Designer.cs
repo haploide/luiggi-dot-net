@@ -29,35 +29,36 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            Microsoft.Reporting.WinForms.ReportDataSource reportDataSource3 = new Microsoft.Reporting.WinForms.ReportDataSource();
-            this.reportViewer1 = new Microsoft.Reporting.WinForms.ReportViewer();
-            this.DataSetOrdenDeCompra = new Vista.DataSetOrdenDeCompra();
+            Microsoft.Reporting.WinForms.ReportDataSource reportDataSource2 = new Microsoft.Reporting.WinForms.ReportDataSource();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(EmitirOrdenDeCompra));
             this.OrdenDeCompraBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            ((System.ComponentModel.ISupportInitialize)(this.DataSetOrdenDeCompra)).BeginInit();
+            this.DataSetOrdenDeCompra = new Vista.DataSetOrdenDeCompra();
+            this.reportViewer1 = new Microsoft.Reporting.WinForms.ReportViewer();
             ((System.ComponentModel.ISupportInitialize)(this.OrdenDeCompraBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DataSetOrdenDeCompra)).BeginInit();
             this.SuspendLayout();
             // 
-            // reportViewer1
+            // OrdenDeCompraBindingSource
             // 
-            this.reportViewer1.Dock = System.Windows.Forms.DockStyle.Fill;
-            reportDataSource3.Name = "DataSet1";
-            reportDataSource3.Value = this.OrdenDeCompraBindingSource;
-            this.reportViewer1.LocalReport.DataSources.Add(reportDataSource3);
-            this.reportViewer1.LocalReport.ReportEmbeddedResource = "Vista.Reportes.ReportOrdenDeCompra.rdlc";
-            this.reportViewer1.Location = new System.Drawing.Point(0, 0);
-            this.reportViewer1.Name = "reportViewer1";
-            this.reportViewer1.Size = new System.Drawing.Size(698, 608);
-            this.reportViewer1.TabIndex = 0;
+            this.OrdenDeCompraBindingSource.DataMember = "OrdenDeCompra";
+            this.OrdenDeCompraBindingSource.DataSource = this.DataSetOrdenDeCompra;
             // 
             // DataSetOrdenDeCompra
             // 
             this.DataSetOrdenDeCompra.DataSetName = "DataSetOrdenDeCompra";
             this.DataSetOrdenDeCompra.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
-            // OrdenDeCompraBindingSource
+            // reportViewer1
             // 
-            this.OrdenDeCompraBindingSource.DataMember = "OrdenDeCompra";
-            this.OrdenDeCompraBindingSource.DataSource = this.DataSetOrdenDeCompra;
+            this.reportViewer1.Dock = System.Windows.Forms.DockStyle.Fill;
+            reportDataSource2.Name = "DataSet1";
+            reportDataSource2.Value = this.OrdenDeCompraBindingSource;
+            this.reportViewer1.LocalReport.DataSources.Add(reportDataSource2);
+            this.reportViewer1.LocalReport.ReportEmbeddedResource = "Vista.Reportes.ReportOrdenDeCompra.rdlc";
+            this.reportViewer1.Location = new System.Drawing.Point(0, 0);
+            this.reportViewer1.Name = "reportViewer1";
+            this.reportViewer1.Size = new System.Drawing.Size(698, 608);
+            this.reportViewer1.TabIndex = 0;
             // 
             // EmitirOrdenDeCompra
             // 
@@ -65,11 +66,13 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(698, 608);
             this.Controls.Add(this.reportViewer1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "EmitirOrdenDeCompra";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Emitir Orden de Compra";
             this.Load += new System.EventHandler(this.EmitirOrdenDeCompra_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.DataSetOrdenDeCompra)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.OrdenDeCompraBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DataSetOrdenDeCompra)).EndInit();
             this.ResumeLayout(false);
 
         }

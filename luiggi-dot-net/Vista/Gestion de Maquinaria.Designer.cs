@@ -33,6 +33,7 @@
             this.btn_guardar = new System.Windows.Forms.Button();
             this.btn_nuevo = new System.Windows.Forms.Button();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
+            this.btn_verificar_existencia = new System.Windows.Forms.Button();
             this.cmb_tipo_maq = new System.Windows.Forms.ComboBox();
             this.label12 = new System.Windows.Forms.Label();
             this.dtp_fechaAlta = new System.Windows.Forms.DateTimePicker();
@@ -41,7 +42,6 @@
             this.txt_nombre = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
-            this.btn_verificar_existencia = new System.Windows.Forms.Button();
             this.groupBox2.SuspendLayout();
             this.groupBox4.SuspendLayout();
             this.SuspendLayout();
@@ -51,7 +51,7 @@
             this.groupBox2.Controls.Add(this.btn_salir);
             this.groupBox2.Controls.Add(this.btn_guardar);
             this.groupBox2.Controls.Add(this.btn_nuevo);
-            this.groupBox2.Location = new System.Drawing.Point(12, 218);
+            this.groupBox2.Location = new System.Drawing.Point(12, 161);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(354, 66);
             this.groupBox2.TabIndex = 11;
@@ -107,10 +107,22 @@
             this.groupBox4.Controls.Add(this.label10);
             this.groupBox4.Location = new System.Drawing.Point(12, 12);
             this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Size = new System.Drawing.Size(354, 187);
+            this.groupBox4.Size = new System.Drawing.Size(354, 143);
             this.groupBox4.TabIndex = 10;
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "Datos de la Maquinaria";
+            // 
+            // btn_verificar_existencia
+            // 
+            this.btn_verificar_existencia.AutoSize = true;
+            this.btn_verificar_existencia.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.btn_verificar_existencia.Image = global::Vista.Properties.Resources.magnifier14;
+            this.btn_verificar_existencia.Location = new System.Drawing.Point(304, 27);
+            this.btn_verificar_existencia.Name = "btn_verificar_existencia";
+            this.btn_verificar_existencia.Size = new System.Drawing.Size(22, 22);
+            this.btn_verificar_existencia.TabIndex = 81;
+            this.btn_verificar_existencia.UseVisualStyleBackColor = true;
+            this.btn_verificar_existencia.Click += new System.EventHandler(this.btn_verificar_existencia_Click);
             // 
             // cmb_tipo_maq
             // 
@@ -184,25 +196,15 @@
             this.label10.TabIndex = 41;
             this.label10.Text = "Descripcion ";
             // 
-            // btn_verificar_existencia
-            // 
-            this.btn_verificar_existencia.AutoSize = true;
-            this.btn_verificar_existencia.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.btn_verificar_existencia.Image = global::Vista.Properties.Resources.magnifier14;
-            this.btn_verificar_existencia.Location = new System.Drawing.Point(304, 27);
-            this.btn_verificar_existencia.Name = "btn_verificar_existencia";
-            this.btn_verificar_existencia.Size = new System.Drawing.Size(22, 22);
-            this.btn_verificar_existencia.TabIndex = 81;
-            this.btn_verificar_existencia.UseVisualStyleBackColor = true;
-            this.btn_verificar_existencia.Click += new System.EventHandler(this.btn_verificar_existencia_Click);
-            // 
             // Gestion_de_Maquinaria
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(385, 306);
+            this.ClientSize = new System.Drawing.Size(375, 236);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox4);
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "Gestion_de_Maquinaria";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Gestión de Maquinaria";

@@ -81,6 +81,7 @@
             this.Controls.Add(this.groupBox1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "EmitirPresupuesto";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Emitir Presupuesto";
             this.Load += new System.EventHandler(this.EmitirPresupuesto_Load);
             ((System.ComponentModel.ISupportInitialize)(this.PresupuestoBindingSource)).EndInit();

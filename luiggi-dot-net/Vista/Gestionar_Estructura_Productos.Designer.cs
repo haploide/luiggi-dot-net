@@ -88,12 +88,14 @@
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             this.lblUnidad = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.groupBox3 = new System.Windows.Forms.GroupBox();
             ((System.ComponentModel.ISupportInitialize)(this.DGVProductos)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.DGVEstructuraProductos)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.DGVProductosAAgregar)).BeginInit();
             this.groupBox2.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.panel1.SuspendLayout();
+            this.groupBox3.SuspendLayout();
             this.SuspendLayout();
             // 
             // DGVProductos
@@ -114,7 +116,7 @@
             this.idProduct,
             this.tipoMaquinariaProducto,
             this.idTipoMaquinariaProducto});
-            this.DGVProductos.Location = new System.Drawing.Point(23, 141);
+            this.DGVProductos.Location = new System.Drawing.Point(19, 141);
             this.DGVProductos.MultiSelect = false;
             this.DGVProductos.Name = "DGVProductos";
             this.DGVProductos.ReadOnly = true;
@@ -232,7 +234,7 @@
             this.tipoMaquinariaDetalle,
             this.idMaquinariaUtilizadaDetalle});
             this.DGVEstructuraProductos.Enabled = false;
-            this.DGVEstructuraProductos.Location = new System.Drawing.Point(23, 474);
+            this.DGVEstructuraProductos.Location = new System.Drawing.Point(19, 474);
             this.DGVEstructuraProductos.MultiSelect = false;
             this.DGVEstructuraProductos.Name = "DGVEstructuraProductos";
             this.DGVEstructuraProductos.ReadOnly = true;
@@ -337,7 +339,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(559, 111);
+            this.label3.Location = new System.Drawing.Point(610, 111);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(237, 20);
             this.label3.TabIndex = 44;
@@ -349,8 +351,6 @@
             this.DGVProductosAAgregar.AllowUserToDeleteRows = false;
             dataGridViewCellStyle4.BackColor = System.Drawing.Color.LightSteelBlue;
             this.DGVProductosAAgregar.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle4;
-            this.DGVProductosAAgregar.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
             this.DGVProductosAAgregar.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.DGVProductosAAgregar.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.dataGridViewTextBoxColumn1,
@@ -461,7 +461,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(13, 14);
+            this.label4.Location = new System.Drawing.Point(13, 13);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(81, 20);
             this.label4.TabIndex = 49;
@@ -481,7 +481,7 @@
             this.lblAccion.AutoSize = true;
             this.lblAccion.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblAccion.ForeColor = System.Drawing.Color.Blue;
-            this.lblAccion.Location = new System.Drawing.Point(19, 9);
+            this.lblAccion.Location = new System.Drawing.Point(7, 0);
             this.lblAccion.Name = "lblAccion";
             this.lblAccion.Size = new System.Drawing.Size(203, 20);
             this.lblAccion.TabIndex = 51;
@@ -511,7 +511,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(268, 11);
+            this.label1.Location = new System.Drawing.Point(268, 13);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(86, 20);
             this.label1.TabIndex = 49;
@@ -522,7 +522,7 @@
             this.lblSeleccionado.AutoSize = true;
             this.lblSeleccionado.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblSeleccionado.ForeColor = System.Drawing.Color.Blue;
-            this.lblSeleccionado.Location = new System.Drawing.Point(360, 14);
+            this.lblSeleccionado.Location = new System.Drawing.Point(360, 17);
             this.lblSeleccionado.Name = "lblSeleccionado";
             this.lblSeleccionado.Size = new System.Drawing.Size(0, 16);
             this.lblSeleccionado.TabIndex = 49;
@@ -532,9 +532,9 @@
             this.groupBox2.Controls.Add(this.btnGuardar);
             this.groupBox2.Controls.Add(this.btnCancelar);
             this.groupBox2.Controls.Add(this.btn_salir_consulta);
-            this.groupBox2.Location = new System.Drawing.Point(23, 684);
+            this.groupBox2.Location = new System.Drawing.Point(12, 694);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(1194, 59);
+            this.groupBox2.Size = new System.Drawing.Size(1216, 59);
             this.groupBox2.TabIndex = 52;
             this.groupBox2.TabStop = false;
             // 
@@ -543,7 +543,7 @@
             this.btnGuardar.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.btnGuardar.Enabled = false;
             this.btnGuardar.Image = global::Vista.Properties.Resources.floppy1;
-            this.btnGuardar.Location = new System.Drawing.Point(404, 12);
+            this.btnGuardar.Location = new System.Drawing.Point(610, 12);
             this.btnGuardar.Name = "btnGuardar";
             this.btnGuardar.Size = new System.Drawing.Size(38, 38);
             this.btnGuardar.TabIndex = 10;
@@ -555,7 +555,7 @@
             // 
             this.btnCancelar.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.btnCancelar.Image = global::Vista.Properties.Resources.mop2;
-            this.btnCancelar.Location = new System.Drawing.Point(448, 12);
+            this.btnCancelar.Location = new System.Drawing.Point(658, 12);
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.Size = new System.Drawing.Size(38, 38);
             this.btnCancelar.TabIndex = 11;
@@ -567,7 +567,7 @@
             // 
             this.btn_salir_consulta.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.btn_salir_consulta.Image = global::Vista.Properties.Resources.exit6;
-            this.btn_salir_consulta.Location = new System.Drawing.Point(1019, 12);
+            this.btn_salir_consulta.Location = new System.Drawing.Point(1150, 12);
             this.btn_salir_consulta.Name = "btn_salir_consulta";
             this.btn_salir_consulta.Size = new System.Drawing.Size(38, 38);
             this.btn_salir_consulta.TabIndex = 12;
@@ -580,7 +580,7 @@
             this.groupBox1.Controls.Add(this.btnModificar);
             this.groupBox1.Controls.Add(this.btnNuevo);
             this.groupBox1.Controls.Add(this.btn_eliminar);
-            this.groupBox1.Location = new System.Drawing.Point(23, 32);
+            this.groupBox1.Location = new System.Drawing.Point(7, 23);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(264, 59);
             this.groupBox1.TabIndex = 53;
@@ -653,7 +653,7 @@
             this.lblUnidad.AutoSize = true;
             this.lblUnidad.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblUnidad.ForeColor = System.Drawing.Color.Blue;
-            this.lblUnidad.Location = new System.Drawing.Point(147, 18);
+            this.lblUnidad.Location = new System.Drawing.Point(147, 17);
             this.lblUnidad.Name = "lblUnidad";
             this.lblUnidad.Size = new System.Drawing.Size(0, 16);
             this.lblUnidad.TabIndex = 54;
@@ -666,22 +666,30 @@
             this.panel1.Controls.Add(this.label4);
             this.panel1.Controls.Add(this.lblSeleccionado);
             this.panel1.Controls.Add(this.txtCantidad);
-            this.panel1.Location = new System.Drawing.Point(606, 421);
+            this.panel1.Location = new System.Drawing.Point(610, 421);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(611, 47);
+            this.panel1.Size = new System.Drawing.Size(607, 47);
             this.panel1.TabIndex = 55;
+            // 
+            // groupBox3
+            // 
+            this.groupBox3.Controls.Add(this.groupBox1);
+            this.groupBox3.Controls.Add(this.lblAccion);
+            this.groupBox3.Location = new System.Drawing.Point(12, 9);
+            this.groupBox3.Name = "groupBox3";
+            this.groupBox3.Size = new System.Drawing.Size(1216, 679);
+            this.groupBox3.TabIndex = 56;
+            this.groupBox3.TabStop = false;
             // 
             // Gestionar_Estructura_Productos
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Inherit;
             this.AutoScroll = true;
-            this.ClientSize = new System.Drawing.Size(1229, 747);
+            this.ClientSize = new System.Drawing.Size(1237, 765);
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.lblDetalle);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.lblAccion);
             this.Controls.Add(this.btnSacar);
             this.Controls.Add(this.btnAgregar);
             this.Controls.Add(this.label2);
@@ -690,10 +698,11 @@
             this.Controls.Add(this.lblProductos);
             this.Controls.Add(this.DGVProductosAAgregar);
             this.Controls.Add(this.DGVProductos);
+            this.Controls.Add(this.groupBox3);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Gestionar_Estructura_Productos";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Gestionar_Estructura_Productos";
+            this.Text = "Gestionar Estructura Productos";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Gestionar_Estructura_Productos_FormClosed);
             this.Load += new System.EventHandler(this.Gestionar_Estructura_Productos_Load);
@@ -704,6 +713,8 @@
             this.groupBox1.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            this.groupBox3.ResumeLayout(false);
+            this.groupBox3.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -772,5 +783,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn tipoMaquinariaDetalle;
         private System.Windows.Forms.DataGridViewTextBoxColumn idMaquinariaUtilizadaDetalle;
         private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.GroupBox groupBox3;
     }
 }

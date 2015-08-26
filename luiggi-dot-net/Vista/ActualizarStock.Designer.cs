@@ -215,7 +215,7 @@
             this.groupBox2.Controls.Add(this.btn_Actualizar_OTPadre);
             this.groupBox2.Controls.Add(this.btn_Actualizar);
             this.groupBox2.Controls.Add(this.btn_salir);
-            this.groupBox2.Location = new System.Drawing.Point(12, 277);
+            this.groupBox2.Location = new System.Drawing.Point(12, 276);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(467, 70);
             this.groupBox2.TabIndex = 25;

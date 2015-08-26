@@ -59,7 +59,11 @@
             this.idPersona = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.btn_limpiar_filtros = new System.Windows.Forms.Button();
             this.helpProviderFiltroClientes = new System.Windows.Forms.HelpProvider();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_clientes)).BeginInit();
+            this.groupBox1.SuspendLayout();
+            this.groupBox2.SuspendLayout();
             this.SuspendLayout();
             // 
             // btn_salir_consulta
@@ -67,7 +71,7 @@
             this.btn_salir_consulta.AutoSize = true;
             this.btn_salir_consulta.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.btn_salir_consulta.Image = global::Vista.Properties.Resources.exit6;
-            this.btn_salir_consulta.Location = new System.Drawing.Point(587, 353);
+            this.btn_salir_consulta.Location = new System.Drawing.Point(589, 19);
             this.btn_salir_consulta.Name = "btn_salir_consulta";
             this.btn_salir_consulta.Size = new System.Drawing.Size(38, 38);
             this.btn_salir_consulta.TabIndex = 42;
@@ -80,8 +84,8 @@
             this.dgv_clientes.AllowUserToDeleteRows = false;
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.LightSteelBlue;
             this.dgv_clientes.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
-            this.dgv_clientes.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.dgv_clientes.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
+                        | System.Windows.Forms.AnchorStyles.Right)));
             this.dgv_clientes.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgv_clientes.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgv_clientes.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -110,12 +114,12 @@
             this.fecha,
             this.sexo,
             this.idPersona});
-            this.dgv_clientes.Location = new System.Drawing.Point(12, 12);
+            this.dgv_clientes.Location = new System.Drawing.Point(6, 19);
             this.dgv_clientes.MultiSelect = false;
             this.dgv_clientes.Name = "dgv_clientes";
             this.dgv_clientes.ReadOnly = true;
             this.dgv_clientes.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgv_clientes.Size = new System.Drawing.Size(647, 301);
+            this.dgv_clientes.Size = new System.Drawing.Size(621, 217);
             this.dgv_clientes.TabIndex = 43;
             this.dgv_clientes.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_clientes_CellDoubleClick);
             // 
@@ -293,7 +297,7 @@
             this.btn_limpiar_filtros.AutoSize = true;
             this.btn_limpiar_filtros.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.btn_limpiar_filtros.Image = global::Vista.Properties.Resources.new10;
-            this.btn_limpiar_filtros.Location = new System.Drawing.Point(466, 355);
+            this.btn_limpiar_filtros.Location = new System.Drawing.Point(468, 21);
             this.btn_limpiar_filtros.Name = "btn_limpiar_filtros";
             this.btn_limpiar_filtros.Size = new System.Drawing.Size(38, 36);
             this.btn_limpiar_filtros.TabIndex = 44;
@@ -304,24 +308,47 @@
             // 
             this.helpProviderFiltroClientes.HelpNamespace = ".\\Ayuda\\Luiggi.chm";
             // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.dgv_clientes);
+            this.groupBox1.Location = new System.Drawing.Point(12, 12);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(633, 244);
+            this.groupBox1.TabIndex = 45;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "Resultado";
+            // 
+            // groupBox2
+            // 
+            this.groupBox2.Controls.Add(this.btn_salir_consulta);
+            this.groupBox2.Controls.Add(this.btn_limpiar_filtros);
+            this.groupBox2.Location = new System.Drawing.Point(12, 262);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(633, 67);
+            this.groupBox2.TabIndex = 46;
+            this.groupBox2.TabStop = false;
+            // 
             // ResultadoDeFiltro
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(671, 414);
-            this.Controls.Add(this.btn_limpiar_filtros);
-            this.Controls.Add(this.dgv_clientes);
-            this.Controls.Add(this.btn_salir_consulta);
+            this.ClientSize = new System.Drawing.Size(652, 336);
+            this.Controls.Add(this.groupBox2);
+            this.Controls.Add(this.groupBox1);
             this.helpProviderFiltroClientes.SetHelpKeyword(this, "32");
             this.helpProviderFiltroClientes.SetHelpNavigator(this, System.Windows.Forms.HelpNavigator.TopicId);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "ResultadoDeFiltro";
             this.helpProviderFiltroClientes.SetShowHelp(this, true);
-            this.Text = "ResultadoDeFiltro";
+            this.Text = "Resultado de Filtro";
             this.Load += new System.EventHandler(this.ResultadoDeFiltro_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgv_clientes)).EndInit();
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox2.ResumeLayout(false);
+            this.groupBox2.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -356,5 +383,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn idPersona;
         private System.Windows.Forms.Button btn_limpiar_filtros;
         private System.Windows.Forms.HelpProvider helpProviderFiltroClientes;
+        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.GroupBox groupBox2;
     }
 }

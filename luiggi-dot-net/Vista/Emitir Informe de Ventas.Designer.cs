@@ -30,6 +30,7 @@
         {
             this.components = new System.ComponentModel.Container();
             Microsoft.Reporting.WinForms.ReportDataSource reportDataSource1 = new Microsoft.Reporting.WinForms.ReportDataSource();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Emitir_Informe_de_Ventas));
             this.VolumenBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.DataSetInformeVolumenVentas = new Vista.DataSetInformeVolumenVentas();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
@@ -150,6 +151,7 @@
             this.ClientSize = new System.Drawing.Size(975, 750);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.groupBox2);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Emitir_Informe_de_Ventas";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Emitir Informe de Ventas";

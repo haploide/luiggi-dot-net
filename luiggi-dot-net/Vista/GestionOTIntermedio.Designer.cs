@@ -381,6 +381,8 @@
             this.Controls.Add(this.label4);
             this.Controls.Add(this.dtp_creacion_OT);
             this.Controls.Add(this.label1);
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "GestionOTIntermedio";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Gestion Orden Trabajo de Productos Intermedio";

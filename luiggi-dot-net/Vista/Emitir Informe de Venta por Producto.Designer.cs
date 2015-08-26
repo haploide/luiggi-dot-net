@@ -30,6 +30,7 @@
         {
             this.components = new System.ComponentModel.Container();
             Microsoft.Reporting.WinForms.ReportDataSource reportDataSource1 = new Microsoft.Reporting.WinForms.ReportDataSource();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Emitir_Informe_de_Venta_por_Producto));
             this.ProductosBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.DataSetInformeVentasProductos = new Vista.DataSetInformeVentasProductos();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
@@ -38,8 +39,8 @@
             this.dtp_fecha_hasta = new System.Windows.Forms.DateTimePicker();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.dtp_fecha_desde = new System.Windows.Forms.DateTimePicker();
             this.btn_aplicar_filtro = new System.Windows.Forms.Button();
+            this.dtp_fecha_desde = new System.Windows.Forms.DateTimePicker();
             ((System.ComponentModel.ISupportInitialize)(this.ProductosBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.DataSetInformeVentasProductos)).BeginInit();
             this.groupBox1.SuspendLayout();
@@ -121,16 +122,6 @@
             this.label1.TabIndex = 37;
             this.label1.Text = "Fecha Desde";
             // 
-            // dtp_fecha_desde
-            // 
-            this.dtp_fecha_desde.CustomFormat = "";
-            this.dtp_fecha_desde.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dtp_fecha_desde.Location = new System.Drawing.Point(107, 30);
-            this.dtp_fecha_desde.Name = "dtp_fecha_desde";
-            this.dtp_fecha_desde.Size = new System.Drawing.Size(96, 20);
-            this.dtp_fecha_desde.TabIndex = 0;
-            this.dtp_fecha_desde.ValueChanged += new System.EventHandler(this.dtp_fecha_desde_ValueChanged);
-            // 
             // btn_aplicar_filtro
             // 
             this.btn_aplicar_filtro.AutoSize = true;
@@ -143,6 +134,16 @@
             this.btn_aplicar_filtro.UseVisualStyleBackColor = true;
             this.btn_aplicar_filtro.Click += new System.EventHandler(this.btn_aplicar_filtro_Click);
             // 
+            // dtp_fecha_desde
+            // 
+            this.dtp_fecha_desde.CustomFormat = "";
+            this.dtp_fecha_desde.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dtp_fecha_desde.Location = new System.Drawing.Point(107, 30);
+            this.dtp_fecha_desde.Name = "dtp_fecha_desde";
+            this.dtp_fecha_desde.Size = new System.Drawing.Size(96, 20);
+            this.dtp_fecha_desde.TabIndex = 0;
+            this.dtp_fecha_desde.ValueChanged += new System.EventHandler(this.dtp_fecha_desde_ValueChanged);
+            // 
             // Emitir_Informe_de_Venta_por_Producto
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -150,6 +151,7 @@
             this.ClientSize = new System.Drawing.Size(1002, 800);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Emitir_Informe_de_Venta_por_Producto";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Emitir Informe de Venta por Producto";

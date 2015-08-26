@@ -181,7 +181,7 @@
             this.groupBox2.Controls.Add(this.btn_salir);
             this.groupBox2.Controls.Add(this.btn_guardar);
             this.groupBox2.Controls.Add(this.btn_nuevo);
-            this.groupBox2.Location = new System.Drawing.Point(12, 218);
+            this.groupBox2.Location = new System.Drawing.Point(12, 205);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(356, 66);
             this.groupBox2.TabIndex = 9;
@@ -227,9 +227,11 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(385, 301);
+            this.ClientSize = new System.Drawing.Size(377, 277);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox4);
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "Gestion_de_Empleado";
             this.Text = "Gestion_de_Empleado";
             this.Load += new System.EventHandler(this.Gestion_de_Empleado_Load);

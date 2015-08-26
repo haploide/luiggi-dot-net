@@ -71,8 +71,10 @@
             this.label18 = new System.Windows.Forms.Label();
             this.tab_persona_cliente = new System.Windows.Forms.TabControl();
             this.Persona = new System.Windows.Forms.TabPage();
+            this.btn_verificar_existencia_persona = new System.Windows.Forms.Button();
             this.empresa = new System.Windows.Forms.TabPage();
             this.txt_cuit = new System.Windows.Forms.MaskedTextBox();
+            this.btn_verificar_existencia_empresa = new System.Windows.Forms.Button();
             this.label17 = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
@@ -80,8 +82,6 @@
             this.txt_mail = new System.Windows.Forms.TextBox();
             this.label14 = new System.Windows.Forms.Label();
             this.helpProviderGesCli = new System.Windows.Forms.HelpProvider();
-            this.btn_verificar_existencia_persona = new System.Windows.Forms.Button();
-            this.btn_verificar_existencia_empresa = new System.Windows.Forms.Button();
             this.btn_nuevo = new System.Windows.Forms.Button();
             this.btn_guardar = new System.Windows.Forms.Button();
             this.btn_salir = new System.Windows.Forms.Button();
@@ -534,6 +534,18 @@
             this.Persona.TabIndex = 0;
             this.Persona.Text = "Persona";
             // 
+            // btn_verificar_existencia_persona
+            // 
+            this.btn_verificar_existencia_persona.AutoSize = true;
+            this.btn_verificar_existencia_persona.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.btn_verificar_existencia_persona.Image = global::Vista.Properties.Resources.magnifier14;
+            this.btn_verificar_existencia_persona.Location = new System.Drawing.Point(193, 42);
+            this.btn_verificar_existencia_persona.Name = "btn_verificar_existencia_persona";
+            this.btn_verificar_existencia_persona.Size = new System.Drawing.Size(22, 22);
+            this.btn_verificar_existencia_persona.TabIndex = 3;
+            this.btn_verificar_existencia_persona.UseVisualStyleBackColor = true;
+            this.btn_verificar_existencia_persona.Click += new System.EventHandler(this.btn_verificar_existencia_persona_Click);
+            // 
             // empresa
             // 
             this.empresa.BackColor = System.Drawing.SystemColors.Control;
@@ -557,6 +569,18 @@
             this.txt_cuit.Size = new System.Drawing.Size(100, 20);
             this.txt_cuit.TabIndex = 1;
             this.txt_cuit.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_nro_doc_KeyPress);
+            // 
+            // btn_verificar_existencia_empresa
+            // 
+            this.btn_verificar_existencia_empresa.AutoSize = true;
+            this.btn_verificar_existencia_empresa.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.btn_verificar_existencia_empresa.Image = global::Vista.Properties.Resources.magnifier14;
+            this.btn_verificar_existencia_empresa.Location = new System.Drawing.Point(197, 12);
+            this.btn_verificar_existencia_empresa.Name = "btn_verificar_existencia_empresa";
+            this.btn_verificar_existencia_empresa.Size = new System.Drawing.Size(22, 22);
+            this.btn_verificar_existencia_empresa.TabIndex = 2;
+            this.btn_verificar_existencia_empresa.UseVisualStyleBackColor = true;
+            this.btn_verificar_existencia_empresa.Click += new System.EventHandler(this.btn_verificar_existencia_empresa_Click);
             // 
             // label17
             // 
@@ -617,30 +641,6 @@
             // 
             this.helpProviderGesCli.HelpNamespace = ".\\Ayuda\\Luiggi.chm";
             // 
-            // btn_verificar_existencia_persona
-            // 
-            this.btn_verificar_existencia_persona.AutoSize = true;
-            this.btn_verificar_existencia_persona.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.btn_verificar_existencia_persona.Image = global::Vista.Properties.Resources.magnifier14;
-            this.btn_verificar_existencia_persona.Location = new System.Drawing.Point(193, 42);
-            this.btn_verificar_existencia_persona.Name = "btn_verificar_existencia_persona";
-            this.btn_verificar_existencia_persona.Size = new System.Drawing.Size(22, 22);
-            this.btn_verificar_existencia_persona.TabIndex = 3;
-            this.btn_verificar_existencia_persona.UseVisualStyleBackColor = true;
-            this.btn_verificar_existencia_persona.Click += new System.EventHandler(this.btn_verificar_existencia_persona_Click);
-            // 
-            // btn_verificar_existencia_empresa
-            // 
-            this.btn_verificar_existencia_empresa.AutoSize = true;
-            this.btn_verificar_existencia_empresa.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.btn_verificar_existencia_empresa.Image = global::Vista.Properties.Resources.magnifier14;
-            this.btn_verificar_existencia_empresa.Location = new System.Drawing.Point(197, 12);
-            this.btn_verificar_existencia_empresa.Name = "btn_verificar_existencia_empresa";
-            this.btn_verificar_existencia_empresa.Size = new System.Drawing.Size(22, 22);
-            this.btn_verificar_existencia_empresa.TabIndex = 2;
-            this.btn_verificar_existencia_empresa.UseVisualStyleBackColor = true;
-            this.btn_verificar_existencia_empresa.Click += new System.EventHandler(this.btn_verificar_existencia_empresa_Click);
-            // 
             // btn_nuevo
             // 
             this.btn_nuevo.AutoSize = true;
@@ -700,10 +700,12 @@
             this.helpProviderGesCli.SetHelpNavigator(this, System.Windows.Forms.HelpNavigator.TopicId);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.KeyPreview = true;
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "Gestion_de_Clientes";
             this.helpProviderGesCli.SetShowHelp(this, true);
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
-            this.Text = "Gestion_de_Clientes";
+            this.Text = "Gestion de Clientes";
             this.Load += new System.EventHandler(this.Gestion_de_Clientes_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();

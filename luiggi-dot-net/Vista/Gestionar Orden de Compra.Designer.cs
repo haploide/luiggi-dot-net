@@ -28,16 +28,16 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle13 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle14 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle15 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle16 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle17 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle18 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle19 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle20 = new System.Windows.Forms.DataGridViewCellStyle();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.btn_salir = new System.Windows.Forms.Button();
             this.btn_guardar = new System.Windows.Forms.Button();
@@ -98,7 +98,7 @@
             this.groupBox2.Controls.Add(this.btn_nuevo);
             this.groupBox2.Location = new System.Drawing.Point(12, 522);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(635, 66);
+            this.groupBox2.Size = new System.Drawing.Size(650, 66);
             this.groupBox2.TabIndex = 41;
             this.groupBox2.TabStop = false;
             // 
@@ -107,7 +107,7 @@
             this.btn_salir.AutoSize = true;
             this.btn_salir.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.btn_salir.Image = global::Vista.Properties.Resources.exit6;
-            this.btn_salir.Location = new System.Drawing.Point(582, 19);
+            this.btn_salir.Location = new System.Drawing.Point(589, 19);
             this.btn_salir.Name = "btn_salir";
             this.btn_salir.Size = new System.Drawing.Size(38, 38);
             this.btn_salir.TabIndex = 2;
@@ -120,7 +120,7 @@
             this.btn_guardar.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.btn_guardar.Enabled = false;
             this.btn_guardar.Image = global::Vista.Properties.Resources.floppy1;
-            this.btn_guardar.Location = new System.Drawing.Point(465, 19);
+            this.btn_guardar.Location = new System.Drawing.Point(472, 19);
             this.btn_guardar.Name = "btn_guardar";
             this.btn_guardar.Size = new System.Drawing.Size(38, 38);
             this.btn_guardar.TabIndex = 0;
@@ -132,7 +132,7 @@
             this.btn_nuevo.AutoSize = true;
             this.btn_nuevo.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.btn_nuevo.Image = global::Vista.Properties.Resources.mop2;
-            this.btn_nuevo.Location = new System.Drawing.Point(421, 19);
+            this.btn_nuevo.Location = new System.Drawing.Point(428, 19);
             this.btn_nuevo.Name = "btn_nuevo";
             this.btn_nuevo.Size = new System.Drawing.Size(38, 38);
             this.btn_nuevo.TabIndex = 1;
@@ -211,7 +211,7 @@
             // 
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(493, 396);
+            this.label11.Location = new System.Drawing.Point(505, 396);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(15, 16);
             this.label11.TabIndex = 73;
@@ -229,8 +229,8 @@
             // 
             this.dgv_detalle.AllowUserToAddRows = false;
             this.dgv_detalle.AllowUserToDeleteRows = false;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.LightSteelBlue;
-            this.dgv_detalle.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle11.BackColor = System.Drawing.Color.LightSteelBlue;
+            this.dgv_detalle.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle11;
             this.dgv_detalle.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgv_detalle.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgv_detalle.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -266,18 +266,18 @@
             // 
             // preciodetalle
             // 
-            dataGridViewCellStyle2.Format = "C2";
-            dataGridViewCellStyle2.NullValue = null;
-            this.preciodetalle.DefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle12.Format = "C2";
+            dataGridViewCellStyle12.NullValue = null;
+            this.preciodetalle.DefaultCellStyle = dataGridViewCellStyle12;
             this.preciodetalle.HeaderText = "Precio";
             this.preciodetalle.Name = "preciodetalle";
             this.preciodetalle.ReadOnly = true;
             // 
             // cantidad
             // 
-            dataGridViewCellStyle3.Format = "N2";
-            dataGridViewCellStyle3.NullValue = null;
-            this.cantidad.DefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle13.Format = "N2";
+            dataGridViewCellStyle13.NullValue = null;
+            this.cantidad.DefaultCellStyle = dataGridViewCellStyle13;
             this.cantidad.HeaderText = "Cantidad";
             this.cantidad.Name = "cantidad";
             this.cantidad.ReadOnly = true;
@@ -290,9 +290,9 @@
             // 
             // sub
             // 
-            dataGridViewCellStyle4.Format = "C2";
-            dataGridViewCellStyle4.NullValue = null;
-            this.sub.DefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle14.Format = "C2";
+            dataGridViewCellStyle14.NullValue = null;
+            this.sub.DefaultCellStyle = dataGridViewCellStyle14;
             this.sub.HeaderText = "SubTotal";
             this.sub.Name = "sub";
             this.sub.ReadOnly = true;
@@ -314,9 +314,9 @@
             // btn_quitar
             // 
             this.btn_quitar.Enabled = false;
-            this.btn_quitar.Location = new System.Drawing.Point(405, 204);
+            this.btn_quitar.Location = new System.Drawing.Point(405, 203);
             this.btn_quitar.Name = "btn_quitar";
-            this.btn_quitar.Size = new System.Drawing.Size(75, 20);
+            this.btn_quitar.Size = new System.Drawing.Size(75, 21);
             this.btn_quitar.TabIndex = 7;
             this.btn_quitar.Text = "Quitar";
             this.btn_quitar.UseVisualStyleBackColor = true;
@@ -325,7 +325,7 @@
             // txt_monto_total
             // 
             this.txt_monto_total.Enabled = false;
-            this.txt_monto_total.Location = new System.Drawing.Point(514, 395);
+            this.txt_monto_total.Location = new System.Drawing.Point(525, 394);
             this.txt_monto_total.MaxLength = 6;
             this.txt_monto_total.Name = "txt_monto_total";
             this.txt_monto_total.Size = new System.Drawing.Size(100, 20);
@@ -354,7 +354,7 @@
             // txt_cantidad
             // 
             this.txt_cantidad.Enabled = false;
-            this.txt_cantidad.Location = new System.Drawing.Point(165, 204);
+            this.txt_cantidad.Location = new System.Drawing.Point(165, 203);
             this.txt_cantidad.MaxLength = 6;
             this.txt_cantidad.Name = "txt_cantidad";
             this.txt_cantidad.Size = new System.Drawing.Size(100, 20);
@@ -364,7 +364,7 @@
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(417, 398);
+            this.label7.Location = new System.Drawing.Point(433, 398);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(67, 13);
             this.label7.TabIndex = 71;
@@ -374,10 +374,10 @@
             // 
             this.dgv_productos.AllowUserToAddRows = false;
             this.dgv_productos.AllowUserToDeleteRows = false;
-            dataGridViewCellStyle5.BackColor = System.Drawing.Color.LightSteelBlue;
-            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.MenuHighlight;
-            this.dgv_productos.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle15.BackColor = System.Drawing.Color.LightSteelBlue;
+            dataGridViewCellStyle15.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle15.SelectionBackColor = System.Drawing.SystemColors.MenuHighlight;
+            this.dgv_productos.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle15;
             this.dgv_productos.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgv_productos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgv_productos.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -425,9 +425,9 @@
             // 
             // precio
             // 
-            dataGridViewCellStyle6.Format = "C2";
-            dataGridViewCellStyle6.NullValue = null;
-            this.precio.DefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle16.Format = "C2";
+            dataGridViewCellStyle16.NullValue = null;
+            this.precio.DefaultCellStyle = dataGridViewCellStyle16;
             this.precio.HeaderText = "Precio";
             this.precio.Name = "precio";
             this.precio.ReadOnly = true;
@@ -440,18 +440,18 @@
             // 
             // stcokRiesgo
             // 
-            dataGridViewCellStyle7.Format = "N2";
-            dataGridViewCellStyle7.NullValue = null;
-            this.stcokRiesgo.DefaultCellStyle = dataGridViewCellStyle7;
+            dataGridViewCellStyle17.Format = "N2";
+            dataGridViewCellStyle17.NullValue = null;
+            this.stcokRiesgo.DefaultCellStyle = dataGridViewCellStyle17;
             this.stcokRiesgo.HeaderText = "Stock Riesgo";
             this.stcokRiesgo.Name = "stcokRiesgo";
             this.stcokRiesgo.ReadOnly = true;
             // 
             // stockActual
             // 
-            dataGridViewCellStyle8.Format = "N2";
-            dataGridViewCellStyle8.NullValue = null;
-            this.stockActual.DefaultCellStyle = dataGridViewCellStyle8;
+            dataGridViewCellStyle18.Format = "N2";
+            dataGridViewCellStyle18.NullValue = null;
+            this.stockActual.DefaultCellStyle = dataGridViewCellStyle18;
             this.stockActual.HeaderText = "Stock Actual";
             this.stockActual.Name = "stockActual";
             this.stockActual.ReadOnly = true;
@@ -459,18 +459,18 @@
             // 
             // stockDisponible
             // 
-            dataGridViewCellStyle9.Format = "N2";
-            dataGridViewCellStyle9.NullValue = null;
-            this.stockDisponible.DefaultCellStyle = dataGridViewCellStyle9;
+            dataGridViewCellStyle19.Format = "N2";
+            dataGridViewCellStyle19.NullValue = null;
+            this.stockDisponible.DefaultCellStyle = dataGridViewCellStyle19;
             this.stockDisponible.HeaderText = "Stock Disponible";
             this.stockDisponible.Name = "stockDisponible";
             this.stockDisponible.ReadOnly = true;
             // 
             // stockReservado
             // 
-            dataGridViewCellStyle10.Format = "N2";
-            dataGridViewCellStyle10.NullValue = null;
-            this.stockReservado.DefaultCellStyle = dataGridViewCellStyle10;
+            dataGridViewCellStyle20.Format = "N2";
+            dataGridViewCellStyle20.NullValue = null;
+            this.stockReservado.DefaultCellStyle = dataGridViewCellStyle20;
             this.stockReservado.HeaderText = "Stock Reservado";
             this.stockReservado.Name = "stockReservado";
             this.stockReservado.ReadOnly = true;
@@ -569,8 +569,11 @@
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.dtp_creacion_OT);
             this.Controls.Add(this.label1);
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "Gestionar_Orden_de_Compra";
-            this.Text = "Gestionar_Orden_de_Compra";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
+            this.Text = "Gestionar Orden de Compra";
             this.Load += new System.EventHandler(this.Gestionar_Orden_de_Compra_Load);
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();

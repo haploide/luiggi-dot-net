@@ -30,6 +30,7 @@
         {
             this.components = new System.ComponentModel.Container();
             Microsoft.Reporting.WinForms.ReportDataSource reportDataSource1 = new Microsoft.Reporting.WinForms.ReportDataSource();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Emitir_Factura));
             this.FacturaBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.DataSetFactura = new Vista.DataSetFactura();
             this.reportViewer1 = new Microsoft.Reporting.WinForms.ReportViewer();
@@ -72,8 +73,10 @@
             this.Controls.Add(this.reportViewer1);
             this.helpProviderEmitirFactura.SetHelpKeyword(this, "31");
             this.helpProviderEmitirFactura.SetHelpNavigator(this, System.Windows.Forms.HelpNavigator.TopicId);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Emitir_Factura";
             this.helpProviderEmitirFactura.SetShowHelp(this, true);
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Emitir Factura";
             this.Load += new System.EventHandler(this.Emitir_Factura_Load);
             ((System.ComponentModel.ISupportInitialize)(this.FacturaBindingSource)).EndInit();

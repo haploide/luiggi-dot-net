@@ -434,7 +434,7 @@
             this.groupBox3.Controls.Add(this.dtp_fecha_factura);
             this.groupBox3.Location = new System.Drawing.Point(347, 12);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(294, 144);
+            this.groupBox3.Size = new System.Drawing.Size(300, 144);
             this.groupBox3.TabIndex = 46;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Datos del Presupuesto";
@@ -490,7 +490,7 @@
             // txt_nroFactura
             // 
             this.txt_nroFactura.Enabled = false;
-            this.txt_nroFactura.Location = new System.Drawing.Point(103, 88);
+            this.txt_nroFactura.Location = new System.Drawing.Point(103, 92);
             this.txt_nroFactura.Name = "txt_nroFactura";
             this.txt_nroFactura.Size = new System.Drawing.Size(98, 20);
             this.txt_nroFactura.TabIndex = 48;
@@ -709,6 +709,8 @@
             this.Controls.Add(this.groupBox2);
             this.HelpButton = true;
             this.KeyPreview = true;
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "Gestion_presupuesto";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Gestion de Presupuesto";

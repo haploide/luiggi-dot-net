@@ -72,7 +72,7 @@
             this.groupBox2.Controls.Add(this.btn_salir);
             this.groupBox2.Controls.Add(this.btn_guardar);
             this.groupBox2.Controls.Add(this.btn_nuevo);
-            this.groupBox2.Location = new System.Drawing.Point(24, 376);
+            this.groupBox2.Location = new System.Drawing.Point(12, 291);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(637, 66);
             this.groupBox2.TabIndex = 3;
@@ -83,7 +83,7 @@
             this.btn_salir.AutoSize = true;
             this.btn_salir.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.btn_salir.Image = global::Vista.Properties.Resources.exit6;
-            this.btn_salir.Location = new System.Drawing.Point(587, 19);
+            this.btn_salir.Location = new System.Drawing.Point(593, 19);
             this.btn_salir.Name = "btn_salir";
             this.btn_salir.Size = new System.Drawing.Size(38, 38);
             this.btn_salir.TabIndex = 22;
@@ -96,7 +96,7 @@
             this.btn_guardar.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.btn_guardar.Enabled = false;
             this.btn_guardar.Image = global::Vista.Properties.Resources.floppy1;
-            this.btn_guardar.Location = new System.Drawing.Point(472, 19);
+            this.btn_guardar.Location = new System.Drawing.Point(478, 19);
             this.btn_guardar.Name = "btn_guardar";
             this.btn_guardar.Size = new System.Drawing.Size(38, 38);
             this.btn_guardar.TabIndex = 20;
@@ -108,7 +108,7 @@
             this.btn_nuevo.AutoSize = true;
             this.btn_nuevo.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.btn_nuevo.Image = global::Vista.Properties.Resources.mop2;
-            this.btn_nuevo.Location = new System.Drawing.Point(428, 19);
+            this.btn_nuevo.Location = new System.Drawing.Point(434, 19);
             this.btn_nuevo.Name = "btn_nuevo";
             this.btn_nuevo.Size = new System.Drawing.Size(38, 38);
             this.btn_nuevo.TabIndex = 21;
@@ -129,9 +129,9 @@
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.groupBox3);
             this.groupBox1.Controls.Add(this.groupBox4);
-            this.groupBox1.Location = new System.Drawing.Point(18, 22);
+            this.groupBox1.Location = new System.Drawing.Point(12, 12);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(637, 348);
+            this.groupBox1.Size = new System.Drawing.Size(637, 273);
             this.groupBox1.TabIndex = 2;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Gestion de Proveedores";
@@ -233,7 +233,7 @@
             // 
             this.groupBox3.Location = new System.Drawing.Point(347, 19);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(268, 310);
+            this.groupBox3.Size = new System.Drawing.Size(268, 244);
             this.groupBox3.TabIndex = 1;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Direccion";
@@ -254,7 +254,7 @@
             this.groupBox4.Controls.Add(this.label14);
             this.groupBox4.Location = new System.Drawing.Point(15, 19);
             this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Size = new System.Drawing.Size(317, 310);
+            this.groupBox4.Size = new System.Drawing.Size(317, 244);
             this.groupBox4.TabIndex = 7;
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "Datos del Proveedor";
@@ -315,7 +315,6 @@
             this.txt_cuit.Name = "txt_cuit";
             this.txt_cuit.Size = new System.Drawing.Size(100, 20);
             this.txt_cuit.TabIndex = 80;
-  
             // 
             // label2
             // 
@@ -359,7 +358,7 @@
             // label17
             // 
             this.label17.AutoSize = true;
-            this.label17.Location = new System.Drawing.Point(180, 232);
+            this.label17.Location = new System.Drawing.Point(181, 206);
             this.label17.Name = "label17";
             this.label17.Size = new System.Drawing.Size(90, 13);
             this.label17.TabIndex = 66;
@@ -368,7 +367,7 @@
             // label16
             // 
             this.label16.AutoSize = true;
-            this.label16.Location = new System.Drawing.Point(84, 232);
+            this.label16.Location = new System.Drawing.Point(85, 206);
             this.label16.Name = "label16";
             this.label16.Size = new System.Drawing.Size(13, 13);
             this.label16.TabIndex = 65;
@@ -377,7 +376,7 @@
             // label13
             // 
             this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(4, 236);
+            this.label13.Location = new System.Drawing.Point(5, 210);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(49, 13);
             this.label13.TabIndex = 64;
@@ -386,7 +385,7 @@
             // txt_telefono
             // 
             this.txt_telefono.Enabled = false;
-            this.txt_telefono.Location = new System.Drawing.Point(96, 229);
+            this.txt_telefono.Location = new System.Drawing.Point(97, 203);
             this.txt_telefono.Mask = "9999-000000";
             this.txt_telefono.Name = "txt_telefono";
             this.txt_telefono.Size = new System.Drawing.Size(78, 20);
@@ -395,7 +394,7 @@
             // txt_mail
             // 
             this.txt_mail.Enabled = false;
-            this.txt_mail.Location = new System.Drawing.Point(97, 204);
+            this.txt_mail.Location = new System.Drawing.Point(98, 178);
             this.txt_mail.MaxLength = 50;
             this.txt_mail.Name = "txt_mail";
             this.txt_mail.Size = new System.Drawing.Size(201, 20);
@@ -404,7 +403,7 @@
             // label14
             // 
             this.label14.AutoSize = true;
-            this.label14.Location = new System.Drawing.Point(5, 207);
+            this.label14.Location = new System.Drawing.Point(6, 181);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(34, 13);
             this.label14.TabIndex = 63;
@@ -414,11 +413,14 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(673, 455);
+            this.ClientSize = new System.Drawing.Size(659, 365);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "Gestion_de_Proveedores";
-            this.Text = "Gestion_de_Proveedores";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
+            this.Text = "Gestion de Proveedores";
             this.Load += new System.EventHandler(this.Gestion_de_Proveedores_Load);
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();

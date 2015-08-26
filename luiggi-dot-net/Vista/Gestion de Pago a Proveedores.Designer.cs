@@ -38,7 +38,7 @@
             this.responsable = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.total = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.fecPago = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.estado = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Estado = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.idEstado = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.opciones = new System.Windows.Forms.DataGridViewButtonColumn();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
@@ -87,7 +87,7 @@
             // groupBox1
             // 
             this.groupBox1.Controls.Add(this.dgv_Orden_Compra);
-            this.groupBox1.Location = new System.Drawing.Point(2, 3);
+            this.groupBox1.Location = new System.Drawing.Point(12, 12);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(929, 264);
             this.groupBox1.TabIndex = 58;
@@ -111,7 +111,7 @@
             this.responsable,
             this.total,
             this.fecPago,
-            this.estado,
+            this.Estado,
             this.idEstado,
             this.opciones});
             this.dgv_Orden_Compra.Location = new System.Drawing.Point(6, 19);
@@ -172,9 +172,9 @@
             // 
             // Estado
             // 
-            this.estado.HeaderText = "Estado";
-            this.estado.Name = "Estado";
-            this.estado.ReadOnly = true;
+            this.Estado.HeaderText = "Estado";
+            this.Estado.Name = "Estado";
+            this.Estado.ReadOnly = true;
             // 
             // idEstado
             // 
@@ -192,7 +192,7 @@
             // groupBox3
             // 
             this.groupBox3.Controls.Add(this.dgv_detalle_orden_compra);
-            this.groupBox3.Location = new System.Drawing.Point(2, 273);
+            this.groupBox3.Location = new System.Drawing.Point(12, 282);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Size = new System.Drawing.Size(929, 189);
             this.groupBox3.TabIndex = 59;
@@ -289,7 +289,7 @@
             // 
             this.groupBox2.Controls.Add(this.btn_nuevo);
             this.groupBox2.Controls.Add(this.btn_salir_consulta);
-            this.groupBox2.Location = new System.Drawing.Point(2, 591);
+            this.groupBox2.Location = new System.Drawing.Point(12, 600);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(929, 59);
             this.groupBox2.TabIndex = 60;
@@ -527,7 +527,7 @@
             this.gp_filtros.Controls.Add(this.dtp_desde);
             this.gp_filtros.Controls.Add(this.label2);
             this.gp_filtros.Controls.Add(this.label1);
-            this.gp_filtros.Location = new System.Drawing.Point(2, 468);
+            this.gp_filtros.Location = new System.Drawing.Point(12, 477);
             this.gp_filtros.Name = "gp_filtros";
             this.gp_filtros.Size = new System.Drawing.Size(929, 107);
             this.gp_filtros.TabIndex = 61;
@@ -537,7 +537,7 @@
             // Gestion_de_Pago_a_Proveedores
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Inherit;
-            this.ClientSize = new System.Drawing.Size(935, 679);
+            this.ClientSize = new System.Drawing.Size(949, 665);
             this.Controls.Add(this.gp_filtros);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
@@ -608,5 +608,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn estado;
         private System.Windows.Forms.DataGridViewTextBoxColumn idEstado;
         private System.Windows.Forms.DataGridViewButtonColumn opciones;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Estado;
     }
 }
