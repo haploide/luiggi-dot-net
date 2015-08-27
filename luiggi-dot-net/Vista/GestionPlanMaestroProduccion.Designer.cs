@@ -269,7 +269,7 @@
             this.groupBox4.Controls.Add(this.dgv_productos_finales);
             this.groupBox4.Location = new System.Drawing.Point(12, 122);
             this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Size = new System.Drawing.Size(677, 541);
+            this.groupBox4.Size = new System.Drawing.Size(677, 608);
             this.groupBox4.TabIndex = 45;
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "Detalle de Plan Maestro de Producción";
@@ -277,7 +277,7 @@
             // lbl_unidad
             // 
             this.lbl_unidad.AutoSize = true;
-            this.lbl_unidad.Location = new System.Drawing.Point(260, 205);
+            this.lbl_unidad.Location = new System.Drawing.Point(260, 272);
             this.lbl_unidad.Name = "lbl_unidad";
             this.lbl_unidad.Size = new System.Drawing.Size(0, 13);
             this.lbl_unidad.TabIndex = 7;
@@ -292,7 +292,7 @@
             this.tab_dias.Controls.Add(this.viernes);
             this.tab_dias.Controls.Add(this.sabado);
             this.tab_dias.Enabled = false;
-            this.tab_dias.Location = new System.Drawing.Point(9, 229);
+            this.tab_dias.Location = new System.Drawing.Point(9, 296);
             this.tab_dias.Name = "tab_dias";
             this.tab_dias.SelectedIndex = 0;
             this.tab_dias.Size = new System.Drawing.Size(662, 306);
@@ -415,6 +415,7 @@
             dataGridViewCellStyle2.BackColor = System.Drawing.Color.LightSteelBlue;
             dataGridViewCellStyle2.ForeColor = System.Drawing.Color.Black;
             this.dgv_detalle_lunes.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle2;
+            this.dgv_detalle_lunes.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgv_detalle_lunes.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgv_detalle_lunes.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.idProductodetalle,
@@ -453,35 +454,30 @@
             this.fechaProduccion.Name = "fechaProduccion";
             this.fechaProduccion.ReadOnly = true;
             this.fechaProduccion.Visible = false;
-            this.fechaProduccion.Width = 80;
             // 
             // cantidadPlan
             // 
             this.cantidadPlan.HeaderText = "Cantidad Planificada";
             this.cantidadPlan.Name = "cantidadPlan";
             this.cantidadPlan.ReadOnly = true;
-            this.cantidadPlan.Width = 65;
             // 
             // cantidadPedidos
             // 
             this.cantidadPedidos.HeaderText = "Cantidad de Pedidos";
             this.cantidadPedidos.Name = "cantidadPedidos";
             this.cantidadPedidos.ReadOnly = true;
-            this.cantidadPedidos.Width = 65;
             // 
             // cantidadTotal
             // 
             this.cantidadTotal.HeaderText = "Cantidad Total a Producir";
             this.cantidadTotal.Name = "cantidadTotal";
             this.cantidadTotal.ReadOnly = true;
-            this.cantidadTotal.Width = 65;
             // 
             // unidadmedida
             // 
             this.unidadmedida.HeaderText = "Unidad de Medida";
             this.unidadmedida.Name = "unidadmedida";
             this.unidadmedida.ReadOnly = true;
-            this.unidadmedida.Width = 60;
             // 
             // pedidos
             // 
@@ -517,6 +513,7 @@
             dataGridViewCellStyle3.BackColor = System.Drawing.Color.LightSteelBlue;
             dataGridViewCellStyle3.ForeColor = System.Drawing.Color.Black;
             this.dgv_detalle_martes.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle3;
+            this.dgv_detalle_martes.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgv_detalle_martes.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgv_detalle_martes.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.dataGridViewTextBoxColumn1,
@@ -555,35 +552,30 @@
             this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
             this.dataGridViewTextBoxColumn3.ReadOnly = true;
             this.dataGridViewTextBoxColumn3.Visible = false;
-            this.dataGridViewTextBoxColumn3.Width = 80;
             // 
             // dataGridViewTextBoxColumn4
             // 
             this.dataGridViewTextBoxColumn4.HeaderText = "Cantidad Planificada";
             this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
             this.dataGridViewTextBoxColumn4.ReadOnly = true;
-            this.dataGridViewTextBoxColumn4.Width = 65;
             // 
             // dataGridViewTextBoxColumn5
             // 
             this.dataGridViewTextBoxColumn5.HeaderText = "Cantidad de Pedidos";
             this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
             this.dataGridViewTextBoxColumn5.ReadOnly = true;
-            this.dataGridViewTextBoxColumn5.Width = 65;
             // 
             // dataGridViewTextBoxColumn6
             // 
             this.dataGridViewTextBoxColumn6.HeaderText = "Cantidad Total a Producir";
             this.dataGridViewTextBoxColumn6.Name = "dataGridViewTextBoxColumn6";
             this.dataGridViewTextBoxColumn6.ReadOnly = true;
-            this.dataGridViewTextBoxColumn6.Width = 65;
             // 
             // dataGridViewTextBoxColumn7
             // 
             this.dataGridViewTextBoxColumn7.HeaderText = "Unidad de Medida";
             this.dataGridViewTextBoxColumn7.Name = "dataGridViewTextBoxColumn7";
             this.dataGridViewTextBoxColumn7.ReadOnly = true;
-            this.dataGridViewTextBoxColumn7.Width = 60;
             // 
             // dataGridViewButtonColumn1
             // 
@@ -619,6 +611,7 @@
             dataGridViewCellStyle4.BackColor = System.Drawing.Color.LightSteelBlue;
             dataGridViewCellStyle4.ForeColor = System.Drawing.Color.Black;
             this.dgv_detalle_miercoles.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle4;
+            this.dgv_detalle_miercoles.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgv_detalle_miercoles.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgv_detalle_miercoles.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.dataGridViewTextBoxColumn8,
@@ -657,35 +650,30 @@
             this.dataGridViewTextBoxColumn10.Name = "dataGridViewTextBoxColumn10";
             this.dataGridViewTextBoxColumn10.ReadOnly = true;
             this.dataGridViewTextBoxColumn10.Visible = false;
-            this.dataGridViewTextBoxColumn10.Width = 80;
             // 
             // dataGridViewTextBoxColumn11
             // 
             this.dataGridViewTextBoxColumn11.HeaderText = "Cantidad Planificada";
             this.dataGridViewTextBoxColumn11.Name = "dataGridViewTextBoxColumn11";
             this.dataGridViewTextBoxColumn11.ReadOnly = true;
-            this.dataGridViewTextBoxColumn11.Width = 65;
             // 
             // dataGridViewTextBoxColumn12
             // 
             this.dataGridViewTextBoxColumn12.HeaderText = "Cantidad de Pedidos";
             this.dataGridViewTextBoxColumn12.Name = "dataGridViewTextBoxColumn12";
             this.dataGridViewTextBoxColumn12.ReadOnly = true;
-            this.dataGridViewTextBoxColumn12.Width = 65;
             // 
             // dataGridViewTextBoxColumn13
             // 
             this.dataGridViewTextBoxColumn13.HeaderText = "Cantidad Total a Producir";
             this.dataGridViewTextBoxColumn13.Name = "dataGridViewTextBoxColumn13";
             this.dataGridViewTextBoxColumn13.ReadOnly = true;
-            this.dataGridViewTextBoxColumn13.Width = 65;
             // 
             // dataGridViewTextBoxColumn14
             // 
             this.dataGridViewTextBoxColumn14.HeaderText = "Unidad de Medida";
             this.dataGridViewTextBoxColumn14.Name = "dataGridViewTextBoxColumn14";
             this.dataGridViewTextBoxColumn14.ReadOnly = true;
-            this.dataGridViewTextBoxColumn14.Width = 60;
             // 
             // dataGridViewButtonColumn2
             // 
@@ -721,6 +709,7 @@
             dataGridViewCellStyle5.BackColor = System.Drawing.Color.LightSteelBlue;
             dataGridViewCellStyle5.ForeColor = System.Drawing.Color.Black;
             this.dgv_detalle_jueves.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle5;
+            this.dgv_detalle_jueves.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgv_detalle_jueves.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgv_detalle_jueves.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.dataGridViewTextBoxColumn15,
@@ -759,35 +748,30 @@
             this.dataGridViewTextBoxColumn17.Name = "dataGridViewTextBoxColumn17";
             this.dataGridViewTextBoxColumn17.ReadOnly = true;
             this.dataGridViewTextBoxColumn17.Visible = false;
-            this.dataGridViewTextBoxColumn17.Width = 80;
             // 
             // dataGridViewTextBoxColumn18
             // 
             this.dataGridViewTextBoxColumn18.HeaderText = "Cantidad Planificada";
             this.dataGridViewTextBoxColumn18.Name = "dataGridViewTextBoxColumn18";
             this.dataGridViewTextBoxColumn18.ReadOnly = true;
-            this.dataGridViewTextBoxColumn18.Width = 65;
             // 
             // dataGridViewTextBoxColumn19
             // 
             this.dataGridViewTextBoxColumn19.HeaderText = "Cantidad de Pedidos";
             this.dataGridViewTextBoxColumn19.Name = "dataGridViewTextBoxColumn19";
             this.dataGridViewTextBoxColumn19.ReadOnly = true;
-            this.dataGridViewTextBoxColumn19.Width = 65;
             // 
             // dataGridViewTextBoxColumn20
             // 
             this.dataGridViewTextBoxColumn20.HeaderText = "Cantidad Total a Producir";
             this.dataGridViewTextBoxColumn20.Name = "dataGridViewTextBoxColumn20";
             this.dataGridViewTextBoxColumn20.ReadOnly = true;
-            this.dataGridViewTextBoxColumn20.Width = 65;
             // 
             // dataGridViewTextBoxColumn21
             // 
             this.dataGridViewTextBoxColumn21.HeaderText = "Unidad de Medida";
             this.dataGridViewTextBoxColumn21.Name = "dataGridViewTextBoxColumn21";
             this.dataGridViewTextBoxColumn21.ReadOnly = true;
-            this.dataGridViewTextBoxColumn21.Width = 60;
             // 
             // dataGridViewButtonColumn3
             // 
@@ -823,6 +807,7 @@
             dataGridViewCellStyle6.BackColor = System.Drawing.Color.LightSteelBlue;
             dataGridViewCellStyle6.ForeColor = System.Drawing.Color.Black;
             this.dgv_detalle_viernes.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle6;
+            this.dgv_detalle_viernes.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgv_detalle_viernes.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgv_detalle_viernes.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.dataGridViewTextBoxColumn22,
@@ -861,35 +846,30 @@
             this.dataGridViewTextBoxColumn24.Name = "dataGridViewTextBoxColumn24";
             this.dataGridViewTextBoxColumn24.ReadOnly = true;
             this.dataGridViewTextBoxColumn24.Visible = false;
-            this.dataGridViewTextBoxColumn24.Width = 80;
             // 
             // dataGridViewTextBoxColumn25
             // 
             this.dataGridViewTextBoxColumn25.HeaderText = "Cantidad Planificada";
             this.dataGridViewTextBoxColumn25.Name = "dataGridViewTextBoxColumn25";
             this.dataGridViewTextBoxColumn25.ReadOnly = true;
-            this.dataGridViewTextBoxColumn25.Width = 65;
             // 
             // dataGridViewTextBoxColumn26
             // 
             this.dataGridViewTextBoxColumn26.HeaderText = "Cantidad de Pedidos";
             this.dataGridViewTextBoxColumn26.Name = "dataGridViewTextBoxColumn26";
             this.dataGridViewTextBoxColumn26.ReadOnly = true;
-            this.dataGridViewTextBoxColumn26.Width = 65;
             // 
             // dataGridViewTextBoxColumn27
             // 
             this.dataGridViewTextBoxColumn27.HeaderText = "Cantidad Total a Producir";
             this.dataGridViewTextBoxColumn27.Name = "dataGridViewTextBoxColumn27";
             this.dataGridViewTextBoxColumn27.ReadOnly = true;
-            this.dataGridViewTextBoxColumn27.Width = 65;
             // 
             // dataGridViewTextBoxColumn28
             // 
             this.dataGridViewTextBoxColumn28.HeaderText = "Unidad de Medida";
             this.dataGridViewTextBoxColumn28.Name = "dataGridViewTextBoxColumn28";
             this.dataGridViewTextBoxColumn28.ReadOnly = true;
-            this.dataGridViewTextBoxColumn28.Width = 60;
             // 
             // dataGridViewButtonColumn4
             // 
@@ -925,6 +905,7 @@
             dataGridViewCellStyle7.BackColor = System.Drawing.Color.LightSteelBlue;
             dataGridViewCellStyle7.ForeColor = System.Drawing.Color.Black;
             this.dgv_detalle_sabado.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle7;
+            this.dgv_detalle_sabado.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgv_detalle_sabado.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgv_detalle_sabado.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.dataGridViewTextBoxColumn29,
@@ -963,35 +944,30 @@
             this.dataGridViewTextBoxColumn31.Name = "dataGridViewTextBoxColumn31";
             this.dataGridViewTextBoxColumn31.ReadOnly = true;
             this.dataGridViewTextBoxColumn31.Visible = false;
-            this.dataGridViewTextBoxColumn31.Width = 80;
             // 
             // dataGridViewTextBoxColumn32
             // 
             this.dataGridViewTextBoxColumn32.HeaderText = "Cantidad Planificada";
             this.dataGridViewTextBoxColumn32.Name = "dataGridViewTextBoxColumn32";
             this.dataGridViewTextBoxColumn32.ReadOnly = true;
-            this.dataGridViewTextBoxColumn32.Width = 65;
             // 
             // dataGridViewTextBoxColumn33
             // 
             this.dataGridViewTextBoxColumn33.HeaderText = "Cantidad de Pedidos";
             this.dataGridViewTextBoxColumn33.Name = "dataGridViewTextBoxColumn33";
             this.dataGridViewTextBoxColumn33.ReadOnly = true;
-            this.dataGridViewTextBoxColumn33.Width = 65;
             // 
             // dataGridViewTextBoxColumn34
             // 
             this.dataGridViewTextBoxColumn34.HeaderText = "Cantidad Total a Producir";
             this.dataGridViewTextBoxColumn34.Name = "dataGridViewTextBoxColumn34";
             this.dataGridViewTextBoxColumn34.ReadOnly = true;
-            this.dataGridViewTextBoxColumn34.Width = 65;
             // 
             // dataGridViewTextBoxColumn35
             // 
             this.dataGridViewTextBoxColumn35.HeaderText = "Unidad de Medida";
             this.dataGridViewTextBoxColumn35.Name = "dataGridViewTextBoxColumn35";
             this.dataGridViewTextBoxColumn35.ReadOnly = true;
-            this.dataGridViewTextBoxColumn35.Width = 60;
             // 
             // dataGridViewButtonColumn5
             // 
@@ -1012,7 +988,7 @@
             // btn_quitar
             // 
             this.btn_quitar.Enabled = false;
-            this.btn_quitar.Location = new System.Drawing.Point(393, 203);
+            this.btn_quitar.Location = new System.Drawing.Point(393, 270);
             this.btn_quitar.Name = "btn_quitar";
             this.btn_quitar.Size = new System.Drawing.Size(75, 20);
             this.btn_quitar.TabIndex = 3;
@@ -1023,7 +999,7 @@
             // btn_agregar
             // 
             this.btn_agregar.Enabled = false;
-            this.btn_agregar.Location = new System.Drawing.Point(312, 202);
+            this.btn_agregar.Location = new System.Drawing.Point(312, 269);
             this.btn_agregar.Name = "btn_agregar";
             this.btn_agregar.Size = new System.Drawing.Size(75, 21);
             this.btn_agregar.TabIndex = 2;
@@ -1034,7 +1010,7 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(26, 205);
+            this.label6.Location = new System.Drawing.Point(26, 272);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(103, 13);
             this.label6.TabIndex = 2;
@@ -1043,7 +1019,7 @@
             // txt_cantidad
             // 
             this.txt_cantidad.Enabled = false;
-            this.txt_cantidad.Location = new System.Drawing.Point(153, 203);
+            this.txt_cantidad.Location = new System.Drawing.Point(153, 270);
             this.txt_cantidad.MaxLength = 6;
             this.txt_cantidad.Name = "txt_cantidad";
             this.txt_cantidad.Size = new System.Drawing.Size(100, 20);
@@ -1077,7 +1053,7 @@
             this.dgv_productos_finales.Name = "dgv_productos_finales";
             this.dgv_productos_finales.ReadOnly = true;
             this.dgv_productos_finales.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgv_productos_finales.Size = new System.Drawing.Size(662, 176);
+            this.dgv_productos_finales.Size = new System.Drawing.Size(662, 244);
             this.dgv_productos_finales.TabIndex = 0;
             this.dgv_productos_finales.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_productos_finales_CellClick);
             // 
@@ -1152,7 +1128,7 @@
             this.groupBox2.Controls.Add(this.btn_salir);
             this.groupBox2.Controls.Add(this.btn_guardar);
             this.groupBox2.Controls.Add(this.btn_nuevo);
-            this.groupBox2.Location = new System.Drawing.Point(12, 669);
+            this.groupBox2.Location = new System.Drawing.Point(12, 736);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(677, 66);
             this.groupBox2.TabIndex = 44;
@@ -1205,7 +1181,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(701, 740);
+            this.ClientSize = new System.Drawing.Size(701, 814);
             this.Controls.Add(this.groupBox4);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
