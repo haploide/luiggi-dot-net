@@ -224,8 +224,8 @@ namespace Vista
             double subTotal = 0;
             for (int c = 0; c < dgv_detalle.RowCount; c++)
             {
-                montoTotal = montoTotal + (double)dgv_detalle.Rows[c].Cells["sub"].Value;
-                subTotal += (double)dgv_detalle.Rows[c].Cells["preciodetalle"].Value * (double)dgv_detalle.Rows[c].Cells["cantidad"].Value;
+                montoTotal = montoTotal + Convert.ToDouble(dgv_detalle.Rows[c].Cells["sub"].Value);
+                subTotal += Convert.ToDouble(dgv_detalle.Rows[c].Cells["preciodetalle"].Value) * Convert.ToDouble(dgv_detalle.Rows[c].Cells["cantidad"].Value);
             }
             txt_subTotal.Text = subTotal.ToString();
             txt_monto_total.Text = montoTotal.ToString();
