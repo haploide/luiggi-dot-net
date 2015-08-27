@@ -153,10 +153,18 @@ namespace Vista
         }
         private void dgv_pedidos_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-            int idPedido = (int)dgv_pedidos.Rows[dgv_pedidos.CurrentRow.Index ].Cells["idPedido"].Value;
-            cargarGrillaDetalle(idPedido);
+            try
+            {
+                int idPedido = (int)dgv_pedidos.Rows[dgv_pedidos.CurrentRow.Index].Cells["idPedido"].Value;
+                cargarGrillaDetalle(idPedido);
 
-            dgv_detalle_pedido.ClearSelection();
+                dgv_detalle_pedido.ClearSelection();
+            }
+            catch (Exception ex)
+            {
+                
+                
+            }
         }
         private void cargarGrillaDetalle(int ped)
         {
@@ -189,20 +197,28 @@ namespace Vista
         }
         private void dgv_pedidos_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
         {
-            if (dgv_pedidos.Rows[dgv_pedidos.CurrentRow.Index].Cells["Estado"].Value.ToString()=="Pendiente de prepacacion"||sonTodosReservados())
+            try
             {
-                Pedido ped = new Pedido();
+                if (dgv_pedidos.Rows[dgv_pedidos.CurrentRow.Index].Cells["Estado"].Value.ToString() == "Pendiente de prepacacion" || sonTodosReservados())
+                {
+                    Pedido ped = new Pedido();
 
-                ped.idPedido = (int)dgv_pedidos.Rows[dgv_pedidos.CurrentRow.Index].Cells["idPedido"].Value;
+                    ped.idPedido = (int)dgv_pedidos.Rows[dgv_pedidos.CurrentRow.Index].Cells["idPedido"].Value;
 
 
-                Gestion_de_Pedidos gestion = new Gestion_de_Pedidos();
+                    Gestion_de_Pedidos gestion = new Gestion_de_Pedidos();
 
-                gestion._estado = estados.modificar;
-                gestion._pedModificar = ped;
-                gestion.ShowDialog();
+                    gestion._estado = estados.modificar;
+                    gestion._pedModificar = ped;
+                    gestion.ShowDialog();
 
-                cargarGrilla(); 
+                    cargarGrilla();
+                }
+            } 
+            catch (Exception ex)
+            {
+                
+                
             }
             
         }
