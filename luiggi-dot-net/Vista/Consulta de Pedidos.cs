@@ -213,6 +213,7 @@ namespace Vista
                     gestion.ShowDialog();
 
                     cargarGrilla();
+                    dgv_pedidos_CellClick(sender, e);
                 }
             } 
             catch (Exception ex)
