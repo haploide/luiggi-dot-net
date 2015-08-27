@@ -143,11 +143,19 @@ namespace Vista
 
         private void dgv_factura_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-           
+
+            try
+            {
                 int idFactura = (int)dgv_factura.Rows[dgv_factura.CurrentRow.Index].Cells["idFactura"].Value;
                 cargarGrillaDetalle(idFactura);
 
                 dgv_detalle_factura.ClearSelection();
+            }
+            catch (Exception ex)
+            {
+                
+                
+            }
         }
         private void cargarGrillaDetalle(int idfactura)
         {

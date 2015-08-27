@@ -169,82 +169,90 @@ namespace Vista
 
         private void btn_agregar_Click(object sender, EventArgs e)
         {
-            if (txt_cantidad.Text == "")
+            try
             {
-                MessageBox.Show("Complete el campo cantidad ", "Atencion", MessageBoxButtons.OK, MessageBoxIcon.Exclamation, MessageBoxDefaultButton.Button1);
-
-            }
-            else
-            {
-                Boolean result = false;
-                int comparar = (int)dgv_productos.Rows[dgv_productos.CurrentRow.Index].Cells["idProducto"].Value;
-
-                for (int c = 0; c < dgv_detalle.RowCount; c++)
+                if (txt_cantidad.Text == "")
                 {
-                    if (comparar == (int)dgv_detalle.Rows[c].Cells["idProductodetalle"].Value)
-                    {
-                        dgv_productos.CurrentRow.Cells["stockDisponible"].Value = (double)dgv_productos.CurrentRow.Cells["stockDisponible"].Value + (double)dgv_detalle.Rows[c].Cells["cantidad"].Value;
-                        result = true;
-                        break;
-                    }
-
-
-                }
-
-                if (result == false)
-                {
-                    int idPro = (int)dgv_productos.Rows[dgv_productos.CurrentRow.Index].Cells["idProducto"].Value;
-                    int cod = (int)dgv_productos.Rows[dgv_productos.CurrentRow.Index].Cells["cod"].Value;
-                    string nom = (string)dgv_productos.Rows[dgv_productos.CurrentRow.Index].Cells["nombreproducto"].Value;
-                    string uni = (string)dgv_productos.Rows[dgv_productos.CurrentRow.Index].Cells["unidad"].Value;
-                    double can = Convert.ToDouble(txt_cantidad.Text);
-                    double pre = (double)dgv_productos.Rows[dgv_productos.CurrentRow.Index].Cells["precio"].Value;
-                    double subTot = can * pre;
-                    if(uni.Equals("g"))
-                    {
-                        subTot = can*(pre / 1000);
-                    }
-
-                   
-
-
-                    dgv_detalle.Rows.Add(cod, nom, pre, can, uni, subTot, idPro);
-                    //dgv_productos_finales.Rows.Remove(dgv_productos_finales.CurrentRow);
-
-                    txt_cantidad.Text = "";
-                    calcularMontoTotal();
-                    btn_quitar.Enabled = true;
+                    MessageBox.Show("Complete el campo cantidad ", "Atencion", MessageBoxButtons.OK, MessageBoxIcon.Exclamation, MessageBoxDefaultButton.Button1);
 
                 }
                 else
                 {
-                    if (MessageBox.Show("Ya se cargó el producto, ¿Desea Modificar?", "Atencion", MessageBoxButtons.YesNo, MessageBoxIcon.Exclamation, MessageBoxDefaultButton.Button1) == DialogResult.Yes)
+                    Boolean result = false;
+                    int comparar = (int)dgv_productos.Rows[dgv_productos.CurrentRow.Index].Cells["idProducto"].Value;
+
+                    for (int c = 0; c < dgv_detalle.RowCount; c++)
                     {
-                        int index = (int)dgv_productos.Rows[dgv_productos.CurrentRow.Index].Cells["idProducto"].Value;
-
-                        for (int c = 0; c < dgv_detalle.RowCount; c++)
+                        if (comparar == (int)dgv_detalle.Rows[c].Cells["idProductodetalle"].Value)
                         {
-                            if ((int)dgv_detalle.Rows[c].Cells["idProductodetalle"].Value == index)
-                            {
-                                int can = Convert.ToInt32(txt_cantidad.Text);
-                                dgv_detalle.Rows[c].Cells["cantidad"].Value = can;
-                                double pre = (double)dgv_productos.Rows[dgv_productos.CurrentRow.Index].Cells["precio"].Value;
-                               
-                                dgv_detalle.Rows[c].Cells["sub"].Value = can * pre;
-                                calcularMontoTotal();
-
-                            }
+                            dgv_productos.CurrentRow.Cells["stockDisponible"].Value = Convert.ToDouble(dgv_productos.CurrentRow.Cells["stockDisponible"].Value) + Convert.ToDouble(dgv_detalle.Rows[c].Cells["cantidad"].Value);
+                            result = true;
+                            break;
                         }
 
-                        txt_cantidad.Text = "";
+
                     }
 
+                    if (result == false)
+                    {
+                        int idPro = (int)dgv_productos.Rows[dgv_productos.CurrentRow.Index].Cells["idProducto"].Value;
+                        int cod = (int)dgv_productos.Rows[dgv_productos.CurrentRow.Index].Cells["cod"].Value;
+                        string nom = (string)dgv_productos.Rows[dgv_productos.CurrentRow.Index].Cells["nombreproducto"].Value;
+                        string uni = (string)dgv_productos.Rows[dgv_productos.CurrentRow.Index].Cells["unidad"].Value;
+                        double can = Convert.ToDouble(txt_cantidad.Text);
+                        double pre = (double)dgv_productos.Rows[dgv_productos.CurrentRow.Index].Cells["precio"].Value;
+                        double subTot = can * pre;
+                        if (uni.Equals("g"))
+                        {
+                            subTot = can * (pre / 1000);
+                        }
+
+
+
+
+                        dgv_detalle.Rows.Add(cod, nom, pre, can, uni, subTot, idPro);
+                        //dgv_productos_finales.Rows.Remove(dgv_productos_finales.CurrentRow);
+
+                        txt_cantidad.Text = "";
+                        calcularMontoTotal();
+                        btn_quitar.Enabled = true;
+
+                    }
+                    else
+                    {
+                        if (MessageBox.Show("Ya se cargó el producto, ¿Desea Modificar?", "Atencion", MessageBoxButtons.YesNo, MessageBoxIcon.Exclamation, MessageBoxDefaultButton.Button1) == DialogResult.Yes)
+                        {
+                            int index = (int)dgv_productos.Rows[dgv_productos.CurrentRow.Index].Cells["idProducto"].Value;
+
+                            for (int c = 0; c < dgv_detalle.RowCount; c++)
+                            {
+                                if ((int)dgv_detalle.Rows[c].Cells["idProductodetalle"].Value == index)
+                                {
+                                    int can = Convert.ToInt32(txt_cantidad.Text);
+                                    dgv_detalle.Rows[c].Cells["cantidad"].Value = can;
+                                    double pre = (double)dgv_productos.Rows[dgv_productos.CurrentRow.Index].Cells["precio"].Value;
+
+                                    dgv_detalle.Rows[c].Cells["sub"].Value = can * pre;
+                                    calcularMontoTotal();
+
+                                }
+                            }
+
+                            txt_cantidad.Text = "";
+                        }
+
+                    }
                 }
+                if (dgv_productos.RowCount != 0)
+                    dgv_productos.ClearSelection();
+                if (dgv_detalle.RowCount != 0)
+                    dgv_detalle.ClearSelection();
             }
-            if (dgv_productos.RowCount != 0)
-                dgv_productos.ClearSelection();
-            if (dgv_detalle.RowCount != 0)
-                dgv_detalle.ClearSelection();
+            catch (Exception ex)
+            {
+                
+                MessageBox.Show("Error al agregar el Producto", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error, MessageBoxDefaultButton.Button1);
+            }
         }
         public void calcularMontoTotal()
         {

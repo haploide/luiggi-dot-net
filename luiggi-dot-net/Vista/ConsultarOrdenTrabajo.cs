@@ -160,35 +160,42 @@ namespace Vista
         }
         private void btn_imprimir_Click(object sender, EventArgs e)
         {
-            if (dgv_OTproductosPadres.Rows.Count > 0 && dgv_OTproductosPadres.Rows[dgv_OTproductosPadres.CurrentRow.Index].DefaultCellStyle.BackColor == Color.IndianRed )
+            if (dgv_OTproductosPadres.Rows.Count > 0)
             {
-                OrdenDeTrabajo orden = new OrdenDeTrabajo();
+                if (dgv_OTproductosPadres.Rows[dgv_OTproductosPadres.CurrentRow.Index].DefaultCellStyle.BackColor == Color.IndianRed)
+                {
+                    OrdenDeTrabajo orden = new OrdenDeTrabajo();
 
-                orden.producto = new Producto() { idProducto = (int)dgv_OTproductosPadres.Rows[dgv_OTproductosPadres.CurrentRow.Index].Cells["idProducto"].Value };
-                orden.fechaCreacion = Convert.ToDateTime(dgv_OTproductosPadres.Rows[dgv_OTproductosPadres.CurrentRow.Index].Cells["fechaCreacion"].Value);
-                orden.idPlan = (int)dgv_OTproductosPadres.Rows[dgv_OTproductosPadres.CurrentRow.Index].Cells["idPlan"].Value;
+                    orden.producto = new Producto() { idProducto = (int)dgv_OTproductosPadres.Rows[dgv_OTproductosPadres.CurrentRow.Index].Cells["idProducto"].Value };
+                    orden.fechaCreacion = Convert.ToDateTime(dgv_OTproductosPadres.Rows[dgv_OTproductosPadres.CurrentRow.Index].Cells["fechaCreacion"].Value);
+                    orden.idPlan = (int)dgv_OTproductosPadres.Rows[dgv_OTproductosPadres.CurrentRow.Index].Cells["idPlan"].Value;
 
-                Emitir_Orden_De_Trabajo emitir = new Emitir_Orden_De_Trabajo();
+                    Emitir_Orden_De_Trabajo emitir = new Emitir_Orden_De_Trabajo();
 
-                emitir._orden = orden;
-                emitir._reporte = reporteOT.intermedio;
-                emitir.ShowDialog();
+                    emitir._orden = orden;
+                    emitir._reporte = reporteOT.intermedio;
+                    emitir.ShowDialog();
 
-                emitir = new Emitir_Orden_De_Trabajo();
+                    emitir = new Emitir_Orden_De_Trabajo();
 
-                emitir._orden = orden;
-                emitir._reporte = reporteOT.final;
-                emitir.ShowDialog();
-
-
+                    emitir._orden = orden;
+                    emitir._reporte = reporteOT.final;
+                    emitir.ShowDialog();
 
 
 
+
+
+                }
+                else
+                {
+                    MessageBox.Show("Esta Orden de Trabajo ya fue Finalizada", "Error", MessageBoxButtons.OK, MessageBoxIcon.Exclamation, MessageBoxDefaultButton.Button1);
+                } 
             }
-            else 
+            else
             {
-                MessageBox.Show("Esta Orden de Trabajo ya fue Finalizada", "Error", MessageBoxButtons.OK, MessageBoxIcon.Exclamation, MessageBoxDefaultButton.Button1);
-            }
+                MessageBox.Show("No Hay Ordenes a Imprimir", "Atención", MessageBoxButtons.OK, MessageBoxIcon.Exclamation, MessageBoxDefaultButton.Button1);
+            } 
         }
         private void dgv_OTproductosPadres_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
@@ -338,6 +345,8 @@ namespace Vista
                 ((Menu_Principal)(MdiParent)).btn_pedido.Visible = true;
             }
         }
+
+        
 
         
 

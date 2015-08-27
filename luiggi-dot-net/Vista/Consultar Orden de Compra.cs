@@ -326,13 +326,20 @@ namespace Vista
         private void btn_imprimir_Click(object sender, EventArgs e)
         {
 
-            if ((int)dgv_pedidos.CurrentRow.Cells["idestado"].Value==31)
+            if (dgv_pedidos.Rows.Count > 0)
             {
-                EmitirOrdenDeCompra orden = new EmitirOrdenDeCompra();
+                if ((int)dgv_pedidos.CurrentRow.Cells["idestado"].Value == 31)
+                {
+                    EmitirOrdenDeCompra orden = new EmitirOrdenDeCompra();
 
-                orden._idOrden = (int)dgv_pedidos.CurrentRow.Cells["idOrden"].Value;
+                    orden._idOrden = (int)dgv_pedidos.CurrentRow.Cells["idOrden"].Value;
 
-                orden.ShowDialog(); 
+                    orden.ShowDialog();
+                }
+            }
+            else
+            {
+                MessageBox.Show("No hay Ordenes para Imprimir", "Atención", MessageBoxButtons.OK, MessageBoxIcon.Exclamation, MessageBoxDefaultButton.Button1);
             }
         }
 

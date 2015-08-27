@@ -115,10 +115,18 @@ namespace Vista
 
         private void dgv_Orden_Compra_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-            int idOrden = (int)dgv_Orden_Compra.Rows[dgv_Orden_Compra.CurrentRow.Index].Cells["idOrden"].Value;
-            cargarGrillaDetalle(idOrden);
+            try
+            {
+                int idOrden = (int)dgv_Orden_Compra.Rows[dgv_Orden_Compra.CurrentRow.Index].Cells["idOrden"].Value;
+                cargarGrillaDetalle(idOrden);
 
-            dgv_detalle_orden_compra.ClearSelection();
+                dgv_detalle_orden_compra.ClearSelection();
+            }
+            catch (Exception ex)
+            {
+                
+                
+            }
         }
         private void cargarGrillaDetalle(int idOrden)
         {

@@ -22,10 +22,10 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ConsultarOrdenTrabajo));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
             this.gp_filtros = new System.Windows.Forms.GroupBox();
             this.dtp_hasta_fin = new System.Windows.Forms.DateTimePicker();
             this.label5 = new System.Windows.Forms.Label();
@@ -156,6 +156,7 @@
             this.btn_aplicar_filtro.Size = new System.Drawing.Size(38, 46);
             this.btn_aplicar_filtro.TabIndex = 71;
             this.btn_aplicar_filtro.UseVisualStyleBackColor = true;
+            
             // 
             // cmb_estado_plan
             // 
@@ -260,8 +261,8 @@
             // 
             this.dgv_OTproductosPadres.AllowUserToAddRows = false;
             this.dgv_OTproductosPadres.AllowUserToDeleteRows = false;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.LightSteelBlue;
-            this.dgv_OTproductosPadres.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle5.BackColor = System.Drawing.Color.LightSteelBlue;
+            this.dgv_OTproductosPadres.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle5;
             this.dgv_OTproductosPadres.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
                         | System.Windows.Forms.AnchorStyles.Right)));
             this.dgv_OTproductosPadres.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
@@ -429,8 +430,8 @@
             // 
             this.dgv_OTproductosHijos.AllowUserToAddRows = false;
             this.dgv_OTproductosHijos.AllowUserToDeleteRows = false;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.LightSteelBlue;
-            this.dgv_OTproductosHijos.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle6.BackColor = System.Drawing.Color.LightSteelBlue;
+            this.dgv_OTproductosHijos.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle6;
             this.dgv_OTproductosHijos.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
                         | System.Windows.Forms.AnchorStyles.Right)));
             this.dgv_OTproductosHijos.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
@@ -506,9 +507,9 @@
             // 
             // cant
             // 
-            dataGridViewCellStyle3.Format = "N2";
-            dataGridViewCellStyle3.NullValue = null;
-            this.cant.DefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle7.Format = "N2";
+            dataGridViewCellStyle7.NullValue = null;
+            this.cant.DefaultCellStyle = dataGridViewCellStyle7;
             this.cant.HeaderText = "Cantidad Planeada";
             this.cant.Name = "cant";
             this.cant.ReadOnly = true;
@@ -516,9 +517,9 @@
             // 
             // cantReal
             // 
-            dataGridViewCellStyle4.Format = "N2";
-            dataGridViewCellStyle4.NullValue = null;
-            this.cantReal.DefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle8.Format = "N2";
+            dataGridViewCellStyle8.NullValue = null;
+            this.cantReal.DefaultCellStyle = dataGridViewCellStyle8;
             this.cantReal.HeaderText = "Cantidad Real";
             this.cantReal.Name = "cantReal";
             this.cantReal.ReadOnly = true;
