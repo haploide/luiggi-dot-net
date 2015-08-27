@@ -1381,12 +1381,6 @@
     <Height>4.77083in</Height>
     <Style />
   </Body>
-  <ReportParameters>
-    <ReportParameter Name="cliente">
-      <DataType>String</DataType>
-      <Prompt>ReportParameter1</Prompt>
-    </ReportParameter>
-  </ReportParameters>
   <Width>6.69792in</Width>
   <Page>
     <PageHeight>29.7cm</PageHeight>
