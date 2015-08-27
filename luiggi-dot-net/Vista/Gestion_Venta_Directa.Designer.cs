@@ -28,11 +28,11 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle13 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle14 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle15 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Gestion_Venta_Directa));
             this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.label13 = new System.Windows.Forms.Label();
@@ -94,6 +94,7 @@
             this.btn_salir = new System.Windows.Forms.Button();
             this.btn_guardar = new System.Windows.Forms.Button();
             this.btn_nuevo = new System.Windows.Forms.Button();
+            this.helpProviderVentaDirecta = new System.Windows.Forms.HelpProvider();
             this.groupBox4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_detalle)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_productos_finales)).BeginInit();
@@ -244,8 +245,8 @@
             // 
             this.dgv_detalle.AllowUserToAddRows = false;
             this.dgv_detalle.AllowUserToDeleteRows = false;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
-            this.dgv_detalle.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle11.BackColor = System.Drawing.Color.White;
+            this.dgv_detalle.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle11;
             this.dgv_detalle.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgv_detalle.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgv_detalle.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -281,9 +282,9 @@
             // 
             // preciodetalle
             // 
-            dataGridViewCellStyle2.Format = "C3";
-            dataGridViewCellStyle2.NullValue = null;
-            this.preciodetalle.DefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle12.Format = "C3";
+            dataGridViewCellStyle12.NullValue = null;
+            this.preciodetalle.DefaultCellStyle = dataGridViewCellStyle12;
             this.preciodetalle.HeaderText = "Precio";
             this.preciodetalle.Name = "preciodetalle";
             this.preciodetalle.ReadOnly = true;
@@ -302,9 +303,9 @@
             // 
             // sub
             // 
-            dataGridViewCellStyle3.Format = "C2";
-            dataGridViewCellStyle3.NullValue = null;
-            this.sub.DefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle13.Format = "C2";
+            dataGridViewCellStyle13.NullValue = null;
+            this.sub.DefaultCellStyle = dataGridViewCellStyle13;
             this.sub.HeaderText = "SubTotal";
             this.sub.Name = "sub";
             this.sub.ReadOnly = true;
@@ -356,8 +357,8 @@
             // 
             this.dgv_productos_finales.AllowUserToAddRows = false;
             this.dgv_productos_finales.AllowUserToDeleteRows = false;
-            dataGridViewCellStyle4.BackColor = System.Drawing.Color.White;
-            this.dgv_productos_finales.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle14.BackColor = System.Drawing.Color.White;
+            this.dgv_productos_finales.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle14;
             this.dgv_productos_finales.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgv_productos_finales.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgv_productos_finales.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -399,9 +400,9 @@
             // 
             // precio
             // 
-            dataGridViewCellStyle5.Format = "C2";
-            dataGridViewCellStyle5.NullValue = null;
-            this.precio.DefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle15.Format = "C2";
+            dataGridViewCellStyle15.NullValue = null;
+            this.precio.DefaultCellStyle = dataGridViewCellStyle15;
             this.precio.HeaderText = "Precio";
             this.precio.Name = "precio";
             this.precio.ReadOnly = true;
@@ -730,19 +731,26 @@
             this.btn_nuevo.UseVisualStyleBackColor = true;
             this.btn_nuevo.Click += new System.EventHandler(this.btn_nuevo_Click);
             // 
+            // helpProviderVentaDirecta
+            // 
+            this.helpProviderVentaDirecta.HelpNamespace = ".\\Ayuda\\Luiggi.chm";
+            // 
             // Gestion_Venta_Directa
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(656, 784);
+            this.ClientSize = new System.Drawing.Size(656, 749);
             this.Controls.Add(this.groupBox4);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.groupBox2);
+            this.helpProviderVentaDirecta.SetHelpKeyword(this, "9");
+            this.helpProviderVentaDirecta.SetHelpNavigator(this, System.Windows.Forms.HelpNavigator.TopicId);
             this.KeyPreview = true;
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "Gestion_Venta_Directa";
+            this.helpProviderVentaDirecta.SetShowHelp(this, true);
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Gestion Venta Directa";
             this.Load += new System.EventHandler(this.Gestion_Venta_Directa_Load);
@@ -824,5 +832,6 @@
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.TextBox txt_subTotal;
         private System.Windows.Forms.Button btn_imprimir;
+        private System.Windows.Forms.HelpProvider helpProviderVentaDirecta;
     }
 }

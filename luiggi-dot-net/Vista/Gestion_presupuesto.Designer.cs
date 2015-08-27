@@ -28,11 +28,11 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Gestion_presupuesto));
             this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.label13 = new System.Windows.Forms.Label();
@@ -91,6 +91,7 @@
             this.btn_salir = new System.Windows.Forms.Button();
             this.btn_guardar = new System.Windows.Forms.Button();
             this.btn_nuevo = new System.Windows.Forms.Button();
+            this.helpProviderPresupuesto = new System.Windows.Forms.HelpProvider();
             this.groupBox4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_detalle)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_productos_finales)).BeginInit();
@@ -240,8 +241,8 @@
             // 
             this.dgv_detalle.AllowUserToAddRows = false;
             this.dgv_detalle.AllowUserToDeleteRows = false;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
-            this.dgv_detalle.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle6.BackColor = System.Drawing.Color.White;
+            this.dgv_detalle.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle6;
             this.dgv_detalle.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgv_detalle.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgv_detalle.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -277,9 +278,9 @@
             // 
             // preciodetalle
             // 
-            dataGridViewCellStyle2.Format = "C3";
-            dataGridViewCellStyle2.NullValue = null;
-            this.preciodetalle.DefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle7.Format = "C3";
+            dataGridViewCellStyle7.NullValue = null;
+            this.preciodetalle.DefaultCellStyle = dataGridViewCellStyle7;
             this.preciodetalle.HeaderText = "Precio";
             this.preciodetalle.Name = "preciodetalle";
             this.preciodetalle.ReadOnly = true;
@@ -298,9 +299,9 @@
             // 
             // sub
             // 
-            dataGridViewCellStyle3.Format = "C2";
-            dataGridViewCellStyle3.NullValue = null;
-            this.sub.DefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle8.Format = "C2";
+            dataGridViewCellStyle8.NullValue = null;
+            this.sub.DefaultCellStyle = dataGridViewCellStyle8;
             this.sub.HeaderText = "SubTotal";
             this.sub.Name = "sub";
             this.sub.ReadOnly = true;
@@ -352,8 +353,8 @@
             // 
             this.dgv_productos_finales.AllowUserToAddRows = false;
             this.dgv_productos_finales.AllowUserToDeleteRows = false;
-            dataGridViewCellStyle4.BackColor = System.Drawing.Color.White;
-            this.dgv_productos_finales.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle9.BackColor = System.Drawing.Color.White;
+            this.dgv_productos_finales.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle9;
             this.dgv_productos_finales.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgv_productos_finales.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgv_productos_finales.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -395,9 +396,9 @@
             // 
             // precio
             // 
-            dataGridViewCellStyle5.Format = "C2";
-            dataGridViewCellStyle5.NullValue = null;
-            this.precio.DefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle10.Format = "C2";
+            dataGridViewCellStyle10.NullValue = null;
+            this.precio.DefaultCellStyle = dataGridViewCellStyle10;
             this.precio.HeaderText = "Precio";
             this.precio.Name = "precio";
             this.precio.ReadOnly = true;
@@ -698,6 +699,10 @@
             this.btn_nuevo.UseVisualStyleBackColor = true;
             this.btn_nuevo.Click += new System.EventHandler(this.btn_nuevo_Click);
             // 
+            // helpProviderPresupuesto
+            // 
+            this.helpProviderPresupuesto.HelpNamespace = ".\\Ayuda\\Luiggi.chm";
+            // 
             // Gestion_presupuesto
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -707,11 +712,13 @@
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.groupBox2);
-            this.HelpButton = true;
+            this.helpProviderPresupuesto.SetHelpKeyword(this, "33");
+            this.helpProviderPresupuesto.SetHelpNavigator(this, System.Windows.Forms.HelpNavigator.TopicId);
             this.KeyPreview = true;
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "Gestion_presupuesto";
+            this.helpProviderPresupuesto.SetShowHelp(this, true);
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Gestion de Presupuesto";
             this.Load += new System.EventHandler(this.Gestion_presupuesto_Load);
@@ -788,5 +795,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn unidad;
         private System.Windows.Forms.DataGridViewTextBoxColumn idProducto;
         private System.Windows.Forms.DataGridViewTextBoxColumn stockDisp;
+        private System.Windows.Forms.HelpProvider helpProviderPresupuesto;
     }
 }

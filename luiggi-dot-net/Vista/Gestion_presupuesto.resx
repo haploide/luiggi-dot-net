@@ -165,16 +165,19 @@
   <assembly alias="System.Drawing" name="System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="btn_imprimir.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
-        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABHNCSVQICAgIfAhkiAAAAAFzUkdCAK7O
-        HOkAAAAEZ0FNQQAAsY8L/GEFAAAACXBIWXMAAAboAAAG6AHhiL8nAAAAGXRFWHRTb2Z0d2FyZQB3d3cu
-        aW5rc2NhcGUub3Jnm+48GgAAAZ1JREFUWEft1b1KA0EUBeBYKBYWRrTQRgRBsBQfIKCFhbWvYKdFLKIQ
-        jdgIYmErNoKVnWBpaSXWvoZ2/oCs5+rceBhOws4SxsYDH+7enbkzm83GWlEUf0oWc5JFhoxCp6I11ZPJ
-        IkMWwQ6quFY9mSwyZJ0apnpUPZksMmSbGqZ6Vj2ZLDLkjBpWUVd9nSwy5JaaVbGs+jpZZMgTNatiQ/V1
-        vwc/r1sL1Os0SE3oPhbegC1uBzk01QZsdzxokD7gHj7D+UHuDVyFNe7CeSf3Bl7gAl7DefYNxP43kLyB
-        dzgBG1PWJaheJvktOPZxZSFDND+W/Al0J6SIerD0DcBq+FtGG0ZA9TLJG7iB0o8BWYBTiPs4+R1owFsY
-        ELOf0jkfG0PsH5mPfQi1c6oxW6PRnesHvSB12FfXHDIBvoBZghnYUeOZLDJkDybBPqH4WfcU5u7CVNyT
-        yaJDpuH7LhC5UB+24XFox32ZLDrkEMag792ruQ7Zgll1zciiQeZhU11LgdgX9EhdM7JokBWQd1yB/S4M
-        y3VUMSdZzEkW8ylqX/IbTXdIh4kSAAAAAElFTkSuQmCC
+        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAG
+        6AAABugB4Yi/JwAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAGdSURBVFhH7dW9
+        SgNBFAXgWCgWFka00EYEQbAUHyCghYW1r2CnRSyiEI3YCGJhKzaClZ1gaWkl1r6Gdv6ArOfq3HgYTsLO
+        EsbGAx/u3p25M5vNxlpRFH9KFnOSRYaMQqeiNdWTySJDFsEOqrhWPZksMmSdGqZ6VD2ZLDJkmxqmelY9
+        mSwy5IwaVlFXfZ0sMuSWmlWxrPo6WWTIEzWrYkP1db8HP69bC9TrNEhN6D4W3oAtbgc5NNUGbHc8aJA+
+        4B4+w/lB7g1chTXuwnkn9wZe4AJew3n2DcT+N5C8gXc4ARtT1iWoXib5LTj2cWUhQzQ/lvwJdCekiHqw
+        9A3AavhbRhtGQPUyyRu4gdKPAVmAU4j7OPkdaMBbGBCzn9I5HxtD7B+Zj30ItXOqMVuj0Z3rB70gddhX
+        1xwyAb6AWYIZ2FHjmSwyZA8mwT6h+Fn3FObuwlTck8miQ6bh+y4QuVAftuFxaMd9mSw65BDGoO/dq7kO
+        2YJZdc3IokHmYVNdS4HYF/RIXTOyaJAVkHdcgf0uDMt1VDEnWcxJFvMpal/yG013SIeJEgAAAABJRU5E
+        rkJggg==
 </value>
   </data>
+  <metadata name="helpProviderPresupuesto.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
 </root>
