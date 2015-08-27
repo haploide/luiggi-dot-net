@@ -105,14 +105,22 @@ namespace Vista
 
         private void dgv_pedidos_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-            if (!(Boolean)dgv_pedidos.Rows[dgv_pedidos.CurrentRow.Index].Cells["cerrar"].Value)
+            try
             {
+                if (!(Boolean)dgv_pedidos.Rows[dgv_pedidos.CurrentRow.Index].Cells["cerrar"].Value)
+                {
 
 
-                int idOrd = (int)dgv_pedidos.Rows[dgv_pedidos.CurrentRow.Index].Cells["idOrden"].Value;
-                cargarGrillaDetalle(idOrd);
+                    int idOrd = (int)dgv_pedidos.Rows[dgv_pedidos.CurrentRow.Index].Cells["idOrden"].Value;
+                    cargarGrillaDetalle(idOrd);
 
-                dgv_detalle_pedido.ClearSelection();  
+                    dgv_detalle_pedido.ClearSelection();
+                }
+            }
+            catch (Exception ex)
+            {
+                
+                
             }
         }
         private void cargarGrillaDetalle(int idOrd)

@@ -113,13 +113,21 @@ namespace Vista
         }
         private void dgv_OTproductosPadres_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-            int idPlan = (int)dgv_OTproductosPadres.Rows[dgv_OTproductosPadres.CurrentRow.Index].Cells["idPlan"].Value;
-            int idProd = (int)dgv_OTproductosPadres.Rows[dgv_OTproductosPadres.CurrentRow.Index].Cells["idProducto"].Value;
-            DateTime fecha = Convert.ToDateTime(dgv_OTproductosPadres.Rows[dgv_OTproductosPadres.CurrentRow.Index].Cells["fechaCreacion"].Value);
-            cargarGrillaOTHijo(idProd, fecha, idPlan);
+            try
+            {
+                int idPlan = (int)dgv_OTproductosPadres.Rows[dgv_OTproductosPadres.CurrentRow.Index].Cells["idPlan"].Value;
+                int idProd = (int)dgv_OTproductosPadres.Rows[dgv_OTproductosPadres.CurrentRow.Index].Cells["idProducto"].Value;
+                DateTime fecha = Convert.ToDateTime(dgv_OTproductosPadres.Rows[dgv_OTproductosPadres.CurrentRow.Index].Cells["fechaCreacion"].Value);
+                cargarGrillaOTHijo(idProd, fecha, idPlan);
 
 
-            dgv_OTproductosHijos.ClearSelection();
+                dgv_OTproductosHijos.ClearSelection();
+            }
+            catch (Exception ex)
+            {
+                
+                
+            }
         }
         private void cargarGrillaOTHijo(int idProd, DateTime fecha, int  idPlan)
         {
