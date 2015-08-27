@@ -30,6 +30,9 @@
         {
             this.components = new System.ComponentModel.Container();
             Microsoft.Reporting.WinForms.ReportDataSource reportDataSource1 = new Microsoft.Reporting.WinForms.ReportDataSource();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(EmitirInformeOrdenCompra));
+            this.InformeOrdenCompraBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.DataSetInformeOrdenCompra = new Vista.DataSetInformeOrdenCompra();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
@@ -40,15 +43,23 @@
             this.reportViewer1 = new Microsoft.Reporting.WinForms.ReportViewer();
             this.DataSetOrdenDeCompra = new Vista.DataSetOrdenDeCompra();
             this.OrdenDeCompraBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.DataSetInformeOrdenCompra = new Vista.DataSetInformeOrdenCompra();
-            this.InformeOrdenCompraBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            ((System.ComponentModel.ISupportInitialize)(this.InformeOrdenCompraBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DataSetInformeOrdenCompra)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DataSetOrdenDeCompra)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.OrdenDeCompraBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.DataSetInformeOrdenCompra)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.InformeOrdenCompraBindingSource)).BeginInit();
             this.SuspendLayout();
+            // 
+            // InformeOrdenCompraBindingSource
+            // 
+            this.InformeOrdenCompraBindingSource.DataMember = "OrdenCompra";
+            this.InformeOrdenCompraBindingSource.DataSource = this.DataSetInformeOrdenCompra;
+            // 
+            // DataSetInformeOrdenCompra
+            // 
+            this.DataSetInformeOrdenCompra.DataSetName = "DataSetInformeOrdenCompra";
+            this.DataSetInformeOrdenCompra.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // groupBox1
             // 
@@ -148,16 +159,6 @@
             this.OrdenDeCompraBindingSource.DataMember = "OrdenDeCompra";
             this.OrdenDeCompraBindingSource.DataSource = this.DataSetOrdenDeCompra;
             // 
-            // DataSetInformeOrdenCompra
-            // 
-            this.DataSetInformeOrdenCompra.DataSetName = "DataSetInformeOrdenCompra";
-            this.DataSetInformeOrdenCompra.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // InformeOrdenCompraBindingSource
-            // 
-            this.InformeOrdenCompraBindingSource.DataMember = "OrdenCompra";
-            this.InformeOrdenCompraBindingSource.DataSource = this.DataSetInformeOrdenCompra;
-            // 
             // EmitirInformeOrdenCompra
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -165,17 +166,18 @@
             this.ClientSize = new System.Drawing.Size(886, 754);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "EmitirInformeOrdenCompra";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Emitir Informe Ordenes de Compras";
             this.Load += new System.EventHandler(this.EmitirInformeOrdenCompra_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.InformeOrdenCompraBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DataSetInformeOrdenCompra)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.DataSetOrdenDeCompra)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.OrdenDeCompraBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.DataSetInformeOrdenCompra)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.InformeOrdenCompraBindingSource)).EndInit();
             this.ResumeLayout(false);
 
         }
