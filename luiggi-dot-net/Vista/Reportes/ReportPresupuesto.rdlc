@@ -163,7 +163,7 @@
           <Line Name="Line1">
             <Top>3.09562cm</Top>
             <Height>0cm</Height>
-            <Width>16.38216cm</Width>
+            <Width>15.87945cm</Width>
             <ZIndex>3</ZIndex>
             <Style>
               <Border>
@@ -240,7 +240,7 @@
           <Line Name="Line2">
             <Top>5.68937cm</Top>
             <Height>0cm</Height>
-            <Width>16.38216cm</Width>
+            <Width>15.87945cm</Width>
             <ZIndex>6</ZIndex>
             <Style>
               <Border>
@@ -347,7 +347,7 @@
           <Line Name="Line3">
             <Top>6.74715cm</Top>
             <Height>0cm</Height>
-            <Width>16.38216cm</Width>
+            <Width>15.87945cm</Width>
             <ZIndex>10</ZIndex>
             <Style>
               <Border>
@@ -1346,7 +1346,7 @@
         <Top>0.17674cm</Top>
         <Left>0.31938cm</Left>
         <Height>11.58875cm</Height>
-        <Width>16.38216cm</Width>
+        <Width>15.87945cm</Width>
         <Style>
           <Border>
             <Style>Solid</Style>
@@ -1357,7 +1357,7 @@
     <Height>4.77083in</Height>
     <Style />
   </Body>
-  <Width>6.69792in</Width>
+  <Width>6.52084in</Width>
   <Page>
     <PageHeight>29.7cm</PageHeight>
     <PageWidth>21cm</PageWidth>
