@@ -233,6 +233,7 @@
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "Gestion_de_Empleado";
+            this.ShowInTaskbar = false;
             this.Text = "Gestion_de_Empleado";
             this.Load += new System.EventHandler(this.Gestion_de_Empleado_Load);
             this.groupBox4.ResumeLayout(false);

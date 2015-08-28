@@ -69,6 +69,7 @@
             this.Controls.Add(this.reportViewer1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Emitir_Orden_De_Trabajo";
+            this.ShowInTaskbar = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Emitir Orden De Trabajo";
             this.Load += new System.EventHandler(this.Emitir_Orden_De_Trabajo_Load);

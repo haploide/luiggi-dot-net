@@ -704,6 +704,7 @@
             this.MinimizeBox = false;
             this.Name = "Gestion_de_Clientes";
             this.helpProviderGesCli.SetShowHelp(this, true);
+            this.ShowInTaskbar = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Gestion de Clientes";
             this.Load += new System.EventHandler(this.Gestion_de_Clientes_Load);

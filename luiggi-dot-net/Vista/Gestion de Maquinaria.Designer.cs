@@ -206,6 +206,7 @@
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "Gestion_de_Maquinaria";
+            this.ShowInTaskbar = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Gestión de Maquinaria";
             this.Load += new System.EventHandler(this.Gestion_de_Maquinaria_Load);

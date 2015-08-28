@@ -342,6 +342,7 @@
             this.MinimizeBox = false;
             this.Name = "ResultadoDeFiltro";
             this.helpProviderFiltroClientes.SetShowHelp(this, true);
+            this.ShowInTaskbar = false;
             this.Text = "Resultado de Filtro";
             this.Load += new System.EventHandler(this.ResultadoDeFiltro_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgv_clientes)).EndInit();

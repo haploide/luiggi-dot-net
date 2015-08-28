@@ -76,6 +76,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Emitir_Factura";
             this.helpProviderEmitirFactura.SetShowHelp(this, true);
+            this.ShowInTaskbar = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Emitir Factura";
             this.Load += new System.EventHandler(this.Emitir_Factura_Load);

@@ -384,6 +384,7 @@
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "GestionOTIntermedio";
+            this.ShowInTaskbar = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Gestion Orden Trabajo de Productos Intermedio";
             this.Load += new System.EventHandler(this.GestionOTIntermedio_Load);

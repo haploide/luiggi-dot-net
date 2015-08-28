@@ -407,6 +407,7 @@
             this.MinimizeBox = false;
             this.Name = "Agregar_productos_a_factura";
             this.helpProviderAgregarProductosAFactura.SetShowHelp(this, true);
+            this.ShowInTaskbar = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Agregar Productos a Factura";
             this.Load += new System.EventHandler(this.Agregar_productos_a_factura_Load);

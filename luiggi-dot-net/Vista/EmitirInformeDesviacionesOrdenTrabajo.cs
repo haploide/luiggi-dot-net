@@ -52,5 +52,13 @@ namespace Vista
                 MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error, MessageBoxDefaultButton.Button1);
             }
         }
+
+        private void dtp_fecha_desde_ValueChanged(object sender, EventArgs e)
+        {
+            if (dtp_fecha_desde.Value.Date >= DateTime.Now.Date)
+            {
+                dtp_fecha_desde.Value = DateTime.Now;
+            }
+        }
     }
 }

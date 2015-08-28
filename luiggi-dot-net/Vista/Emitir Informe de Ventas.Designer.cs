@@ -134,6 +134,7 @@
             this.dtp_fecha_hasta.Name = "dtp_fecha_hasta";
             this.dtp_fecha_hasta.Size = new System.Drawing.Size(96, 20);
             this.dtp_fecha_hasta.TabIndex = 1;
+            this.dtp_fecha_hasta.ValueChanged += new System.EventHandler(this.dtp_fecha_hasta_ValueChanged);
             // 
             // dtp_fecha_desde
             // 
@@ -143,6 +144,7 @@
             this.dtp_fecha_desde.Name = "dtp_fecha_desde";
             this.dtp_fecha_desde.Size = new System.Drawing.Size(96, 20);
             this.dtp_fecha_desde.TabIndex = 0;
+            this.dtp_fecha_desde.ValueChanged += new System.EventHandler(this.dtp_fecha_desde_ValueChanged);
             // 
             // Emitir_Informe_de_Ventas
             // 
@@ -153,6 +155,7 @@
             this.Controls.Add(this.groupBox2);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Emitir_Informe_de_Ventas";
+            this.ShowInTaskbar = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Emitir Informe de Ventas";
             this.Load += new System.EventHandler(this.Emitir_Informe_de_Ventas_Load);

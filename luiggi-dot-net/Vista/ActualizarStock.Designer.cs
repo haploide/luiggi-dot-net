@@ -232,6 +232,7 @@
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "ActualizarStock";
+            this.ShowInTaskbar = false;
             this.Text = "Actualizar Stock";
             this.Load += new System.EventHandler(this.ActualizarStock_Load);
             ((System.ComponentModel.ISupportInitialize)(this.DGV_detalle_Productos)).EndInit();

@@ -103,6 +103,7 @@
             this.dtp_fecha_hasta.Name = "dtp_fecha_hasta";
             this.dtp_fecha_hasta.Size = new System.Drawing.Size(96, 20);
             this.dtp_fecha_hasta.TabIndex = 39;
+            this.dtp_fecha_hasta.ValueChanged += new System.EventHandler(this.dtp_fecha_hasta_ValueChanged);
             // 
             // label2
             // 
@@ -153,6 +154,7 @@
             this.Controls.Add(this.groupBox1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Emitir_Informe_de_Venta_por_Producto";
+            this.ShowInTaskbar = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Emitir Informe de Venta por Producto";
             this.Load += new System.EventHandler(this.Emitir_Informe_de_Venta_por_Producto_Load);

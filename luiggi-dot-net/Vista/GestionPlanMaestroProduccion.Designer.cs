@@ -1188,6 +1188,7 @@
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "GestionPlanMaestroProduccion";
+            this.ShowInTaskbar = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Gestion Plan Maestro Produccion";
             this.Load += new System.EventHandler(this.GestionPlanMaestroProduccion_Load);

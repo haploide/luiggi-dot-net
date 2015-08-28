@@ -713,6 +713,7 @@
             this.MinimizeBox = false;
             this.Name = "Gestion_de_Pedidos";
             this.helpProviderGestionPedidos.SetShowHelp(this, true);
+            this.ShowInTaskbar = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Gestion de Pedidos";
             this.Load += new System.EventHandler(this.Gestion_de_Pedidos_Load);

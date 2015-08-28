@@ -442,6 +442,7 @@
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "Gestion_de_Producto";
+            this.ShowInTaskbar = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Gestion de Producto";
             this.Load += new System.EventHandler(this.Gestion_de_Producto_Load);

@@ -30,19 +30,29 @@
         {
             this.components = new System.ComponentModel.Container();
             Microsoft.Reporting.WinForms.ReportDataSource reportDataSource1 = new Microsoft.Reporting.WinForms.ReportDataSource();
+            this.OrdenDeTrabajoBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.DataSetInformeDesviacionesOrdenesDeTrabajo = new Vista.DataSetInformeDesviacionesOrdenesDeTrabajo();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.reportViewer1 = new Microsoft.Reporting.WinForms.ReportViewer();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.label1 = new System.Windows.Forms.Label();
             this.btn_aplicar_filtro = new System.Windows.Forms.Button();
             this.dtp_fecha_desde = new System.Windows.Forms.DateTimePicker();
-            this.DataSetInformeDesviacionesOrdenesDeTrabajo = new Vista.DataSetInformeDesviacionesOrdenesDeTrabajo();
-            this.OrdenDeTrabajoBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            ((System.ComponentModel.ISupportInitialize)(this.OrdenDeTrabajoBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DataSetInformeDesviacionesOrdenesDeTrabajo)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.DataSetInformeDesviacionesOrdenesDeTrabajo)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.OrdenDeTrabajoBindingSource)).BeginInit();
             this.SuspendLayout();
+            // 
+            // OrdenDeTrabajoBindingSource
+            // 
+            this.OrdenDeTrabajoBindingSource.DataMember = "OrdenDeTrabajo";
+            this.OrdenDeTrabajoBindingSource.DataSource = this.DataSetInformeDesviacionesOrdenesDeTrabajo;
+            // 
+            // DataSetInformeDesviacionesOrdenesDeTrabajo
+            // 
+            this.DataSetInformeDesviacionesOrdenesDeTrabajo.DataSetName = "DataSetInformeDesviacionesOrdenesDeTrabajo";
+            this.DataSetInformeDesviacionesOrdenesDeTrabajo.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // groupBox1
             // 
@@ -110,16 +120,7 @@
             this.dtp_fecha_desde.Name = "dtp_fecha_desde";
             this.dtp_fecha_desde.Size = new System.Drawing.Size(67, 20);
             this.dtp_fecha_desde.TabIndex = 39;
-            // 
-            // DataSetInformeDesviacionesOrdenesDeTrabajo
-            // 
-            this.DataSetInformeDesviacionesOrdenesDeTrabajo.DataSetName = "DataSetInformeDesviacionesOrdenesDeTrabajo";
-            this.DataSetInformeDesviacionesOrdenesDeTrabajo.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // OrdenDeTrabajoBindingSource
-            // 
-            this.OrdenDeTrabajoBindingSource.DataMember = "OrdenDeTrabajo";
-            this.OrdenDeTrabajoBindingSource.DataSource = this.DataSetInformeDesviacionesOrdenesDeTrabajo;
+            this.dtp_fecha_desde.ValueChanged += new System.EventHandler(this.dtp_fecha_desde_ValueChanged);
             // 
             // EmitirInformeDesviacionesOrdenTrabajo
             // 
@@ -129,14 +130,15 @@
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Name = "EmitirInformeDesviacionesOrdenTrabajo";
+            this.ShowInTaskbar = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Emitir Informe Desviaciones Orden Trabajo";
             this.Load += new System.EventHandler(this.EmitirInformeDesviacionesOrdenTrabajo_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.OrdenDeTrabajoBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DataSetInformeDesviacionesOrdenesDeTrabajo)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.DataSetInformeDesviacionesOrdenesDeTrabajo)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.OrdenDeTrabajoBindingSource)).EndInit();
             this.ResumeLayout(false);
 
         }

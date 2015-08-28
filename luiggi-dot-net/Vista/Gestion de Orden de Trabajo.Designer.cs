@@ -497,7 +497,10 @@ namespace Vista
             this.Controls.Add(this.label4);
             this.Controls.Add(this.dtp_creacion_OT);
             this.Controls.Add(this.label1);
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "Gestion_de_orden_de_Trabajo";
+            this.ShowInTaskbar = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Gestion de Ordenes de Trabajo";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Gestion_de_orden_de_Trabajo_FormClosing);

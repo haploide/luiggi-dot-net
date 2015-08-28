@@ -42,5 +42,27 @@ namespace Vista
                 MessageBox.Show(ex.Message, "Atención", MessageBoxButtons.OK, MessageBoxIcon.Information, MessageBoxDefaultButton.Button1);
             }
         }
+
+        private void dtp_fecha_desde_ValueChanged(object sender, EventArgs e)
+        {
+            if (dtp_fecha_desde.Value.Date >= DateTime.Now.Date)
+            {
+                dtp_fecha_desde.Value = DateTime.Now;
+                dtp_fecha_hasta_ValueChanged(sender, e);
+            }
+            dtp_fecha_hasta_ValueChanged(sender, e);
+        }
+
+        private void dtp_fecha_hasta_ValueChanged(object sender, EventArgs e)
+        {
+            if (dtp_fecha_hasta.Value.Date >= DateTime.Now.Date)
+            {
+                dtp_fecha_hasta.Value = DateTime.Now.Date;
+            }
+            if (dtp_fecha_hasta.Value.Date <= dtp_fecha_desde.Value.Date)
+            {
+                dtp_fecha_hasta.Value = dtp_fecha_desde.Value.Date;
+            }
+        }
     }
 }

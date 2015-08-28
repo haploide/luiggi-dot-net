@@ -419,6 +419,7 @@
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "Gestion_de_Proveedores";
+            this.ShowInTaskbar = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Gestion de Proveedores";
             this.Load += new System.EventHandler(this.Gestion_de_Proveedores_Load);
