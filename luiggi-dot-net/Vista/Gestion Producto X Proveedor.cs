@@ -267,7 +267,7 @@ namespace Vista
                 if (ProductoXProveedorDAO.sePuedeInsertar(productoXProveedor.proveedor.idPersona, productoXProveedor.producto.idProducto) == true)
                 {
                     ProductoXProveedorDAO.Insert(productoXProveedor);
-                    MessageBox.Show("Nuevo Producto Por Proveedor cargado con exito", "ATENCION", MessageBoxButtons.OK, MessageBoxIcon.None);
+                    MessageBox.Show("Nuevo Producto Por Proveedor cargado con exito", "ATENCION", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     cargarGrilla();
                     limpiar();
                 }
@@ -281,7 +281,7 @@ namespace Vista
                 if (productoXProveedor.proveedor.idPersona == prodXProvViejo.proveedor.idPersona && productoXProveedor.producto.idProducto == prodXProvViejo.producto.idProducto)
                 {
                     ProductoXProveedorDAO.Update(productoXProveedor, prodXProvViejo);
-                    MessageBox.Show("Producto Por Proveedor actualizado con exito", "ATENCION", MessageBoxButtons.OK, MessageBoxIcon.None);
+                    MessageBox.Show("Producto Por Proveedor actualizado con exito", "ATENCION", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     cargarGrilla();
                     limpiar();
                 }
