@@ -42,6 +42,7 @@
             this.txt_nombre = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
+            this.helpProviderGestionDeMaquinaria = new System.Windows.Forms.HelpProvider();
             this.groupBox2.SuspendLayout();
             this.groupBox4.SuspendLayout();
             this.SuspendLayout();
@@ -196,6 +197,10 @@
             this.label10.TabIndex = 41;
             this.label10.Text = "Descripcion ";
             // 
+            // helpProviderGestionDeMaquinaria
+            // 
+            this.helpProviderGestionDeMaquinaria.HelpNamespace = ".\\Ayuda\\Luiggi.chm";
+            // 
             // Gestion_de_Maquinaria
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -203,9 +208,12 @@
             this.ClientSize = new System.Drawing.Size(375, 236);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox4);
+            this.helpProviderGestionDeMaquinaria.SetHelpKeyword(this, "47");
+            this.helpProviderGestionDeMaquinaria.SetHelpNavigator(this, System.Windows.Forms.HelpNavigator.TopicId);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "Gestion_de_Maquinaria";
+            this.helpProviderGestionDeMaquinaria.SetShowHelp(this, true);
             this.ShowInTaskbar = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Gestión de Maquinaria";
@@ -234,5 +242,6 @@
         private System.Windows.Forms.ComboBox cmb_tipo_maq;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Button btn_verificar_existencia;
+        private System.Windows.Forms.HelpProvider helpProviderGestionDeMaquinaria;
     }
 }

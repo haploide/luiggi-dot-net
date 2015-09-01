@@ -42,6 +42,7 @@
             this.label12 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.reportViewer1 = new Microsoft.Reporting.WinForms.ReportViewer();
+            this.helpProviderEmitirInformeStock = new System.Windows.Forms.HelpProvider();
             ((System.ComponentModel.ISupportInitialize)(this.ProductoBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.DataSetInformeDeStock)).BeginInit();
             this.groupBox1.SuspendLayout();
@@ -60,8 +61,8 @@
             // 
             // groupBox1
             // 
-            this.groupBox1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.groupBox1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.groupBox1.Controls.Add(this.chk_bajo);
             this.groupBox1.Controls.Add(this.btn_aplicar_filtro_unidad);
             this.groupBox1.Controls.Add(this.cmb_unidad_filtro);
@@ -135,9 +136,9 @@
             // 
             // groupBox2
             // 
-            this.groupBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-                        | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.groupBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.groupBox2.Controls.Add(this.reportViewer1);
             this.groupBox2.Location = new System.Drawing.Point(12, 113);
             this.groupBox2.Name = "groupBox2";
@@ -157,15 +158,22 @@
             this.reportViewer1.Size = new System.Drawing.Size(1190, 620);
             this.reportViewer1.TabIndex = 0;
             // 
+            // helpProviderEmitirInformeStock
+            // 
+            this.helpProviderEmitirInformeStock.HelpNamespace = ".\\Ayuda\\Luiggi.chm";
+            // 
             // Emitir_Informe_de_Stock
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1220, 764);
+            this.ClientSize = new System.Drawing.Size(1220, 749);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
+            this.helpProviderEmitirInformeStock.SetHelpKeyword(this, "23");
+            this.helpProviderEmitirInformeStock.SetHelpNavigator(this, System.Windows.Forms.HelpNavigator.TopicId);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Emitir_Informe_de_Stock";
+            this.helpProviderEmitirInformeStock.SetShowHelp(this, true);
             this.ShowInTaskbar = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Emitir Informe de Stock";
@@ -192,6 +200,7 @@
         private System.Windows.Forms.BindingSource ProductoBindingSource;
         private DataSetInformeDeStock DataSetInformeDeStock;
         private System.Windows.Forms.CheckBox chk_bajo;
+        private System.Windows.Forms.HelpProvider helpProviderEmitirInformeStock;
 
     }
 }

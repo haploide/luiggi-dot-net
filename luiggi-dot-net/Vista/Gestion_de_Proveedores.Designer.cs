@@ -61,6 +61,7 @@
             this.txt_telefono = new System.Windows.Forms.MaskedTextBox();
             this.txt_mail = new System.Windows.Forms.TextBox();
             this.label14 = new System.Windows.Forms.Label();
+            this.helpProviderGestionDeProveedores = new System.Windows.Forms.HelpProvider();
             this.groupBox2.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.groupBox4.SuspendLayout();
@@ -409,6 +410,10 @@
             this.label14.TabIndex = 63;
             this.label14.Text = "e-mail";
             // 
+            // helpProviderGestionDeProveedores
+            // 
+            this.helpProviderGestionDeProveedores.HelpNamespace = ".\\Ayuda\\Luiggi.chm";
+            // 
             // Gestion_de_Proveedores
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -416,9 +421,12 @@
             this.ClientSize = new System.Drawing.Size(659, 365);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
+            this.helpProviderGestionDeProveedores.SetHelpKeyword(this, "20");
+            this.helpProviderGestionDeProveedores.SetHelpNavigator(this, System.Windows.Forms.HelpNavigator.TopicId);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "Gestion_de_Proveedores";
+            this.helpProviderGestionDeProveedores.SetShowHelp(this, true);
             this.ShowInTaskbar = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Gestion de Proveedores";
@@ -470,5 +478,6 @@
         private System.Windows.Forms.MaskedTextBox txt_telefono;
         private System.Windows.Forms.TextBox txt_mail;
         private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.HelpProvider helpProviderGestionDeProveedores;
     }
 }

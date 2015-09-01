@@ -62,6 +62,7 @@
             this.lbl_precio_mayorista = new System.Windows.Forms.Label();
             this.txt_Precio_Mayorista = new System.Windows.Forms.TextBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.helpProviderGestionProducto = new System.Windows.Forms.HelpProvider();
             ((System.ComponentModel.ISupportInitialize)(this.pb_foto)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.grb_Horas.SuspendLayout();
@@ -431,6 +432,10 @@
             this.groupBox2.TabIndex = 39;
             this.groupBox2.TabStop = false;
             // 
+            // helpProviderGestionProducto
+            // 
+            this.helpProviderGestionProducto.HelpNamespace = ".\\Ayuda\\Luiggi.chm";
+            // 
             // Gestion_de_Producto
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -438,10 +443,13 @@
             this.ClientSize = new System.Drawing.Size(656, 437);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.groupBox2);
+            this.helpProviderGestionProducto.SetHelpKeyword(this, "11");
+            this.helpProviderGestionProducto.SetHelpNavigator(this, System.Windows.Forms.HelpNavigator.TopicId);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "Gestion_de_Producto";
+            this.helpProviderGestionProducto.SetShowHelp(this, true);
             this.ShowInTaskbar = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Gestion de Producto";
@@ -492,6 +500,7 @@
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.ComboBox cmb_unidad_catidad;
+        private System.Windows.Forms.HelpProvider helpProviderGestionProducto;
 
     }
 }

@@ -84,6 +84,7 @@
             this.label14 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.txt_contacto = new System.Windows.Forms.TextBox();
+            this.helpProviderGestionOrdenDeCompra = new System.Windows.Forms.HelpProvider();
             this.groupBox2.SuspendLayout();
             this.panel1.SuspendLayout();
             this.groupBox1.SuspendLayout();
@@ -552,6 +553,10 @@
             this.txt_contacto.Size = new System.Drawing.Size(160, 20);
             this.txt_contacto.TabIndex = 80;
             // 
+            // helpProviderGestionOrdenDeCompra
+            // 
+            this.helpProviderGestionOrdenDeCompra.HelpNamespace = ".\\Ayuda\\Luiggi.chm";
+            // 
             // Gestionar_Orden_de_Compra
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -569,9 +574,12 @@
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.dtp_creacion_OT);
             this.Controls.Add(this.label1);
+            this.helpProviderGestionOrdenDeCompra.SetHelpKeyword(this, "18");
+            this.helpProviderGestionOrdenDeCompra.SetHelpNavigator(this, System.Windows.Forms.HelpNavigator.TopicId);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "Gestionar_Orden_de_Compra";
+            this.helpProviderGestionOrdenDeCompra.SetShowHelp(this, true);
             this.ShowInTaskbar = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Gestionar Orden de Compra";
@@ -637,5 +645,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn stockReservado;
         private System.Windows.Forms.DataGridViewTextBoxColumn idProducto;
         private System.Windows.Forms.DataGridViewTextBoxColumn stockFaltante;
+        private System.Windows.Forms.HelpProvider helpProviderGestionOrdenDeCompra;
     }
 }

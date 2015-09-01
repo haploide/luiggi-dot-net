@@ -45,6 +45,7 @@
             this.btn_salir = new System.Windows.Forms.Button();
             this.btn_guardar = new System.Windows.Forms.Button();
             this.btn_nuevo = new System.Windows.Forms.Button();
+            this.helpProviderGestionEmpleados = new System.Windows.Forms.HelpProvider();
             this.groupBox4.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.SuspendLayout();
@@ -223,6 +224,10 @@
             this.btn_nuevo.UseVisualStyleBackColor = true;
             this.btn_nuevo.Click += new System.EventHandler(this.btn_nuevo_Click);
             // 
+            // helpProviderGestionEmpleados
+            // 
+            this.helpProviderGestionEmpleados.HelpNamespace = ".\\Ayuda\\Luiggi.chm";
+            // 
             // Gestion_de_Empleado
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -230,9 +235,12 @@
             this.ClientSize = new System.Drawing.Size(377, 277);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox4);
+            this.helpProviderGestionEmpleados.SetHelpKeyword(this, "46");
+            this.helpProviderGestionEmpleados.SetHelpNavigator(this, System.Windows.Forms.HelpNavigator.TopicId);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "Gestion_de_Empleado";
+            this.helpProviderGestionEmpleados.SetShowHelp(this, true);
             this.ShowInTaskbar = false;
             this.Text = "Gestion_de_Empleado";
             this.Load += new System.EventHandler(this.Gestion_de_Empleado_Load);
@@ -263,5 +271,6 @@
         private System.Windows.Forms.Button btn_salir;
         private System.Windows.Forms.Button btn_guardar;
         private System.Windows.Forms.Button btn_nuevo;
+        private System.Windows.Forms.HelpProvider helpProviderGestionEmpleados;
     }
 }

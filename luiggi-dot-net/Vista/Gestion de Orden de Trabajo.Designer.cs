@@ -74,6 +74,7 @@ namespace Vista
             this.lbl_unidad = new System.Windows.Forms.Label();
             this.btn_cargar_combos = new System.Windows.Forms.Button();
             this.lbl_tiempo = new System.Windows.Forms.Label();
+            this.helpProviderGestionOrdenesDeTrabajo = new System.Windows.Forms.HelpProvider();
             ((System.ComponentModel.ISupportInitialize)(this.errores)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_estructuraOT)).BeginInit();
             this.groupBox2.SuspendLayout();
@@ -474,6 +475,10 @@ namespace Vista
             this.lbl_tiempo.Text = "0";
             this.lbl_tiempo.Visible = false;
             // 
+            // helpProviderGestionOrdenesDeTrabajo
+            // 
+            this.helpProviderGestionOrdenesDeTrabajo.HelpNamespace = ".\\Ayuda\\Luiggi.chm";
+            // 
             // Gestion_de_orden_de_Trabajo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -497,9 +502,12 @@ namespace Vista
             this.Controls.Add(this.label4);
             this.Controls.Add(this.dtp_creacion_OT);
             this.Controls.Add(this.label1);
+            this.helpProviderGestionOrdenesDeTrabajo.SetHelpKeyword(this, "16");
+            this.helpProviderGestionOrdenesDeTrabajo.SetHelpNavigator(this, System.Windows.Forms.HelpNavigator.TopicId);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "Gestion_de_orden_de_Trabajo";
+            this.helpProviderGestionOrdenesDeTrabajo.SetShowHelp(this, true);
             this.ShowInTaskbar = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Gestion de Ordenes de Trabajo";
@@ -560,6 +568,7 @@ namespace Vista
         private System.Windows.Forms.DataGridViewTextBoxColumn unidad;
         private System.Windows.Forms.DataGridViewTextBoxColumn estado;
         private System.Windows.Forms.DataGridViewTextBoxColumn Estado;
+        private System.Windows.Forms.HelpProvider helpProviderGestionOrdenesDeTrabajo;
 
     }
 }

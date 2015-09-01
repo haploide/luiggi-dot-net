@@ -35,6 +35,7 @@
             this.DataSetInformeProductos = new Vista.DataSetInformeProductos();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.reportViewer1 = new Microsoft.Reporting.WinForms.ReportViewer();
+            this.helpProviderEmitirInformeProductos = new System.Windows.Forms.HelpProvider();
             ((System.ComponentModel.ISupportInitialize)(this.ProductoBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.DataSetInformeProductos)).BeginInit();
             this.groupBox1.SuspendLayout();
@@ -52,9 +53,9 @@
             // 
             // groupBox1
             // 
-            this.groupBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-                        | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.groupBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.groupBox1.Controls.Add(this.reportViewer1);
             this.groupBox1.Location = new System.Drawing.Point(12, 12);
             this.groupBox1.Name = "groupBox1";
@@ -74,14 +75,21 @@
             this.reportViewer1.Size = new System.Drawing.Size(976, 929);
             this.reportViewer1.TabIndex = 0;
             // 
+            // helpProviderEmitirInformeProductos
+            // 
+            this.helpProviderEmitirInformeProductos.HelpNamespace = ".\\Ayuda\\Luiggi.chm";
+            // 
             // Emitir_Informe_Productos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(997, 972);
+            this.ClientSize = new System.Drawing.Size(997, 749);
             this.Controls.Add(this.groupBox1);
+            this.helpProviderEmitirInformeProductos.SetHelpKeyword(this, "41");
+            this.helpProviderEmitirInformeProductos.SetHelpNavigator(this, System.Windows.Forms.HelpNavigator.TopicId);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Emitir_Informe_Productos";
+            this.helpProviderEmitirInformeProductos.SetShowHelp(this, true);
             this.ShowInTaskbar = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Emitir Informe Productos";
@@ -99,5 +107,6 @@
         private Microsoft.Reporting.WinForms.ReportViewer reportViewer1;
         private System.Windows.Forms.BindingSource ProductoBindingSource;
         private DataSetInformeProductos DataSetInformeProductos;
+        private System.Windows.Forms.HelpProvider helpProviderEmitirInformeProductos;
     }
 }

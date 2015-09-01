@@ -76,6 +76,7 @@
             this.label14 = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
             this.gp_filtros = new System.Windows.Forms.GroupBox();
+            this.helpProviderGestionPagoAProveedores = new System.Windows.Forms.HelpProvider();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_Orden_Compra)).BeginInit();
             this.groupBox3.SuspendLayout();
@@ -100,8 +101,8 @@
             this.dgv_Orden_Compra.AllowUserToDeleteRows = false;
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.LightSteelBlue;
             this.dgv_Orden_Compra.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
-            this.dgv_Orden_Compra.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.dgv_Orden_Compra.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.dgv_Orden_Compra.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgv_Orden_Compra.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgv_Orden_Compra.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -205,8 +206,8 @@
             this.dgv_detalle_orden_compra.AllowUserToDeleteRows = false;
             dataGridViewCellStyle5.BackColor = System.Drawing.Color.LightSteelBlue;
             this.dgv_detalle_orden_compra.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle5;
-            this.dgv_detalle_orden_compra.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.dgv_detalle_orden_compra.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.dgv_detalle_orden_compra.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgv_detalle_orden_compra.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgv_detalle_orden_compra.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -534,6 +535,10 @@
             this.gp_filtros.TabStop = false;
             this.gp_filtros.Text = "Filtros";
             // 
+            // helpProviderGestionPagoAProveedores
+            // 
+            this.helpProviderGestionPagoAProveedores.HelpNamespace = ".\\Ayuda\\Luiggi.chm";
+            // 
             // Gestion_de_Pago_a_Proveedores
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Inherit;
@@ -542,8 +547,11 @@
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.groupBox3);
+            this.helpProviderGestionPagoAProveedores.SetHelpKeyword(this, "27");
+            this.helpProviderGestionPagoAProveedores.SetHelpNavigator(this, System.Windows.Forms.HelpNavigator.TopicId);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Gestion_de_Pago_a_Proveedores";
+            this.helpProviderGestionPagoAProveedores.SetShowHelp(this, true);
             this.Text = "Gestion de Pago a Proveedores";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Gestion_de_Pago_a_Proveedores_FormClosed);
@@ -609,5 +617,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn idEstado;
         private System.Windows.Forms.DataGridViewButtonColumn opciones;
         private System.Windows.Forms.DataGridViewTextBoxColumn Estado;
+        private System.Windows.Forms.HelpProvider helpProviderGestionPagoAProveedores;
     }
 }

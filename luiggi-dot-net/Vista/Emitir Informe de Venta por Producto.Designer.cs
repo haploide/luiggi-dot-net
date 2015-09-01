@@ -41,6 +41,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.btn_aplicar_filtro = new System.Windows.Forms.Button();
             this.dtp_fecha_desde = new System.Windows.Forms.DateTimePicker();
+            this.helpProviderEmitirInformeVentaProducto = new System.Windows.Forms.HelpProvider();
             ((System.ComponentModel.ISupportInitialize)(this.ProductosBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.DataSetInformeVentasProductos)).BeginInit();
             this.groupBox1.SuspendLayout();
@@ -59,9 +60,9 @@
             // 
             // groupBox1
             // 
-            this.groupBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-                        | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.groupBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.groupBox1.Controls.Add(this.reportViewer1);
             this.groupBox1.Location = new System.Drawing.Point(12, 118);
             this.groupBox1.Name = "groupBox1";
@@ -83,8 +84,8 @@
             // 
             // groupBox2
             // 
-            this.groupBox2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.groupBox2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.groupBox2.Controls.Add(this.dtp_fecha_hasta);
             this.groupBox2.Controls.Add(this.label2);
             this.groupBox2.Controls.Add(this.label1);
@@ -145,15 +146,22 @@
             this.dtp_fecha_desde.TabIndex = 0;
             this.dtp_fecha_desde.ValueChanged += new System.EventHandler(this.dtp_fecha_desde_ValueChanged);
             // 
+            // helpProviderEmitirInformeVentaProducto
+            // 
+            this.helpProviderEmitirInformeVentaProducto.HelpNamespace = ".\\Ayuda\\Luiggi.chm";
+            // 
             // Emitir_Informe_de_Venta_por_Producto
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1002, 800);
+            this.ClientSize = new System.Drawing.Size(1002, 749);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
+            this.helpProviderEmitirInformeVentaProducto.SetHelpKeyword(this, "38");
+            this.helpProviderEmitirInformeVentaProducto.SetHelpNavigator(this, System.Windows.Forms.HelpNavigator.TopicId);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Emitir_Informe_de_Venta_por_Producto";
+            this.helpProviderEmitirInformeVentaProducto.SetShowHelp(this, true);
             this.ShowInTaskbar = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Emitir Informe de Venta por Producto";
@@ -179,5 +187,6 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.DateTimePicker dtp_fecha_hasta;
+        private System.Windows.Forms.HelpProvider helpProviderEmitirInformeVentaProducto;
     }
 }

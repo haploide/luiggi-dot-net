@@ -89,6 +89,7 @@
             this.lblUnidad = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.helpProviderGestionEstructuraDeProductos = new System.Windows.Forms.HelpProvider();
             ((System.ComponentModel.ISupportInitialize)(this.DGVProductos)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.DGVEstructuraProductos)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.DGVProductosAAgregar)).BeginInit();
@@ -681,11 +682,15 @@
             this.groupBox3.TabIndex = 56;
             this.groupBox3.TabStop = false;
             // 
+            // helpProviderGestionEstructuraDeProductos
+            // 
+            this.helpProviderGestionEstructuraDeProductos.HelpNamespace = ".\\Ayuda\\Luiggi.chm";
+            // 
             // Gestionar_Estructura_Productos
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Inherit;
             this.AutoScroll = true;
-            this.ClientSize = new System.Drawing.Size(1237, 765);
+            this.ClientSize = new System.Drawing.Size(1237, 749);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.lblDetalle);
@@ -699,8 +704,11 @@
             this.Controls.Add(this.DGVProductosAAgregar);
             this.Controls.Add(this.DGVProductos);
             this.Controls.Add(this.groupBox3);
+            this.helpProviderGestionEstructuraDeProductos.SetHelpKeyword(this, "12");
+            this.helpProviderGestionEstructuraDeProductos.SetHelpNavigator(this, System.Windows.Forms.HelpNavigator.TopicId);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Gestionar_Estructura_Productos";
+            this.helpProviderGestionEstructuraDeProductos.SetShowHelp(this, true);
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Gestionar Estructura Productos";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
@@ -784,5 +792,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn idMaquinariaUtilizadaDetalle;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.GroupBox groupBox3;
+        private System.Windows.Forms.HelpProvider helpProviderGestionEstructuraDeProductos;
     }
 }

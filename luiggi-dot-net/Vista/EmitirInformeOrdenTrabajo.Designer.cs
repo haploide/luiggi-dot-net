@@ -41,6 +41,7 @@
             this.dtp_fecha_desde = new System.Windows.Forms.DateTimePicker();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.reportViewer1 = new Microsoft.Reporting.WinForms.ReportViewer();
+            this.helpProviderEmitirInformeOrdenesDeTrabajo = new System.Windows.Forms.HelpProvider();
             ((System.ComponentModel.ISupportInitialize)(this.OrdenTrabajoBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.DataSetInformeOrdenTrabajo)).BeginInit();
             this.groupBox2.SuspendLayout();
@@ -59,8 +60,8 @@
             // 
             // groupBox2
             // 
-            this.groupBox2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.groupBox2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.groupBox2.Controls.Add(this.dtp_fecha_hasta);
             this.groupBox2.Controls.Add(this.label2);
             this.groupBox2.Controls.Add(this.label1);
@@ -123,9 +124,9 @@
             // 
             // groupBox1
             // 
-            this.groupBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-                        | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.groupBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.groupBox1.Controls.Add(this.reportViewer1);
             this.groupBox1.Location = new System.Drawing.Point(12, 118);
             this.groupBox1.Name = "groupBox1";
@@ -145,6 +146,10 @@
             this.reportViewer1.Size = new System.Drawing.Size(976, 521);
             this.reportViewer1.TabIndex = 0;
             // 
+            // helpProviderEmitirInformeOrdenesDeTrabajo
+            // 
+            this.helpProviderEmitirInformeOrdenesDeTrabajo.HelpNamespace = ".\\Ayuda\\Luiggi.chm";
+            // 
             // EmitirInformeOrdenTrabajo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -152,8 +157,11 @@
             this.ClientSize = new System.Drawing.Size(1006, 670);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.groupBox2);
+            this.helpProviderEmitirInformeOrdenesDeTrabajo.SetHelpKeyword(this, "44");
+            this.helpProviderEmitirInformeOrdenesDeTrabajo.SetHelpNavigator(this, System.Windows.Forms.HelpNavigator.TopicId);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "EmitirInformeOrdenTrabajo";
+            this.helpProviderEmitirInformeOrdenesDeTrabajo.SetShowHelp(this, true);
             this.ShowInTaskbar = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Emitir Informe Ordenes de Trabajo";
@@ -179,6 +187,7 @@
         private Microsoft.Reporting.WinForms.ReportViewer reportViewer1;
         private System.Windows.Forms.BindingSource OrdenTrabajoBindingSource;
         private DataSetInformeOrdenTrabajo DataSetInformeOrdenTrabajo;
+        private System.Windows.Forms.HelpProvider helpProviderEmitirInformeOrdenesDeTrabajo;
 
     }
 }

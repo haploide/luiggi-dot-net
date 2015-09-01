@@ -54,6 +54,7 @@
             this.btn_salir_consulta = new System.Windows.Forms.Button();
             this.btn_limpiar_filtros = new System.Windows.Forms.Button();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.helpProviderConsultaProveedor = new System.Windows.Forms.HelpProvider();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_proveedores)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -66,9 +67,9 @@
             this.dgv_proveedores.AllowUserToDeleteRows = false;
             dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.dgv_proveedores.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
-            this.dgv_proveedores.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-                        | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.dgv_proveedores.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.dgv_proveedores.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
             this.dgv_proveedores.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgv_proveedores.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -107,7 +108,7 @@
             this.raSocial.HeaderText = "Razon Social";
             this.raSocial.Name = "raSocial";
             this.raSocial.ReadOnly = true;
-            this.raSocial.Width = 88;
+            this.raSocial.Width = 87;
             // 
             // cuit
             // 
@@ -362,6 +363,10 @@
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Proveedores";
             // 
+            // helpProviderConsultaProveedor
+            // 
+            this.helpProviderConsultaProveedor.HelpNamespace = ".\\Ayuda\\Luiggi.chm";
+            // 
             // Consulta_Proveedor
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Inherit;
@@ -369,8 +374,11 @@
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.groupBox2);
+            this.helpProviderConsultaProveedor.SetHelpKeyword(this, "19");
+            this.helpProviderConsultaProveedor.SetHelpNavigator(this, System.Windows.Forms.HelpNavigator.TopicId);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Consulta_Proveedor";
+            this.helpProviderConsultaProveedor.SetShowHelp(this, true);
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Consultar Proveedor";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
@@ -420,5 +428,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn idprovincia;
         private System.Windows.Forms.DataGridViewTextBoxColumn idlocalidad;
         private System.Windows.Forms.GroupBox groupBox3;
+        private System.Windows.Forms.HelpProvider helpProviderConsultaProveedor;
     }
 }

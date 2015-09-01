@@ -22,10 +22,10 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ConsultarOrdenTrabajo));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             this.gp_filtros = new System.Windows.Forms.GroupBox();
             this.dtp_hasta_fin = new System.Windows.Forms.DateTimePicker();
             this.label5 = new System.Windows.Forms.Label();
@@ -78,6 +78,7 @@
             this.empleado = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.idEstadoDetalle = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.btnHija = new System.Windows.Forms.DataGridViewButtonColumn();
+            this.helpProviderConsultaOrdenTrabajo = new System.Windows.Forms.HelpProvider();
             this.gp_filtros.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox1.SuspendLayout();
@@ -156,7 +157,6 @@
             this.btn_aplicar_filtro.Size = new System.Drawing.Size(38, 46);
             this.btn_aplicar_filtro.TabIndex = 71;
             this.btn_aplicar_filtro.UseVisualStyleBackColor = true;
-            
             // 
             // cmb_estado_plan
             // 
@@ -261,10 +261,10 @@
             // 
             this.dgv_OTproductosPadres.AllowUserToAddRows = false;
             this.dgv_OTproductosPadres.AllowUserToDeleteRows = false;
-            dataGridViewCellStyle5.BackColor = System.Drawing.Color.LightSteelBlue;
-            this.dgv_OTproductosPadres.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle5;
-            this.dgv_OTproductosPadres.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.LightSteelBlue;
+            this.dgv_OTproductosPadres.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            this.dgv_OTproductosPadres.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.dgv_OTproductosPadres.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
             this.dgv_OTproductosPadres.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgv_OTproductosPadres.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -430,10 +430,10 @@
             // 
             this.dgv_OTproductosHijos.AllowUserToAddRows = false;
             this.dgv_OTproductosHijos.AllowUserToDeleteRows = false;
-            dataGridViewCellStyle6.BackColor = System.Drawing.Color.LightSteelBlue;
-            this.dgv_OTproductosHijos.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle6;
-            this.dgv_OTproductosHijos.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.LightSteelBlue;
+            this.dgv_OTproductosHijos.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle2;
+            this.dgv_OTproductosHijos.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.dgv_OTproductosHijos.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
             this.dgv_OTproductosHijos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgv_OTproductosHijos.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -507,9 +507,9 @@
             // 
             // cant
             // 
-            dataGridViewCellStyle7.Format = "N2";
-            dataGridViewCellStyle7.NullValue = null;
-            this.cant.DefaultCellStyle = dataGridViewCellStyle7;
+            dataGridViewCellStyle3.Format = "N2";
+            dataGridViewCellStyle3.NullValue = null;
+            this.cant.DefaultCellStyle = dataGridViewCellStyle3;
             this.cant.HeaderText = "Cantidad Planeada";
             this.cant.Name = "cant";
             this.cant.ReadOnly = true;
@@ -517,9 +517,9 @@
             // 
             // cantReal
             // 
-            dataGridViewCellStyle8.Format = "N2";
-            dataGridViewCellStyle8.NullValue = null;
-            this.cantReal.DefaultCellStyle = dataGridViewCellStyle8;
+            dataGridViewCellStyle4.Format = "N2";
+            dataGridViewCellStyle4.NullValue = null;
+            this.cantReal.DefaultCellStyle = dataGridViewCellStyle4;
             this.cantReal.HeaderText = "Cantidad Real";
             this.cantReal.Name = "cantReal";
             this.cantReal.ReadOnly = true;
@@ -583,6 +583,10 @@
             this.btnHija.UseColumnTextForButtonValue = true;
             this.btnHija.Width = 5;
             // 
+            // helpProviderConsultaOrdenTrabajo
+            // 
+            this.helpProviderConsultaOrdenTrabajo.HelpNamespace = ".\\Ayuda\\Luiggi.chm";
+            // 
             // ConsultarOrdenTrabajo
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Inherit;
@@ -591,8 +595,11 @@
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.groupBox3);
+            this.helpProviderConsultaOrdenTrabajo.SetHelpKeyword(this, "15");
+            this.helpProviderConsultaOrdenTrabajo.SetHelpNavigator(this, System.Windows.Forms.HelpNavigator.TopicId);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "ConsultarOrdenTrabajo";
+            this.helpProviderConsultaOrdenTrabajo.SetShowHelp(this, true);
             this.Text = "Consultar Orden Trabajo";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.ConsultarOrdenTrabajo_FormClosed);
@@ -664,5 +671,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn idEstadoDetalle;
         private System.Windows.Forms.DataGridViewButtonColumn btnHija;
         private System.Windows.Forms.DataGridViewTextBoxColumn Estado;
+        private System.Windows.Forms.HelpProvider helpProviderConsultaOrdenTrabajo;
     }
 }

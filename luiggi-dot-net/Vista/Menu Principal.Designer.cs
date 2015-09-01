@@ -61,6 +61,7 @@
             this.gestionDePagoAProveedoresToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.gestiónDeEmpleadosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.cuentasStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.cerrarSesiónToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.helpMenu = new System.Windows.Forms.ToolStripMenuItem();
             this.statusStrip = new System.Windows.Forms.StatusStrip();
             this.ts_fecha = new System.Windows.Forms.ToolStripStatusLabel();
@@ -78,7 +79,6 @@
             this.informeDesviaciónDeOrdenesDeTrabajoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.helpProviderMenu = new System.Windows.Forms.HelpProvider();
             this.btn_pedido = new System.Windows.Forms.Button();
-            this.cerrarSesiónToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip.SuspendLayout();
             this.statusStrip.SuspendLayout();
             this.contextMenuStripImpresiones.SuspendLayout();
@@ -337,6 +337,13 @@
             this.cuentasStripMenuItem1.Size = new System.Drawing.Size(162, 20);
             this.cuentasStripMenuItem1.Text = "Administracion de Cuentas";
             // 
+            // cerrarSesiónToolStripMenuItem
+            // 
+            this.cerrarSesiónToolStripMenuItem.Name = "cerrarSesiónToolStripMenuItem";
+            this.cerrarSesiónToolStripMenuItem.Size = new System.Drawing.Size(143, 22);
+            this.cerrarSesiónToolStripMenuItem.Text = "Cerrar Sesión";
+            this.cerrarSesiónToolStripMenuItem.Click += new System.EventHandler(this.cerrarSesiónToolStripMenuItem_Click);
+            // 
             // helpMenu
             // 
             this.helpMenu.Name = "helpMenu";
@@ -349,7 +356,7 @@
             this.statusStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.ts_fecha,
             this.usuario});
-            this.statusStrip.Location = new System.Drawing.Point(0, 728);
+            this.statusStrip.Location = new System.Drawing.Point(0, 727);
             this.statusStrip.Name = "statusStrip";
             this.statusStrip.Size = new System.Drawing.Size(1102, 22);
             this.statusStrip.TabIndex = 2;
@@ -467,13 +474,6 @@
             this.btn_pedido.UseVisualStyleBackColor = true;
             this.btn_pedido.Click += new System.EventHandler(this.btn_pedido_Click);
             // 
-            // cerrarSesiónToolStripMenuItem
-            // 
-            this.cerrarSesiónToolStripMenuItem.Name = "cerrarSesiónToolStripMenuItem";
-            this.cerrarSesiónToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.cerrarSesiónToolStripMenuItem.Text = "Cerrar Sesión";
-            this.cerrarSesiónToolStripMenuItem.Click += new System.EventHandler(this.cerrarSesiónToolStripMenuItem_Click);
-            // 
             // Menu_Principal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
@@ -481,17 +481,20 @@
             this.BackColor = System.Drawing.SystemColors.Control;
             this.BackgroundImage = global::Vista.Properties.Resources.La_pasta_de_luiggi;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1102, 750);
+            this.ClientSize = new System.Drawing.Size(1102, 749);
             this.Controls.Add(this.btn_pedido);
             this.Controls.Add(this.statusStrip);
             this.Controls.Add(this.menuStrip);
             this.Controls.Add(this.btn_ventas);
             this.Controls.Add(this.btn_impresiones);
             this.DoubleBuffered = true;
+            this.helpProviderMenu.SetHelpKeyword(this, "0");
+            this.helpProviderMenu.SetHelpNavigator(this, System.Windows.Forms.HelpNavigator.TopicId);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.IsMdiContainer = true;
             this.MainMenuStrip = this.menuStrip;
             this.Name = "Menu_Principal";
+            this.helpProviderMenu.SetShowHelp(this, true);
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Menú Principal ";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;

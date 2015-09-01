@@ -146,6 +146,7 @@
             this.btn_guardar = new System.Windows.Forms.Button();
             this.btn_nuevo = new System.Windows.Forms.Button();
             this.tp_mesajes = new System.Windows.Forms.ToolTip(this.components);
+            this.helpProviderGestionPlanMaestroDeProduccion = new System.Windows.Forms.HelpProvider();
             this.groupBox1.SuspendLayout();
             this.groupBox4.SuspendLayout();
             this.tab_dias.SuspendLayout();
@@ -1177,17 +1178,24 @@
             this.tp_mesajes.InitialDelay = 250;
             this.tp_mesajes.ReshowDelay = 100;
             // 
+            // helpProviderGestionPlanMaestroDeProduccion
+            // 
+            this.helpProviderGestionPlanMaestroDeProduccion.HelpNamespace = ".\\Ayuda\\Luiggi.chm";
+            // 
             // GestionPlanMaestroProduccion
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(701, 814);
+            this.ClientSize = new System.Drawing.Size(701, 749);
             this.Controls.Add(this.groupBox4);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
+            this.helpProviderGestionPlanMaestroDeProduccion.SetHelpKeyword(this, "14");
+            this.helpProviderGestionPlanMaestroDeProduccion.SetHelpNavigator(this, System.Windows.Forms.HelpNavigator.TopicId);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "GestionPlanMaestroProduccion";
+            this.helpProviderGestionPlanMaestroDeProduccion.SetShowHelp(this, true);
             this.ShowInTaskbar = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Gestion Plan Maestro Produccion";
@@ -1329,5 +1337,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn stockDisponible;
         private System.Windows.Forms.DataGridViewTextBoxColumn stockReservado;
         private System.Windows.Forms.DataGridViewTextBoxColumn idProducto;
+        private System.Windows.Forms.HelpProvider helpProviderGestionPlanMaestroDeProduccion;
     }
 }

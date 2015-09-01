@@ -60,6 +60,7 @@
             this.btn_limpiar_filtros = new System.Windows.Forms.Button();
             this.pb_foto = new System.Windows.Forms.PictureBox();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.helpProviderConsultaProducto = new System.Windows.Forms.HelpProvider();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_productos)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -154,8 +155,8 @@
             this.dgv_productos.AllowUserToDeleteRows = false;
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.LightSteelBlue;
             this.dgv_productos.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
-            this.dgv_productos.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.dgv_productos.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.dgv_productos.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
             this.dgv_productos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgv_productos.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -227,14 +228,14 @@
             this.Unidad.HeaderText = "Unidad de Medida";
             this.Unidad.Name = "Unidad";
             this.Unidad.ReadOnly = true;
-            this.Unidad.Width = 119;
+            this.Unidad.Width = 109;
             // 
             // stock_riesg
             // 
             this.stock_riesg.HeaderText = "Stock de Riesgo";
             this.stock_riesg.Name = "stock_riesg";
             this.stock_riesg.ReadOnly = true;
-            this.stock_riesg.Width = 111;
+            this.stock_riesg.Width = 102;
             // 
             // idUnidad
             // 
@@ -427,6 +428,10 @@
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Productos";
             // 
+            // helpProviderConsultaProducto
+            // 
+            this.helpProviderConsultaProducto.HelpNamespace = ".\\Ayuda\\Luiggi.chm";
+            // 
             // Consultas_Producto
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Inherit;
@@ -435,8 +440,11 @@
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.groupBox2);
+            this.helpProviderConsultaProducto.SetHelpKeyword(this, "10");
+            this.helpProviderConsultaProducto.SetHelpNavigator(this, System.Windows.Forms.HelpNavigator.TopicId);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Consultas_Producto";
+            this.helpProviderConsultaProducto.SetShowHelp(this, true);
             this.Text = "Consultas Producto";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Consultas_Producto_FormClosed);
@@ -490,5 +498,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn idUnidadTiempo;
         private System.Windows.Forms.DataGridViewTextBoxColumn cantidadProductos;
         private System.Windows.Forms.GroupBox groupBox3;
+        private System.Windows.Forms.HelpProvider helpProviderConsultaProducto;
     }
 }

@@ -46,6 +46,7 @@
             this.btn_limpiar_filtros = new System.Windows.Forms.Button();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.btn_limpiar = new System.Windows.Forms.Button();
+            this.helpProviderConsultaEmpleado = new System.Windows.Forms.HelpProvider();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_empleados)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -58,9 +59,9 @@
             this.dgv_empleados.AllowUserToDeleteRows = false;
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.LightSteelBlue;
             this.dgv_empleados.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
-            this.dgv_empleados.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-                        | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.dgv_empleados.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.dgv_empleados.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.DisplayedCells;
             this.dgv_empleados.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgv_empleados.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -290,6 +291,10 @@
             this.btn_limpiar.UseVisualStyleBackColor = true;
             this.btn_limpiar.Click += new System.EventHandler(this.btn_limpiar_Click);
             // 
+            // helpProviderConsultaEmpleado
+            // 
+            this.helpProviderConsultaEmpleado.HelpNamespace = ".\\Ayuda\\Luiggi.chm";
+            // 
             // Consulta_Empleado
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Inherit;
@@ -297,8 +302,11 @@
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
+            this.helpProviderConsultaEmpleado.SetHelpKeyword(this, "36");
+            this.helpProviderConsultaEmpleado.SetHelpNavigator(this, System.Windows.Forms.HelpNavigator.TopicId);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Consulta_Empleado";
+            this.helpProviderConsultaEmpleado.SetShowHelp(this, true);
             this.Text = "Consulta Empleado";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Consulta_Empleado_FormClosed);
@@ -338,5 +346,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn estado;
         private System.Windows.Forms.DataGridViewTextBoxColumn idEstado;
         private System.Windows.Forms.DataGridViewButtonColumn opciones;
+        private System.Windows.Forms.HelpProvider helpProviderConsultaEmpleado;
     }
 }

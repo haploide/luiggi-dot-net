@@ -47,6 +47,7 @@
             this.btn_Actualizar_OTPadre = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.helpProviderActualizarStock = new System.Windows.Forms.HelpProvider();
             ((System.ComponentModel.ISupportInitialize)(this.DGV_detalle_Productos)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -221,6 +222,10 @@
             this.groupBox2.TabIndex = 25;
             this.groupBox2.TabStop = false;
             // 
+            // helpProviderActualizarStock
+            // 
+            this.helpProviderActualizarStock.HelpNamespace = ".\\Ayuda\\Luiggi.chm";
+            // 
             // ActualizarStock
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -228,10 +233,13 @@
             this.ClientSize = new System.Drawing.Size(491, 358);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
+            this.helpProviderActualizarStock.SetHelpKeyword(this, "35");
+            this.helpProviderActualizarStock.SetHelpNavigator(this, System.Windows.Forms.HelpNavigator.TopicId);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "ActualizarStock";
+            this.helpProviderActualizarStock.SetShowHelp(this, true);
             this.ShowInTaskbar = false;
             this.Text = "Actualizar Stock";
             this.Load += new System.EventHandler(this.ActualizarStock_Load);
@@ -263,5 +271,6 @@
         private System.Windows.Forms.Button btn_Actualizar_OTPadre;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.GroupBox groupBox2;
+        private System.Windows.Forms.HelpProvider helpProviderActualizarStock;
     }
 }

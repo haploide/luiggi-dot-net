@@ -49,6 +49,7 @@
             this.idTipo = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.idEstado = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.opciones = new System.Windows.Forms.DataGridViewButtonColumn();
+            this.helpProviderCunsultaMaquinaria = new System.Windows.Forms.HelpProvider();
             this.gp_filtros.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox1.SuspendLayout();
@@ -319,6 +320,10 @@
             this.opciones.ReadOnly = true;
             this.opciones.Width = 58;
             // 
+            // helpProviderCunsultaMaquinaria
+            // 
+            this.helpProviderCunsultaMaquinaria.HelpNamespace = ".\\Ayuda\\Luiggi.chm";
+            // 
             // Consulta_Maquinaria
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Inherit;
@@ -327,8 +332,11 @@
             this.Controls.Add(this.gp_filtros);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
+            this.helpProviderCunsultaMaquinaria.SetHelpKeyword(this, "37");
+            this.helpProviderCunsultaMaquinaria.SetHelpNavigator(this, System.Windows.Forms.HelpNavigator.TopicId);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Consulta_Maquinaria";
+            this.helpProviderCunsultaMaquinaria.SetShowHelp(this, true);
             this.Text = "Consulta Maquinaria";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Consulta_Maquinaria_FormClosed);
@@ -372,5 +380,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn idEstado;
         private System.Windows.Forms.DataGridViewTextBoxColumn Estado;
         private System.Windows.Forms.DataGridViewButtonColumn opciones;
+        private System.Windows.Forms.HelpProvider helpProviderCunsultaMaquinaria;
     }
 }

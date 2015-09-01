@@ -60,6 +60,7 @@
             this.errores = new System.Windows.Forms.ErrorProvider(this.components);
             this.lbl_unidad = new System.Windows.Forms.Label();
             this.btn_cargar_combos = new System.Windows.Forms.Button();
+            this.helpProviderGestionOrdenDeTrabajoDeProductosIntermedios = new System.Windows.Forms.HelpProvider();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_estructuraOT)).BeginInit();
@@ -358,6 +359,10 @@
             this.btn_cargar_combos.UseVisualStyleBackColor = true;
             this.btn_cargar_combos.Click += new System.EventHandler(this.btn_cargar_combos_Click);
             // 
+            // helpProviderGestionOrdenDeTrabajoDeProductosIntermedios
+            // 
+            this.helpProviderGestionOrdenDeTrabajoDeProductosIntermedios.HelpNamespace = ".\\Ayuda\\Luiggi.chm";
+            // 
             // GestionOTIntermedio
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -381,9 +386,12 @@
             this.Controls.Add(this.label4);
             this.Controls.Add(this.dtp_creacion_OT);
             this.Controls.Add(this.label1);
+            this.helpProviderGestionOrdenDeTrabajoDeProductosIntermedios.SetHelpKeyword(this, "48");
+            this.helpProviderGestionOrdenDeTrabajoDeProductosIntermedios.SetHelpNavigator(this, System.Windows.Forms.HelpNavigator.TopicId);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "GestionOTIntermedio";
+            this.helpProviderGestionOrdenDeTrabajoDeProductosIntermedios.SetShowHelp(this, true);
             this.ShowInTaskbar = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Gestion Orden Trabajo de Productos Intermedio";
@@ -430,5 +438,6 @@
         private System.Windows.Forms.ErrorProvider errores;
         private System.Windows.Forms.Label lbl_unidad;
         private System.Windows.Forms.Button btn_cargar_combos;
+        private System.Windows.Forms.HelpProvider helpProviderGestionOrdenDeTrabajoDeProductosIntermedios;
     }
 }

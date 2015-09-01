@@ -83,6 +83,7 @@
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.helpProviderGestionProductoPorProveedor = new System.Windows.Forms.HelpProvider();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_productos)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_Productos_X_Proveedores)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_proveedores)).BeginInit();
@@ -251,7 +252,7 @@
             this.stockRiesgo.HeaderText = "Stock de Riesgo";
             this.stockRiesgo.Name = "stockRiesgo";
             this.stockRiesgo.ReadOnly = true;
-            this.stockRiesgo.Width = 111;
+            this.stockRiesgo.Width = 102;
             // 
             // stockActual
             // 
@@ -630,6 +631,10 @@
             this.groupBox3.TabIndex = 74;
             this.groupBox3.TabStop = false;
             // 
+            // helpProviderGestionProductoPorProveedor
+            // 
+            this.helpProviderGestionProductoPorProveedor.HelpNamespace = ".\\Ayuda\\Luiggi.chm";
+            // 
             // Gestion_Producto_X_Proveedor
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Inherit;
@@ -638,7 +643,10 @@
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox3);
+            this.helpProviderGestionProductoPorProveedor.SetHelpKeyword(this, "21");
+            this.helpProviderGestionProductoPorProveedor.SetHelpNavigator(this, System.Windows.Forms.HelpNavigator.TopicId);
             this.Name = "Gestion_Producto_X_Proveedor";
+            this.helpProviderGestionProductoPorProveedor.SetShowHelp(this, true);
             this.Text = "Gestion Producto x Proveedor";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Gestion_Producto_X_Proveedor_FormClosed);
@@ -716,5 +724,6 @@
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.GroupBox groupBox3;
+        private System.Windows.Forms.HelpProvider helpProviderGestionProductoPorProveedor;
     }
 }

@@ -43,6 +43,7 @@
             this.reportViewer1 = new Microsoft.Reporting.WinForms.ReportViewer();
             this.DataSetOrdenDeCompra = new Vista.DataSetOrdenDeCompra();
             this.OrdenDeCompraBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.helpProviderEmitirInformeOrdenesDeCompra = new System.Windows.Forms.HelpProvider();
             ((System.ComponentModel.ISupportInitialize)(this.InformeOrdenCompraBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.DataSetInformeOrdenCompra)).BeginInit();
             this.groupBox1.SuspendLayout();
@@ -63,8 +64,8 @@
             // 
             // groupBox1
             // 
-            this.groupBox1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.groupBox1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Controls.Add(this.btn_aplicar_filtro);
@@ -129,9 +130,9 @@
             // 
             // groupBox2
             // 
-            this.groupBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-                        | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.groupBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.groupBox2.Controls.Add(this.reportViewer1);
             this.groupBox2.Location = new System.Drawing.Point(12, 118);
             this.groupBox2.Name = "groupBox2";
@@ -161,15 +162,22 @@
             this.OrdenDeCompraBindingSource.DataMember = "OrdenDeCompra";
             this.OrdenDeCompraBindingSource.DataSource = this.DataSetOrdenDeCompra;
             // 
+            // helpProviderEmitirInformeOrdenesDeCompra
+            // 
+            this.helpProviderEmitirInformeOrdenesDeCompra.HelpNamespace = ".\\Ayuda\\Luiggi.chm";
+            // 
             // EmitirInformeOrdenCompra
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(886, 754);
+            this.ClientSize = new System.Drawing.Size(886, 749);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
+            this.helpProviderEmitirInformeOrdenesDeCompra.SetHelpKeyword(this, "43");
+            this.helpProviderEmitirInformeOrdenesDeCompra.SetHelpNavigator(this, System.Windows.Forms.HelpNavigator.TopicId);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "EmitirInformeOrdenCompra";
+            this.helpProviderEmitirInformeOrdenesDeCompra.SetShowHelp(this, true);
             this.ShowInTaskbar = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Emitir Informe Ordenes de Compras";
@@ -199,5 +207,6 @@
         private DataSetOrdenDeCompra DataSetOrdenDeCompra;
         private System.Windows.Forms.BindingSource InformeOrdenCompraBindingSource;
         private DataSetInformeOrdenCompra DataSetInformeOrdenCompra;
+        private System.Windows.Forms.HelpProvider helpProviderEmitirInformeOrdenesDeCompra;
     }
 }

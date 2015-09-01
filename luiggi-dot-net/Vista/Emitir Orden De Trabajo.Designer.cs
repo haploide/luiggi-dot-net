@@ -34,6 +34,7 @@
             this.OrdenDeTrabajoIntermediasBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.DataSetOrdenDeTrabajo = new Vista.DataSetOrdenDeTrabajo();
             this.reportViewer1 = new Microsoft.Reporting.WinForms.ReportViewer();
+            this.helpProviderEmitirOrdenTrabajo = new System.Windows.Forms.HelpProvider();
             ((System.ComponentModel.ISupportInitialize)(this.OrdenDeTrabajoIntermediasBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.DataSetOrdenDeTrabajo)).BeginInit();
             this.SuspendLayout();
@@ -61,14 +62,21 @@
             this.reportViewer1.Size = new System.Drawing.Size(713, 664);
             this.reportViewer1.TabIndex = 0;
             // 
+            // helpProviderEmitirOrdenTrabajo
+            // 
+            this.helpProviderEmitirOrdenTrabajo.HelpNamespace = ".\\Ayuda\\Luiggi.chm";
+            // 
             // Emitir_Orden_De_Trabajo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(713, 664);
             this.Controls.Add(this.reportViewer1);
+            this.helpProviderEmitirOrdenTrabajo.SetHelpKeyword(this, "40");
+            this.helpProviderEmitirOrdenTrabajo.SetHelpNavigator(this, System.Windows.Forms.HelpNavigator.TopicId);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Emitir_Orden_De_Trabajo";
+            this.helpProviderEmitirOrdenTrabajo.SetShowHelp(this, true);
             this.ShowInTaskbar = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Emitir Orden De Trabajo";
@@ -85,5 +93,6 @@
         private Microsoft.Reporting.WinForms.ReportViewer reportViewer1;
         private DataSetOrdenDeTrabajo DataSetOrdenDeTrabajo;
         private System.Windows.Forms.BindingSource OrdenDeTrabajoIntermediasBindingSource;
+        private System.Windows.Forms.HelpProvider helpProviderEmitirOrdenTrabajo;
     }
 }

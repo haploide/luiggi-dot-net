@@ -58,6 +58,7 @@
             this.cantPedido = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.cant = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.fechaProd = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.helpProviderConsultaPlanProduccion = new System.Windows.Forms.HelpProvider();
             this.gp_filtros.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox1.SuspendLayout();
@@ -371,6 +372,10 @@
             this.fechaProd.Name = "fechaProd";
             this.fechaProd.ReadOnly = true;
             // 
+            // helpProviderConsultaPlanProduccion
+            // 
+            this.helpProviderConsultaPlanProduccion.HelpNamespace = ".\\Ayuda\\Luiggi.chm";
+            // 
             // Consulta_Planes_Produccion
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
@@ -380,8 +385,11 @@
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.groupBox3);
+            this.helpProviderConsultaPlanProduccion.SetHelpKeyword(this, "13");
+            this.helpProviderConsultaPlanProduccion.SetHelpNavigator(this, System.Windows.Forms.HelpNavigator.TopicId);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Consulta_Planes_Produccion";
+            this.helpProviderConsultaPlanProduccion.SetShowHelp(this, true);
             this.Text = "Consulta Planes Produccion";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Consulta_Planes_Produccion_FormClosed);
@@ -431,5 +439,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn cant;
         private System.Windows.Forms.DataGridViewTextBoxColumn fechaProd;
         private System.Windows.Forms.DataGridViewTextBoxColumn Estado;
+        private System.Windows.Forms.HelpProvider helpProviderConsultaPlanProduccion;
     }
 }

@@ -41,7 +41,7 @@
             this.razSoc = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Nombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ape = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.estado = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Estado = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tipoFac = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.total = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.fecPago = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -88,6 +88,7 @@
             this.dtp_desde = new System.Windows.Forms.DateTimePicker();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.helpProviderGestionDeFacturas = new System.Windows.Forms.HelpProvider();
             this.groupBox2.SuspendLayout();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_factura)).BeginInit();
@@ -146,8 +147,8 @@
             this.dgv_factura.AllowUserToDeleteRows = false;
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.LightSteelBlue;
             this.dgv_factura.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
-            this.dgv_factura.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.dgv_factura.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.dgv_factura.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgv_factura.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgv_factura.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -156,7 +157,7 @@
             this.razSoc,
             this.Nombre,
             this.ape,
-            this.estado,
+            this.Estado,
             this.tipoFac,
             this.total,
             this.fecPago,
@@ -208,9 +209,9 @@
             // 
             // Estado
             // 
-            this.estado.HeaderText = "Estado";
-            this.estado.Name = "Estado";
-            this.estado.ReadOnly = true;
+            this.Estado.HeaderText = "Estado";
+            this.Estado.Name = "Estado";
+            this.Estado.ReadOnly = true;
             // 
             // tipoFac
             // 
@@ -265,8 +266,8 @@
             this.dgv_detalle_factura.AllowUserToDeleteRows = false;
             dataGridViewCellStyle5.BackColor = System.Drawing.Color.LightSteelBlue;
             this.dgv_detalle_factura.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle5;
-            this.dgv_detalle_factura.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.dgv_detalle_factura.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.dgv_detalle_factura.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgv_detalle_factura.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgv_detalle_factura.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -655,6 +656,10 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Rango Fecha";
             // 
+            // helpProviderGestionDeFacturas
+            // 
+            this.helpProviderGestionDeFacturas.HelpNamespace = ".\\Ayuda\\Luiggi.chm";
+            // 
             // Gestion_de_Facturas
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Inherit;
@@ -664,8 +669,11 @@
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.gp_filtros);
+            this.helpProviderGestionDeFacturas.SetHelpKeyword(this, "26");
+            this.helpProviderGestionDeFacturas.SetHelpNavigator(this, System.Windows.Forms.HelpNavigator.TopicId);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Gestion_de_Facturas";
+            this.helpProviderGestionDeFacturas.SetShowHelp(this, true);
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Gestion de Facturas";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
@@ -742,5 +750,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn fecPago;
         private System.Windows.Forms.DataGridViewButtonColumn opciones;
         private System.Windows.Forms.DataGridViewTextBoxColumn idestado;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Estado;
+        private System.Windows.Forms.HelpProvider helpProviderGestionDeFacturas;
     }
 }

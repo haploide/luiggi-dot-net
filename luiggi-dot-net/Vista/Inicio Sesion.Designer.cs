@@ -37,6 +37,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btn_salir_consulta = new System.Windows.Forms.Button();
+            this.helpProviderInicioDeSesion = new System.Windows.Forms.HelpProvider();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -117,6 +118,10 @@
             this.btn_salir_consulta.UseVisualStyleBackColor = true;
             this.btn_salir_consulta.Click += new System.EventHandler(this.btn_salir_consulta_Click);
             // 
+            // helpProviderInicioDeSesion
+            // 
+            this.helpProviderInicioDeSesion.HelpNamespace = ".\\Ayuda\\Luiggi.chm";
+            // 
             // Inicio_Sesion
             // 
             this.AcceptButton = this.btn_inicio;
@@ -132,11 +137,14 @@
             this.Controls.Add(this.txt_pass);
             this.Controls.Add(this.txt_usuario);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.helpProviderInicioDeSesion.SetHelpKeyword(this, "49");
+            this.helpProviderInicioDeSesion.SetHelpNavigator(this, System.Windows.Forms.HelpNavigator.TopicId);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.ImeMode = System.Windows.Forms.ImeMode.Off;
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "Inicio_Sesion";
+            this.helpProviderInicioDeSesion.SetShowHelp(this, true);
             this.ShowInTaskbar = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Inicio Sesion";
@@ -157,5 +165,6 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button btn_salir_consulta;
+        private System.Windows.Forms.HelpProvider helpProviderInicioDeSesion;
     }
 }
