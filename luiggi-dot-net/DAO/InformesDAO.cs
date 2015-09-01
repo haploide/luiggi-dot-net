@@ -201,7 +201,7 @@ namespace DAO
 
 
 
-            String sql = " SELECT o.idProducto, p.nombre, MONTH(o.fechaCreacion) AS mes, AVG(o.cantidad) AS \"CantidadPlanificada\", AVG(o.cantidadProducidaReal) AS \"CantidadProducida\", @año as año ";
+            String sql = " SELECT o.idProducto, p.nombre, MONTH(o.fechaCreacion) AS mes, SUM(o.cantidad) AS \"CantidadPlanificada\", SUM(o.cantidadProducidaReal) AS \"CantidadProducida\", @año as año ";
             sql += " FROM OrdenTrabajo AS o INNER JOIN Producto AS p ON o.idProducto = p.idProducto";
             sql += " WHERE (YEAR(o.fechaCreacion) = @año)";
             sql += " GROUP BY o.idProducto, MONTH(o.fechaCreacion), p.nombre";
