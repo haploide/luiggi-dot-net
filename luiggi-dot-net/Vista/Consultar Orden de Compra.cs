@@ -72,7 +72,7 @@ namespace Vista
                     }
                     else
                     {
-                        dgv_pedidos.Rows[fila].DefaultCellStyle.BackColor = Color.MediumSeaGreen;
+                        dgv_pedidos.Rows[fila].DefaultCellStyle.BackColor = Color.LightGreen;
                     }
                     
                 }
@@ -149,11 +149,11 @@ namespace Vista
                    
                     //if (detPed.Estado.idEstado == 25 || detPed.Estado.idEstado == 4)
                     //{
-                    //    dgv_detalle_pedido.Rows[fila].DefaultCellStyle.BackColor = Color.MediumSeaGreen;
+                    //    dgv_detalle_pedido.Rows[fila].DefaultCellStyle.BackColor = Color.LightGreen;
                     //}
                     //if (detPed.Estado.idEstado == 26)
                     //{
-                    //    dgv_detalle_pedido.Rows[fila].DefaultCellStyle.BackColor = Color.IndianRed;
+                    //    dgv_detalle_pedido.Rows[fila].DefaultCellStyle.BackColor = Color.LightSalmon;
                     //}
                 }
 

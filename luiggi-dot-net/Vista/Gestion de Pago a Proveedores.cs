@@ -98,7 +98,7 @@ namespace Vista
                         }
                         else
                         {
-                            dgv_Orden_Compra.Rows[fila].DefaultCellStyle.BackColor = Color.MediumSeaGreen;
+                            dgv_Orden_Compra.Rows[fila].DefaultCellStyle.BackColor = Color.LightGreen;
                         } 
                     }
 
@@ -229,7 +229,7 @@ namespace Vista
                     }
                     else
                     {
-                        dgv_Orden_Compra.Rows[fila].DefaultCellStyle.BackColor = Color.MediumSeaGreen;
+                        dgv_Orden_Compra.Rows[fila].DefaultCellStyle.BackColor = Color.LightGreen;
                     }
                 }
             }

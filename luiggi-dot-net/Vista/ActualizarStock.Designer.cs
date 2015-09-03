@@ -46,6 +46,8 @@
             this.btn_salir = new System.Windows.Forms.Button();
             this.btn_Actualizar_OTPadre = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.txt_observaciones = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.helpProviderActualizarStock = new System.Windows.Forms.HelpProvider();
             ((System.ComponentModel.ISupportInitialize)(this.DGV_detalle_Productos)).BeginInit();
@@ -105,7 +107,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(6, 75);
+            this.label3.Location = new System.Drawing.Point(6, 121);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(184, 20);
             this.label3.TabIndex = 0;
@@ -123,7 +125,7 @@
             this.cantidadPlanificada,
             this.cantidadReal,
             this.unidad});
-            this.DGV_detalle_Productos.Location = new System.Drawing.Point(10, 99);
+            this.DGV_detalle_Productos.Location = new System.Drawing.Point(10, 145);
             this.DGV_detalle_Productos.Name = "DGV_detalle_Productos";
             this.DGV_detalle_Productos.Size = new System.Drawing.Size(446, 150);
             this.DGV_detalle_Productos.TabIndex = 2;
@@ -188,7 +190,7 @@
             // 
             this.btn_Actualizar_OTPadre.BackgroundImage = global::Vista.Properties.Resources.floppy1;
             this.btn_Actualizar_OTPadre.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btn_Actualizar_OTPadre.Location = new System.Drawing.Point(10, 19);
+            this.btn_Actualizar_OTPadre.Location = new System.Drawing.Point(54, 19);
             this.btn_Actualizar_OTPadre.Name = "btn_Actualizar_OTPadre";
             this.btn_Actualizar_OTPadre.Size = new System.Drawing.Size(38, 38);
             this.btn_Actualizar_OTPadre.TabIndex = 3;
@@ -198,6 +200,8 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.txt_observaciones);
+            this.groupBox1.Controls.Add(this.label4);
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.label3);
@@ -207,16 +211,35 @@
             this.groupBox1.Controls.Add(this.txt_cantidad_real);
             this.groupBox1.Location = new System.Drawing.Point(12, 12);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(467, 259);
+            this.groupBox1.Size = new System.Drawing.Size(467, 305);
             this.groupBox1.TabIndex = 24;
             this.groupBox1.TabStop = false;
+            // 
+            // txt_observaciones
+            // 
+            this.txt_observaciones.Location = new System.Drawing.Point(144, 82);
+            this.txt_observaciones.Multiline = true;
+            this.txt_observaciones.Name = "txt_observaciones";
+            this.txt_observaciones.ScrollBars = System.Windows.Forms.ScrollBars.Both;
+            this.txt_observaciones.Size = new System.Drawing.Size(312, 36);
+            this.txt_observaciones.TabIndex = 4;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(6, 80);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(132, 20);
+            this.label4.TabIndex = 3;
+            this.label4.Text = "Observaciones:";
             // 
             // groupBox2
             // 
             this.groupBox2.Controls.Add(this.btn_Actualizar_OTPadre);
             this.groupBox2.Controls.Add(this.btn_Actualizar);
             this.groupBox2.Controls.Add(this.btn_salir);
-            this.groupBox2.Location = new System.Drawing.Point(12, 276);
+            this.groupBox2.Location = new System.Drawing.Point(12, 334);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(467, 70);
             this.groupBox2.TabIndex = 25;
@@ -230,7 +253,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(491, 358);
+            this.ClientSize = new System.Drawing.Size(491, 406);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.helpProviderActualizarStock.SetHelpKeyword(this, "35");
@@ -272,5 +295,7 @@
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.HelpProvider helpProviderActualizarStock;
+        private System.Windows.Forms.TextBox txt_observaciones;
+        private System.Windows.Forms.Label label4;
     }
 }

@@ -12,7 +12,7 @@
   <xs:element name="DataSetInformeOrdenTrabajo" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="DataSetInformeOrdenTrabajo" msprop:Generator_UserDSName="DataSetInformeOrdenTrabajo">
     <xs:complexType>
       <xs:choice minOccurs="0" maxOccurs="unbounded">
-        <xs:element name="OrdenTrabajo" msprop:Generator_TableClassName="OrdenTrabajoDataTable" msprop:Generator_TableVarName="tableOrdenTrabajo" msprop:Generator_TablePropName="OrdenTrabajo" msprop:Generator_RowDeletingName="OrdenTrabajoRowDeleting" msprop:Generator_UserTableName="OrdenTrabajo" msprop:Generator_RowChangingName="OrdenTrabajoRowChanging" msprop:Generator_RowEvHandlerName="OrdenTrabajoRowChangeEventHandler" msprop:Generator_RowDeletedName="OrdenTrabajoRowDeleted" msprop:Generator_RowEvArgName="OrdenTrabajoRowChangeEvent" msprop:Generator_RowChangedName="OrdenTrabajoRowChanged" msprop:Generator_RowClassName="OrdenTrabajoRow">
+        <xs:element name="OrdenTrabajo" msprop:Generator_TableClassName="OrdenTrabajoDataTable" msprop:Generator_TableVarName="tableOrdenTrabajo" msprop:Generator_RowChangedName="OrdenTrabajoRowChanged" msprop:Generator_TablePropName="OrdenTrabajo" msprop:Generator_RowDeletingName="OrdenTrabajoRowDeleting" msprop:Generator_RowChangingName="OrdenTrabajoRowChanging" msprop:Generator_RowEvHandlerName="OrdenTrabajoRowChangeEventHandler" msprop:Generator_RowDeletedName="OrdenTrabajoRowDeleted" msprop:Generator_RowClassName="OrdenTrabajoRow" msprop:Generator_UserTableName="OrdenTrabajo" msprop:Generator_RowEvArgName="OrdenTrabajoRowChangeEvent">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="idOrdenTrabajo" msprop:Generator_ColumnVarNameInTable="columnidOrdenTrabajo" msprop:Generator_ColumnPropNameInRow="idOrdenTrabajo" msprop:Generator_ColumnPropNameInTable="idOrdenTrabajoColumn" msprop:Generator_UserColumnName="idOrdenTrabajo" type="xs:int" minOccurs="0" />
@@ -27,6 +27,7 @@
               <xs:element name="cantidadProducidaReal" msprop:Generator_ColumnVarNameInTable="columncantidadProducidaReal" msprop:Generator_ColumnPropNameInRow="cantidadProducidaReal" msprop:Generator_ColumnPropNameInTable="cantidadProducidaRealColumn" msprop:Generator_UserColumnName="cantidadProducidaReal" type="xs:double" minOccurs="0" />
               <xs:element name="nombreFinal" msprop:Generator_ColumnVarNameInTable="columnnombreFinal" msprop:Generator_ColumnPropNameInRow="nombreFinal" msprop:Generator_ColumnPropNameInTable="nombreFinalColumn" msprop:Generator_UserColumnName="nombreFinal" type="xs:string" minOccurs="0" />
               <xs:element name="unidadFinal" msprop:Generator_ColumnVarNameInTable="columnunidadFinal" msprop:Generator_ColumnPropNameInRow="unidadFinal" msprop:Generator_ColumnPropNameInTable="unidadFinalColumn" msprop:Generator_UserColumnName="unidadFinal" type="xs:string" minOccurs="0" />
+              <xs:element name="observaciones" msprop:Generator_ColumnVarNameInTable="columnobservaciones" msprop:Generator_ColumnPropNameInRow="observaciones" msprop:Generator_ColumnPropNameInTable="observacionesColumn" msprop:Generator_UserColumnName="observaciones" type="xs:string" minOccurs="0" />
             </xs:sequence>
           </xs:complexType>
         </xs:element>

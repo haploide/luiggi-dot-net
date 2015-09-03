@@ -76,7 +76,7 @@ namespace Vista
                     int fila=dgv_productos_finales.Rows.Add(prod.CODProducto, prod.Nombre, prod.Descripcion, prod.Unidad.Nombre, prod.StockRiesgo*2,prod.StockRiesgo, prod.StockActual, prod.StockDisponible, prod.StockReservado, prod.idProducto);
                     if(prod.StockDisponible<=prod.StockRiesgo)
                     {
-                        dgv_productos_finales.Rows[fila].DefaultCellStyle.BackColor = Color.IndianRed;
+                        dgv_productos_finales.Rows[fila].DefaultCellStyle.BackColor = Color.LightSalmon;
                     }
                 }
 

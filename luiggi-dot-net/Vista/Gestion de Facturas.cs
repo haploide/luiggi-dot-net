@@ -117,11 +117,11 @@ namespace Vista
 
                     if (factura.estado.idEstado == 28)
                     {
-                        dgv_factura.Rows[fila].DefaultCellStyle.BackColor = Color.MediumSeaGreen;
+                        dgv_factura.Rows[fila].DefaultCellStyle.BackColor = Color.LightGreen;
                     }
                     if (factura.estado.idEstado == 30)
                     {
-                        dgv_factura.Rows[fila].DefaultCellStyle.BackColor = Color.IndianRed;
+                        dgv_factura.Rows[fila].DefaultCellStyle.BackColor = Color.LightSalmon;
                     }
                 }
 
@@ -258,11 +258,11 @@ namespace Vista
 
                     if (factura.estado.idEstado == 28)
                     {
-                        dgv_factura.Rows[fila].DefaultCellStyle.BackColor = Color.MediumSeaGreen;
+                        dgv_factura.Rows[fila].DefaultCellStyle.BackColor = Color.LightGreen;
                     }
                     if (factura.estado.idEstado == 30)
                     {
-                        dgv_factura.Rows[fila].DefaultCellStyle.BackColor = Color.IndianRed;
+                        dgv_factura.Rows[fila].DefaultCellStyle.BackColor = Color.LightSalmon;
                     }
                     
                 }
