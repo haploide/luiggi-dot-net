@@ -183,6 +183,7 @@ namespace Vista
                     productos.Add(p);
                 }
                 orden.cantidadReal = double.Parse(txt_cantidad_real.Text);
+                orden.observaciones = txt_observaciones.Text;
                 cantidadPlan = orden.cantidadReal - cantidadPedido;
                 OrdenDeTrabajoDAO.finalizarOTPadre(orden, cantidadPedido, cantidadPlan, productos);
                 Estado est = new Estado();
@@ -203,5 +204,8 @@ namespace Vista
             
 
         }
+
+       
+       
     }
 }
