@@ -32,6 +32,9 @@ namespace Vista
                 if (tabla.Rows.Count > 0)
                 {
                     OrdenTrabajoBindingSource.DataSource = tabla;
+                   
+                    
+                   
 
                     this.reportViewer1.RefreshReport();
                 }
