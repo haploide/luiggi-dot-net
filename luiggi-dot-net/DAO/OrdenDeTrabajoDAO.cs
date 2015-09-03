@@ -558,7 +558,7 @@ namespace DAO
 
             DataTable ordenes = new DataTable();
 
-            string sql = "SELECT OrdenTrabajo.idOrdenTrabajo, OrdenTrabajo.fechaCreacion, OrdenTrabajo.horaInicio, OrdenTrabajo.horaFin, OrdenTrabajo.horaInicioReal,";
+            string sql = "SELECT OrdenTrabajo.idOrdenTrabajo, OrdenTrabajo.fechaCreacion, OrdenTrabajo.observaciones, OrdenTrabajo.horaInicio, OrdenTrabajo.horaFin, OrdenTrabajo.horaInicioReal,";
             sql += " OrdenTrabajo.horaFinReal, ISNULL(Producto.nombre, '') AS nombreIntermedio, p1.nombre AS nombreFinal, ISNULL(UnidadMedida.nombre, '') AS unidadIntermedio,";
             sql += " u1.nombre AS unidadFinal, OrdenTrabajo.cantidad, OrdenTrabajo.cantidadProducidaReal";
             sql += " FROM Estado INNER JOIN OrdenTrabajo INNER JOIN UnidadMedida AS u1 INNER JOIN";
