@@ -62,11 +62,11 @@ namespace Vista
                     int fila=dgv_OTproductosPadres.Rows.Add(ot.idOrdenTrabajo, ot.fechaCreacion.ToShortDateString(), ot.horaInicio.ToShortTimeString(), ot.horaFin.ToShortTimeString(), ot.producto.idProducto, ot.producto.Nombre, ot.cantidad, ot.cantidadReal,ot.producto.Unidad.Nombre , ot.estado.idEstado,ot.estado.Nombre,ot.idPlan, ot.maquinaria.idMaquinaria,ot.maquinaria.Nombre,ot.empleado.idEmpleado,ot.empleado.Nombre +" "+ ot.empleado.Apellido );
                     if (ot.estado.idEstado == 19)
                     {
-                        dgv_OTproductosPadres.Rows[fila].DefaultCellStyle.BackColor = Color.IndianRed;
+                        dgv_OTproductosPadres.Rows[fila].DefaultCellStyle.BackColor = Color.LightSalmon;
                     }
                     if (ot.estado.idEstado == 20)
                     {
-                        dgv_OTproductosPadres.Rows[fila].DefaultCellStyle.BackColor = Color.MediumSeaGreen;
+                        dgv_OTproductosPadres.Rows[fila].DefaultCellStyle.BackColor = Color.LightGreen;
                     }
                     
                 }
@@ -141,11 +141,11 @@ namespace Vista
                     int fila=dgv_OTproductosHijos.Rows.Add(oth.idOrdenTrabajo, oth.fechaCreacion.ToShortDateString(), oth.horaInicio.ToShortTimeString(), oth.horaFin.ToShortTimeString(), oth.productoIntermedio.idProducto, oth.productoIntermedio.Nombre,oth.cantidad,oth.cantidadReal,oth.productoIntermedio.Unidad.Nombre, oth.estado.Nombre, oth.maquinaria.idMaquinaria, oth.maquinaria.Nombre,oth.empleado.idEmpleado, oth.empleado.Nombre + " " + oth.empleado.Apellido, oth.estado.idEstado);
                     if (oth.estado.idEstado == 19)
                     {
-                        dgv_OTproductosHijos.Rows[fila].DefaultCellStyle.BackColor = Color.IndianRed;
+                        dgv_OTproductosHijos.Rows[fila].DefaultCellStyle.BackColor = Color.LightSalmon;
                     }
                     if (oth.estado.idEstado == 20)
                     {
-                        dgv_OTproductosHijos.Rows[fila].DefaultCellStyle.BackColor = Color.MediumSeaGreen;
+                        dgv_OTproductosHijos.Rows[fila].DefaultCellStyle.BackColor = Color.LightGreen;
                     }
                 }
 
@@ -162,7 +162,7 @@ namespace Vista
         {
             if (dgv_OTproductosPadres.Rows.Count > 0)
             {
-                if (dgv_OTproductosPadres.Rows[dgv_OTproductosPadres.CurrentRow.Index].DefaultCellStyle.BackColor == Color.IndianRed)
+                if (dgv_OTproductosPadres.Rows[dgv_OTproductosPadres.CurrentRow.Index].DefaultCellStyle.BackColor == Color.LightSalmon)
                 {
                     OrdenDeTrabajo orden = new OrdenDeTrabajo();
 
@@ -202,7 +202,7 @@ namespace Vista
             
                 if (dgv_OTproductosPadres.CurrentCell is DataGridViewButtonCell)
                 {
-                    if (dgv_OTproductosPadres.Rows[dgv_OTproductosPadres.CurrentRow.Index].DefaultCellStyle.BackColor != Color.MediumSeaGreen)
+                    if (dgv_OTproductosPadres.Rows[dgv_OTproductosPadres.CurrentRow.Index].DefaultCellStyle.BackColor != Color.LightGreen)
                     {
                         if (tieneHijosFinalizados() == true)
                         {
@@ -235,7 +235,7 @@ namespace Vista
                                         if (orden.estado.Nombre == "LISTO")
                                         {
                                             MessageBox.Show("Finalizado con éxito", "Exito", MessageBoxButtons.OK, MessageBoxIcon.Information, MessageBoxDefaultButton.Button1);
-                                            dgv_OTproductosPadres.CurrentRow.DefaultCellStyle.BackColor = Color.MediumSeaGreen;
+                                            dgv_OTproductosPadres.CurrentRow.DefaultCellStyle.BackColor = Color.LightGreen;
                                             dgv_OTproductosPadres.CurrentRow.Cells["cantiReal"].Value = orden.cantidadReal;
                                             cargarGrilla();
                                         }
@@ -271,7 +271,7 @@ namespace Vista
             Boolean result = true;
             for (int i = 0; i < dgv_OTproductosHijos.Rows.Count; i++)
             {
-                if(dgv_OTproductosHijos.Rows[i].DefaultCellStyle.BackColor!=Color.MediumSeaGreen)
+                if(dgv_OTproductosHijos.Rows[i].DefaultCellStyle.BackColor!=Color.LightGreen)
                 {
                     result = false;
                 }
@@ -283,7 +283,7 @@ namespace Vista
         {
             if (dgv_OTproductosHijos.CurrentCell is DataGridViewButtonCell)
             {
-                if (dgv_OTproductosHijos.Rows[dgv_OTproductosHijos.CurrentRow.Index].DefaultCellStyle.BackColor != Color.MediumSeaGreen)
+                if (dgv_OTproductosHijos.Rows[dgv_OTproductosHijos.CurrentRow.Index].DefaultCellStyle.BackColor != Color.LightGreen)
                 {
                     try
                     {
@@ -305,7 +305,7 @@ namespace Vista
                             if (orden.estado.Nombre == "LISTO")
                             {
                                 MessageBox.Show("Finalizado con éxito", "Exito", MessageBoxButtons.OK, MessageBoxIcon.Information, MessageBoxDefaultButton.Button1);
-                                dgv_OTproductosHijos.CurrentRow.DefaultCellStyle.BackColor = Color.MediumSeaGreen;
+                                dgv_OTproductosHijos.CurrentRow.DefaultCellStyle.BackColor = Color.LightGreen;
                                 dgv_OTproductosHijos.CurrentRow.Cells["cantReal"].Value = orden.cantidadReal;
                             }
                         }

@@ -120,11 +120,11 @@ namespace Vista
                     
                     if (ped.estado.idEstado == 7)
                     {
-                        dgv_pedidos.Rows[fila].DefaultCellStyle.BackColor = Color.MediumSeaGreen;
+                        dgv_pedidos.Rows[fila].DefaultCellStyle.BackColor = Color.LightGreen ;
                     }
                     if (ped.estado.idEstado == 9 || ped.estado.idEstado == 10)
                     {
-                        dgv_pedidos.Rows[fila].DefaultCellStyle.BackColor = Color.IndianRed;
+                        dgv_pedidos.Rows[fila].DefaultCellStyle.BackColor = Color.LightSalmon;
                     }
                 }
 
@@ -178,11 +178,11 @@ namespace Vista
 
                     if (detPed.Estado.idEstado == 25 || detPed.Estado.idEstado == 4)
                     {
-                        dgv_detalle_pedido.Rows[fila].DefaultCellStyle.BackColor = Color.MediumSeaGreen;
+                        dgv_detalle_pedido.Rows[fila].DefaultCellStyle.BackColor = Color.LightGreen;
                     }
                     if (detPed.Estado.idEstado == 26)
                     {
-                        dgv_detalle_pedido.Rows[fila].DefaultCellStyle.BackColor = Color.IndianRed;
+                        dgv_detalle_pedido.Rows[fila].DefaultCellStyle.BackColor = Color.LightSalmon;
                     }
                 }
 
@@ -295,11 +295,11 @@ namespace Vista
                     
                     if (ped.estado.idEstado == 7)
                     {
-                        dgv_pedidos.Rows[fila].DefaultCellStyle.BackColor = Color.MediumSeaGreen;
+                        dgv_pedidos.Rows[fila].DefaultCellStyle.BackColor = Color.LightGreen;
                     }
                     if (ped.estado.idEstado == 9 || ped.estado.idEstado == 10)
                     {
-                        dgv_pedidos.Rows[fila].DefaultCellStyle.BackColor = Color.IndianRed;
+                        dgv_pedidos.Rows[fila].DefaultCellStyle.BackColor = Color.LightSalmon;
                     }
                 }
 
@@ -467,7 +467,7 @@ namespace Vista
             Boolean result = true;
             for (int i = 0; i < dgv_detalle_pedido.Rows.Count; i++)
             {
-                if (dgv_detalle_pedido.Rows[i].DefaultCellStyle.BackColor != Color.MediumSeaGreen)
+                if (dgv_detalle_pedido.Rows[i].DefaultCellStyle.BackColor != Color.LightGreen)
                 {
                     result = false;
                 }

@@ -171,7 +171,7 @@ namespace Vista
                             
                             if (_estado == estados.nuevo)
                             {
-                                dgv_estructuraOT.Rows[c].DefaultCellStyle.BackColor = Color.IndianRed;
+                                dgv_estructuraOT.Rows[c].DefaultCellStyle.BackColor = Color.LightSalmon;
                             }
                             
                         }
@@ -236,7 +236,7 @@ namespace Vista
                 
                 if (gestion._estado==estados.guardado)
                 {
-                    fila.DefaultCellStyle.BackColor = Color.MediumSeaGreen;
+                    fila.DefaultCellStyle.BackColor = Color.LightGreen;
                     fila.Cells["Estado"].Value = 1;
                 }
                 

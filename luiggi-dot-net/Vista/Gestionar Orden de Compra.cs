@@ -99,7 +99,7 @@ namespace Vista
                         
                         if(p.producto.StockDisponible<=(p.producto.StockRiesgo)*1.25)
                         {
-                            dgv_productos.Rows[fila].DefaultCellStyle.BackColor = Color.IndianRed;
+                            dgv_productos.Rows[fila].DefaultCellStyle.BackColor = Color.LightSalmon;
                         }
                         txt_celular.Text = p.proveedor.telefono;
                         txt_contacto.Text = p.proveedor.Apellido + " " + p.proveedor.Nombre;
