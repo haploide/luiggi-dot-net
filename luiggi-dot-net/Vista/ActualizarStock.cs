@@ -101,6 +101,7 @@ namespace Vista
                     productos.Add(p);
                 }
                 orden.cantidadReal = double.Parse(txt_cantidad_real.Text);
+                orden.observaciones = txt_observaciones.Text;
                 OrdenDeTrabajoDAO.finalizarOTHija(orden, productos);
                 Estado est = new Estado();
                 est.Nombre = "LISTO";

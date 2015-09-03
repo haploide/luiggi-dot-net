@@ -56,7 +56,7 @@ namespace DAO
             SqlConnection cn = new SqlConnection(ac.getCadenaConexion());
             SqlTransaction tran=null;
 
-            string sql = "UPDATE [Luiggi].[dbo].[OrdenTrabajo] SET [idEstado] = 20, [cantidadProducidaReal]= @cantreal, SET [observaciones] = @observaciones WHERE idOrdenTrabajo =  @idOrdenTrabajo ";
+            string sql = "UPDATE [Luiggi].[dbo].[OrdenTrabajo] SET [idEstado] = 20, [cantidadProducidaReal]= @cantreal, [observaciones] = @observaciones WHERE idOrdenTrabajo =  @idOrdenTrabajo ";
 
             SqlCommand cmd = new SqlCommand();
             cmd.Parameters.AddWithValue("@idOrdenTrabajo", ot.idOrdenTrabajo);
@@ -107,11 +107,12 @@ namespace DAO
             SqlConnection cn = new SqlConnection(ac.getCadenaConexion());
             SqlTransaction tran = null;
 
-            string sql = "UPDATE [Luiggi].[dbo].[OrdenTrabajo] SET [idEstado] = 20, [cantidadProducidaReal]= @cantreal WHERE idOrdenTrabajo =  @idOrdenTrabajo ";
+            string sql = "UPDATE [Luiggi].[dbo].[OrdenTrabajo] SET [idEstado] = 20, [cantidadProducidaReal]= @cantreal, [observaciones] = @observaciones WHERE idOrdenTrabajo =  @idOrdenTrabajo ";
 
             SqlCommand cmd = new SqlCommand();
             cmd.Parameters.AddWithValue("@idOrdenTrabajo", ot.idOrdenTrabajo);
             cmd.Parameters.AddWithValue("@cantreal",ot.cantidadReal);
+            cmd.Parameters.AddWithValue("@observaciones", ot.observaciones);
 
             try
             {
