@@ -1153,7 +1153,7 @@
             this.btn_guardar.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.btn_guardar.Enabled = false;
             this.btn_guardar.Image = global::Vista.Properties.Resources.floppy1;
-            this.btn_guardar.Location = new System.Drawing.Point(465, 19);
+            this.btn_guardar.Location = new System.Drawing.Point(479, 19);
             this.btn_guardar.Name = "btn_guardar";
             this.btn_guardar.Size = new System.Drawing.Size(38, 38);
             this.btn_guardar.TabIndex = 0;
@@ -1165,7 +1165,7 @@
             this.btn_nuevo.AutoSize = true;
             this.btn_nuevo.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.btn_nuevo.Image = global::Vista.Properties.Resources.mop2;
-            this.btn_nuevo.Location = new System.Drawing.Point(421, 19);
+            this.btn_nuevo.Location = new System.Drawing.Point(435, 19);
             this.btn_nuevo.Name = "btn_nuevo";
             this.btn_nuevo.Size = new System.Drawing.Size(38, 38);
             this.btn_nuevo.TabIndex = 1;
