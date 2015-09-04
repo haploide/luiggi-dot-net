@@ -489,7 +489,7 @@ namespace DAO
 
             List<Pedido> pedidos = new List<Pedido>();
 
-            string sql = "SELECT * from CONSULTA_PEDIDOS";
+            string sql = "SELECT * from CONSULTA_PEDIDOS ORDER BY idPedido DESC";
             SqlCommand cmd = new SqlCommand();
             SqlConnection conexion = new SqlConnection(ac.getCadenaConexion());
 

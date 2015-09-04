@@ -751,7 +751,7 @@
                                           <Paragraph>
                                             <TextRuns>
                                               <TextRun>
-                                                <Value>=IIf(Fields!nombreIntermedio.Value="",Fields!nombreFinal.Value,Fields!nombreIntermedio.Value)</Value>
+                                                <Value>=Fields!observaciones.Value</Value>
                                                 <Style />
                                               </TextRun>
                                             </TextRuns>
@@ -813,7 +813,7 @@
                           <Top>1.40228cm</Top>
                           <Left>0.45959cm</Left>
                           <Height>1.2cm</Height>
-                          <Width>24.34169cm</Width>
+                          <Width>24.34161cm</Width>
                           <Style>
                             <Border>
                               <Style>None</Style>
@@ -977,7 +977,7 @@
         <DataSetName>DataSet1</DataSetName>
         <Top>0.10583cm</Top>
         <Left>0.42333cm</Left>
-        <Height>2.87042cm</Height>
+        <Height>2.87043cm</Height>
         <Width>25.24221cm</Width>
         <Style>
           <Border>
