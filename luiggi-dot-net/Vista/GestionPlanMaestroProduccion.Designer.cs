@@ -270,7 +270,7 @@
             this.groupBox4.Controls.Add(this.dgv_productos_finales);
             this.groupBox4.Location = new System.Drawing.Point(12, 122);
             this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Size = new System.Drawing.Size(677, 608);
+            this.groupBox4.Size = new System.Drawing.Size(677, 522);
             this.groupBox4.TabIndex = 45;
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "Detalle de Plan Maestro de Producción";
@@ -296,7 +296,7 @@
             this.tab_dias.Location = new System.Drawing.Point(9, 296);
             this.tab_dias.Name = "tab_dias";
             this.tab_dias.SelectedIndex = 0;
-            this.tab_dias.Size = new System.Drawing.Size(662, 306);
+            this.tab_dias.Size = new System.Drawing.Size(662, 219);
             this.tab_dias.TabIndex = 6;
             // 
             // domingo
@@ -305,7 +305,7 @@
             this.domingo.Controls.Add(this.dtp_domingo);
             this.domingo.Location = new System.Drawing.Point(4, 22);
             this.domingo.Name = "domingo";
-            this.domingo.Size = new System.Drawing.Size(654, 280);
+            this.domingo.Size = new System.Drawing.Size(654, 193);
             this.domingo.TabIndex = 6;
             this.domingo.Text = "Domingo";
             this.domingo.UseVisualStyleBackColor = true;
@@ -334,7 +334,7 @@
             this.dgv_detalle_domingo.Name = "dgv_detalle_domingo";
             this.dgv_detalle_domingo.ReadOnly = true;
             this.dgv_detalle_domingo.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgv_detalle_domingo.Size = new System.Drawing.Size(642, 266);
+            this.dgv_detalle_domingo.Size = new System.Drawing.Size(642, 179);
             this.dgv_detalle_domingo.TabIndex = 8;
             // 
             // dataGridViewTextBoxColumn36
@@ -392,7 +392,7 @@
             // dtp_domingo
             // 
             this.dtp_domingo.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dtp_domingo.Location = new System.Drawing.Point(559, 253);
+            this.dtp_domingo.Location = new System.Drawing.Point(559, 166);
             this.dtp_domingo.Name = "dtp_domingo";
             this.dtp_domingo.Size = new System.Drawing.Size(89, 20);
             this.dtp_domingo.TabIndex = 7;
@@ -1129,9 +1129,9 @@
             this.groupBox2.Controls.Add(this.btn_salir);
             this.groupBox2.Controls.Add(this.btn_guardar);
             this.groupBox2.Controls.Add(this.btn_nuevo);
-            this.groupBox2.Location = new System.Drawing.Point(12, 736);
+            this.groupBox2.Location = new System.Drawing.Point(12, 650);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(677, 66);
+            this.groupBox2.Size = new System.Drawing.Size(677, 52);
             this.groupBox2.TabIndex = 44;
             this.groupBox2.TabStop = false;
             // 
@@ -1140,7 +1140,7 @@
             this.btn_salir.AutoSize = true;
             this.btn_salir.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.btn_salir.Image = global::Vista.Properties.Resources.exit6;
-            this.btn_salir.Location = new System.Drawing.Point(633, 19);
+            this.btn_salir.Location = new System.Drawing.Point(632, 11);
             this.btn_salir.Name = "btn_salir";
             this.btn_salir.Size = new System.Drawing.Size(38, 38);
             this.btn_salir.TabIndex = 2;
@@ -1153,7 +1153,7 @@
             this.btn_guardar.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.btn_guardar.Enabled = false;
             this.btn_guardar.Image = global::Vista.Properties.Resources.floppy1;
-            this.btn_guardar.Location = new System.Drawing.Point(479, 19);
+            this.btn_guardar.Location = new System.Drawing.Point(478, 11);
             this.btn_guardar.Name = "btn_guardar";
             this.btn_guardar.Size = new System.Drawing.Size(38, 38);
             this.btn_guardar.TabIndex = 0;
@@ -1165,7 +1165,7 @@
             this.btn_nuevo.AutoSize = true;
             this.btn_nuevo.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.btn_nuevo.Image = global::Vista.Properties.Resources.mop2;
-            this.btn_nuevo.Location = new System.Drawing.Point(435, 19);
+            this.btn_nuevo.Location = new System.Drawing.Point(430, 11);
             this.btn_nuevo.Name = "btn_nuevo";
             this.btn_nuevo.Size = new System.Drawing.Size(38, 38);
             this.btn_nuevo.TabIndex = 1;
@@ -1186,7 +1186,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(701, 811);
+            this.ClientSize = new System.Drawing.Size(701, 712);
             this.Controls.Add(this.groupBox4);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
