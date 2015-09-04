@@ -363,8 +363,8 @@ namespace Vista
         {
             if (dgv_pedidos.CurrentCell is DataGridViewButtonCell)
             {
-                int idPedido = (int)dgv_pedidos.Rows[dgv_pedidos.CurrentRow.Index].Cells["idPedido"].Value;
-                int estadoDesde = (int)dgv_pedidos.Rows[dgv_pedidos.CurrentRow.Index].Cells["idestado"].Value;
+                int idPedido = Convert.ToInt32(dgv_pedidos.Rows[dgv_pedidos.CurrentRow.Index].Cells["idPedido"].Value);
+                int estadoDesde = Convert.ToInt32(dgv_pedidos.Rows[dgv_pedidos.CurrentRow.Index].Cells["idestado"].Value);
                 int estadoHasta = estadoDesde;
 
                 switch (estadoDesde)

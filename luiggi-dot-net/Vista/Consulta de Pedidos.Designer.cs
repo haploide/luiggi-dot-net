@@ -26,14 +26,27 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Consulta_de_Pedidos));
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.btn_limpiar_filtros = new System.Windows.Forms.Button();
             this.btn_eliminar = new System.Windows.Forms.Button();
             this.btn_salir_consulta = new System.Windows.Forms.Button();
             this.btn_nuevo = new System.Windows.Forms.Button();
+            this.dgv_pedidos = new System.Windows.Forms.DataGridView();
+            this.idPedido = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.nroPedido = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.fecPedido = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Estado = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.razSoc = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Nombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ape = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.fecNec = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.total = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dirEntrega = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.opciones = new System.Windows.Forms.DataGridViewButtonColumn();
+            this.idestado = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dgv_detalle_pedido = new System.Windows.Forms.DataGridView();
             this.codProd = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.nomProd = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -76,24 +89,12 @@
             this.btn_cancelar = new System.Windows.Forms.Button();
             this.helpProviderConsultaPedidos = new System.Windows.Forms.HelpProvider();
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
-            this.idestado = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.opciones = new System.Windows.Forms.DataGridViewButtonColumn();
-            this.dirEntrega = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.total = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.fecNec = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ape = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Nombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.razSoc = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.fecPedido = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.nroPedido = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.idPedido = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dgv_pedidos = new System.Windows.Forms.DataGridView();
             this.groupBox2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgv_pedidos)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_detalle_pedido)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.groupBox3.SuspendLayout();
             this.gp_filtros.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgv_pedidos)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBox2
@@ -160,12 +161,123 @@
             this.btn_nuevo.UseVisualStyleBackColor = true;
             this.btn_nuevo.Click += new System.EventHandler(this.btn_limpiar_filtros_Click);
             // 
+            // dgv_pedidos
+            // 
+            this.dgv_pedidos.AllowUserToAddRows = false;
+            this.dgv_pedidos.AllowUserToDeleteRows = false;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.LightSteelBlue;
+            this.dgv_pedidos.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            this.dgv_pedidos.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
+                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.dgv_pedidos.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgv_pedidos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgv_pedidos.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.idPedido,
+            this.nroPedido,
+            this.fecPedido,
+            this.Estado,
+            this.razSoc,
+            this.Nombre,
+            this.ape,
+            this.fecNec,
+            this.total,
+            this.dirEntrega,
+            this.opciones,
+            this.idestado});
+            this.dgv_pedidos.Location = new System.Drawing.Point(6, 19);
+            this.dgv_pedidos.MultiSelect = false;
+            this.dgv_pedidos.Name = "dgv_pedidos";
+            this.dgv_pedidos.ReadOnly = true;
+            this.dgv_pedidos.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dgv_pedidos.Size = new System.Drawing.Size(1006, 176);
+            this.dgv_pedidos.TabIndex = 49;
+            this.dgv_pedidos.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_pedidos_CellClick);
+            this.dgv_pedidos.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_pedidos_CellContentClick);
+            this.dgv_pedidos.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_pedidos_CellDoubleClick);
+            // 
+            // idPedido
+            // 
+            this.idPedido.HeaderText = "idPedido";
+            this.idPedido.Name = "idPedido";
+            this.idPedido.ReadOnly = true;
+            this.idPedido.Visible = false;
+            // 
+            // nroPedido
+            // 
+            this.nroPedido.HeaderText = "Numero de Pedido";
+            this.nroPedido.Name = "nroPedido";
+            this.nroPedido.ReadOnly = true;
+            // 
+            // fecPedido
+            // 
+            this.fecPedido.HeaderText = "Fecha Pedido";
+            this.fecPedido.Name = "fecPedido";
+            this.fecPedido.ReadOnly = true;
+            // 
+            // Estado
+            // 
+            this.Estado.HeaderText = "Estado";
+            this.Estado.Name = "Estado";
+            this.Estado.ReadOnly = true;
+            // 
+            // razSoc
+            // 
+            this.razSoc.HeaderText = "Razon Social";
+            this.razSoc.Name = "razSoc";
+            this.razSoc.ReadOnly = true;
+            // 
+            // Nombre
+            // 
+            this.Nombre.HeaderText = "Nombre";
+            this.Nombre.Name = "Nombre";
+            this.Nombre.ReadOnly = true;
+            // 
+            // ape
+            // 
+            this.ape.HeaderText = "Apellido";
+            this.ape.Name = "ape";
+            this.ape.ReadOnly = true;
+            // 
+            // fecNec
+            // 
+            this.fecNec.HeaderText = "Fecha Necesidad";
+            this.fecNec.Name = "fecNec";
+            this.fecNec.ReadOnly = true;
+            // 
+            // total
+            // 
+            dataGridViewCellStyle2.Format = "C2";
+            dataGridViewCellStyle2.NullValue = null;
+            this.total.DefaultCellStyle = dataGridViewCellStyle2;
+            this.total.HeaderText = "Monto Total";
+            this.total.Name = "total";
+            this.total.ReadOnly = true;
+            // 
+            // dirEntrega
+            // 
+            this.dirEntrega.HeaderText = "Dir. Entrega";
+            this.dirEntrega.Name = "dirEntrega";
+            this.dirEntrega.ReadOnly = true;
+            // 
+            // opciones
+            // 
+            this.opciones.HeaderText = "Opciones";
+            this.opciones.Name = "opciones";
+            this.opciones.ReadOnly = true;
+            // 
+            // idestado
+            // 
+            this.idestado.HeaderText = "idestado";
+            this.idestado.Name = "idestado";
+            this.idestado.ReadOnly = true;
+            this.idestado.Visible = false;
+            // 
             // dgv_detalle_pedido
             // 
             this.dgv_detalle_pedido.AllowUserToAddRows = false;
             this.dgv_detalle_pedido.AllowUserToDeleteRows = false;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.LightSteelBlue;
-            this.dgv_detalle_pedido.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.LightSteelBlue;
+            this.dgv_detalle_pedido.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle3;
             this.dgv_detalle_pedido.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
                         | System.Windows.Forms.AnchorStyles.Right)));
             this.dgv_detalle_pedido.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
@@ -208,27 +320,27 @@
             // 
             // cant
             // 
-            dataGridViewCellStyle2.Format = "N2";
-            dataGridViewCellStyle2.NullValue = null;
-            this.cant.DefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle4.Format = "N2";
+            dataGridViewCellStyle4.NullValue = null;
+            this.cant.DefaultCellStyle = dataGridViewCellStyle4;
             this.cant.HeaderText = "Cantidad";
             this.cant.Name = "cant";
             this.cant.ReadOnly = true;
             // 
             // precio
             // 
-            dataGridViewCellStyle3.Format = "C2";
-            dataGridViewCellStyle3.NullValue = null;
-            this.precio.DefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle5.Format = "C2";
+            dataGridViewCellStyle5.NullValue = null;
+            this.precio.DefaultCellStyle = dataGridViewCellStyle5;
             this.precio.HeaderText = "Precio";
             this.precio.Name = "precio";
             this.precio.ReadOnly = true;
             // 
             // subTotal
             // 
-            dataGridViewCellStyle4.Format = "C2";
-            dataGridViewCellStyle4.NullValue = null;
-            this.subTotal.DefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle6.Format = "C2";
+            dataGridViewCellStyle6.NullValue = null;
+            this.subTotal.DefaultCellStyle = dataGridViewCellStyle6;
             this.subTotal.HeaderText = "Sub Total";
             this.subTotal.Name = "subTotal";
             this.subTotal.ReadOnly = true;
@@ -569,119 +681,6 @@
             // 
             this.helpProviderConsultaPedidos.HelpNamespace = ".\\Ayuda\\Luiggi.chm";
             // 
-            // idestado
-            // 
-            this.idestado.HeaderText = "idestado";
-            this.idestado.Name = "idestado";
-            this.idestado.ReadOnly = true;
-            this.idestado.Visible = false;
-            // 
-            // opciones
-            // 
-            this.opciones.HeaderText = "Opciones";
-            this.opciones.Name = "opciones";
-            this.opciones.ReadOnly = true;
-            this.opciones.Width = 58;
-            // 
-            // dirEntrega
-            // 
-            this.dirEntrega.HeaderText = "Dir. Entrega";
-            this.dirEntrega.Name = "dirEntrega";
-            this.dirEntrega.ReadOnly = true;
-            this.dirEntrega.Width = 81;
-            // 
-            // total
-            // 
-            dataGridViewCellStyle6.Format = "C2";
-            dataGridViewCellStyle6.NullValue = null;
-            this.total.DefaultCellStyle = dataGridViewCellStyle6;
-            this.total.HeaderText = "Monto Total";
-            this.total.Name = "total";
-            this.total.ReadOnly = true;
-            this.total.Width = 82;
-            // 
-            // fecNec
-            // 
-            this.fecNec.HeaderText = "Fecha Necesidad";
-            this.fecNec.Name = "fecNec";
-            this.fecNec.ReadOnly = true;
-            this.fecNec.Width = 106;
-            // 
-            // ape
-            // 
-            this.ape.HeaderText = "Apellido";
-            this.ape.Name = "ape";
-            this.ape.ReadOnly = true;
-            this.ape.Width = 69;
-            // 
-            // Nombre
-            // 
-            this.Nombre.HeaderText = "Nombre";
-            this.Nombre.Name = "Nombre";
-            this.Nombre.ReadOnly = true;
-            this.Nombre.Width = 69;
-            // 
-            // razSoc
-            // 
-            this.razSoc.HeaderText = "Razon Social";
-            this.razSoc.Name = "razSoc";
-            this.razSoc.ReadOnly = true;
-            this.razSoc.Width = 87;
-            // 
-            // fecPedido
-            // 
-            this.fecPedido.HeaderText = "Fecha Pedido";
-            this.fecPedido.Name = "fecPedido";
-            this.fecPedido.ReadOnly = true;
-            this.fecPedido.Width = 90;
-            // 
-            // nroPedido
-            // 
-            this.nroPedido.HeaderText = "Numero de Pedido";
-            this.nroPedido.Name = "nroPedido";
-            this.nroPedido.ReadOnly = true;
-            this.nroPedido.Width = 80;
-            // 
-            // idPedido
-            // 
-            this.idPedido.HeaderText = "idPedido";
-            this.idPedido.Name = "idPedido";
-            this.idPedido.ReadOnly = true;
-            this.idPedido.Visible = false;
-            // 
-            // dgv_pedidos
-            // 
-            this.dgv_pedidos.AllowUserToAddRows = false;
-            this.dgv_pedidos.AllowUserToDeleteRows = false;
-            dataGridViewCellStyle5.BackColor = System.Drawing.Color.LightSteelBlue;
-            this.dgv_pedidos.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle5;
-            this.dgv_pedidos.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
-            this.dgv_pedidos.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
-            this.dgv_pedidos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgv_pedidos.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.idPedido,
-            this.nroPedido,
-            this.fecPedido,
-            this.razSoc,
-            this.Nombre,
-            this.ape,
-            this.fecNec,
-            this.total,
-            this.dirEntrega,
-            this.opciones,
-            this.idestado});
-            this.dgv_pedidos.Location = new System.Drawing.Point(6, 19);
-            this.dgv_pedidos.MultiSelect = false;
-            this.dgv_pedidos.Name = "dgv_pedidos";
-            this.dgv_pedidos.ReadOnly = true;
-            this.dgv_pedidos.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgv_pedidos.Size = new System.Drawing.Size(1006, 176);
-            this.dgv_pedidos.TabIndex = 49;
-            this.dgv_pedidos.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_pedidos_CellClick);
-            this.dgv_pedidos.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_pedidos_CellContentClick);
-            this.dgv_pedidos.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_pedidos_CellDoubleClick);
-            // 
             // Consulta_de_Pedidos
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Inherit;
@@ -703,12 +702,12 @@
             this.Load += new System.EventHandler(this.Consulta_de_Pedidos_Load);
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgv_pedidos)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_detalle_pedido)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox3.ResumeLayout(false);
             this.gp_filtros.ResumeLayout(false);
             this.gp_filtros.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgv_pedidos)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -720,6 +719,7 @@
         private System.Windows.Forms.Button btn_salir_consulta;
         private System.Windows.Forms.Button btn_nuevo;
         private System.Windows.Forms.GroupBox groupBox2;
+        private System.Windows.Forms.DataGridView dgv_pedidos;
         private System.Windows.Forms.DataGridView dgv_detalle_pedido;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.GroupBox groupBox3;
@@ -752,7 +752,18 @@
         private System.Windows.Forms.Button btn_limpiar_filtros;
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.DataGridViewTextBoxColumn idPedido;
+        private System.Windows.Forms.DataGridViewTextBoxColumn nroPedido;
+        private System.Windows.Forms.DataGridViewTextBoxColumn fecPedido;
         private System.Windows.Forms.DataGridViewTextBoxColumn estado;
+        private System.Windows.Forms.DataGridViewTextBoxColumn razSoc;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Nombre;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ape;
+        private System.Windows.Forms.DataGridViewTextBoxColumn fecNec;
+        private System.Windows.Forms.DataGridViewTextBoxColumn total;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dirEntrega;
+        private System.Windows.Forms.DataGridViewButtonColumn opciones;
+        private System.Windows.Forms.DataGridViewTextBoxColumn idestado;
         private System.Windows.Forms.Button btn_cancelar;
         private System.Windows.Forms.DataGridViewTextBoxColumn codProd;
         private System.Windows.Forms.DataGridViewTextBoxColumn nomProd;
@@ -762,19 +773,8 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn subTotal;
         private System.Windows.Forms.DataGridViewTextBoxColumn idProd;
         private System.Windows.Forms.DataGridViewTextBoxColumn idEstadoDetalle;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Estado;
         private System.Windows.Forms.HelpProvider helpProviderConsultaPedidos;
         private System.Windows.Forms.ToolTip toolTip1;
-        private System.Windows.Forms.DataGridView dgv_pedidos;
-        private System.Windows.Forms.DataGridViewTextBoxColumn idPedido;
-        private System.Windows.Forms.DataGridViewTextBoxColumn nroPedido;
-        private System.Windows.Forms.DataGridViewTextBoxColumn fecPedido;
-        private System.Windows.Forms.DataGridViewTextBoxColumn razSoc;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Nombre;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ape;
-        private System.Windows.Forms.DataGridViewTextBoxColumn fecNec;
-        private System.Windows.Forms.DataGridViewTextBoxColumn total;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dirEntrega;
-        private System.Windows.Forms.DataGridViewButtonColumn opciones;
-        private System.Windows.Forms.DataGridViewTextBoxColumn idestado;
     }
 }
