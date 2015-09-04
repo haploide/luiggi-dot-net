@@ -42,6 +42,7 @@
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.reportViewer1 = new Microsoft.Reporting.WinForms.ReportViewer();
             this.helpProviderEmitirInformeOrdenesDeTrabajo = new System.Windows.Forms.HelpProvider();
+            this.chk_conDif = new System.Windows.Forms.CheckBox();
             ((System.ComponentModel.ISupportInitialize)(this.OrdenTrabajoBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.DataSetInformeOrdenTrabajo)).BeginInit();
             this.groupBox2.SuspendLayout();
@@ -60,8 +61,9 @@
             // 
             // groupBox2
             // 
-            this.groupBox2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.groupBox2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
+                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.groupBox2.Controls.Add(this.chk_conDif);
             this.groupBox2.Controls.Add(this.dtp_fecha_hasta);
             this.groupBox2.Controls.Add(this.label2);
             this.groupBox2.Controls.Add(this.label1);
@@ -105,7 +107,7 @@
             this.btn_aplicar_filtro.AutoSize = true;
             this.btn_aplicar_filtro.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.btn_aplicar_filtro.Image = global::Vista.Properties.Resources.looking2;
-            this.btn_aplicar_filtro.Location = new System.Drawing.Point(258, 30);
+            this.btn_aplicar_filtro.Location = new System.Drawing.Point(517, 30);
             this.btn_aplicar_filtro.Name = "btn_aplicar_filtro";
             this.btn_aplicar_filtro.Size = new System.Drawing.Size(38, 46);
             this.btn_aplicar_filtro.TabIndex = 36;
@@ -124,9 +126,9 @@
             // 
             // groupBox1
             // 
-            this.groupBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.groupBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+                        | System.Windows.Forms.AnchorStyles.Left)
+                        | System.Windows.Forms.AnchorStyles.Right)));
             this.groupBox1.Controls.Add(this.reportViewer1);
             this.groupBox1.Location = new System.Drawing.Point(12, 118);
             this.groupBox1.Name = "groupBox1";
@@ -149,6 +151,16 @@
             // helpProviderEmitirInformeOrdenesDeTrabajo
             // 
             this.helpProviderEmitirInformeOrdenesDeTrabajo.HelpNamespace = ".\\Ayuda\\Luiggi.chm";
+            // 
+            // chk_conDif
+            // 
+            this.chk_conDif.AutoSize = true;
+            this.chk_conDif.Location = new System.Drawing.Point(259, 32);
+            this.chk_conDif.Name = "chk_conDif";
+            this.chk_conDif.Size = new System.Drawing.Size(162, 17);
+            this.chk_conDif.TabIndex = 40;
+            this.chk_conDif.Text = "Mostrar Solo con Diferencias";
+            this.chk_conDif.UseVisualStyleBackColor = true;
             // 
             // EmitirInformeOrdenTrabajo
             // 
@@ -188,6 +200,7 @@
         private System.Windows.Forms.BindingSource OrdenTrabajoBindingSource;
         private DataSetInformeOrdenTrabajo DataSetInformeOrdenTrabajo;
         private System.Windows.Forms.HelpProvider helpProviderEmitirInformeOrdenesDeTrabajo;
+        private System.Windows.Forms.CheckBox chk_conDif;
 
     }
 }

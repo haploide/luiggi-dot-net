@@ -32,9 +32,16 @@ namespace Vista
                 if (tabla.Rows.Count > 0)
                 {
                     OrdenTrabajoBindingSource.DataSource = tabla;
-                   
-                    
-                   
+
+
+                    if (chk_conDif.Checked == true)
+                    {
+                        OrdenTrabajoBindingSource.Filter = " cantidad <> cantidadProducidaReal ";
+                    }
+                    else
+                    {
+                        OrdenTrabajoBindingSource.Filter = "";
+                    }
 
                     this.reportViewer1.RefreshReport();
                 }

@@ -967,8 +967,8 @@
             <TablixMember>
               <Group Name="Detalles1">
                 <GroupExpressions>
-                  <GroupExpression>=Fields!nombreFinal.Value</GroupExpression>
                   <GroupExpression>=Fields!nombreIntermedio.Value</GroupExpression>
+                  <GroupExpression>=Fields!nombreFinal.Value</GroupExpression>
                 </GroupExpressions>
               </Group>
             </TablixMember>
