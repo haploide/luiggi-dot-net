@@ -510,6 +510,34 @@ namespace DAO
 
             return idPlan;
         }
+        public static void actualizarEstado()
+        {
+            Acceso ac = new Acceso();
+            SqlTransaction tran = null;
+
+            SqlConnection conexion = new SqlConnection(ac.getCadenaConexion());
+
+            SqlCommand cmd = new SqlCommand("UPDATE [Luiggi].[dbo].[PlanMaestroProduccion] SET idEstado = 24 WHERE [fechaFin] < Cast(Convert(varchar(10),getdate(),103) as datetime) and idEstado <> 24", conexion);
+
+            
+            try
+            {
+                conexion.Open();
+                cmd.CommandType = CommandType.Text;
+                cmd.ExecuteNonQuery();
+                
+            }
+            
+            catch (SqlException ex)
+            {
+                throw new ApplicationException("Error en BD: " + ex.Message);
+            }
+            finally
+            {
+
+                conexion.Close();
+            }
+        }
         
     }
 }

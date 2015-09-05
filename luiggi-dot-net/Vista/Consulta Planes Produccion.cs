@@ -54,6 +54,7 @@ namespace Vista
         private void Consulta_Planes_Produccion_Load(object sender, EventArgs e)
         {
             cargarCombo();
+
             cargarGrilla();
         }
         private void cargarCombo()
@@ -80,6 +81,7 @@ namespace Vista
         {
             try
             {
+                PlanMaestroProduccionDAO.actualizarEstado();
                 List<PlanMaestroProduccion> planes = PlanMaestroProduccionDAO.GetAll();
 
                 dgv_planes.Rows.Clear();
