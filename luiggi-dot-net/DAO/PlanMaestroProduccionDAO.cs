@@ -216,7 +216,7 @@ namespace DAO
 
             List<PlanMaestroProduccion> planes = new List<PlanMaestroProduccion>();
 
-            string sql = "SELECT * from CONSULTA_PLAN_PRODUCCION";
+            string sql = "SELECT * from CONSULTA_PLAN_PRODUCCION order by idPlanProduccion desc";
             SqlCommand cmd = new SqlCommand();
             SqlConnection conexion = new SqlConnection(ac.getCadenaConexion());
 

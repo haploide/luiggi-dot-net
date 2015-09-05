@@ -259,7 +259,7 @@ namespace DAO
 
             List<OrdenDeCompra> ordenCompra = new List<OrdenDeCompra>();
 
-            string sql = "SELECT * from CONSULTAR_ORDEN_COMPRA";
+            string sql = "SELECT * from CONSULTAR_ORDEN_COMPRA order by fechaOrden desc";
             SqlCommand cmd = new SqlCommand();
             SqlConnection conexion = new SqlConnection(ac.getCadenaConexion());
 

@@ -321,7 +321,7 @@ namespace DAO
 
             List<Persona> personas = new List<Persona>();
 
-            string sql = "SELECT * from CONSULTA_CLIENTES";
+            string sql = "SELECT * from CONSULTA_CLIENTES order by apellido asc";
             SqlCommand cmd = new SqlCommand();
             SqlConnection conexion = new SqlConnection(ac.getCadenaConexion());
 

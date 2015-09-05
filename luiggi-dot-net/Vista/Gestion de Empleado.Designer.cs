@@ -232,6 +232,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.ClientSize = new System.Drawing.Size(377, 277);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox4);
@@ -242,6 +243,7 @@
             this.Name = "Gestion_de_Empleado";
             this.helpProviderGestionEmpleados.SetShowHelp(this, true);
             this.ShowInTaskbar = false;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Gestion_de_Empleado";
             this.Load += new System.EventHandler(this.Gestion_de_Empleado_Load);
             this.groupBox4.ResumeLayout(false);

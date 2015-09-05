@@ -246,7 +246,7 @@ namespace DAO
 
             List<Factura> facturas = new List<Factura>();
 
-            string sql = "SELECT * from CONSULTAR_FACTURA";
+            string sql = "SELECT * from CONSULTAR_FACTURA order by fecha desc";
             SqlCommand cmd = new SqlCommand();
             SqlConnection conexion = new SqlConnection(ac.getCadenaConexion());
 

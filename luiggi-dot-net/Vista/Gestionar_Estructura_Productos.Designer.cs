@@ -105,6 +105,7 @@
             this.DGVProductos.AllowUserToDeleteRows = false;
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.LightSteelBlue;
             this.DGVProductos.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            this.DGVProductos.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
             this.DGVProductos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.DGVProductos.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.codigo,
@@ -122,7 +123,7 @@
             this.DGVProductos.Name = "DGVProductos";
             this.DGVProductos.ReadOnly = true;
             this.DGVProductos.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.DGVProductos.Size = new System.Drawing.Size(581, 274);
+            this.DGVProductos.Size = new System.Drawing.Size(746, 274);
             this.DGVProductos.TabIndex = 4;
             this.DGVProductos.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DGVProductos_CellClick);
             this.DGVProductos.SelectionChanged += new System.EventHandler(this.DGVProductos_SelectionChanged);
@@ -140,24 +141,28 @@
             this.productoPadre.HeaderText = "Nombre";
             this.productoPadre.Name = "productoPadre";
             this.productoPadre.ReadOnly = true;
+            this.productoPadre.Width = 69;
             // 
             // Descripcion
             // 
             this.Descripcion.HeaderText = "Descripcion";
             this.Descripcion.Name = "Descripcion";
             this.Descripcion.ReadOnly = true;
+            this.Descripcion.Width = 88;
             // 
             // cat
             // 
             this.cat.HeaderText = "Categoria";
             this.cat.Name = "cat";
             this.cat.ReadOnly = true;
+            this.cat.Width = 77;
             // 
             // Unidad
             // 
             this.Unidad.HeaderText = "Unidad de Medida";
             this.Unidad.Name = "Unidad";
             this.Unidad.ReadOnly = true;
+            this.Unidad.Width = 109;
             // 
             // codCategoria
             // 
@@ -185,6 +190,7 @@
             this.tipoMaquinariaProducto.HeaderText = "Maquinaria Utilizada";
             this.tipoMaquinariaProducto.Name = "tipoMaquinariaProducto";
             this.tipoMaquinariaProducto.ReadOnly = true;
+            this.tipoMaquinariaProducto.Width = 116;
             // 
             // idTipoMaquinariaProducto
             // 
@@ -219,6 +225,7 @@
             this.DGVEstructuraProductos.AllowUserToDeleteRows = false;
             dataGridViewCellStyle2.BackColor = System.Drawing.Color.LightSteelBlue;
             this.DGVEstructuraProductos.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle2;
+            this.DGVEstructuraProductos.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
             this.DGVEstructuraProductos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.DGVEstructuraProductos.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.idProductoPadre,
@@ -240,7 +247,7 @@
             this.DGVEstructuraProductos.Name = "DGVEstructuraProductos";
             this.DGVEstructuraProductos.ReadOnly = true;
             this.DGVEstructuraProductos.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.DGVEstructuraProductos.Size = new System.Drawing.Size(646, 204);
+            this.DGVEstructuraProductos.Size = new System.Drawing.Size(746, 204);
             this.DGVEstructuraProductos.TabIndex = 8;
             this.DGVEstructuraProductos.DoubleClick += new System.EventHandler(this.DGVEstructuraProductos_DoubleClick);
             // 
@@ -263,7 +270,7 @@
             this.nombreProductoEstructura.HeaderText = "Nombre";
             this.nombreProductoEstructura.Name = "nombreProductoEstructura";
             this.nombreProductoEstructura.ReadOnly = true;
-            this.nombreProductoEstructura.Width = 150;
+            this.nombreProductoEstructura.Width = 69;
             // 
             // cantidad
             // 
@@ -272,42 +279,42 @@
             this.cantidad.HeaderText = "Cantidad";
             this.cantidad.Name = "cantidad";
             this.cantidad.ReadOnly = true;
-            this.cantidad.Width = 60;
+            this.cantidad.Width = 74;
             // 
             // nombreCategoria
             // 
             this.nombreCategoria.HeaderText = "Categoria";
             this.nombreCategoria.Name = "nombreCategoria";
             this.nombreCategoria.ReadOnly = true;
-            this.nombreCategoria.Width = 50;
+            this.nombreCategoria.Width = 77;
             // 
             // cantidadDeProductos2
             // 
             this.cantidadDeProductos2.HeaderText = "Cantidad de Productos";
             this.cantidadDeProductos2.Name = "cantidadDeProductos2";
             this.cantidadDeProductos2.ReadOnly = true;
-            this.cantidadDeProductos2.Width = 50;
+            this.cantidadDeProductos2.Width = 85;
             // 
             // unidadMedidaEstructura
             // 
             this.unidadMedidaEstructura.HeaderText = "Unidad de Medida";
             this.unidadMedidaEstructura.Name = "unidadMedidaEstructura";
             this.unidadMedidaEstructura.ReadOnly = true;
-            this.unidadMedidaEstructura.Width = 60;
+            this.unidadMedidaEstructura.Width = 78;
             // 
             // tiempoProduccion2
             // 
             this.tiempoProduccion2.HeaderText = "Tiempo de Produccion";
             this.tiempoProduccion2.Name = "tiempoProduccion2";
             this.tiempoProduccion2.ReadOnly = true;
-            this.tiempoProduccion2.Width = 75;
+            this.tiempoProduccion2.Width = 127;
             // 
             // unidadTiempo2
             // 
             this.unidadTiempo2.HeaderText = "";
             this.unidadTiempo2.Name = "unidadTiempo2";
             this.unidadTiempo2.ReadOnly = true;
-            this.unidadTiempo2.Width = 60;
+            this.unidadTiempo2.Width = 19;
             // 
             // idUnid
             // 
@@ -328,6 +335,7 @@
             this.tipoMaquinariaDetalle.HeaderText = "Maquinaria Utilizada";
             this.tipoMaquinariaDetalle.Name = "tipoMaquinariaDetalle";
             this.tipoMaquinariaDetalle.ReadOnly = true;
+            this.tipoMaquinariaDetalle.Width = 116;
             // 
             // idMaquinariaUtilizadaDetalle
             // 
@@ -340,7 +348,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(610, 111);
+            this.label3.Location = new System.Drawing.Point(776, 102);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(237, 20);
             this.label3.TabIndex = 44;
@@ -352,6 +360,7 @@
             this.DGVProductosAAgregar.AllowUserToDeleteRows = false;
             dataGridViewCellStyle4.BackColor = System.Drawing.Color.LightSteelBlue;
             this.DGVProductosAAgregar.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle4;
+            this.DGVProductosAAgregar.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
             this.DGVProductosAAgregar.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.DGVProductosAAgregar.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.dataGridViewTextBoxColumn1,
@@ -366,12 +375,12 @@
             this.idProd,
             this.tipoMaquinaria,
             this.idTipoMaquinaria});
-            this.DGVProductosAAgregar.Location = new System.Drawing.Point(610, 141);
+            this.DGVProductosAAgregar.Location = new System.Drawing.Point(776, 132);
             this.DGVProductosAAgregar.MultiSelect = false;
             this.DGVProductosAAgregar.Name = "DGVProductosAAgregar";
             this.DGVProductosAAgregar.ReadOnly = true;
             this.DGVProductosAAgregar.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.DGVProductosAAgregar.Size = new System.Drawing.Size(607, 274);
+            this.DGVProductosAAgregar.Size = new System.Drawing.Size(788, 274);
             this.DGVProductosAAgregar.TabIndex = 5;
             this.DGVProductosAAgregar.DoubleClick += new System.EventHandler(this.DGVProductosAAgregar_DoubleClick);
             // 
@@ -387,42 +396,42 @@
             this.nombreProductoAAgregar.HeaderText = "Nombre";
             this.nombreProductoAAgregar.Name = "nombreProductoAAgregar";
             this.nombreProductoAAgregar.ReadOnly = true;
-            this.nombreProductoAAgregar.Width = 180;
+            this.nombreProductoAAgregar.Width = 69;
             // 
             // categoriaAAgregar
             // 
             this.categoriaAAgregar.HeaderText = "Categoria";
             this.categoriaAAgregar.Name = "categoriaAAgregar";
             this.categoriaAAgregar.ReadOnly = true;
-            this.categoriaAAgregar.Width = 60;
+            this.categoriaAAgregar.Width = 77;
             // 
             // cantidadDeProductos1
             // 
             this.cantidadDeProductos1.HeaderText = "Cantidad de Productos";
             this.cantidadDeProductos1.Name = "cantidadDeProductos1";
             this.cantidadDeProductos1.ReadOnly = true;
-            this.cantidadDeProductos1.Width = 60;
+            this.cantidadDeProductos1.Width = 85;
             // 
             // unidadMedidaAAgregar
             // 
             this.unidadMedidaAAgregar.HeaderText = "Unidad de Medida";
             this.unidadMedidaAAgregar.Name = "unidadMedidaAAgregar";
             this.unidadMedidaAAgregar.ReadOnly = true;
-            this.unidadMedidaAAgregar.Width = 60;
+            this.unidadMedidaAAgregar.Width = 78;
             // 
             // tiempoProduccion1
             // 
             this.tiempoProduccion1.HeaderText = "Tiempo de Produccion";
             this.tiempoProduccion1.Name = "tiempoProduccion1";
             this.tiempoProduccion1.ReadOnly = true;
-            this.tiempoProduccion1.Width = 75;
+            this.tiempoProduccion1.Width = 127;
             // 
             // unidadTiempo1
             // 
             this.unidadTiempo1.HeaderText = "";
             this.unidadTiempo1.Name = "unidadTiempo1";
             this.unidadTiempo1.ReadOnly = true;
-            this.unidadTiempo1.Width = 40;
+            this.unidadTiempo1.Width = 19;
             // 
             // idCategoriaAAgregar
             // 
@@ -450,6 +459,7 @@
             this.tipoMaquinaria.HeaderText = "Maquinaria Utilizada";
             this.tipoMaquinaria.Name = "tipoMaquinaria";
             this.tipoMaquinaria.ReadOnly = true;
+            this.tipoMaquinaria.Width = 116;
             // 
             // idTipoMaquinaria
             // 
@@ -533,9 +543,9 @@
             this.groupBox2.Controls.Add(this.btnGuardar);
             this.groupBox2.Controls.Add(this.btnCancelar);
             this.groupBox2.Controls.Add(this.btn_salir_consulta);
-            this.groupBox2.Location = new System.Drawing.Point(12, 694);
+            this.groupBox2.Location = new System.Drawing.Point(202, 694);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(1216, 59);
+            this.groupBox2.Size = new System.Drawing.Size(1407, 59);
             this.groupBox2.TabIndex = 52;
             this.groupBox2.TabStop = false;
             // 
@@ -627,7 +637,7 @@
             // 
             this.btnSacar.Image = global::Vista.Properties.Resources.arrow_right_red2;
             this.btnSacar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnSacar.Location = new System.Drawing.Point(696, 588);
+            this.btnSacar.Location = new System.Drawing.Point(776, 577);
             this.btnSacar.Name = "btnSacar";
             this.btnSacar.Size = new System.Drawing.Size(85, 58);
             this.btnSacar.TabIndex = 9;
@@ -640,7 +650,7 @@
             // 
             this.btnAgregar.Image = global::Vista.Properties.Resources.arrow_left_green21;
             this.btnAgregar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnAgregar.Location = new System.Drawing.Point(696, 498);
+            this.btnAgregar.Location = new System.Drawing.Point(776, 487);
             this.btnAgregar.Name = "btnAgregar";
             this.btnAgregar.Size = new System.Drawing.Size(85, 58);
             this.btnAgregar.TabIndex = 7;
@@ -667,18 +677,23 @@
             this.panel1.Controls.Add(this.label4);
             this.panel1.Controls.Add(this.lblSeleccionado);
             this.panel1.Controls.Add(this.txtCantidad);
-            this.panel1.Location = new System.Drawing.Point(610, 421);
+            this.panel1.Location = new System.Drawing.Point(776, 412);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(607, 47);
+            this.panel1.Size = new System.Drawing.Size(788, 47);
             this.panel1.TabIndex = 55;
             // 
             // groupBox3
             // 
+            this.groupBox3.Controls.Add(this.panel1);
             this.groupBox3.Controls.Add(this.groupBox1);
             this.groupBox3.Controls.Add(this.lblAccion);
+            this.groupBox3.Controls.Add(this.btnSacar);
+            this.groupBox3.Controls.Add(this.label3);
+            this.groupBox3.Controls.Add(this.btnAgregar);
+            this.groupBox3.Controls.Add(this.DGVProductosAAgregar);
             this.groupBox3.Location = new System.Drawing.Point(12, 9);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(1216, 679);
+            this.groupBox3.Size = new System.Drawing.Size(1597, 679);
             this.groupBox3.TabIndex = 56;
             this.groupBox3.TabStop = false;
             // 
@@ -690,18 +705,13 @@
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Inherit;
             this.AutoScroll = true;
-            this.ClientSize = new System.Drawing.Size(1237, 749);
-            this.Controls.Add(this.panel1);
+            this.ClientSize = new System.Drawing.Size(1621, 759);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.lblDetalle);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.btnSacar);
-            this.Controls.Add(this.btnAgregar);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.DGVEstructuraProductos);
-            this.Controls.Add(this.label3);
             this.Controls.Add(this.lblProductos);
-            this.Controls.Add(this.DGVProductosAAgregar);
             this.Controls.Add(this.DGVProductos);
             this.Controls.Add(this.groupBox3);
             this.helpProviderGestionEstructuraDeProductos.SetHelpKeyword(this, "12");

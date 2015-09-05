@@ -8,6 +8,8 @@ using System.Text;
 using System.Windows.Forms;
 using Entidades;
 using DAO;
+using Microsoft.Reporting.WinForms;
+
 
 namespace Vista
 {
@@ -53,7 +55,10 @@ namespace Vista
                 {
                     ProductosBindingSource.DataSource = tabla;
 
+                    this.reportViewer1.LocalReport.SetParameters(new ReportParameter("desde", dtp_fecha_desde.Value.Date.ToShortDateString().ToString()));
+                    this.reportViewer1.LocalReport.SetParameters(new ReportParameter("hasta", dtp_fecha_hasta.Value.Date.ToShortDateString().ToString()));
                     this.reportViewer1.RefreshReport();
+                    
                 }
                 else
                 {

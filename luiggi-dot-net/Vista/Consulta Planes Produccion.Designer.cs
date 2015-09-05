@@ -77,7 +77,7 @@
             this.gp_filtros.Controls.Add(this.btn_aplicar_filtro);
             this.gp_filtros.Controls.Add(this.cmb_estado_plan);
             this.gp_filtros.Controls.Add(this.label4);
-            this.gp_filtros.Location = new System.Drawing.Point(12, 440);
+            this.gp_filtros.Location = new System.Drawing.Point(12, 542);
             this.gp_filtros.Name = "gp_filtros";
             this.gp_filtros.Size = new System.Drawing.Size(628, 85);
             this.gp_filtros.TabIndex = 57;
@@ -163,7 +163,7 @@
             this.groupBox2.Controls.Add(this.btn_eliminar);
             this.groupBox2.Controls.Add(this.btn_salir_consulta);
             this.groupBox2.Controls.Add(this.btn_limpiar_filtros);
-            this.groupBox2.Location = new System.Drawing.Point(12, 531);
+            this.groupBox2.Location = new System.Drawing.Point(12, 633);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(628, 59);
             this.groupBox2.TabIndex = 54;
@@ -222,7 +222,7 @@
             this.groupBox1.Controls.Add(this.dgv_planes);
             this.groupBox1.Location = new System.Drawing.Point(12, 12);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(628, 233);
+            this.groupBox1.Size = new System.Drawing.Size(628, 285);
             this.groupBox1.TabIndex = 55;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Planes";
@@ -246,7 +246,7 @@
             this.dgv_planes.Name = "dgv_planes";
             this.dgv_planes.ReadOnly = true;
             this.dgv_planes.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgv_planes.Size = new System.Drawing.Size(616, 208);
+            this.dgv_planes.Size = new System.Drawing.Size(616, 260);
             this.dgv_planes.TabIndex = 49;
             this.dgv_planes.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_planes_CellClick);
             this.dgv_planes.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_planes_CellDoubleClick);
@@ -295,9 +295,9 @@
             // groupBox3
             // 
             this.groupBox3.Controls.Add(this.dgv_detalle_plan);
-            this.groupBox3.Location = new System.Drawing.Point(12, 251);
+            this.groupBox3.Location = new System.Drawing.Point(12, 303);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(628, 183);
+            this.groupBox3.Size = new System.Drawing.Size(628, 233);
             this.groupBox3.TabIndex = 56;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Detalle de Plan";
@@ -323,7 +323,7 @@
             this.dgv_detalle_plan.Name = "dgv_detalle_plan";
             this.dgv_detalle_plan.ReadOnly = true;
             this.dgv_detalle_plan.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgv_detalle_plan.Size = new System.Drawing.Size(616, 164);
+            this.dgv_detalle_plan.Size = new System.Drawing.Size(616, 208);
             this.dgv_detalle_plan.TabIndex = 50;
             // 
             // codProd
@@ -380,7 +380,7 @@
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.AutoSize = true;
-            this.ClientSize = new System.Drawing.Size(652, 597);
+            this.ClientSize = new System.Drawing.Size(652, 704);
             this.Controls.Add(this.gp_filtros);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);

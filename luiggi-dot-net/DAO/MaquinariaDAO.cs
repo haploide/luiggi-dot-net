@@ -139,7 +139,7 @@ namespace DAO
 
             List<Maquinaria> maquinarias = new List<Maquinaria>();
 
-            string sql = "SELECT * FROM CONSULTAR_MAQUINARIA";
+            string sql = "SELECT * FROM CONSULTAR_MAQUINARIA order by tipoMaquinaria asc, nombre asc";
             //string sql = "SELECT Maquinaria.idMaquinaria, Maquinaria.nombre, Maquinaria.descripcion, Maquinaria.idTipo, Maquinaria.fechaAlta, ";
             //sql += " Maquinaria.idEstado, TipoMaquinaria.nombre AS tipoMaquinaria, Estado.nombre AS estado FROM Estado INNER JOIN Maquinaria ON Estado.idEstado = Maquinaria.idEstado INNER JOIN";
             //sql+= " TipoMaquinaria ON Maquinaria.idTipo = TipoMaquinaria.idTipoMaquinaria";

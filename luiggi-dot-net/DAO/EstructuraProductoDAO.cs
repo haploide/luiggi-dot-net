@@ -17,7 +17,7 @@ namespace DAO
 
             List<Producto> productos = new List<Producto>();
 
-            string sql = "SELECT codProducto, nombre, descripcion, precio, categoria, unidad, stockDeRiesgo, idCategoria, descCat, idUnidad, descUni, idProducto, idTipoMaquinaria, tipoMaquinaria from CONSULTA_PRODUCTOS where idCategoria = 1 OR idCategoria = 2";
+            string sql = "SELECT codProducto, nombre, descripcion, precio, categoria, unidad, stockDeRiesgo, idCategoria, descCat, idUnidad, descUni, idProducto, idTipoMaquinaria, tipoMaquinaria from CONSULTA_PRODUCTOS where idCategoria = 1 OR idCategoria = 2 order by categoria asc, nombre asc";
             SqlCommand cmd = new SqlCommand();
             SqlConnection conexion = new SqlConnection(ac.getCadenaConexion());
 
@@ -451,7 +451,7 @@ namespace DAO
 
             List<Producto> productos = new List<Producto>();
 
-            string sql = "SELECT codProducto, nombre, descripcion, precio, categoria, unidad, stockDeRiesgo, idCategoria, descCat, idUnidad, descUni, idProducto, cantidadProductos, tiempoProduccion, unidadTiempo, idUnidadTiempo, descUnidadTiempo, idTipoMaquinaria, tipoMaquinaria from CONSULTA_PRODUCTOS where idCategoria <> 1";
+            string sql = "SELECT codProducto, nombre, descripcion, precio, categoria, unidad, stockDeRiesgo, idCategoria, descCat, idUnidad, descUni, idProducto, cantidadProductos, tiempoProduccion, unidadTiempo, idUnidadTiempo, descUnidadTiempo, idTipoMaquinaria, tipoMaquinaria from CONSULTA_PRODUCTOS where idCategoria <> 1 order by categoria desc, nombre asc";
             SqlCommand cmd = new SqlCommand();
             SqlConnection conexion = new SqlConnection(ac.getCadenaConexion());
 

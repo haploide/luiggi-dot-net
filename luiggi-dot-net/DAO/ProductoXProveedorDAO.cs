@@ -126,7 +126,7 @@ namespace DAO
 
             List<ProductoXProveedor> productos = new List<ProductoXProveedor>();
 
-            string sql = "SELECT idProveedor, idProducto, fecha, precio, nombre, descripcion, stockDisponible, stockDeRiesgo, stockActual, stockReservado, unidad, idUnidad, razonSocial, CUIT, nombreRepresentante, apellido, email, telefonoContacto, idCategoria from CONSULTAR_PRODUCTOS_X_PROVEEDOR";
+            string sql = "SELECT idProveedor, idProducto, fecha, precio, nombre, descripcion, stockDisponible, stockDeRiesgo, stockActual, stockReservado, unidad, idUnidad, razonSocial, CUIT, nombreRepresentante, apellido, email, telefonoContacto, idCategoria from CONSULTAR_PRODUCTOS_X_PROVEEDOR order by nombre asc";
             SqlCommand cmd = new SqlCommand();
             SqlConnection conexion = new SqlConnection(ac.getCadenaConexion());
 

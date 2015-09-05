@@ -244,7 +244,7 @@ namespace DAO
 
             List<Empleado> empleados = new List<Empleado>();
 
-            string sql = "SELECT * FROM CONSULTAR_EMPLEADO";
+            string sql = "SELECT * FROM CONSULTAR_EMPLEADO order by apellido asc, nombre asc";
            
             SqlCommand cmd = new SqlCommand();
             SqlConnection conexion = new SqlConnection(ac.getCadenaConexion());

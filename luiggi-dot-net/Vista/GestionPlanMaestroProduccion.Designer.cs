@@ -404,7 +404,7 @@
             this.lunes.Location = new System.Drawing.Point(4, 22);
             this.lunes.Name = "lunes";
             this.lunes.Padding = new System.Windows.Forms.Padding(3);
-            this.lunes.Size = new System.Drawing.Size(654, 280);
+            this.lunes.Size = new System.Drawing.Size(654, 193);
             this.lunes.TabIndex = 0;
             this.lunes.Text = "Lunes";
             this.lunes.UseVisualStyleBackColor = true;
@@ -502,7 +502,7 @@
             this.martes.Controls.Add(this.dtp_martes);
             this.martes.Location = new System.Drawing.Point(4, 22);
             this.martes.Name = "martes";
-            this.martes.Size = new System.Drawing.Size(654, 280);
+            this.martes.Size = new System.Drawing.Size(654, 193);
             this.martes.TabIndex = 1;
             this.martes.Text = "Martes";
             this.martes.UseVisualStyleBackColor = true;
@@ -600,7 +600,7 @@
             this.miercoles.Controls.Add(this.dtp_miercoles);
             this.miercoles.Location = new System.Drawing.Point(4, 22);
             this.miercoles.Name = "miercoles";
-            this.miercoles.Size = new System.Drawing.Size(654, 280);
+            this.miercoles.Size = new System.Drawing.Size(654, 193);
             this.miercoles.TabIndex = 2;
             this.miercoles.Text = "Miercoles";
             this.miercoles.UseVisualStyleBackColor = true;
@@ -698,7 +698,7 @@
             this.jueves.Controls.Add(this.dtp_jueves);
             this.jueves.Location = new System.Drawing.Point(4, 22);
             this.jueves.Name = "jueves";
-            this.jueves.Size = new System.Drawing.Size(654, 280);
+            this.jueves.Size = new System.Drawing.Size(654, 193);
             this.jueves.TabIndex = 3;
             this.jueves.Text = "Jueves";
             this.jueves.UseVisualStyleBackColor = true;
@@ -796,7 +796,7 @@
             this.viernes.Controls.Add(this.dtp_viernes);
             this.viernes.Location = new System.Drawing.Point(4, 22);
             this.viernes.Name = "viernes";
-            this.viernes.Size = new System.Drawing.Size(654, 280);
+            this.viernes.Size = new System.Drawing.Size(654, 193);
             this.viernes.TabIndex = 4;
             this.viernes.Text = "Viernes";
             this.viernes.UseVisualStyleBackColor = true;
@@ -894,7 +894,7 @@
             this.sabado.Controls.Add(this.dtp_sabado);
             this.sabado.Location = new System.Drawing.Point(4, 22);
             this.sabado.Name = "sabado";
-            this.sabado.Size = new System.Drawing.Size(654, 280);
+            this.sabado.Size = new System.Drawing.Size(654, 193);
             this.sabado.TabIndex = 5;
             this.sabado.Text = "Sabado";
             this.sabado.UseVisualStyleBackColor = true;
@@ -1186,6 +1186,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.ClientSize = new System.Drawing.Size(701, 712);
             this.Controls.Add(this.groupBox4);
             this.Controls.Add(this.groupBox2);

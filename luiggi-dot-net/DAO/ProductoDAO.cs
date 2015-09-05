@@ -447,7 +447,7 @@ namespace DAO
 
             List<Producto> productos = new List<Producto>();
 
-            string sql = "SELECT codProducto, nombre, descripcion, precio, categoria, unidad, stockDisponible, stockDeRiesgo, stockReservado, stockActual, idCategoria, descCat, idUnidad, descUni, foto, idTipoMaquinaria, tiempoProduccion, tipoMaquinaria, precioMayorista, idUnidadTiempo, cantidadProductos from CONSULTA_PRODUCTOS";
+            string sql = "SELECT codProducto, nombre, descripcion, precio, categoria, unidad, stockDisponible, stockDeRiesgo, stockReservado, stockActual, idCategoria, descCat, idUnidad, descUni, foto, idTipoMaquinaria, tiempoProduccion, tipoMaquinaria, precioMayorista, idUnidadTiempo, cantidadProductos from CONSULTA_PRODUCTOS order by categoria asc, nombre asc";
             SqlCommand cmd = new SqlCommand();
             SqlConnection conexion = new SqlConnection(ac.getCadenaConexion());
 
@@ -542,7 +542,7 @@ namespace DAO
 
             List<Producto> productos = new List<Producto>();
 
-            string sql = "SELECT DISTINCT c.codProducto, c.nombre, c.descripcion, c.precio, c.categoria, c.unidad, c.stockDisponible, c.stockDeRiesgo, c.stockReservado, c.stockActual,  c.idCategoria, c.descCat, c.idUnidad, c.descUni, c.idProducto, c.foto from CONSULTA_PRODUCTOS c INNER JOIN DetalleProducto d ON c.idProducto = d.idProducto where c.idCategoria = 1";
+            string sql = "SELECT DISTINCT c.codProducto, c.nombre, c.descripcion, c.precio, c.categoria, c.unidad, c.stockDisponible, c.stockDeRiesgo, c.stockReservado, c.stockActual,  c.idCategoria, c.descCat, c.idUnidad, c.descUni, c.idProducto, c.foto from CONSULTA_PRODUCTOS c INNER JOIN DetalleProducto d ON c.idProducto = d.idProducto where c.idCategoria = 1 order by nombre asc";
             SqlCommand cmd = new SqlCommand();
             SqlConnection conexion = new SqlConnection(ac.getCadenaConexion());
 
@@ -620,7 +620,7 @@ namespace DAO
             List<Producto> productos = new List<Producto>();
 
             string sql = "SELECT DISTINCT codProducto, nombre, descripcion, precio, categoria, unidad, stockDisponible, stockDeRiesgo, stockReservado, stockActual,  idCategoria, descCat, idUnidad, descUni, idProducto, foto from CONSULTA_PRODUCTOS where (idCategoria = 3 or idCategoria = 4)";
-            sql += " and not Upper(nombre)='AGUA'";
+            sql += " and not Upper(nombre)='AGUA' order by nombre asc";
             SqlCommand cmd = new SqlCommand();
             SqlConnection conexion = new SqlConnection(ac.getCadenaConexion());
 

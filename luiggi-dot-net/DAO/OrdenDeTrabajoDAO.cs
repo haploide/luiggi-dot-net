@@ -461,7 +461,7 @@ namespace DAO
 
             List<OrdenDeTrabajo> ordenes = new List<OrdenDeTrabajo>();
 
-            string sql = "SELECT * from CONSULTAR_OT_Padre";
+            string sql = "SELECT * from CONSULTAR_OT_Padre order by fechaCreacion desc, horaInicio desc";
             SqlCommand cmd = new SqlCommand();
             SqlConnection conexion = new SqlConnection(ac.getCadenaConexion());
 
