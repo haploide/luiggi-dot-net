@@ -717,7 +717,7 @@
         <Top>10.78653cm</Top>
         <Left>4.31259cm</Left>
         <Height>1.2cm</Height>
-        <Width>16.30998cm</Width>
+        <Width>16.30997cm</Width>
         <ZIndex>1</ZIndex>
         <Style>
           <Border>
@@ -1004,8 +1004,75 @@
           <PaddingBottom>2pt</PaddingBottom>
         </Style>
       </Textbox>
+      <Textbox Name="Textbox7">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>Total:</Value>
+                <Style>
+                  <FontWeight>Bold</FontWeight>
+                  <TextDecoration>Underline</TextDecoration>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style />
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>Textbox7</rd:DefaultName>
+        <Top>12.12764cm</Top>
+        <Left>16.725cm</Left>
+        <Height>0.6cm</Height>
+        <Width>1.25646cm</Width>
+        <ZIndex>10</ZIndex>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+      </Textbox>
+      <Textbox Name="Textbox12">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>=Sum(Fields!total.Value, "DataSet1")</Value>
+                <Style>
+                  <Format>'$'0.00;('$'0.00)</Format>
+                  <rd:FormatSymbolCulture>es-AR</rd:FormatSymbolCulture>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style />
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>Textbox12</rd:DefaultName>
+        <Top>12.09236cm</Top>
+        <Left>18.12257cm</Left>
+        <Height>0.6cm</Height>
+        <Width>2.5cm</Width>
+        <ZIndex>11</ZIndex>
+        <Style>
+          <Border>
+            <Style>Solid</Style>
+          </Border>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+          <rd:FormatSymbolCulture>es-AR</rd:FormatSymbolCulture>
+        </Style>
+      </Textbox>
     </ReportItems>
-    <Height>4.91309in</Height>
+    <Height>5.11101in</Height>
     <Style />
   </Body>
   <ReportParameters>

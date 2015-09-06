@@ -13,7 +13,7 @@ namespace Vista
     public partial class Emitir_Factura : Form
     {
 
-        private int nroFactura;
+        
         public Emitir_Factura()
         {
             InitializeComponent();

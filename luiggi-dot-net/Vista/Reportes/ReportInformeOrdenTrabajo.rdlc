@@ -90,7 +90,7 @@
           </TablixColumns>
           <TablixRows>
             <TablixRow>
-              <Height>1.13009in</Height>
+              <Height>1.14076in</Height>
               <TablixCells>
                 <TablixCell>
                   <CellContents>
@@ -422,7 +422,7 @@
                                           <Paragraph>
                                             <TextRuns>
                                               <TextRun>
-                                                <Value>observaciones</Value>
+                                                <Value>Observaciones</Value>
                                                 <Style />
                                               </TextRun>
                                             </TextRuns>
@@ -654,6 +654,7 @@
                                           <Paragraph>
                                             <TextRuns>
                                               <TextRun>
+                                                <Label>unidadRes</Label>
                                                 <Value>=IIf(Fields!unidadIntermedio.Value="",Fields!unidadFinal.Value,Fields!unidadIntermedio.Value)</Value>
                                                 <Style />
                                               </TextRun>
@@ -883,66 +884,84 @@
                             <PaddingBottom>2pt</PaddingBottom>
                           </Style>
                         </Textbox>
-                        <Textbox Name="nombreIntermedio">
-                          <CanGrow>true</CanGrow>
-                          <KeepTogether>true</KeepTogether>
-                          <Paragraphs>
-                            <Paragraph>
-                              <TextRuns>
-                                <TextRun>
-                                  <Value>=Fields!nombreIntermedio.Value</Value>
+                        <Rectangle Name="Rectangle2">
+                          <ReportItems>
+                            <Textbox Name="nombreFinal">
+                              <CanGrow>true</CanGrow>
+                              <KeepTogether>true</KeepTogether>
+                              <Paragraphs>
+                                <Paragraph>
+                                  <TextRuns>
+                                    <TextRun>
+                                      <Value>=Fields!nombreFinal.Value</Value>
+                                      <Style />
+                                    </TextRun>
+                                  </TextRuns>
                                   <Style />
-                                </TextRun>
-                              </TextRuns>
-                              <Style />
-                            </Paragraph>
-                          </Paragraphs>
-                          <rd:DefaultName>nombreIntermedio</rd:DefaultName>
-                          <Top>0.60918cm</Top>
-                          <Left>13.2207cm</Left>
+                                </Paragraph>
+                              </Paragraphs>
+                              <rd:DefaultName>nombreFinal</rd:DefaultName>
+                              <Left>2.3918cm</Left>
+                              <Height>0.6cm</Height>
+                              <Width>4.64313cm</Width>
+                              <Style>
+                                <Border>
+                                  <Style>None</Style>
+                                </Border>
+                                <PaddingLeft>2pt</PaddingLeft>
+                                <PaddingRight>2pt</PaddingRight>
+                                <PaddingTop>2pt</PaddingTop>
+                                <PaddingBottom>2pt</PaddingBottom>
+                              </Style>
+                            </Textbox>
+                            <Textbox Name="Textbox14">
+                              <CanGrow>true</CanGrow>
+                              <KeepTogether>true</KeepTogether>
+                              <Paragraphs>
+                                <Paragraph>
+                                  <TextRuns>
+                                    <TextRun>
+                                      <Value>Para hacer:</Value>
+                                      <Style>
+                                        <FontWeight>Bold</FontWeight>
+                                        <TextDecoration>Underline</TextDecoration>
+                                      </Style>
+                                    </TextRun>
+                                  </TextRuns>
+                                  <Style />
+                                </Paragraph>
+                              </Paragraphs>
+                              <rd:DefaultName>Textbox14</rd:DefaultName>
+                              <Left>0.10583cm</Left>
+                              <Height>0.6cm</Height>
+                              <Width>2.28597cm</Width>
+                              <ZIndex>1</ZIndex>
+                              <Style>
+                                <Border>
+                                  <Style>None</Style>
+                                </Border>
+                                <PaddingLeft>2pt</PaddingLeft>
+                                <PaddingRight>2pt</PaddingRight>
+                                <PaddingTop>2pt</PaddingTop>
+                                <PaddingBottom>2pt</PaddingBottom>
+                              </Style>
+                            </Textbox>
+                          </ReportItems>
+                          <KeepTogether>true</KeepTogether>
+                          <Top>0.29104cm</Top>
+                          <Left>11.75913cm</Left>
                           <Height>0.6cm</Height>
-                          <Width>2.5cm</Width>
+                          <Width>10.42396cm</Width>
                           <ZIndex>3</ZIndex>
+                          <Visibility>
+                            <Hidden>=IIf(Fields!nombreIntermedio.Value="",True,False)</Hidden>
+                          </Visibility>
                           <Style>
                             <Border>
                               <Style>None</Style>
                             </Border>
-                            <PaddingLeft>2pt</PaddingLeft>
-                            <PaddingRight>2pt</PaddingRight>
-                            <PaddingTop>2pt</PaddingTop>
-                            <PaddingBottom>2pt</PaddingBottom>
                           </Style>
-                        </Textbox>
-                        <Textbox Name="nombreFinal">
-                          <CanGrow>true</CanGrow>
-                          <KeepTogether>true</KeepTogether>
-                          <Paragraphs>
-                            <Paragraph>
-                              <TextRuns>
-                                <TextRun>
-                                  <Value>=Fields!nombreFinal.Value</Value>
-                                  <Style />
-                                </TextRun>
-                              </TextRuns>
-                              <Style />
-                            </Paragraph>
-                          </Paragraphs>
-                          <rd:DefaultName>nombreFinal</rd:DefaultName>
-                          <Top>0.6621cm</Top>
-                          <Left>17.58633cm</Left>
-                          <Height>0.6cm</Height>
-                          <Width>2.5cm</Width>
-                          <ZIndex>4</ZIndex>
-                          <Style>
-                            <Border>
-                              <Style>None</Style>
-                            </Border>
-                            <PaddingLeft>2pt</PaddingLeft>
-                            <PaddingRight>2pt</PaddingRight>
-                            <PaddingTop>2pt</PaddingTop>
-                            <PaddingBottom>2pt</PaddingBottom>
-                          </Style>
-                        </Textbox>
+                        </Rectangle>
                       </ReportItems>
                       <KeepTogether>true</KeepTogether>
                       <Style>
@@ -977,7 +996,7 @@
         <DataSetName>DataSet1</DataSetName>
         <Top>0.10583cm</Top>
         <Left>0.42333cm</Left>
-        <Height>2.87043cm</Height>
+        <Height>2.89752cm</Height>
         <Width>25.24221cm</Width>
         <Style>
           <Border>
@@ -986,7 +1005,7 @@
         </Style>
       </Tablix>
     </ReportItems>
-    <Height>1.39583in</Height>
+    <Height>1.22916in</Height>
     <Style />
   </Body>
   <ReportParameters>
@@ -1006,6 +1025,14 @@
           <Value>=Now().ToShortTimeString</Value>
         </Values>
       </DefaultValue>
+      <Prompt>ReportParameter1</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="desde">
+      <DataType>DateTime</DataType>
+      <Prompt>ReportParameter1</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="hasta">
+      <DataType>DateTime</DataType>
       <Prompt>ReportParameter1</Prompt>
     </ReportParameter>
   </ReportParameters>
@@ -1042,7 +1069,7 @@
                     <FontSize>28pt</FontSize>
                     <FontWeight>Bold</FontWeight>
                     <TextDecoration>Underline</TextDecoration>
-                    <Color>LightSteelBlue</Color>
+                    <Color>Navy</Color>
                   </Style>
                 </TextRun>
               </TextRuns>
@@ -1221,6 +1248,153 @@
             <PaddingBottom>2pt</PaddingBottom>
           </Style>
         </Textbox>
+        <Rectangle Name="Rectangle3">
+          <ReportItems>
+            <Textbox Name="Textbox9">
+              <CanGrow>true</CanGrow>
+              <KeepTogether>true</KeepTogether>
+              <Paragraphs>
+                <Paragraph>
+                  <TextRuns>
+                    <TextRun>
+                      <Value>Periodo de Filtrado</Value>
+                      <Style>
+                        <TextDecoration>Underline</TextDecoration>
+                      </Style>
+                    </TextRun>
+                    <TextRun>
+                      <Value>:</Value>
+                      <Style>
+                        <FontStyle>Normal</FontStyle>
+                        <FontWeight>Normal</FontWeight>
+                        <TextDecoration>Underline</TextDecoration>
+                        <Color>#000000</Color>
+                      </Style>
+                    </TextRun>
+                  </TextRuns>
+                  <Style />
+                </Paragraph>
+              </Paragraphs>
+              <rd:DefaultName>Textbox2</rd:DefaultName>
+              <Height>0.6cm</Height>
+              <Width>3.24083cm</Width>
+              <Style>
+                <Border>
+                  <Style>None</Style>
+                </Border>
+                <PaddingLeft>2pt</PaddingLeft>
+                <PaddingRight>2pt</PaddingRight>
+                <PaddingTop>2pt</PaddingTop>
+                <PaddingBottom>2pt</PaddingBottom>
+              </Style>
+            </Textbox>
+            <Textbox Name="Textbox12">
+              <CanGrow>true</CanGrow>
+              <KeepTogether>true</KeepTogether>
+              <Paragraphs>
+                <Paragraph>
+                  <TextRuns>
+                    <TextRun>
+                      <Value>a</Value>
+                      <Style />
+                    </TextRun>
+                  </TextRuns>
+                  <Style />
+                </Paragraph>
+              </Paragraphs>
+              <rd:DefaultName>Textbox10</rd:DefaultName>
+              <Left>5.16757cm</Left>
+              <Height>0.6cm</Height>
+              <Width>0.35688cm</Width>
+              <ZIndex>1</ZIndex>
+              <Style>
+                <Border>
+                  <Style>None</Style>
+                </Border>
+                <PaddingLeft>2pt</PaddingLeft>
+                <PaddingRight>2pt</PaddingRight>
+                <PaddingTop>2pt</PaddingTop>
+                <PaddingBottom>2pt</PaddingBottom>
+              </Style>
+            </Textbox>
+            <Textbox Name="desde1">
+              <CanGrow>true</CanGrow>
+              <KeepTogether>true</KeepTogether>
+              <Paragraphs>
+                <Paragraph>
+                  <TextRuns>
+                    <TextRun>
+                      <Value>=Parameters!desde.Value</Value>
+                      <Style>
+                        <Format>dd/MM/yyyy</Format>
+                      </Style>
+                    </TextRun>
+                  </TextRuns>
+                  <Style />
+                </Paragraph>
+              </Paragraphs>
+              <rd:DefaultName>desde1</rd:DefaultName>
+              <Left>3.24083cm</Left>
+              <Height>0.6cm</Height>
+              <Width>1.92671cm</Width>
+              <ZIndex>2</ZIndex>
+              <Style>
+                <Border>
+                  <Style>None</Style>
+                </Border>
+                <PaddingLeft>2pt</PaddingLeft>
+                <PaddingRight>2pt</PaddingRight>
+                <PaddingTop>2pt</PaddingTop>
+                <PaddingBottom>2pt</PaddingBottom>
+              </Style>
+            </Textbox>
+            <Textbox Name="hasta1">
+              <CanGrow>true</CanGrow>
+              <KeepTogether>true</KeepTogether>
+              <Paragraphs>
+                <Paragraph>
+                  <TextRuns>
+                    <TextRun>
+                      <Value>=Parameters!hasta.Value</Value>
+                      <Style>
+                        <Format>dd/MM/yyyy</Format>
+                      </Style>
+                    </TextRun>
+                  </TextRuns>
+                  <Style />
+                </Paragraph>
+              </Paragraphs>
+              <rd:DefaultName>hasta1</rd:DefaultName>
+              <Left>5.52445cm</Left>
+              <Height>0.6cm</Height>
+              <Width>1.97968cm</Width>
+              <ZIndex>3</ZIndex>
+              <Style>
+                <Border>
+                  <Style>None</Style>
+                </Border>
+                <PaddingLeft>2pt</PaddingLeft>
+                <PaddingRight>2pt</PaddingRight>
+                <PaddingTop>2pt</PaddingTop>
+                <PaddingBottom>2pt</PaddingBottom>
+              </Style>
+            </Textbox>
+          </ReportItems>
+          <KeepTogether>true</KeepTogether>
+          <Top>3.60687cm</Top>
+          <Left>11.71326cm</Left>
+          <Height>0.6cm</Height>
+          <Width>7.50413cm</Width>
+          <ZIndex>7</ZIndex>
+          <Visibility>
+            <Hidden>=CDate(Parameters!desde.Value)="01/01/1900"</Hidden>
+          </Visibility>
+          <Style>
+            <Border>
+              <Style>None</Style>
+            </Border>
+          </Style>
+        </Rectangle>
       </ReportItems>
       <Style>
         <Border>

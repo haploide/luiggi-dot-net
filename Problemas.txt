@@ -1,9 +1,6 @@
 -En el caso de comprar a proveedor, cuando viene de menos y se pone que vino de menos pero el 
 calculo de pago no tiene encuenta esto y muestra el monto por la cantidad original.
 
--en informe de venta por producto, por ser diferentes las unidades pareciera que se 
-vende mas unos productos que otros en el grafico.
-
 -en ordenes de trabajo al registrar lo que realmente se produjo se muestran numeros con muchos decimales.
 
 

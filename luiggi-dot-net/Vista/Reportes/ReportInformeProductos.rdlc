@@ -57,12 +57,12 @@
         <TablixBody>
           <TablixColumns>
             <TablixColumn>
-              <Width>7.73376in</Width>
+              <Width>8.16084in</Width>
             </TablixColumn>
           </TablixColumns>
           <TablixRows>
             <TablixRow>
-              <Height>1.30274in</Height>
+              <Height>1.24024in</Height>
               <TablixCells>
                 <TablixCell>
                   <CellContents>
@@ -75,7 +75,7 @@
                                 <Width>1.3905in</Width>
                               </TablixColumn>
                               <TablixColumn>
-                                <Width>1.69259in</Width>
+                                <Width>2.11967in</Width>
                               </TablixColumn>
                               <TablixColumn>
                                 <Width>3.203in</Width>
@@ -89,7 +89,7 @@
                             </TablixColumns>
                             <TablixRows>
                               <TablixRow>
-                                <Height>0.23622in</Height>
+                                <Height>0.19455in</Height>
                                 <TablixCells>
                                   <TablixCell>
                                     <CellContents>
@@ -267,7 +267,7 @@
                                 </TablixCells>
                               </TablixRow>
                               <TablixRow>
-                                <Height>1.0383in</Height>
+                                <Height>0.99663in</Height>
                                 <TablixCells>
                                   <TablixCell>
                                     <CellContents>
@@ -434,8 +434,8 @@
                             </TablixMembers>
                           </TablixRowHierarchy>
                           <DataSetName>DataSet1</DataSetName>
-                          <Height>3.23728cm</Height>
-                          <Width>19.64375cm</Width>
+                          <Height>3.02561cm</Height>
+                          <Width>20.72854cm</Width>
                           <Style>
                             <Border>
                               <Style>None</Style>
@@ -469,166 +469,27 @@
                   <GroupExpression>=Fields!idProducto.Value</GroupExpression>
                 </GroupExpressions>
               </Group>
+              <SortExpressions>
+                <SortExpression>
+                  <Value>=Fields!nombre.Value</Value>
+                </SortExpression>
+              </SortExpressions>
             </TablixMember>
           </TablixMembers>
         </TablixRowHierarchy>
         <DataSetName>DataSet1</DataSetName>
-        <Top>1.90508cm</Top>
-        <Left>2.81842cm</Left>
-        <Height>3.30896cm</Height>
-        <Width>19.64375cm</Width>
+        <Top>0.17639cm</Top>
+        <Left>2.05215cm</Left>
+        <Height>3.15021cm</Height>
+        <Width>20.72854cm</Width>
         <Style>
           <Border>
             <Style>None</Style>
           </Border>
         </Style>
       </Tablix>
-      <Textbox Name="fecha">
-        <CanGrow>true</CanGrow>
-        <KeepTogether>true</KeepTogether>
-        <Paragraphs>
-          <Paragraph>
-            <TextRuns>
-              <TextRun>
-                <Value>=Parameters!fecha.Value</Value>
-                <Style />
-              </TextRun>
-            </TextRuns>
-            <Style>
-              <TextAlign>Left</TextAlign>
-            </Style>
-          </Paragraph>
-        </Paragraphs>
-        <rd:DefaultName>fecha</rd:DefaultName>
-        <Top>0.17639cm</Top>
-        <Left>2.92538cm</Left>
-        <Height>0.6cm</Height>
-        <Width>2.20896cm</Width>
-        <ZIndex>1</ZIndex>
-        <Style>
-          <Border>
-            <Style>None</Style>
-          </Border>
-          <PaddingLeft>2pt</PaddingLeft>
-          <PaddingRight>2pt</PaddingRight>
-          <PaddingTop>2pt</PaddingTop>
-          <PaddingBottom>2pt</PaddingBottom>
-        </Style>
-      </Textbox>
-      <Textbox Name="hora">
-        <CanGrow>true</CanGrow>
-        <KeepTogether>true</KeepTogether>
-        <Paragraphs>
-          <Paragraph>
-            <TextRuns>
-              <TextRun>
-                <Value>=Parameters!hora.Value</Value>
-                <Style />
-              </TextRun>
-            </TextRuns>
-            <Style />
-          </Paragraph>
-        </Paragraphs>
-        <rd:DefaultName>hora</rd:DefaultName>
-        <Top>0.77639cm</Top>
-        <Left>2.92538cm</Left>
-        <Height>0.6cm</Height>
-        <Width>2.5cm</Width>
-        <ZIndex>2</ZIndex>
-        <Style>
-          <Border>
-            <Style>None</Style>
-          </Border>
-          <PaddingLeft>2pt</PaddingLeft>
-          <PaddingRight>2pt</PaddingRight>
-          <PaddingTop>2pt</PaddingTop>
-          <PaddingBottom>2pt</PaddingBottom>
-        </Style>
-      </Textbox>
-      <Textbox Name="Textbox4">
-        <CanGrow>true</CanGrow>
-        <KeepTogether>true</KeepTogether>
-        <Paragraphs>
-          <Paragraph>
-            <TextRuns>
-              <TextRun>
-                <Value>Fecha </Value>
-                <Style>
-                  <TextDecoration>Underline</TextDecoration>
-                </Style>
-              </TextRun>
-              <TextRun>
-                <Value>emisión:</Value>
-                <Style>
-                  <FontStyle>Normal</FontStyle>
-                  <FontWeight>Normal</FontWeight>
-                  <TextDecoration>Underline</TextDecoration>
-                  <Color>#000000</Color>
-                </Style>
-              </TextRun>
-            </TextRuns>
-            <Style />
-          </Paragraph>
-        </Paragraphs>
-        <rd:DefaultName>Textbox4</rd:DefaultName>
-        <Top>0.17639cm</Top>
-        <Left>0.42538cm</Left>
-        <Height>0.6cm</Height>
-        <Width>2.5cm</Width>
-        <ZIndex>3</ZIndex>
-        <Style>
-          <Border>
-            <Style>None</Style>
-          </Border>
-          <PaddingLeft>2pt</PaddingLeft>
-          <PaddingRight>2pt</PaddingRight>
-          <PaddingTop>2pt</PaddingTop>
-          <PaddingBottom>2pt</PaddingBottom>
-        </Style>
-      </Textbox>
-      <Textbox Name="Textbox5">
-        <CanGrow>true</CanGrow>
-        <KeepTogether>true</KeepTogether>
-        <Paragraphs>
-          <Paragraph>
-            <TextRuns>
-              <TextRun>
-                <Value>Hora </Value>
-                <Style>
-                  <TextDecoration>Underline</TextDecoration>
-                </Style>
-              </TextRun>
-              <TextRun>
-                <Value>emisión:</Value>
-                <Style>
-                  <FontStyle>Normal</FontStyle>
-                  <FontWeight>Normal</FontWeight>
-                  <TextDecoration>Underline</TextDecoration>
-                  <Color>#000000</Color>
-                </Style>
-              </TextRun>
-            </TextRuns>
-            <Style />
-          </Paragraph>
-        </Paragraphs>
-        <rd:DefaultName>Textbox4</rd:DefaultName>
-        <Top>0.77639cm</Top>
-        <Left>0.42538cm</Left>
-        <Height>0.6cm</Height>
-        <Width>2.5cm</Width>
-        <ZIndex>4</ZIndex>
-        <Style>
-          <Border>
-            <Style>None</Style>
-          </Border>
-          <PaddingLeft>2pt</PaddingLeft>
-          <PaddingRight>2pt</PaddingRight>
-          <PaddingTop>2pt</PaddingTop>
-          <PaddingBottom>2pt</PaddingBottom>
-        </Style>
-      </Textbox>
     </ReportItems>
-    <Height>2.18786in</Height>
+    <Height>1.40661in</Height>
     <Style />
   </Body>
   <ReportParameters>
@@ -654,7 +515,7 @@
   <Width>9.77671in</Width>
   <Page>
     <PageHeader>
-      <Height>3.57614cm</Height>
+      <Height>5.05781cm</Height>
       <PrintOnFirstPage>true</PrintOnFirstPage>
       <PrintOnLastPage>true</PrintOnLastPage>
       <ReportItems>
@@ -685,7 +546,7 @@
                     <FontSize>28pt</FontSize>
                     <FontWeight>Bold</FontWeight>
                     <TextDecoration>Underline</TextDecoration>
-                    <Color>LightSteelBlue</Color>
+                    <Color>Navy</Color>
                   </Style>
                 </TextRun>
               </TextRuns>
@@ -722,6 +583,150 @@
             </Border>
           </Style>
         </Line>
+        <Textbox Name="fecha">
+          <CanGrow>true</CanGrow>
+          <KeepTogether>true</KeepTogether>
+          <Paragraphs>
+            <Paragraph>
+              <TextRuns>
+                <TextRun>
+                  <Value>=Parameters!fecha.Value</Value>
+                  <Style />
+                </TextRun>
+              </TextRuns>
+              <Style>
+                <TextAlign>Left</TextAlign>
+              </Style>
+            </Paragraph>
+          </Paragraphs>
+          <rd:DefaultName>fecha</rd:DefaultName>
+          <Top>3.59805cm</Top>
+          <Left>2.92538cm</Left>
+          <Height>0.6cm</Height>
+          <Width>2.20896cm</Width>
+          <ZIndex>3</ZIndex>
+          <Style>
+            <Border>
+              <Style>None</Style>
+            </Border>
+            <PaddingLeft>2pt</PaddingLeft>
+            <PaddingRight>2pt</PaddingRight>
+            <PaddingTop>2pt</PaddingTop>
+            <PaddingBottom>2pt</PaddingBottom>
+          </Style>
+        </Textbox>
+        <Textbox Name="hora">
+          <CanGrow>true</CanGrow>
+          <KeepTogether>true</KeepTogether>
+          <Paragraphs>
+            <Paragraph>
+              <TextRuns>
+                <TextRun>
+                  <Value>=Parameters!hora.Value</Value>
+                  <Style />
+                </TextRun>
+              </TextRuns>
+              <Style />
+            </Paragraph>
+          </Paragraphs>
+          <rd:DefaultName>hora</rd:DefaultName>
+          <Top>4.19805cm</Top>
+          <Left>2.92538cm</Left>
+          <Height>0.6cm</Height>
+          <Width>2.5cm</Width>
+          <ZIndex>4</ZIndex>
+          <Style>
+            <Border>
+              <Style>None</Style>
+            </Border>
+            <PaddingLeft>2pt</PaddingLeft>
+            <PaddingRight>2pt</PaddingRight>
+            <PaddingTop>2pt</PaddingTop>
+            <PaddingBottom>2pt</PaddingBottom>
+          </Style>
+        </Textbox>
+        <Textbox Name="Textbox4">
+          <CanGrow>true</CanGrow>
+          <KeepTogether>true</KeepTogether>
+          <Paragraphs>
+            <Paragraph>
+              <TextRuns>
+                <TextRun>
+                  <Value>Fecha </Value>
+                  <Style>
+                    <TextDecoration>Underline</TextDecoration>
+                  </Style>
+                </TextRun>
+                <TextRun>
+                  <Value>emisión:</Value>
+                  <Style>
+                    <FontStyle>Normal</FontStyle>
+                    <FontWeight>Normal</FontWeight>
+                    <TextDecoration>Underline</TextDecoration>
+                    <Color>#000000</Color>
+                  </Style>
+                </TextRun>
+              </TextRuns>
+              <Style />
+            </Paragraph>
+          </Paragraphs>
+          <rd:DefaultName>Textbox4</rd:DefaultName>
+          <Top>3.59805cm</Top>
+          <Left>0.42538cm</Left>
+          <Height>0.6cm</Height>
+          <Width>2.5cm</Width>
+          <ZIndex>5</ZIndex>
+          <Style>
+            <Border>
+              <Style>None</Style>
+            </Border>
+            <PaddingLeft>2pt</PaddingLeft>
+            <PaddingRight>2pt</PaddingRight>
+            <PaddingTop>2pt</PaddingTop>
+            <PaddingBottom>2pt</PaddingBottom>
+          </Style>
+        </Textbox>
+        <Textbox Name="Textbox5">
+          <CanGrow>true</CanGrow>
+          <KeepTogether>true</KeepTogether>
+          <Paragraphs>
+            <Paragraph>
+              <TextRuns>
+                <TextRun>
+                  <Value>Hora </Value>
+                  <Style>
+                    <TextDecoration>Underline</TextDecoration>
+                  </Style>
+                </TextRun>
+                <TextRun>
+                  <Value>emisión:</Value>
+                  <Style>
+                    <FontStyle>Normal</FontStyle>
+                    <FontWeight>Normal</FontWeight>
+                    <TextDecoration>Underline</TextDecoration>
+                    <Color>#000000</Color>
+                  </Style>
+                </TextRun>
+              </TextRuns>
+              <Style />
+            </Paragraph>
+          </Paragraphs>
+          <rd:DefaultName>Textbox4</rd:DefaultName>
+          <Top>4.19805cm</Top>
+          <Left>0.42538cm</Left>
+          <Height>0.6cm</Height>
+          <Width>2.5cm</Width>
+          <ZIndex>6</ZIndex>
+          <Style>
+            <Border>
+              <Style>None</Style>
+            </Border>
+            <PaddingLeft>2pt</PaddingLeft>
+            <PaddingRight>2pt</PaddingRight>
+            <PaddingTop>2pt</PaddingTop>
+            <PaddingBottom>2pt</PaddingBottom>
+          </Style>
+        </Textbox>
       </ReportItems>
       <Style>
         <Border>

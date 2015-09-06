@@ -12,7 +12,7 @@
   <xs:element name="DataSetInformeOrdenCompra" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="DataSetInformeOrdenCompra" msprop:Generator_UserDSName="DataSetInformeOrdenCompra">
     <xs:complexType>
       <xs:choice minOccurs="0" maxOccurs="unbounded">
-        <xs:element name="OrdenCompra" msprop:Generator_TableClassName="OrdenCompraDataTable" msprop:Generator_TableVarName="tableOrdenCompra" msprop:Generator_TablePropName="OrdenCompra" msprop:Generator_RowDeletingName="OrdenCompraRowDeleting" msprop:Generator_UserTableName="OrdenCompra" msprop:Generator_RowChangingName="OrdenCompraRowChanging" msprop:Generator_RowEvHandlerName="OrdenCompraRowChangeEventHandler" msprop:Generator_RowDeletedName="OrdenCompraRowDeleted" msprop:Generator_RowEvArgName="OrdenCompraRowChangeEvent" msprop:Generator_RowChangedName="OrdenCompraRowChanged" msprop:Generator_RowClassName="OrdenCompraRow">
+        <xs:element name="OrdenCompra" msprop:Generator_TableClassName="OrdenCompraDataTable" msprop:Generator_TableVarName="tableOrdenCompra" msprop:Generator_RowChangedName="OrdenCompraRowChanged" msprop:Generator_TablePropName="OrdenCompra" msprop:Generator_RowDeletingName="OrdenCompraRowDeleting" msprop:Generator_RowChangingName="OrdenCompraRowChanging" msprop:Generator_RowEvHandlerName="OrdenCompraRowChangeEventHandler" msprop:Generator_RowDeletedName="OrdenCompraRowDeleted" msprop:Generator_RowClassName="OrdenCompraRow" msprop:Generator_UserTableName="OrdenCompra" msprop:Generator_RowEvArgName="OrdenCompraRowChangeEvent">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="idOrden" msprop:Generator_ColumnVarNameInTable="columnidOrden" msprop:Generator_ColumnPropNameInRow="idOrden" msprop:Generator_ColumnPropNameInTable="idOrdenColumn" msprop:Generator_UserColumnName="idOrden" type="xs:int" minOccurs="0" />
@@ -23,8 +23,6 @@
               <xs:element name="cantidadRealIngresada" msprop:Generator_ColumnVarNameInTable="columncantidadRealIngresada" msprop:Generator_ColumnPropNameInRow="cantidadRealIngresada" msprop:Generator_ColumnPropNameInTable="cantidadRealIngresadaColumn" msprop:Generator_UserColumnName="cantidadRealIngresada" type="xs:double" minOccurs="0" />
               <xs:element name="nombre" msprop:Generator_ColumnVarNameInTable="columnnombre" msprop:Generator_ColumnPropNameInRow="nombre" msprop:Generator_ColumnPropNameInTable="nombreColumn" msprop:Generator_UserColumnName="nombre" type="xs:string" minOccurs="0" />
               <xs:element name="unidad" msprop:Generator_ColumnVarNameInTable="columnunidad" msprop:Generator_ColumnPropNameInRow="unidad" msprop:Generator_ColumnPropNameInTable="unidadColumn" msprop:Generator_UserColumnName="unidad" type="xs:string" minOccurs="0" />
-              <xs:element name="desde" msprop:Generator_ColumnVarNameInTable="columndesde" msprop:Generator_ColumnPropNameInRow="desde" msprop:Generator_ColumnPropNameInTable="desdeColumn" msprop:Generator_UserColumnName="desde" type="xs:dateTime" minOccurs="0" />
-              <xs:element name="hasta" msprop:Generator_ColumnVarNameInTable="columnhasta" msprop:Generator_ColumnPropNameInRow="hasta" msprop:Generator_ColumnPropNameInTable="hastaColumn" msprop:Generator_UserColumnName="hasta" type="xs:dateTime" minOccurs="0" />
             </xs:sequence>
           </xs:complexType>
         </xs:element>

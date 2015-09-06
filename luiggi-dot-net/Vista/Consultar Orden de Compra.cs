@@ -275,7 +275,7 @@ namespace Vista
                                 det.cantidadRealIngresada = Convert.ToDouble(dgv_detalle_pedido.Rows[i].Cells["cantReal"].Value);
                                 UnidadMedida u = new UnidadMedida();
                                 
-                                if (dgv_detalle_pedido.Rows[i].Cells["unidadReal"].Value == "g")
+                                if ((string)dgv_detalle_pedido.Rows[i].Cells["unidadReal"].Value == "g")
                                 {
                                     u.Descripcion = "g";
                                 }

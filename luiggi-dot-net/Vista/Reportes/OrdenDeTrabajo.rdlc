@@ -929,7 +929,7 @@
                     <FontSize>28pt</FontSize>
                     <FontWeight>Bold</FontWeight>
                     <TextDecoration>Underline</TextDecoration>
-                    <Color>LightSteelBlue</Color>
+                    <Color>Navy</Color>
                   </Style>
                 </TextRun>
               </TextRuns>

@@ -12,13 +12,11 @@
   <xs:element name="DataSetInformeVolumenVentas" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="DataSetInformeVolumenVentas" msprop:Generator_UserDSName="DataSetInformeVolumenVentas">
     <xs:complexType>
       <xs:choice minOccurs="0" maxOccurs="unbounded">
-        <xs:element name="Volumen" msprop:Generator_TableClassName="VolumenDataTable" msprop:Generator_TableVarName="tableVolumen" msprop:Generator_TablePropName="Volumen" msprop:Generator_RowDeletingName="VolumenRowDeleting" msprop:Generator_UserTableName="Volumen" msprop:Generator_RowChangingName="VolumenRowChanging" msprop:Generator_RowEvHandlerName="VolumenRowChangeEventHandler" msprop:Generator_RowDeletedName="VolumenRowDeleted" msprop:Generator_RowEvArgName="VolumenRowChangeEvent" msprop:Generator_RowChangedName="VolumenRowChanged" msprop:Generator_RowClassName="VolumenRow">
+        <xs:element name="Volumen" msprop:Generator_TableClassName="VolumenDataTable" msprop:Generator_TableVarName="tableVolumen" msprop:Generator_RowChangedName="VolumenRowChanged" msprop:Generator_TablePropName="Volumen" msprop:Generator_RowDeletingName="VolumenRowDeleting" msprop:Generator_RowChangingName="VolumenRowChanging" msprop:Generator_RowEvHandlerName="VolumenRowChangeEventHandler" msprop:Generator_RowDeletedName="VolumenRowDeleted" msprop:Generator_RowClassName="VolumenRow" msprop:Generator_UserTableName="Volumen" msprop:Generator_RowEvArgName="VolumenRowChangeEvent">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="periodo" msprop:Generator_ColumnVarNameInTable="columnperiodo" msprop:Generator_ColumnPropNameInRow="periodo" msprop:Generator_ColumnPropNameInTable="periodoColumn" msprop:Generator_UserColumnName="periodo" type="xs:string" minOccurs="0" />
               <xs:element name="monto" msprop:Generator_ColumnVarNameInTable="columnmonto" msprop:Generator_ColumnPropNameInRow="monto" msprop:Generator_ColumnPropNameInTable="montoColumn" msprop:Generator_UserColumnName="monto" type="xs:double" minOccurs="0" />
-              <xs:element name="desde" msprop:Generator_ColumnVarNameInTable="columndesde" msprop:Generator_ColumnPropNameInRow="desde" msprop:Generator_ColumnPropNameInTable="desdeColumn" msprop:Generator_UserColumnName="desde" type="xs:dateTime" minOccurs="0" />
-              <xs:element name="hasta" msprop:Generator_ColumnVarNameInTable="columnhasta" msprop:Generator_ColumnPropNameInRow="hasta" msprop:Generator_ColumnPropNameInTable="hastaColumn" msprop:Generator_UserColumnName="hasta" type="xs:dateTime" minOccurs="0" />
             </xs:sequence>
           </xs:complexType>
         </xs:element>

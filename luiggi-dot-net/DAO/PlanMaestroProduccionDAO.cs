@@ -513,7 +513,7 @@ namespace DAO
         public static void actualizarEstado()
         {
             Acceso ac = new Acceso();
-            SqlTransaction tran = null;
+            
 
             SqlConnection conexion = new SqlConnection(ac.getCadenaConexion());
 

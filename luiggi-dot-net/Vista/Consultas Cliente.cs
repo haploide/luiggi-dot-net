@@ -124,7 +124,7 @@ namespace Vista
         {
             string clienteSeleccionado;
 
-            if (!(dgv_clientes.Rows[dgv_clientes.CurrentRow.Index].Cells["Nombre"].Value == "N/D") && !((string)dgv_clientes.Rows[dgv_clientes.CurrentRow.Index].Cells["apellido"].Value == "N/D"))
+            if (!((string)dgv_clientes.Rows[dgv_clientes.CurrentRow.Index].Cells["Nombre"].Value == "N/D") && !((string)dgv_clientes.Rows[dgv_clientes.CurrentRow.Index].Cells["apellido"].Value == "N/D"))
             {
 
                 clienteSeleccionado = (string)dgv_clientes.Rows[dgv_clientes.CurrentRow.Index].Cells["Nombre"].Value + " " + (string)dgv_clientes.Rows[dgv_clientes.CurrentRow.Index].Cells["apellido"].Value;

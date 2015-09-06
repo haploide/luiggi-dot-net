@@ -298,7 +298,7 @@ namespace DAO
 
                 SqlDataReader dr = cmd.ExecuteReader();
 
-                Producto p;
+                
                 Producto pi;
                 //Categoria c;
                 UnidadMedida u;
@@ -553,7 +553,7 @@ namespace DAO
             return ordenes;
 
         }
-        public static DataTable GetByFiltrosInforme()
+        public static DataTable GetByFiltrosInforme(DateTime? desde, DateTime? hasta)
         {
             Acceso ac = new Acceso();
 
@@ -566,8 +566,18 @@ namespace DAO
             sql += " Producto AS p1 ON u1.idUnidad = p1.idUnidadMedida ON OrdenTrabajo.idProducto = p1.idProducto ON Estado.idEstado = OrdenTrabajo.idEstado LEFT OUTER JOIN";
             sql += " Producto INNER JOIN UnidadMedida ON Producto.idUnidadMedida = UnidadMedida.idUnidad ON OrdenTrabajo.idProdIntermedio = Producto.idProducto";
             sql += " WHERE (Estado.idEstado = 20)";
+            
+            
 
             SqlCommand cmd = new SqlCommand();
+
+            if (desde != null)
+            {
+                sql += " and fechaCreacion between @fechaDesde and @fechaHasta";
+                cmd.Parameters.AddWithValue("@fechaDesde", desde);
+                cmd.Parameters.AddWithValue("@fechaHasta", hasta);
+            }
+
             SqlConnection conexion = new SqlConnection(ac.getCadenaConexion());
 
             //if (cat != null)

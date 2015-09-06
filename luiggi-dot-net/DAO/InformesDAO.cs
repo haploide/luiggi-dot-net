@@ -104,7 +104,7 @@ namespace DAO
 
             String sql = "SELECT Producto.idProducto, Producto.nombre, Producto.descripcion, UnidadMedida.nombre AS unidad, Producto.precio, Producto.foto ";
             sql += " FROM Producto INNER JOIN UnidadMedida ON Producto.idUnidadMedida = UnidadMedida.idUnidad INNER JOIN Categoria ON Producto.idCategoria = Categoria.idCategoria";
-            sql += " WHERE (Producto.idCategoria = 1)";
+            sql += " WHERE (Producto.idCategoria = 1) AND EXISTS (Select 1 From CONSULTA_ESTRUCTURA_PRODUCTOS C where C.idProducto = Producto.idProducto)";
 
             try
             {
@@ -144,7 +144,7 @@ namespace DAO
 
             
 
-            String sql = " SELECT idOrden, fechaOrden, idProveedor, razonSocial, cantidad, cantidadRealIngresada, nombre, unidad, @fechaDesde as desde, @fechaHasta as hasta";
+            String sql = " SELECT idOrden, fechaOrden, idProveedor, razonSocial, cantidad, cantidadRealIngresada, nombre, unidad";
             sql += " FROM EMITIR_INFORME_ORDEN_DE_COMPRA WHERE 1=1";
 
             if (desde != null)
@@ -201,10 +201,10 @@ namespace DAO
 
 
 
-            String sql = " SELECT o.idProducto, p.nombre, MONTH(o.fechaCreacion) AS mes, SUM(o.cantidad) AS \"CantidadPlanificada\", SUM(o.cantidadProducidaReal) AS \"CantidadProducida\", @año as año ";
-            sql += " FROM OrdenTrabajo AS o INNER JOIN Producto AS p ON o.idProducto = p.idProducto";
+            String sql = " SELECT o.idProducto, p.nombre, u.nombre as unidad, MONTH(o.fechaCreacion) AS mes, SUM(o.cantidad) AS \"CantidadPlanificada\", SUM(o.cantidadProducidaReal) AS \"CantidadProducida\", @año as año ";
+            sql += " FROM OrdenTrabajo AS o INNER JOIN Producto AS p ON o.idProducto = p.idProducto inner join UnidadMedida u on p.idUnidadMedida = u.idUnidad";
             sql += " WHERE (YEAR(o.fechaCreacion) = @año)";
-            sql += " GROUP BY o.idProducto, MONTH(o.fechaCreacion), p.nombre";
+            sql += " GROUP BY o.idProducto, MONTH(o.fechaCreacion), p.nombre, u.nombre";
 
             cmd.Parameters.AddWithValue("@año",año);
                  

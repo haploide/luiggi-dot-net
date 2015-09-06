@@ -61,8 +61,8 @@
             // 
             // groupBox1
             // 
-            this.groupBox1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.groupBox1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
+                        | System.Windows.Forms.AnchorStyles.Right)));
             this.groupBox1.Controls.Add(this.chk_bajo);
             this.groupBox1.Controls.Add(this.btn_aplicar_filtro_unidad);
             this.groupBox1.Controls.Add(this.cmb_unidad_filtro);
@@ -136,13 +136,13 @@
             // 
             // groupBox2
             // 
-            this.groupBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.groupBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+                        | System.Windows.Forms.AnchorStyles.Left)
+                        | System.Windows.Forms.AnchorStyles.Right)));
             this.groupBox2.Controls.Add(this.reportViewer1);
             this.groupBox2.Location = new System.Drawing.Point(12, 113);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(1196, 639);
+            this.groupBox2.Size = new System.Drawing.Size(1196, 733);
             this.groupBox2.TabIndex = 39;
             this.groupBox2.TabStop = false;
             // 
@@ -155,7 +155,7 @@
             this.reportViewer1.LocalReport.ReportEmbeddedResource = "Vista.Reportes.ReportInformeDeStock.rdlc";
             this.reportViewer1.Location = new System.Drawing.Point(3, 16);
             this.reportViewer1.Name = "reportViewer1";
-            this.reportViewer1.Size = new System.Drawing.Size(1190, 620);
+            this.reportViewer1.Size = new System.Drawing.Size(1190, 714);
             this.reportViewer1.TabIndex = 0;
             // 
             // helpProviderEmitirInformeStock
@@ -166,7 +166,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1220, 749);
+            this.ClientSize = new System.Drawing.Size(1220, 843);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.helpProviderEmitirInformeStock.SetHelpKeyword(this, "23");

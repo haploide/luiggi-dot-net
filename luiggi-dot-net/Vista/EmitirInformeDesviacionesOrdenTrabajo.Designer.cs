@@ -57,13 +57,13 @@
             // 
             // groupBox1
             // 
-            this.groupBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.groupBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+                        | System.Windows.Forms.AnchorStyles.Left)
+                        | System.Windows.Forms.AnchorStyles.Right)));
             this.groupBox1.Controls.Add(this.reportViewer1);
             this.groupBox1.Location = new System.Drawing.Point(12, 86);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(934, 708);
+            this.groupBox1.Size = new System.Drawing.Size(934, 845);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             // 
@@ -76,13 +76,13 @@
             this.reportViewer1.LocalReport.ReportEmbeddedResource = "Vista.Reportes.ReportInformeDesviacionesOrdenTrabajo.rdlc";
             this.reportViewer1.Location = new System.Drawing.Point(3, 16);
             this.reportViewer1.Name = "reportViewer1";
-            this.reportViewer1.Size = new System.Drawing.Size(928, 689);
+            this.reportViewer1.Size = new System.Drawing.Size(928, 826);
             this.reportViewer1.TabIndex = 0;
             // 
             // groupBox2
             // 
-            this.groupBox2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.groupBox2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
+                        | System.Windows.Forms.AnchorStyles.Right)));
             this.groupBox2.Controls.Add(this.label1);
             this.groupBox2.Controls.Add(this.btn_aplicar_filtro);
             this.groupBox2.Controls.Add(this.dtp_fecha_desde);
@@ -131,7 +131,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(958, 749);
+            this.ClientSize = new System.Drawing.Size(958, 943);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.helpProviderEmitirInformeDesviacionesOrdenTrabajo.SetHelpKeyword(this, "42");

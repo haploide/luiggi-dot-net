@@ -209,7 +209,7 @@ namespace Vista
                             try
                             {
                                 double cant = (double)dgv_OTproductosPadres.Rows[dgv_OTproductosPadres.CurrentRow.Index].Cells["cantidad"].Value;
-                                if (dgv_OTproductosPadres.CurrentRow.Cells["cantiReal"].Value != String.Empty)
+                                if ((string)dgv_OTproductosPadres.CurrentRow.Cells["cantiReal"].Value != String.Empty)
                                 {
                                     double cantidadPlan = 0;
                                     double cantidadPedido = DetallePlanProduccionDAO.GetCantidadPedidosParaOT((int)dgv_OTproductosPadres.Rows[dgv_OTproductosPadres.CurrentRow.Index].Cells["idProducto"].Value, Convert.ToDateTime(dgv_OTproductosPadres.Rows[dgv_OTproductosPadres.CurrentRow.Index].Cells["fechaCreacion"].Value));
