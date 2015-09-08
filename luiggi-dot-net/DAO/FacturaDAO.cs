@@ -79,7 +79,7 @@ namespace DAO
             cmd.Parameters.AddWithValue("@idCliente", fac.cliente.idPersona );
             cmd.Parameters.AddWithValue("@idPedido", fac.pedido.idPedido );
             cmd.Parameters.AddWithValue("@importe", fac.importeTotal );
-            //cmd.Parameters.AddWithValue("@fechaPago", fac.fechaPago );
+            cmd.Parameters.AddWithValue("@fechaPago", fac.fechaCreacion);
             cmd.Parameters.AddWithValue("@tipoFactura", fac.tipoFactura );
             cmd.Parameters.AddWithValue("@numeroFactura", fac.numeroFactura );
             cmd.Parameters.AddWithValue("@totalIVA", fac.totalIVA );
