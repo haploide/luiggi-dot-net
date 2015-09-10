@@ -31,6 +31,7 @@ namespace Vista
             return InstanciaFormulario;
         }
 
+
         protected override void Dispose(bool disposing)
         {
             if (disposing && (components != null))
