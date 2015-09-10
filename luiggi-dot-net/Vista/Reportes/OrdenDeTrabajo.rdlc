@@ -1170,7 +1170,18 @@
                 <Paragraph>
                   <TextRuns>
                     <TextRun>
-                      <Value>Obserbaciones:</Value>
+                      <Value>Observaciones</Value>
+                      <Style>
+                        <FontStyle>Normal</FontStyle>
+                        <FontFamily>Times New Roman</FontFamily>
+                        <FontSize>12pt</FontSize>
+                        <FontWeight>Bold</FontWeight>
+                        <TextDecoration>Underline</TextDecoration>
+                        <Color>#000000</Color>
+                      </Style>
+                    </TextRun>
+                    <TextRun>
+                      <Value>:</Value>
                       <Style>
                         <FontWeight>Bold</FontWeight>
                         <TextDecoration>Underline</TextDecoration>
