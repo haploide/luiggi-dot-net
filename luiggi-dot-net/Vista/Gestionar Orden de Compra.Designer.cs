@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
@@ -38,6 +39,7 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Gestionar_Orden_de_Compra));
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.btn_salir = new System.Windows.Forms.Button();
             this.btn_guardar = new System.Windows.Forms.Button();
@@ -85,6 +87,8 @@
             this.label2 = new System.Windows.Forms.Label();
             this.txt_contacto = new System.Windows.Forms.TextBox();
             this.helpProviderGestionOrdenDeCompra = new System.Windows.Forms.HelpProvider();
+            this.btn_Informe = new System.Windows.Forms.Button();
+            this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             this.groupBox2.SuspendLayout();
             this.panel1.SuspendLayout();
             this.groupBox1.SuspendLayout();
@@ -493,7 +497,7 @@
             // label19
             // 
             this.label19.AutoSize = true;
-            this.label19.Location = new System.Drawing.Point(480, 14);
+            this.label19.Location = new System.Drawing.Point(465, 12);
             this.label19.Name = "label19";
             this.label19.Size = new System.Drawing.Size(13, 13);
             this.label19.TabIndex = 76;
@@ -502,7 +506,7 @@
             // txt_celular
             // 
             this.txt_celular.Enabled = false;
-            this.txt_celular.Location = new System.Drawing.Point(501, 11);
+            this.txt_celular.Location = new System.Drawing.Point(486, 9);
             this.txt_celular.Mask = "0000-00000000";
             this.txt_celular.Name = "txt_celular";
             this.txt_celular.Size = new System.Drawing.Size(92, 20);
@@ -511,7 +515,7 @@
             // label13
             // 
             this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(374, 14);
+            this.label13.Location = new System.Drawing.Point(359, 12);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(97, 13);
             this.label13.TabIndex = 74;
@@ -520,7 +524,7 @@
             // txt_mail
             // 
             this.txt_mail.Enabled = false;
-            this.txt_mail.Location = new System.Drawing.Point(433, 32);
+            this.txt_mail.Location = new System.Drawing.Point(418, 30);
             this.txt_mail.MaxLength = 50;
             this.txt_mail.Name = "txt_mail";
             this.txt_mail.Size = new System.Drawing.Size(160, 20);
@@ -529,7 +533,7 @@
             // label14
             // 
             this.label14.AutoSize = true;
-            this.label14.Location = new System.Drawing.Point(374, 35);
+            this.label14.Location = new System.Drawing.Point(359, 33);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(34, 13);
             this.label14.TabIndex = 78;
@@ -538,7 +542,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(374, 56);
+            this.label2.Location = new System.Drawing.Point(359, 54);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(53, 13);
             this.label2.TabIndex = 79;
@@ -547,7 +551,7 @@
             // txt_contacto
             // 
             this.txt_contacto.Enabled = false;
-            this.txt_contacto.Location = new System.Drawing.Point(433, 53);
+            this.txt_contacto.Location = new System.Drawing.Point(418, 51);
             this.txt_contacto.MaxLength = 50;
             this.txt_contacto.Name = "txt_contacto";
             this.txt_contacto.Size = new System.Drawing.Size(160, 20);
@@ -557,12 +561,25 @@
             // 
             this.helpProviderGestionOrdenDeCompra.HelpNamespace = ".\\Ayuda\\Luiggi.chm";
             // 
+            // btn_Informe
+            // 
+            this.btn_Informe.AutoSize = true;
+            this.btn_Informe.Image = global::Vista.Properties.Resources.booking_list_checkpoint_order_32;
+            this.btn_Informe.Location = new System.Drawing.Point(600, 13);
+            this.btn_Informe.Name = "btn_Informe";
+            this.btn_Informe.Size = new System.Drawing.Size(55, 58);
+            this.btn_Informe.TabIndex = 81;
+            this.toolTip1.SetToolTip(this.btn_Informe, "Listado de Productos por Proveedor");
+            this.btn_Informe.UseVisualStyleBackColor = true;
+            this.btn_Informe.Click += new System.EventHandler(this.btn_Informe_Click);
+            // 
             // Gestionar_Orden_de_Compra
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.ClientSize = new System.Drawing.Size(667, 600);
+            this.Controls.Add(this.btn_Informe);
             this.Controls.Add(this.txt_contacto);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.txt_mail);
@@ -577,6 +594,7 @@
             this.Controls.Add(this.label1);
             this.helpProviderGestionOrdenDeCompra.SetHelpKeyword(this, "18");
             this.helpProviderGestionOrdenDeCompra.SetHelpNavigator(this, System.Windows.Forms.HelpNavigator.TopicId);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "Gestionar_Orden_de_Compra";
@@ -647,5 +665,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn idProducto;
         private System.Windows.Forms.DataGridViewTextBoxColumn stockFaltante;
         private System.Windows.Forms.HelpProvider helpProviderGestionOrdenDeCompra;
+        private System.Windows.Forms.Button btn_Informe;
+        private System.Windows.Forms.ToolTip toolTip1;
     }
 }

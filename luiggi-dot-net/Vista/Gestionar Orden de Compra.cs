@@ -381,6 +381,13 @@ namespace Vista
             cmb_proveedores_SelectionChangeCommitted(sender, e);
             txt_monto_total.Text = "0";
         }
+
+        private void btn_Informe_Click(object sender, EventArgs e)
+        {
+            EmitirInformeProductoXProveedor infProdProv = new EmitirInformeProductoXProveedor();
+            infProdProv.ShowDialog();
+
+        }
        
     }
 }

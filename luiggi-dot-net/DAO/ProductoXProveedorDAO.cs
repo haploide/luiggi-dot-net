@@ -13,6 +13,46 @@ namespace DAO
 {
     public  class ProductoXProveedorDAO
     {
+        public static DataTable GetAll()
+        {
+            Acceso ac = new Acceso();
+            SqlConnection conexion = new SqlConnection(ac.getCadenaConexion());
+            
+            SqlCommand cmd = new SqlCommand();
+            string sql = "Select * From EMITIR_INFORME_PRODUCTO_X_PROVEEDOR";
+            DataTable tabla= new DataTable();
+            
+            try
+            {
+                conexion.Open();
+
+                cmd.Connection = conexion;
+                cmd.CommandText = sql;
+                cmd.CommandType = CommandType.Text;
+
+                tabla.Load(cmd.ExecuteReader());
+
+                
+
+            }
+
+            catch (InvalidOperationException ex)
+            {
+                throw new ApplicationException(ex.Message);
+            }
+            catch (SqlException ex)
+            {
+                throw new ApplicationException("Error en BD: " + ex.Message);
+            }
+            finally
+            {
+                conexion.Close();
+            }
+
+            return tabla;
+            
+
+        }
         public static List <ProductoXProveedor > GetByIdProd(int idProv)
         {
             Acceso ac = new Acceso();
