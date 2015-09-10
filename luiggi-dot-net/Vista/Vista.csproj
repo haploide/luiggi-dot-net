@@ -131,6 +131,12 @@
       <DependentUpon>DataSetPresupuesto.xsd</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="EmitirInformeProductoXProveedor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EmitirInformeProductoXProveedor.Designer.cs">
+      <DependentUpon>EmitirInformeProductoXProveedor.cs</DependentUpon>
+    </Compile>
     <Compile Include="Gestion_presupuesto.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -415,6 +421,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Consultas Cliente.resx">
       <DependentUpon>Consultas Cliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EmitirInformeProductoXProveedor.resx">
+      <DependentUpon>EmitirInformeProductoXProveedor.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Gestion_presupuesto.resx">
       <DependentUpon>Gestion_presupuesto.cs</DependentUpon>

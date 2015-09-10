@@ -32,7 +32,6 @@
             Microsoft.Reporting.WinForms.ReportDataSource reportDataSource1 = new Microsoft.Reporting.WinForms.ReportDataSource();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(EmitirInformeProductoXProveedor));
             this.ProductoXProveedorBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.DataSetInformeProductosXProveedor = new Vista.DataSetInformeProductosXProveedor();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.label1 = new System.Windows.Forms.Label();
             this.txt_producto = new System.Windows.Forms.TextBox();
@@ -47,7 +46,6 @@
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.reportViewer1 = new Microsoft.Reporting.WinForms.ReportViewer();
             ((System.ComponentModel.ISupportInitialize)(this.ProductoXProveedorBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.DataSetInformeProductosXProveedor)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.SuspendLayout();
@@ -55,12 +53,6 @@
             // ProductoXProveedorBindingSource
             // 
             this.ProductoXProveedorBindingSource.DataMember = "ProductoXProveedor";
-            this.ProductoXProveedorBindingSource.DataSource = this.DataSetInformeProductosXProveedor;
-            // 
-            // DataSetInformeProductosXProveedor
-            // 
-            this.DataSetInformeProductosXProveedor.DataSetName = "DataSetInformeProductosXProveedor";
-            this.DataSetInformeProductosXProveedor.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // groupBox1
             // 
@@ -213,7 +205,6 @@
             this.Text = "Emitir Informe Producto/Proveedor";
             this.Load += new System.EventHandler(this.EmitirInformeProductoXProveedor_Load);
             ((System.ComponentModel.ISupportInitialize)(this.ProductoXProveedorBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.DataSetInformeProductosXProveedor)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);
