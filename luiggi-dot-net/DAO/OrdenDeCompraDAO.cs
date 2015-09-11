@@ -63,13 +63,14 @@ namespace DAO
             SqlTransaction tran = null;
 
             SqlConnection conexion = new SqlConnection(ac.getCadenaConexion());
-           
 
-            SqlCommand cmd = new SqlCommand("UPDATE [Luiggi].[dbo].[OrdenDeCompra] SET [idEstado] = @idEstado WHERE idOrden = @idOrden", conexion);
+
+            SqlCommand cmd = new SqlCommand("UPDATE [Luiggi].[dbo].[OrdenDeCompra] SET [idEstado] = @idEstado, [montoReal] = @montoReal WHERE idOrden = @idOrden", conexion);
 
 
             cmd.Parameters.AddWithValue("@idOrden", ord.idOrdenCompra );
             cmd.Parameters.AddWithValue("@idEstado", ord.estado.idEstado );
+            cmd.Parameters.AddWithValue("@montoReal", ord.montoReal );
            
 
             try
