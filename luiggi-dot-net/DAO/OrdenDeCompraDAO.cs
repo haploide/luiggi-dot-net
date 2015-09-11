@@ -299,6 +299,7 @@ namespace DAO
                     o.fechaOrden = Convert.ToDateTime(dr["fechaOrden"]);
                     o.proveedor = c;
                     o.monto = Convert.ToDouble(dr["monto"]);
+                    o.montoReal = Convert.ToDouble(dr["montoReal"]);
                     o.fechaRemito = Convert.ToDateTime(dr["fechaRemito"]);
                     o.estado = e;
                     o.fechaPago = Convert.ToDateTime(dr["fechaPago"]);
