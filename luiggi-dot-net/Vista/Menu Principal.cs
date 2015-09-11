@@ -566,10 +566,11 @@ namespace Vista
            
         }
 
-
-
-        
-
-       
+        private void informeDeProductosPorProveedorToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            EmitirInformeProductoXProveedor infProdProv = new EmitirInformeProductoXProveedor();
+            infProdProv.ShowDialog();
+        }
+      
     }
 }
