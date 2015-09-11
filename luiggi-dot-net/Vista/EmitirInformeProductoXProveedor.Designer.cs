@@ -103,6 +103,7 @@
             this.btn_limpiar_filtros.Size = new System.Drawing.Size(38, 38);
             this.btn_limpiar_filtros.TabIndex = 43;
             this.btn_limpiar_filtros.UseVisualStyleBackColor = true;
+            this.btn_limpiar_filtros.Click += new System.EventHandler(this.btn_limpiar_filtros_Click);
             // 
             // label3
             // 

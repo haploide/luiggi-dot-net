@@ -69,7 +69,38 @@ namespace Vista
 
         private void btn_aplicar_filtro_unidad_Click(object sender, EventArgs e)
         {
+            string filtros = "1=1";
 
+            if (txt_producto.Text != String.Empty)
+            {
+                filtros += " and nombre like '"+ txt_producto.Text +"%'";
+            }
+            if (txt_proveedor.Text != String.Empty)
+            {
+                filtros += " and razonSocial like '" + txt_proveedor.Text + "%'";
+            }
+            if ((int)cmb_unidad_filtro.SelectedValue != 0)
+            {
+                filtros += " and idUnidad=" + (int)cmb_unidad_filtro.SelectedValue;
+            }
+            if ((int)cmb_cat_filtro.SelectedValue != 0)
+            {
+                filtros += " and idCategoria=" + (int)cmb_cat_filtro.SelectedValue;
+            }
+
+
+            ProductoXProveedorBindingSource.Filter = filtros;
+            this.reportViewer1.RefreshReport();
+        }
+
+        private void btn_limpiar_filtros_Click(object sender, EventArgs e)
+        {
+            txt_producto.Text = "";
+            txt_proveedor.Text = "";
+            cmb_cat_filtro.SelectedValue = 0;
+            cmb_unidad_filtro.SelectedValue = 0;
+            ProductoXProveedorBindingSource.Filter = "";
+            this.reportViewer1.RefreshReport();
         }
     }
 }
