@@ -127,6 +127,11 @@
     <Compile Include="Consultas Cliente.Designer.cs">
       <DependentUpon>Consultas Cliente.cs</DependentUpon>
     </Compile>
+    <Compile Include="DataSetInformeProductosXProveedor.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSetInformeProductosXProveedor.xsd</DependentUpon>
+    </Compile>
     <Compile Include="DataSetPresupuesto.cs">
       <DependentUpon>DataSetPresupuesto.xsd</DependentUpon>
       <SubType>Component</SubType>
@@ -528,6 +533,7 @@
     <EmbeddedResource Include="RegistrarFactura.resx">
       <DependentUpon>RegistrarFactura.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\ReportInformeProductoXProveedor.rdlc" />
     <EmbeddedResource Include="Reportes\ReportPresupuesto.rdlc" />
     <EmbeddedResource Include="Reportes\OrdenDeTrabajo.rdlc" />
     <EmbeddedResource Include="Reportes\ReportFactura.rdlc" />
@@ -610,6 +616,17 @@
     </None>
     <None Include="DataSetInformeProductos.xss">
       <DependentUpon>DataSetInformeProductos.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetInformeProductosXProveedor.xsc">
+      <DependentUpon>DataSetInformeProductosXProveedor.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetInformeProductosXProveedor.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSetInformeProductosXProveedor.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSetInformeProductosXProveedor.xss">
+      <DependentUpon>DataSetInformeProductosXProveedor.xsd</DependentUpon>
     </None>
     <None Include="DataSetInformeVentasProductos.xsc">
       <DependentUpon>DataSetInformeVentasProductos.xsd</DependentUpon>
