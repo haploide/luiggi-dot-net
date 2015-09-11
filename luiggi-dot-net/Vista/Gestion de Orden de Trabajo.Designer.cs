@@ -356,6 +356,7 @@ namespace Vista
             this.btn_limpiar_filtros.Size = new System.Drawing.Size(38, 36);
             this.btn_limpiar_filtros.TabIndex = 34;
             this.btn_limpiar_filtros.UseVisualStyleBackColor = true;
+            this.btn_limpiar_filtros.Visible = false;
             this.btn_limpiar_filtros.Click += new System.EventHandler(this.btn_limpiar_filtros_Click);
             // 
             // lbl_cant

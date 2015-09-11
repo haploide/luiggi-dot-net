@@ -410,6 +410,7 @@ namespace Vista
         private void btn_nuevo_Click(object sender, EventArgs e)
         {
             limpiar();
+            _estado = estados.nuevo;
         }
         private void cmb_productos_SelectedIndexChanged(object sender, EventArgs e)
         {
@@ -418,7 +419,7 @@ namespace Vista
         private void btn_limpiar_filtros_Click(object sender, EventArgs e)
         {
             limpiar();
-            _estado = estados.nuevo;
+            
 
         }
 
