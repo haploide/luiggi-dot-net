@@ -90,7 +90,7 @@ namespace Vista
                             op = "Registrar Pago";
                         }
 
-                        int fila = dgv_Orden_Compra.Rows.Add(or.idOrdenCompra, or.fechaOrden, or.proveedor.RazonSocial, or.proveedor.Apellido + " " + or.proveedor.Nombre, or.monto, fecPago, or.estado.Nombre, or.estado.idEstado, op);
+                        int fila = dgv_Orden_Compra.Rows.Add(or.idOrdenCompra, or.fechaOrden, or.proveedor.RazonSocial, or.proveedor.Apellido + " " + or.proveedor.Nombre, or.montoReal, fecPago, or.estado.Nombre, or.estado.idEstado, op);
 
                         if (or.estado.idEstado != 33)
                         {
@@ -140,10 +140,14 @@ namespace Vista
                     if (detOrd.producto.Unidad.Nombre == "g")
                     {
                         unidadReal = "Kg";
-                        
+
+                    }
+                    else
+                    {
+                        unidadReal = detOrd.producto.Unidad.Nombre;
                     }
 
-                    dgv_detalle_orden_compra.Rows.Add(detOrd.producto.idProducto, detOrd.producto.Nombre, detOrd.cantidad, unidadReal, detOrd.precio, detOrd.subTotal);
+                    dgv_detalle_orden_compra.Rows.Add(detOrd.producto.idProducto, detOrd.producto.Nombre, detOrd.cantidadRealIngresada, unidadReal, detOrd.precio, detOrd.subTotal);
 
                 }
 

@@ -267,6 +267,7 @@ namespace Vista
                         {
                             List<DetalleOrdenCompra> detalle = new List<DetalleOrdenCompra>();
 
+                            double montoReal = 0;
                             for (int i = 0; i < dgv_detalle_pedido.Rows.Count; i++)//SE CARGA CADA DETALLE PARA LUEGO ACTUALIZAR STOCK DE MP
                             {
                                 DetalleOrdenCompra det = new DetalleOrdenCompra();
@@ -287,12 +288,12 @@ namespace Vista
                                 {
                                     det.precio = det.precio/1000;
                                 }
-
+                                montoReal += det.cantidadRealIngresada * det.precio;
                                 detalle.Add(det);
                             }
 
                             OrdenDeCompra ord = new OrdenDeCompra();
-
+                            ord.montoReal=montoReal;
                             ord.detalleOrdenCompra = detalle;
                             ord.idOrdenCompra = (int)dgv_pedidos.CurrentRow.Cells["idOrden"].Value;
                             ord.estado = new Estado() { idEstado = 32 };
