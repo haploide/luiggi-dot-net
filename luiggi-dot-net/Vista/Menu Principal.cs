@@ -568,6 +568,11 @@ namespace Vista
 
         private void informeDeProductosPorProveedorToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            informeDeProductosPorProveedorToolStripMenuItem1_Click(sender, e);
+        }
+
+        private void informeDeProductosPorProveedorToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
             EmitirInformeProductoXProveedor infProdProv = new EmitirInformeProductoXProveedor();
             infProdProv.ShowDialog();
         }
