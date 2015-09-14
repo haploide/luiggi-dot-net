@@ -128,19 +128,23 @@ namespace Vista
         }
         private void dgv_planes_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
         {
-            PlanMaestroProduccion plan = new PlanMaestroProduccion();
+            String estado = dgv_planes.Rows[dgv_planes.CurrentRow.Index].Cells["Estado"].Value.ToString();
+            if (estado == "Pendiente de fabricación")
+            {
+                PlanMaestroProduccion plan = new PlanMaestroProduccion();
 
-            plan.IDPlanProduccion = (int)dgv_planes.Rows[dgv_planes.CurrentRow.Index].Cells["nroPlan"].Value;
+                plan.IDPlanProduccion = (int)dgv_planes.Rows[dgv_planes.CurrentRow.Index].Cells["nroPlan"].Value;
 
 
-            GestionPlanMaestroProduccion gestPlan = new GestionPlanMaestroProduccion();
-            gestPlan._estado = estados.modificar;
-            gestPlan._planModificar = plan;
-            
-           gestPlan.ShowDialog();
-            
-            cargarGrilla();
-            dgv_detalle_plan.Rows.Clear();
+                GestionPlanMaestroProduccion gestPlan = new GestionPlanMaestroProduccion();
+                gestPlan._estado = estados.modificar;
+                gestPlan._planModificar = plan;
+
+                gestPlan.ShowDialog();
+
+                cargarGrilla();
+                dgv_detalle_plan.Rows.Clear(); 
+            }
         }
         private void btn_aplicar_filtro_Click(object sender, EventArgs e)
         {

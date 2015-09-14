@@ -139,8 +139,6 @@ namespace DAO
                 conexion.Close();
             }
         }
-
-
         public static void actualizarStock(DetallePlanProduccion detPlan, SqlConnection con, SqlTransaction trans, PlanMaestroProduccion plan, List<Producto> ProductosConPocaMP)
         {
             DataTable ProductosIntermedio;
@@ -517,7 +515,10 @@ namespace DAO
 
             SqlConnection conexion = new SqlConnection(ac.getCadenaConexion());
 
-            SqlCommand cmd = new SqlCommand("UPDATE [Luiggi].[dbo].[PlanMaestroProduccion] SET idEstado = 24 WHERE [fechaFin] < Cast(Convert(varchar(10),getdate(),103) as datetime) and idEstado <> 24", conexion);
+            string sql = "UPDATE [Luiggi].[dbo].[PlanMaestroProduccion] SET idEstado = 24 WHERE [fechaFin] < Cast(Convert(varchar(10),getdate(),103) as datetime) and idEstado <> 24";
+            sql+=" UPDATE [Luiggi].[dbo].[PlanMaestroProduccion] SET idEstado = 18 WHERE [fechaFin] > Cast(Convert(varchar(10),getdate(),103) as datetime) and [fechaInicio] < Cast(Convert(varchar(10),getdate(),103) as datetime) and idEstado <> 18 ";
+
+            SqlCommand cmd = new SqlCommand(sql, conexion);
 
             
             try
