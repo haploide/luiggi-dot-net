@@ -1024,7 +1024,7 @@
                 <Paragraph>
                   <TextRuns>
                     <TextRun>
-                      <Value>Obserbaciones:</Value>
+                      <Value>Observaciones:</Value>
                       <Style>
                         <FontWeight>Bold</FontWeight>
                         <TextDecoration>Underline</TextDecoration>

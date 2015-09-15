@@ -511,7 +511,7 @@
             this.dgv_detalle.MultiSelect = false;
             this.dgv_detalle.Name = "dgv_detalle";
             this.dgv_detalle.ReadOnly = true;
-            this.dgv_detalle.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.CellSelect;
+            this.dgv_detalle.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgv_detalle.Size = new System.Drawing.Size(620, 154);
             this.dgv_detalle.TabIndex = 4;
             this.dgv_detalle.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_detalle_CellContentClick);

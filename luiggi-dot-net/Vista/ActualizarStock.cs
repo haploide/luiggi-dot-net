@@ -41,7 +41,7 @@ namespace Vista
         {
             lbl_producto.Text = orden.producto.Nombre;
             lbl_unidad.Text = orden.producto.Unidad.Nombre;
-            
+
             txt_cantidad_real.Text = orden.cantidad.ToString();
             txt_cantidad_real.Focus();
             if (btn_Actualizar.Visible == true)

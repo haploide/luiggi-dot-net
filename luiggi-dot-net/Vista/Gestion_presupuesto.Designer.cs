@@ -715,6 +715,7 @@
             this.Controls.Add(this.groupBox2);
             this.helpProviderPresupuesto.SetHelpKeyword(this, "33");
             this.helpProviderPresupuesto.SetHelpNavigator(this, System.Windows.Forms.HelpNavigator.TopicId);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.KeyPreview = true;
             this.MaximizeBox = false;
             this.MinimizeBox = false;
