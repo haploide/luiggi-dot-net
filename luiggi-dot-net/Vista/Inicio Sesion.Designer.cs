@@ -47,6 +47,7 @@
             this.txt_usuario.Name = "txt_usuario";
             this.txt_usuario.Size = new System.Drawing.Size(100, 20);
             this.txt_usuario.TabIndex = 0;
+            this.txt_usuario.Text = "admin";
             // 
             // txt_pass
             // 
@@ -55,6 +56,7 @@
             this.txt_pass.PasswordChar = '*';
             this.txt_pass.Size = new System.Drawing.Size(100, 20);
             this.txt_pass.TabIndex = 1;
+            this.txt_pass.Text = "admin";
             // 
             // btn_inicio
             // 
