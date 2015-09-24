@@ -101,7 +101,7 @@
             // 
             this.groupBox2.Controls.Add(this.btn_nuevo);
             this.groupBox2.Controls.Add(this.btn_salir_consulta);
-            this.groupBox2.Location = new System.Drawing.Point(12, 667);
+            this.groupBox2.Location = new System.Drawing.Point(12, 633);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(929, 59);
             this.groupBox2.TabIndex = 58;
@@ -136,7 +136,7 @@
             this.groupBox1.Controls.Add(this.dgv_factura);
             this.groupBox1.Location = new System.Drawing.Point(12, 12);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(929, 264);
+            this.groupBox1.Size = new System.Drawing.Size(929, 230);
             this.groupBox1.TabIndex = 56;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Factura";
@@ -168,7 +168,7 @@
             this.dgv_factura.Name = "dgv_factura";
             this.dgv_factura.ReadOnly = true;
             this.dgv_factura.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgv_factura.Size = new System.Drawing.Size(917, 239);
+            this.dgv_factura.Size = new System.Drawing.Size(917, 205);
             this.dgv_factura.TabIndex = 49;
             this.dgv_factura.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_factura_CellClick);
             this.dgv_factura.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_factura_CellContentClick);
@@ -253,7 +253,7 @@
             // groupBox3
             // 
             this.groupBox3.Controls.Add(this.dgv_detalle_factura);
-            this.groupBox3.Location = new System.Drawing.Point(12, 282);
+            this.groupBox3.Location = new System.Drawing.Point(12, 248);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Size = new System.Drawing.Size(929, 189);
             this.groupBox3.TabIndex = 57;
@@ -387,7 +387,7 @@
             this.gp_filtros.Controls.Add(this.dtp_desde);
             this.gp_filtros.Controls.Add(this.label2);
             this.gp_filtros.Controls.Add(this.label1);
-            this.gp_filtros.Location = new System.Drawing.Point(12, 477);
+            this.gp_filtros.Location = new System.Drawing.Point(12, 443);
             this.gp_filtros.Name = "gp_filtros";
             this.gp_filtros.Size = new System.Drawing.Size(929, 184);
             this.gp_filtros.TabIndex = 59;
@@ -664,7 +664,7 @@
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Inherit;
             this.AutoScroll = true;
-            this.ClientSize = new System.Drawing.Size(950, 738);
+            this.ClientSize = new System.Drawing.Size(950, 695);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.groupBox3);
