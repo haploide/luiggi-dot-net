@@ -51,6 +51,11 @@ namespace Vista
 
         private void Gestion_Producto_X_Proveedor_Load(object sender, EventArgs e)
         {
+            ((Menu_Principal)(MdiParent)).btn_ventas.Visible = false;
+            ((Menu_Principal)(MdiParent)).btn_impresiones.Visible = false;
+            ((Menu_Principal)(MdiParent)).btn_pedido.Visible = false;
+            iniciador.cantVentanasAbiertas++;
+
             cargarGrilla();
             cargarGrillaProductos();
             cargarGrillaProveedores();

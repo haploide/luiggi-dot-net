@@ -45,6 +45,11 @@ namespace Vista
 
         private void Consulta_de_Pedidos_Load(object sender, EventArgs e)
         {
+            ((Menu_Principal)(MdiParent)).btn_ventas.Visible = false;
+            ((Menu_Principal)(MdiParent)).btn_impresiones.Visible = false;
+            ((Menu_Principal)(MdiParent)).btn_pedido.Visible = false;
+            iniciador.cantVentanasAbiertas++;
+
             //dtp_desde.Format = DateTimePickerFormat.Custom;
             //dtp_desde.CustomFormat = " ";
 

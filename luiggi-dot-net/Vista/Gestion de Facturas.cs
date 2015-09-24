@@ -42,6 +42,11 @@ namespace Vista
 
         private void Gestion_de_Facturas_Load(object sender, EventArgs e)
         {
+            ((Menu_Principal)(MdiParent)).btn_ventas.Visible = false;
+            ((Menu_Principal)(MdiParent)).btn_impresiones.Visible = false;
+            ((Menu_Principal)(MdiParent)).btn_pedido.Visible = false;
+            iniciador.cantVentanasAbiertas++;
+
             cargarCombos();
             cargarGrilla();
             dtp_desde.Value = Convert.ToDateTime("01/" + DateTime.Now.Month + "/" + DateTime.Now.Year);

@@ -48,6 +48,11 @@ namespace Vista
 
         private void Gestion_de_Pago_a_Proveedores_Load(object sender, EventArgs e)
         {
+            ((Menu_Principal)(MdiParent)).btn_ventas.Visible = false;
+            ((Menu_Principal)(MdiParent)).btn_impresiones.Visible = false;
+            ((Menu_Principal)(MdiParent)).btn_pedido.Visible = false;
+            iniciador.cantVentanasAbiertas++;
+
             dtp_desde.Value = Convert.ToDateTime("01/" + DateTime.Now.Month + "/" + DateTime.Now.Year);
             dtp_hasta.Value = Convert.ToDateTime("28/" + DateTime.Now.Month + "/" + DateTime.Now.Year);
             cargarGrilla();

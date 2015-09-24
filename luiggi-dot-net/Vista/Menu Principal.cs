@@ -95,10 +95,10 @@ namespace Vista
                 return;
             }
             
-                btn_ventas.Visible = false;
-                btn_impresiones.Visible = false;
-                btn_pedido.Visible = false;
-                iniciador.cantVentanasAbiertas++;
+                //btn_ventas.Visible = false;
+                //btn_impresiones.Visible = false;
+                //btn_pedido.Visible = false;
+                //iniciador.cantVentanasAbiertas++;
 
                 Consultas_Producto consProd = Consultas_Producto.Instance();
                 consProd.MdiParent = this;
@@ -115,10 +115,10 @@ namespace Vista
                 return;
             }
             
-                btn_ventas.Visible = false;
-                btn_impresiones.Visible = false;
-                btn_pedido.Visible = false;
-                iniciador.cantVentanasAbiertas++;
+                //btn_ventas.Visible = false;
+                //btn_impresiones.Visible = false;
+                //btn_pedido.Visible = false;
+                //iniciador.cantVentanasAbiertas++;
 
                 Consultas_Cliente consCli = Consultas_Cliente.Instance();
                 consCli.MdiParent = this;
@@ -137,10 +137,10 @@ namespace Vista
             }
 
             
-                btn_ventas.Visible = false;
-                btn_impresiones.Visible = false;
-                btn_pedido.Visible = false;
-                iniciador.cantVentanasAbiertas++;
+                //btn_ventas.Visible = false;
+                //btn_impresiones.Visible = false;
+                //btn_pedido.Visible = false;
+                //iniciador.cantVentanasAbiertas++;
 
                 Consulta_de_Pedidos consPed =Consulta_de_Pedidos.Instance();
                 consPed.MdiParent = this;
@@ -156,10 +156,10 @@ namespace Vista
                 return;
             }
             
-                btn_ventas.Visible = false;
-                btn_impresiones.Visible = false;
-                btn_pedido.Visible = false;
-                iniciador.cantVentanasAbiertas++;
+                //btn_ventas.Visible = false;
+                //btn_impresiones.Visible = false;
+                //btn_pedido.Visible = false;
+                //iniciador.cantVentanasAbiertas++;
 
                 Gestionar_Estructura_Productos Estr = Gestionar_Estructura_Productos.Instance();
                 Estr.MdiParent = this;
@@ -175,10 +175,10 @@ namespace Vista
                 return;
             } 
             
-                btn_ventas.Visible = false;
-                btn_impresiones.Visible = false;
-                btn_pedido.Visible = false;
-                iniciador.cantVentanasAbiertas++;
+                //btn_ventas.Visible = false;
+                //btn_impresiones.Visible = false;
+                //btn_pedido.Visible = false;
+                //iniciador.cantVentanasAbiertas++;
 
                 Consulta_Planes_Produccion planes = Consulta_Planes_Produccion.Instance();
                 planes.MdiParent = this;
@@ -194,14 +194,15 @@ namespace Vista
                 return;
             }
             
-                btn_ventas.Visible = false;
-                btn_impresiones.Visible = false;
-                btn_pedido.Visible = false;
-                iniciador.cantVentanasAbiertas++;
+                //btn_ventas.Visible = false;
+                //btn_impresiones.Visible = false;
+                //btn_pedido.Visible = false;
+                //iniciador.cantVentanasAbiertas++;
 
                 ConsultarOrdenTrabajo Ordenes = ConsultarOrdenTrabajo.Instance();
                 Ordenes.MdiParent = this;
                 Ordenes.Show();
+            
             
         }
 
@@ -213,10 +214,10 @@ namespace Vista
                 return;
             }
             
-                btn_ventas.Visible = false;
-                btn_impresiones.Visible = false;
-                btn_pedido.Visible = false;
-                iniciador.cantVentanasAbiertas++;
+                //btn_ventas.Visible = false;
+                //btn_impresiones.Visible = false;
+                //btn_pedido.Visible = false;
+                //iniciador.cantVentanasAbiertas++;
 
                 Consulta_Proveedor consProv = Consulta_Proveedor.Instance();
                 consProv.MdiParent = this;
@@ -232,10 +233,10 @@ namespace Vista
                 return;
             }
             
-                btn_ventas.Visible = false;
-                btn_impresiones.Visible = false;
-                btn_pedido.Visible = false;
-                iniciador.cantVentanasAbiertas++;
+                //btn_ventas.Visible = false;
+                //btn_impresiones.Visible = false;
+                //btn_pedido.Visible = false;
+                //iniciador.cantVentanasAbiertas++;
 
                 Gestion_Producto_X_Proveedor consProdProv = Gestion_Producto_X_Proveedor.Instance();
                 consProdProv.MdiParent = this;
@@ -251,10 +252,10 @@ namespace Vista
                 return;
             }
             
-                btn_ventas.Visible = false;
-                btn_impresiones.Visible = false;
-                btn_pedido.Visible = false;
-                iniciador.cantVentanasAbiertas++;
+                //btn_ventas.Visible = false;
+                //btn_impresiones.Visible = false;
+                //btn_pedido.Visible = false;
+                //iniciador.cantVentanasAbiertas++;
 
                 Consultar_Orden_de_Compra consOrCom = Consultar_Orden_de_Compra.Instance();
                 consOrCom.MdiParent = this;
@@ -270,10 +271,10 @@ namespace Vista
                 return;
             }
             
-                btn_ventas.Visible = false;
-                btn_impresiones.Visible = false;
-                btn_pedido.Visible = false;
-                iniciador.cantVentanasAbiertas++;
+                //btn_ventas.Visible = false;
+                //btn_impresiones.Visible = false;
+                //btn_pedido.Visible = false;
+                //iniciador.cantVentanasAbiertas++;
 
                 Gestion_de_Facturas facturas = Gestion_de_Facturas.Instance();
                 facturas.MdiParent = this;
@@ -291,10 +292,10 @@ namespace Vista
                 return;
             }
             
-                btn_ventas.Visible = false;
-                btn_impresiones.Visible = false;
-                btn_pedido.Visible = false;
-                iniciador.cantVentanasAbiertas++;
+                //btn_ventas.Visible = false;
+                //btn_impresiones.Visible = false;
+                //btn_pedido.Visible = false;
+                //iniciador.cantVentanasAbiertas++;
 
                 Gestion_de_Pago_a_Proveedores ordenesCompra = Gestion_de_Pago_a_Proveedores.Instance();
                 ordenesCompra.MdiParent = this;
@@ -379,10 +380,10 @@ namespace Vista
                 return;
             }
             
-                btn_ventas.Visible = false;
-                btn_impresiones.Visible = false;
-                btn_pedido.Visible = false;
-                iniciador.cantVentanasAbiertas++;
+                //btn_ventas.Visible = false;
+                //btn_impresiones.Visible = false;
+                //btn_pedido.Visible = false;
+                //iniciador.cantVentanasAbiertas++;
 
                 Consulta_Maquinaria gestMaquina = Consulta_Maquinaria.Instance();
                 gestMaquina.MdiParent = this;
@@ -414,10 +415,10 @@ namespace Vista
                 return;
             }
             
-                btn_ventas.Visible = false;
-                btn_impresiones.Visible = false;
-                btn_pedido.Visible = false;
-                iniciador.cantVentanasAbiertas++;
+                //btn_ventas.Visible = false;
+                //btn_impresiones.Visible = false;
+                //btn_pedido.Visible = false;
+                //iniciador.cantVentanasAbiertas++;
 
                 Consulta_Empleado gestEmpleado = Consulta_Empleado.Instance();
                 gestEmpleado.MdiParent = this;

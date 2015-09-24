@@ -45,6 +45,11 @@ namespace Vista
 
         private void Consultas_Cliente_Load(object sender, EventArgs e)
         {
+            ((Menu_Principal)(MdiParent)).btn_ventas.Visible = false;
+            ((Menu_Principal)(MdiParent)).btn_impresiones.Visible = false;
+            ((Menu_Principal)(MdiParent)).btn_pedido.Visible = false;
+            iniciador.cantVentanasAbiertas++;
+
             gestor = new GestorConsultarCliente();
             //habilitarPantalla();
             cargarCombos();
