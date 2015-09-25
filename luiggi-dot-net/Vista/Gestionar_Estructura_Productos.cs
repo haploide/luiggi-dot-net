@@ -598,5 +598,15 @@ namespace Vista
                 ((Menu_Principal)(MdiParent)).btn_pedido.Visible = true;
             }
         }
+
+        private void groupBox3_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void DGVProductos_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }

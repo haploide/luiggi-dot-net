@@ -56,18 +56,6 @@
             this.idMaquinariaUtilizadaDetalle = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.label3 = new System.Windows.Forms.Label();
             this.DGVProductosAAgregar = new System.Windows.Forms.DataGridView();
-            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.nombreProductoAAgregar = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.categoriaAAgregar = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.cantidadDeProductos1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.unidadMedidaAAgregar = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.tiempoProduccion1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.unidadTiempo1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.idCategoriaAAgregar = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.idUnidadAAgregar = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.idProd = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.tipoMaquinaria = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.idTipoMaquinaria = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.label4 = new System.Windows.Forms.Label();
             this.txtCantidad = new System.Windows.Forms.TextBox();
             this.lblAccion = new System.Windows.Forms.Label();
@@ -90,6 +78,18 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.helpProviderGestionEstructuraDeProductos = new System.Windows.Forms.HelpProvider();
+            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.nombreProductoAAgregar = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.categoriaAAgregar = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.cantidadDeProductos1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.unidadMedidaAAgregar = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.tiempoProduccion1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.unidadTiempo1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.idCategoriaAAgregar = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.idUnidadAAgregar = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.idProd = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.tipoMaquinaria = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.idTipoMaquinaria = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.DGVProductos)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.DGVEstructuraProductos)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.DGVProductosAAgregar)).BeginInit();
@@ -105,7 +105,7 @@
             this.DGVProductos.AllowUserToDeleteRows = false;
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.LightSteelBlue;
             this.DGVProductos.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
-            this.DGVProductos.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
+            this.DGVProductos.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.DGVProductos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.DGVProductos.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.codigo,
@@ -118,14 +118,15 @@
             this.idProduct,
             this.tipoMaquinariaProducto,
             this.idTipoMaquinariaProducto});
-            this.DGVProductos.Location = new System.Drawing.Point(19, 141);
+            this.DGVProductos.Location = new System.Drawing.Point(7, 108);
             this.DGVProductos.MultiSelect = false;
             this.DGVProductos.Name = "DGVProductos";
             this.DGVProductos.ReadOnly = true;
             this.DGVProductos.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.DGVProductos.Size = new System.Drawing.Size(746, 274);
+            this.DGVProductos.Size = new System.Drawing.Size(602, 232);
             this.DGVProductos.TabIndex = 4;
             this.DGVProductos.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DGVProductos_CellClick);
+            this.DGVProductos.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DGVProductos_CellContentClick);
             this.DGVProductos.SelectionChanged += new System.EventHandler(this.DGVProductos_SelectionChanged);
             this.DGVProductos.DoubleClick += new System.EventHandler(this.DGVProductos_DoubleClick);
             // 
@@ -141,28 +142,24 @@
             this.productoPadre.HeaderText = "Nombre";
             this.productoPadre.Name = "productoPadre";
             this.productoPadre.ReadOnly = true;
-            this.productoPadre.Width = 69;
             // 
             // Descripcion
             // 
             this.Descripcion.HeaderText = "Descripcion";
             this.Descripcion.Name = "Descripcion";
             this.Descripcion.ReadOnly = true;
-            this.Descripcion.Width = 88;
             // 
             // cat
             // 
             this.cat.HeaderText = "Categoria";
             this.cat.Name = "cat";
             this.cat.ReadOnly = true;
-            this.cat.Width = 77;
             // 
             // Unidad
             // 
             this.Unidad.HeaderText = "Unidad de Medida";
             this.Unidad.Name = "Unidad";
             this.Unidad.ReadOnly = true;
-            this.Unidad.Width = 109;
             // 
             // codCategoria
             // 
@@ -190,7 +187,6 @@
             this.tipoMaquinariaProducto.HeaderText = "Maquinaria Utilizada";
             this.tipoMaquinariaProducto.Name = "tipoMaquinariaProducto";
             this.tipoMaquinariaProducto.ReadOnly = true;
-            this.tipoMaquinariaProducto.Width = 116;
             // 
             // idTipoMaquinariaProducto
             // 
@@ -203,7 +199,7 @@
             // 
             this.lblProductos.AutoSize = true;
             this.lblProductos.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblProductos.Location = new System.Drawing.Point(19, 111);
+            this.lblProductos.Location = new System.Drawing.Point(6, 85);
             this.lblProductos.Name = "lblProductos";
             this.lblProductos.Size = new System.Drawing.Size(178, 20);
             this.lblProductos.TabIndex = 44;
@@ -213,7 +209,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(19, 451);
+            this.label2.Location = new System.Drawing.Point(8, 346);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(177, 20);
             this.label2.TabIndex = 46;
@@ -225,7 +221,7 @@
             this.DGVEstructuraProductos.AllowUserToDeleteRows = false;
             dataGridViewCellStyle2.BackColor = System.Drawing.Color.LightSteelBlue;
             this.DGVEstructuraProductos.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle2;
-            this.DGVEstructuraProductos.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
+            this.DGVEstructuraProductos.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.DGVEstructuraProductos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.DGVEstructuraProductos.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.idProductoPadre,
@@ -242,12 +238,12 @@
             this.tipoMaquinariaDetalle,
             this.idMaquinariaUtilizadaDetalle});
             this.DGVEstructuraProductos.Enabled = false;
-            this.DGVEstructuraProductos.Location = new System.Drawing.Point(19, 474);
+            this.DGVEstructuraProductos.Location = new System.Drawing.Point(7, 400);
             this.DGVEstructuraProductos.MultiSelect = false;
             this.DGVEstructuraProductos.Name = "DGVEstructuraProductos";
             this.DGVEstructuraProductos.ReadOnly = true;
             this.DGVEstructuraProductos.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.DGVEstructuraProductos.Size = new System.Drawing.Size(746, 204);
+            this.DGVEstructuraProductos.Size = new System.Drawing.Size(602, 201);
             this.DGVEstructuraProductos.TabIndex = 8;
             this.DGVEstructuraProductos.DoubleClick += new System.EventHandler(this.DGVEstructuraProductos_DoubleClick);
             // 
@@ -270,7 +266,6 @@
             this.nombreProductoEstructura.HeaderText = "Nombre";
             this.nombreProductoEstructura.Name = "nombreProductoEstructura";
             this.nombreProductoEstructura.ReadOnly = true;
-            this.nombreProductoEstructura.Width = 69;
             // 
             // cantidad
             // 
@@ -279,42 +274,36 @@
             this.cantidad.HeaderText = "Cantidad";
             this.cantidad.Name = "cantidad";
             this.cantidad.ReadOnly = true;
-            this.cantidad.Width = 74;
             // 
             // nombreCategoria
             // 
             this.nombreCategoria.HeaderText = "Categoria";
             this.nombreCategoria.Name = "nombreCategoria";
             this.nombreCategoria.ReadOnly = true;
-            this.nombreCategoria.Width = 77;
             // 
             // cantidadDeProductos2
             // 
             this.cantidadDeProductos2.HeaderText = "Cantidad de Productos";
             this.cantidadDeProductos2.Name = "cantidadDeProductos2";
             this.cantidadDeProductos2.ReadOnly = true;
-            this.cantidadDeProductos2.Width = 85;
             // 
             // unidadMedidaEstructura
             // 
             this.unidadMedidaEstructura.HeaderText = "Unidad de Medida";
             this.unidadMedidaEstructura.Name = "unidadMedidaEstructura";
             this.unidadMedidaEstructura.ReadOnly = true;
-            this.unidadMedidaEstructura.Width = 78;
             // 
             // tiempoProduccion2
             // 
             this.tiempoProduccion2.HeaderText = "Tiempo de Produccion";
             this.tiempoProduccion2.Name = "tiempoProduccion2";
             this.tiempoProduccion2.ReadOnly = true;
-            this.tiempoProduccion2.Width = 127;
             // 
             // unidadTiempo2
             // 
             this.unidadTiempo2.HeaderText = "";
             this.unidadTiempo2.Name = "unidadTiempo2";
             this.unidadTiempo2.ReadOnly = true;
-            this.unidadTiempo2.Width = 19;
             // 
             // idUnid
             // 
@@ -335,7 +324,6 @@
             this.tipoMaquinariaDetalle.HeaderText = "Maquinaria Utilizada";
             this.tipoMaquinariaDetalle.Name = "tipoMaquinariaDetalle";
             this.tipoMaquinariaDetalle.ReadOnly = true;
-            this.tipoMaquinariaDetalle.Width = 116;
             // 
             // idMaquinariaUtilizadaDetalle
             // 
@@ -348,7 +336,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(776, 102);
+            this.label3.Location = new System.Drawing.Point(615, 85);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(237, 20);
             this.label3.TabIndex = 44;
@@ -360,7 +348,7 @@
             this.DGVProductosAAgregar.AllowUserToDeleteRows = false;
             dataGridViewCellStyle4.BackColor = System.Drawing.Color.LightSteelBlue;
             this.DGVProductosAAgregar.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle4;
-            this.DGVProductosAAgregar.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
+            this.DGVProductosAAgregar.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.DGVProductosAAgregar.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.DGVProductosAAgregar.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.dataGridViewTextBoxColumn1,
@@ -375,98 +363,14 @@
             this.idProd,
             this.tipoMaquinaria,
             this.idTipoMaquinaria});
-            this.DGVProductosAAgregar.Location = new System.Drawing.Point(776, 132);
+            this.DGVProductosAAgregar.Location = new System.Drawing.Point(615, 108);
             this.DGVProductosAAgregar.MultiSelect = false;
             this.DGVProductosAAgregar.Name = "DGVProductosAAgregar";
             this.DGVProductosAAgregar.ReadOnly = true;
             this.DGVProductosAAgregar.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.DGVProductosAAgregar.Size = new System.Drawing.Size(788, 274);
+            this.DGVProductosAAgregar.Size = new System.Drawing.Size(659, 232);
             this.DGVProductosAAgregar.TabIndex = 5;
             this.DGVProductosAAgregar.DoubleClick += new System.EventHandler(this.DGVProductosAAgregar_DoubleClick);
-            // 
-            // dataGridViewTextBoxColumn1
-            // 
-            this.dataGridViewTextBoxColumn1.HeaderText = "Codigo";
-            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
-            this.dataGridViewTextBoxColumn1.ReadOnly = true;
-            this.dataGridViewTextBoxColumn1.Visible = false;
-            // 
-            // nombreProductoAAgregar
-            // 
-            this.nombreProductoAAgregar.HeaderText = "Nombre";
-            this.nombreProductoAAgregar.Name = "nombreProductoAAgregar";
-            this.nombreProductoAAgregar.ReadOnly = true;
-            this.nombreProductoAAgregar.Width = 69;
-            // 
-            // categoriaAAgregar
-            // 
-            this.categoriaAAgregar.HeaderText = "Categoria";
-            this.categoriaAAgregar.Name = "categoriaAAgregar";
-            this.categoriaAAgregar.ReadOnly = true;
-            this.categoriaAAgregar.Width = 77;
-            // 
-            // cantidadDeProductos1
-            // 
-            this.cantidadDeProductos1.HeaderText = "Cantidad de Productos";
-            this.cantidadDeProductos1.Name = "cantidadDeProductos1";
-            this.cantidadDeProductos1.ReadOnly = true;
-            this.cantidadDeProductos1.Width = 85;
-            // 
-            // unidadMedidaAAgregar
-            // 
-            this.unidadMedidaAAgregar.HeaderText = "Unidad de Medida";
-            this.unidadMedidaAAgregar.Name = "unidadMedidaAAgregar";
-            this.unidadMedidaAAgregar.ReadOnly = true;
-            this.unidadMedidaAAgregar.Width = 78;
-            // 
-            // tiempoProduccion1
-            // 
-            this.tiempoProduccion1.HeaderText = "Tiempo de Produccion";
-            this.tiempoProduccion1.Name = "tiempoProduccion1";
-            this.tiempoProduccion1.ReadOnly = true;
-            this.tiempoProduccion1.Width = 127;
-            // 
-            // unidadTiempo1
-            // 
-            this.unidadTiempo1.HeaderText = "";
-            this.unidadTiempo1.Name = "unidadTiempo1";
-            this.unidadTiempo1.ReadOnly = true;
-            this.unidadTiempo1.Width = 19;
-            // 
-            // idCategoriaAAgregar
-            // 
-            this.idCategoriaAAgregar.HeaderText = "codCategoria";
-            this.idCategoriaAAgregar.Name = "idCategoriaAAgregar";
-            this.idCategoriaAAgregar.ReadOnly = true;
-            this.idCategoriaAAgregar.Visible = false;
-            // 
-            // idUnidadAAgregar
-            // 
-            this.idUnidadAAgregar.HeaderText = "idUnidad";
-            this.idUnidadAAgregar.Name = "idUnidadAAgregar";
-            this.idUnidadAAgregar.ReadOnly = true;
-            this.idUnidadAAgregar.Visible = false;
-            // 
-            // idProd
-            // 
-            this.idProd.HeaderText = "idProducto";
-            this.idProd.Name = "idProd";
-            this.idProd.ReadOnly = true;
-            this.idProd.Visible = false;
-            // 
-            // tipoMaquinaria
-            // 
-            this.tipoMaquinaria.HeaderText = "Maquinaria Utilizada";
-            this.tipoMaquinaria.Name = "tipoMaquinaria";
-            this.tipoMaquinaria.ReadOnly = true;
-            this.tipoMaquinaria.Width = 116;
-            // 
-            // idTipoMaquinaria
-            // 
-            this.idTipoMaquinaria.HeaderText = "idMaquinariaUtilizada";
-            this.idTipoMaquinaria.Name = "idTipoMaquinaria";
-            this.idTipoMaquinaria.ReadOnly = true;
-            this.idTipoMaquinaria.Visible = false;
             // 
             // label4
             // 
@@ -503,7 +407,7 @@
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.Blue;
-            this.label5.Location = new System.Drawing.Point(213, 454);
+            this.label5.Location = new System.Drawing.Point(207, 350);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(0, 16);
             this.label5.TabIndex = 51;
@@ -513,7 +417,7 @@
             this.lblDetalle.AutoSize = true;
             this.lblDetalle.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblDetalle.ForeColor = System.Drawing.Color.Blue;
-            this.lblDetalle.Location = new System.Drawing.Point(219, 451);
+            this.lblDetalle.Location = new System.Drawing.Point(207, 350);
             this.lblDetalle.Name = "lblDetalle";
             this.lblDetalle.Size = new System.Drawing.Size(0, 16);
             this.lblDetalle.TabIndex = 51;
@@ -543,9 +447,9 @@
             this.groupBox2.Controls.Add(this.btnGuardar);
             this.groupBox2.Controls.Add(this.btnCancelar);
             this.groupBox2.Controls.Add(this.btn_salir_consulta);
-            this.groupBox2.Location = new System.Drawing.Point(202, 694);
+            this.groupBox2.Location = new System.Drawing.Point(12, 626);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(1407, 59);
+            this.groupBox2.Size = new System.Drawing.Size(1281, 54);
             this.groupBox2.TabIndex = 52;
             this.groupBox2.TabStop = false;
             // 
@@ -637,7 +541,7 @@
             // 
             this.btnSacar.Image = global::Vista.Properties.Resources.arrow_right_red2;
             this.btnSacar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnSacar.Location = new System.Drawing.Point(776, 577);
+            this.btnSacar.Location = new System.Drawing.Point(643, 524);
             this.btnSacar.Name = "btnSacar";
             this.btnSacar.Size = new System.Drawing.Size(85, 58);
             this.btnSacar.TabIndex = 9;
@@ -650,7 +554,7 @@
             // 
             this.btnAgregar.Image = global::Vista.Properties.Resources.arrow_left_green21;
             this.btnAgregar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnAgregar.Location = new System.Drawing.Point(776, 487);
+            this.btnAgregar.Location = new System.Drawing.Point(643, 434);
             this.btnAgregar.Name = "btnAgregar";
             this.btnAgregar.Size = new System.Drawing.Size(85, 58);
             this.btnAgregar.TabIndex = 7;
@@ -677,42 +581,121 @@
             this.panel1.Controls.Add(this.label4);
             this.panel1.Controls.Add(this.lblSeleccionado);
             this.panel1.Controls.Add(this.txtCantidad);
-            this.panel1.Location = new System.Drawing.Point(776, 412);
+            this.panel1.Location = new System.Drawing.Point(615, 346);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(788, 47);
+            this.panel1.Size = new System.Drawing.Size(659, 47);
             this.panel1.TabIndex = 55;
             // 
             // groupBox3
             // 
             this.groupBox3.Controls.Add(this.panel1);
+            this.groupBox3.Controls.Add(this.lblDetalle);
             this.groupBox3.Controls.Add(this.groupBox1);
+            this.groupBox3.Controls.Add(this.DGVProductos);
+            this.groupBox3.Controls.Add(this.lblProductos);
+            this.groupBox3.Controls.Add(this.label5);
             this.groupBox3.Controls.Add(this.lblAccion);
+            this.groupBox3.Controls.Add(this.DGVEstructuraProductos);
+            this.groupBox3.Controls.Add(this.label2);
             this.groupBox3.Controls.Add(this.btnSacar);
             this.groupBox3.Controls.Add(this.label3);
             this.groupBox3.Controls.Add(this.btnAgregar);
             this.groupBox3.Controls.Add(this.DGVProductosAAgregar);
             this.groupBox3.Location = new System.Drawing.Point(12, 9);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(1597, 679);
+            this.groupBox3.Size = new System.Drawing.Size(1281, 611);
             this.groupBox3.TabIndex = 56;
             this.groupBox3.TabStop = false;
+            this.groupBox3.Enter += new System.EventHandler(this.groupBox3_Enter);
             // 
             // helpProviderGestionEstructuraDeProductos
             // 
             this.helpProviderGestionEstructuraDeProductos.HelpNamespace = ".\\Ayuda\\Luiggi.chm";
             // 
+            // dataGridViewTextBoxColumn1
+            // 
+            this.dataGridViewTextBoxColumn1.HeaderText = "Codigo";
+            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
+            this.dataGridViewTextBoxColumn1.ReadOnly = true;
+            this.dataGridViewTextBoxColumn1.Visible = false;
+            // 
+            // nombreProductoAAgregar
+            // 
+            this.nombreProductoAAgregar.HeaderText = "Nombre";
+            this.nombreProductoAAgregar.Name = "nombreProductoAAgregar";
+            this.nombreProductoAAgregar.ReadOnly = true;
+            // 
+            // categoriaAAgregar
+            // 
+            this.categoriaAAgregar.HeaderText = "Categoria";
+            this.categoriaAAgregar.Name = "categoriaAAgregar";
+            this.categoriaAAgregar.ReadOnly = true;
+            // 
+            // cantidadDeProductos1
+            // 
+            this.cantidadDeProductos1.HeaderText = "Cantidad de Productos";
+            this.cantidadDeProductos1.Name = "cantidadDeProductos1";
+            this.cantidadDeProductos1.ReadOnly = true;
+            // 
+            // unidadMedidaAAgregar
+            // 
+            this.unidadMedidaAAgregar.HeaderText = "Unidad de Medida";
+            this.unidadMedidaAAgregar.Name = "unidadMedidaAAgregar";
+            this.unidadMedidaAAgregar.ReadOnly = true;
+            // 
+            // tiempoProduccion1
+            // 
+            this.tiempoProduccion1.HeaderText = "Tiempo de Produccion";
+            this.tiempoProduccion1.Name = "tiempoProduccion1";
+            this.tiempoProduccion1.ReadOnly = true;
+            // 
+            // unidadTiempo1
+            // 
+            this.unidadTiempo1.HeaderText = "";
+            this.unidadTiempo1.Name = "unidadTiempo1";
+            this.unidadTiempo1.ReadOnly = true;
+            // 
+            // idCategoriaAAgregar
+            // 
+            this.idCategoriaAAgregar.HeaderText = "codCategoria";
+            this.idCategoriaAAgregar.Name = "idCategoriaAAgregar";
+            this.idCategoriaAAgregar.ReadOnly = true;
+            this.idCategoriaAAgregar.Visible = false;
+            // 
+            // idUnidadAAgregar
+            // 
+            this.idUnidadAAgregar.HeaderText = "idUnidad";
+            this.idUnidadAAgregar.Name = "idUnidadAAgregar";
+            this.idUnidadAAgregar.ReadOnly = true;
+            this.idUnidadAAgregar.Visible = false;
+            // 
+            // idProd
+            // 
+            this.idProd.HeaderText = "idProducto";
+            this.idProd.Name = "idProd";
+            this.idProd.ReadOnly = true;
+            this.idProd.Visible = false;
+            // 
+            // tipoMaquinaria
+            // 
+            this.tipoMaquinaria.HeaderText = "Maquinaria Utilizada";
+            this.tipoMaquinaria.Name = "tipoMaquinaria";
+            this.tipoMaquinaria.ReadOnly = true;
+            this.tipoMaquinaria.Visible = false;
+            // 
+            // idTipoMaquinaria
+            // 
+            this.idTipoMaquinaria.HeaderText = "idMaquinariaUtilizada";
+            this.idTipoMaquinaria.Name = "idTipoMaquinaria";
+            this.idTipoMaquinaria.ReadOnly = true;
+            this.idTipoMaquinaria.Visible = false;
+            // 
             // Gestionar_Estructura_Productos
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Inherit;
             this.AutoScroll = true;
-            this.ClientSize = new System.Drawing.Size(1621, 759);
+            this.ClientSize = new System.Drawing.Size(1302, 685);
             this.Controls.Add(this.groupBox2);
-            this.Controls.Add(this.lblDetalle);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.DGVEstructuraProductos);
-            this.Controls.Add(this.lblProductos);
-            this.Controls.Add(this.DGVProductos);
             this.Controls.Add(this.groupBox3);
             this.helpProviderGestionEstructuraDeProductos.SetHelpKeyword(this, "12");
             this.helpProviderGestionEstructuraDeProductos.SetHelpNavigator(this, System.Windows.Forms.HelpNavigator.TopicId);
@@ -734,7 +717,6 @@
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -775,18 +757,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn idProduct;
         private System.Windows.Forms.DataGridViewTextBoxColumn tipoMaquinariaProducto;
         private System.Windows.Forms.DataGridViewTextBoxColumn idTipoMaquinariaProducto;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn nombreProductoAAgregar;
-        private System.Windows.Forms.DataGridViewTextBoxColumn categoriaAAgregar;
-        private System.Windows.Forms.DataGridViewTextBoxColumn cantidadDeProductos1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn unidadMedidaAAgregar;
-        private System.Windows.Forms.DataGridViewTextBoxColumn tiempoProduccion1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn unidadTiempo1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn idCategoriaAAgregar;
-        private System.Windows.Forms.DataGridViewTextBoxColumn idUnidadAAgregar;
-        private System.Windows.Forms.DataGridViewTextBoxColumn idProd;
-        private System.Windows.Forms.DataGridViewTextBoxColumn tipoMaquinaria;
-        private System.Windows.Forms.DataGridViewTextBoxColumn idTipoMaquinaria;
         private System.Windows.Forms.DataGridViewTextBoxColumn idProductoPadre;
         private System.Windows.Forms.DataGridViewTextBoxColumn idProducto;
         private System.Windows.Forms.DataGridViewTextBoxColumn nombreProductoEstructura;
@@ -803,5 +773,17 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.GroupBox groupBox3;
         private System.Windows.Forms.HelpProvider helpProviderGestionEstructuraDeProductos;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn nombreProductoAAgregar;
+        private System.Windows.Forms.DataGridViewTextBoxColumn categoriaAAgregar;
+        private System.Windows.Forms.DataGridViewTextBoxColumn cantidadDeProductos1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn unidadMedidaAAgregar;
+        private System.Windows.Forms.DataGridViewTextBoxColumn tiempoProduccion1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn unidadTiempo1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn idCategoriaAAgregar;
+        private System.Windows.Forms.DataGridViewTextBoxColumn idUnidadAAgregar;
+        private System.Windows.Forms.DataGridViewTextBoxColumn idProd;
+        private System.Windows.Forms.DataGridViewTextBoxColumn tipoMaquinaria;
+        private System.Windows.Forms.DataGridViewTextBoxColumn idTipoMaquinaria;
     }
 }
