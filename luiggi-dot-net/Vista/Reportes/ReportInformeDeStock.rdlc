@@ -586,7 +586,7 @@
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value>=IIf(Fields!stockDisponible.Value&lt;0,0,Fields!stockDisponible.Value)</Value>
+                              <Value>=IIf(Fields!stockDisponible.Value&lt;0,0,IIf((Fields!unidad.Value="Unidad")Or(Fields!unidad.Value="Planchas"),Fix(Fields!stockDisponible.Value),Fields!stockDisponible.Value))</Value>
                               <Style>
                                 <Format>0.00;- 0.00</Format>
                               </Style>
@@ -618,7 +618,7 @@
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value>=Fields!stockActual.Value</Value>
+                              <Value>=IIf((Fields!unidad.Value="Unidad")Or(Fields!unidad.Value="Planchas"),Fix(Fields!stockActual.Value),Fields!stockActual.Value)</Value>
                               <Style>
                                 <Format>0.00;- 0.00</Format>
                               </Style>
@@ -650,7 +650,7 @@
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value>=Fields!stockReservado.Value</Value>
+                              <Value>=IIf((Fields!unidad.Value="Unidad")Or(Fields!unidad.Value="Planchas"),Fix(Fields!stockReservado.Value),Fields!stockReservado.Value)</Value>
                               <Style>
                                 <Format>0.00;- 0.00</Format>
                               </Style>
