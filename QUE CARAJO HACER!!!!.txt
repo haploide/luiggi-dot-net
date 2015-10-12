@@ -1,0 +1,24 @@
+Cicuito:
+es martes
+objetivo sistemas
+
+pedido(mostrar,ya creados, producto reservado y no reservado)
+plan de produccion (mostrar, ya creado, distinguir lo pedido de lo planificado)
+ordener de trabajo (creacion e impresion de producto solo planificado)
+ordenes de trabajo (finalizacion de lo que se ha pedido, se actualiza el stock)
+pedido ( mostrar que los productos del pedido ya estan realizados, finalizar la preparacion, registramos la entrega añadiendo otros productos)
+cobramos el pedido
+
+pedido (crear un pedido para una fecha posterior, reservando 1 producto y otro no)
+plan de produccion (mostrar como se modifico el plan con el pedido, y registrar otro plan para una semana siguiente)
+
+Otra funcionalidades:
+orden de compra ( finalizar una orden de compra ya emitida)
+orden de compra ( registrar y emitir una orden de compra nueva)
+pago a proveedores (registrar el pago)
+Venta directa (registrar y mostrar la factura)
+presupuesto (mostrar como se realiza para un cliente)
+
+
+
+9tfptxcgxfmmxxr99dgt
