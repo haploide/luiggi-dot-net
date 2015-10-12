@@ -58,6 +58,7 @@ namespace Vista
             dtp_desde.Value = Convert.ToDateTime("01/" + DateTime.Now.Month + "/" + DateTime.Now.Year);
             dtp_hasta.Value = Convert.ToDateTime("28/" + DateTime.Now.Month + "/" + DateTime.Now.Year);
             cargarCombos();
+            dgv_pedidos.ClearSelection();
            
         }
         public void cargarCombos()

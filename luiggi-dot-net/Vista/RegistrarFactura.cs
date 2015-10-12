@@ -40,6 +40,8 @@ namespace Vista
             cargarCliente(idPedido);
 
             txt_nroFactura.Text = FacturaDAO.getUltimoNumeroFactura().ToString();
+
+            dgv_detalle.ClearSelection();
         }
         public void cargarCombo()
         {

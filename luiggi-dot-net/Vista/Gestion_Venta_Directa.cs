@@ -75,6 +75,8 @@ namespace Vista
             btn_quitar.Enabled = true;
             btn_guardar.Enabled = true;
             rdb_Contado.Checked = true;
+
+            dgv_productos_finales.ClearSelection();
             
         }
         private void checkear()

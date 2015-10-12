@@ -103,6 +103,7 @@ namespace Vista
 
             cargarGrilla();
             cargarCombos();
+            dgv_maquinas.ClearSelection();
         }
 
         private void cargarGrilla()

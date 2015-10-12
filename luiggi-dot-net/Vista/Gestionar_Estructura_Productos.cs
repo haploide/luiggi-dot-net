@@ -149,6 +149,10 @@ namespace Vista
             DGVEstructuraProductos.Rows.Clear();
             btnAgregar.Enabled = false;
             btnSacar.Enabled = false;
+
+            DGVEstructuraProductos.ClearSelection();
+            DGVProductos.ClearSelection();
+            DGVProductosAAgregar.ClearSelection();
         }
         private void cargarGrillaProductosAAgregar()
         {
@@ -548,6 +552,8 @@ namespace Vista
         {
             lblDetalle.Text = DGVProductos.SelectedRows[0].Cells["productoPadre"].Value.ToString() + " X " + DGVProductos.SelectedRows[0].Cells["unidad"].Value.ToString();
             cargarGrillaDetalleProducto();
+
+            
         }
         private void DGVProductos_SelectionChanged(object sender, EventArgs e)
         {

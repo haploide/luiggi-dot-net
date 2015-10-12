@@ -52,7 +52,7 @@ namespace Vista
             cmb_productos.ValueMember = "idProducto";
             cmb_productos.SelectedValue = 0;
 
-            
+            dgv_estructuraOT.ClearSelection();
         }
         public void cargaCombos()
         {

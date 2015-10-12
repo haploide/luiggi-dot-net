@@ -52,6 +52,8 @@ namespace Vista
             {
                 cargarGrillaOTPadre();
             }
+
+            DGV_detalle_Productos.ClearSelection();
         }
         private void cargarGrilla()
         {

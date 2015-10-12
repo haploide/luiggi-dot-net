@@ -72,7 +72,8 @@ namespace Vista
                 dtp_fecha_necesidad.Enabled = true;
                 cargarModificacion();
             }
-            
+
+            dgv_productos_finales.ClearSelection();
             
         }
         public void cargarModificacion()

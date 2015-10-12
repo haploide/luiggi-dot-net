@@ -51,6 +51,8 @@ namespace Vista
 
             cargaCombo();
             cargarGrilla();
+
+            dgv_OTproductosPadres.ClearSelection();
         }
         private void cargarGrilla()
         {

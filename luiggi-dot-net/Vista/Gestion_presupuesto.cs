@@ -543,6 +543,8 @@ namespace Vista
             btn_agregar.Enabled = true;
             btn_quitar.Enabled = true;
             btn_guardar.Enabled = true;
+
+            dgv_productos_finales.ClearSelection();
         
            
         }

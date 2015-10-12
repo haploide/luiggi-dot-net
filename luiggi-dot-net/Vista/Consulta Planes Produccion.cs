@@ -61,6 +61,7 @@ namespace Vista
             cargarCombo();
 
             cargarGrilla();
+            dgv_planes.ClearSelection();
         }
         private void cargarCombo()
         {
@@ -109,6 +110,7 @@ namespace Vista
         {
             int idPlan = (int)dgv_planes.Rows[dgv_planes.CurrentRow.Index].Cells["nroPlan"].Value;
             cargarGrillaDetalle(idPlan);
+            dgv_detalle_plan.ClearSelection();
         }
         private void cargarGrillaDetalle(int plan)
         {

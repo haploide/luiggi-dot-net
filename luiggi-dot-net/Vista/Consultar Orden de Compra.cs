@@ -49,6 +49,7 @@ namespace Vista
             iniciador.cantVentanasAbiertas++;
 
             cargarGrilla();
+            dgv_pedidos.ClearSelection();
             
         }
         private void cargarGrilla()

@@ -50,6 +50,8 @@ namespace Vista
             
             habilitar();
             dtp_creacion_OT.Enabled = false;
+
+            dgv_estructuraOT.ClearSelection();
         }
         public void cargaCombos()
         {

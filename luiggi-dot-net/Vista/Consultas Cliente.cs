@@ -54,7 +54,8 @@ namespace Vista
             //habilitarPantalla();
             cargarCombos();
             cargarGrilla();
-            
+
+            dgv_clientes.ClearSelection();
         }
         private void cargarGrilla()
         {

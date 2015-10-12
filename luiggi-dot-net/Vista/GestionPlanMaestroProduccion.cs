@@ -61,6 +61,7 @@ namespace Vista
                 habilitar();
                 btn_guardar.Enabled = true;
             }
+            dgv_productos_finales.ClearSelection();
             
             
         }
@@ -693,6 +694,11 @@ namespace Vista
                 }
             }
             return cantidad;
+        }
+
+        private void dgv_productos_finales_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
 
         

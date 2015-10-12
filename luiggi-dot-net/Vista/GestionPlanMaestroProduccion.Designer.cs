@@ -1057,6 +1057,7 @@
             this.dgv_productos_finales.Size = new System.Drawing.Size(662, 244);
             this.dgv_productos_finales.TabIndex = 0;
             this.dgv_productos_finales.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_productos_finales_CellClick);
+            this.dgv_productos_finales.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_productos_finales_CellContentClick);
             // 
             // cod
             // 

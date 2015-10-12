@@ -36,6 +36,7 @@ namespace Vista
         private void ResultadoDeFiltro_Load(object sender, EventArgs e)
         {
             cargarGrilla();
+            dgv_clientes.ClearSelection();
         }
         private void cargarGrilla()
         {

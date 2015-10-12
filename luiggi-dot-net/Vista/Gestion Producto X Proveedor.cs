@@ -61,6 +61,10 @@ namespace Vista
             cargarGrillaProveedores();
             limpiar();
             esNuevo = true;
+
+            dgv_productos.ClearSelection();
+            dgv_proveedores.ClearSelection();
+            dgv_Productos_X_Proveedores.ClearSelection();
         }
         private void limpiar()
         {

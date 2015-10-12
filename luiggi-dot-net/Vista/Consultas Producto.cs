@@ -68,6 +68,8 @@ namespace Vista
             gestor = new GestorConsultaProducto ();
             limpiar();
             cargarCombos();
+
+            dgv_productos.ClearSelection();
           
         }
         private void limpiar()
